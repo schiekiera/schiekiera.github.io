@@ -2,16 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/'>Freie Universität Berlin, Division of Clinical Psychological Intervention</a>. Schloßstr. 1, 12163 Berlin.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: ls.jpg
+  image_circular: true # crops the image to make it circular
+  more_info: false
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
