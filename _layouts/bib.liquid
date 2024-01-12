@@ -3,13 +3,20 @@
 <!-- _layouts/bib.html -->
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-  <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="max-width: 200px; height: auto;">
+    <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
   <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="max-width: 200px; height: auto;">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-  <img class="preview z-depth-1 rounded preview-image" src="{{ entry.preview }}">
+          {%
+            include figure.html
+            path=entry_path
+            sizes = "200px"
+            class="preview z-depth-1 rounded"
+            zoomable=false
+            alt=entry.preview
+          %}
         {% endif %}
       {% elsif entry.abbr %}
         {% if site.data.venues[entry.abbr] %}
