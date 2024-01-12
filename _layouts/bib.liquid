@@ -6,7 +6,14 @@
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {%
+    include figure.html
+    path=entry.preview
+    sizes="200px"
+    class="preview z-depth-1 rounded"
+    zoomable=false
+    alt=entry.title
+  %}
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
