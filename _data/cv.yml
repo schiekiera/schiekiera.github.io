@@ -12,31 +12,32 @@
       institution: Freie Universität Berlin, Berlin, Germany
       year: 2024 - now
       description:
-        - "THESIS: Understanding Publication Bias Using Large Language Models and Behavioral Methods"
-        - Advisors: Dr. Helen Niemeyer & Prof. Christine Knaevelsrud
+        - "Thesis: Understanding Publication Bias Using Large Language Models and Behavioral Methods"
+        - "Advisors: Dr. Helen Niemeyer & Prof. Christine Knaevelsrud"
 
     - title: MSc Psychology
       institution: University of Potsdam, Potsdam, Germany
       year: 2021 - 2023
       description:
-        - "THESIS: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
-        - Advisors: Dr. Helen Niemeyer & Dr. Jochen Laubrock
+        - "Thesis: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
+        - "Advisors: Dr. Helen Niemeyer & Dr. Jochen Laubrock"
 
 
     - title: BSc Psychology
       institution: University of Hamburg, Hamburg, Germany
       year: 2018 - 2021
       description:
-        - "THESIS: Parental Quality of Life After the Child's Intensive Therapy: A Longitudinal Study on Parents of Pediatric Cancer Patients"
-        - Advisors: Prof. Jenny Wagner & Prof. Laura Inhestern
+        - "Thesis: Parental Quality of Life After the Child's Intensive Therapy: A Longitudinal Study on Parents of Pediatric Cancer Patients"
+        - "Advisors: Prof. Jenny Wagner & Prof. Laura Inhestern"
 
     - title: BA Sociology and Technology Studies
       institution: Technical University of Berlin, Berlin, Germany
       year: 2014 - 2018
       description:
-        - "MINOR: Human Factors Engineering"
-        - "THESIS: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
-        - Advisors: Dr. René Tuma & Prof. Jan-Peter Voß
+        - "Thesis: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
+        - "Advisors: Dr. René Tuma & Prof. Jan-Peter Voß"
+        - "Minor: Human Factors Engineering"
+
 
 - title: Experience
   type: time_table
