@@ -13,18 +13,22 @@
       year: 2024 - now
       description:
         - "THESIS: Understanding Publication Bias Using Large Language Models and Behavioral Methods"
+        - Advisors: Dr. Helen Niemeyer & Prof. Christine Knaevelsrud
 
     - title: MSc Psychology
       institution: University of Potsdam, Potsdam, Germany
       year: 2021 - 2023
       description:
         - "THESIS: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
+        - Advisors: Dr. Helen Niemeyer & Dr. Jochen Laubrock
+
 
     - title: BSc Psychology
       institution: University of Hamburg, Hamburg, Germany
       year: 2018 - 2021
       description:
         - "THESIS: Parental Quality of Life After the Child's Intensive Therapy: A Longitudinal Study on Parents of Pediatric Cancer Patients"
+        - Advisors: Prof. Jenny Wagner & Prof. Laura Inhestern
 
     - title: BA Sociology and Technology Studies
       institution: Technical University of Berlin, Berlin, Germany
@@ -32,6 +36,7 @@
       description:
         - "MINOR: Human Factors Engineering"
         - "THESIS: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
+        - Advisors: Dr. René Tuma & Prof. Jan-Peter Voß
 
 - title: Experience
   type: time_table
@@ -40,80 +45,31 @@
       institution: Computational Modeling Group, Institute for Psychology, Humboldt Universität zu Berlin
       year: 2024 - now
       description:
-        - "Conceptualization and implementation of the computational Swinging Lexical Network model"
-        - "Modeling in the intersection of psycholinguistics, machine learning and cognitive science"
 
     - title: Research Assistant
       institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
       year: 2023 - 2024
-      description:
-        - "Utilizing machine learning, scientometrics and behavioral online methods for meta research"
 
     - title: Student Research Assistant
       institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
       year: 2021 - 2023
-      description:
-        - "Programming experiments, machine learning and statistics for meta research"
 
     - title: Student Research Assistant
       institution: Institute for Medical Psychology, University Medical Center Hamburg-Eppendorf
       year: 2019 - 2021
-      description:
-        - "Statistical modelling for a research project on pediatric psychooncology"
 
-- title: Technical Skills
-  type: nested_list
-  contents:
-    - title: Programming Languages
-      items:
-        - R
-        - Python
-        - JavaScript
-        - MATLAB
+    - title: Student Research Assistant
+      institution: Institute for Medical Sociology, University Medical Center Hamburg-Eppendorf
+      year: 2018 - 2019
 
-    - title: Machine Learning
-      items:
-        - scikit-learn
-        - PyTorch
-        - nltk
-        - Transformers
-        - HuggingFace
+    - title: Student Research Assistant
+      institution: Department of General Sociology and Theory of Modern Societies, Technical University of Berlin
+      year: 2018 - 2019
 
-    - title: Statistical/Data Analysis
-      items:
-        - lme4
-        - lavaan
-        - tidyverse
-        - pandas
-        - statsmodels
-        - SPSS
+    - title: Intern
+      institution: Berliner Stadtmission, Haus Leo, Berlin
+      year: 2018
 
-    - title: Other Skills
-      items:
-        - Git (GitLab, Github)
-        - SLURM
-        - HTML
-        - CSS
-        - LaTeX
-        - Illustrator
-        - Photoshop
-
-- title: Languages
-  type: list
-  contents:
-    - German (Native Speaker)
-    - English (Fluent)
-    - Italian (Intermediate)
-    - Spanish (Intermediate)
-    - Portuguese (Elementary)
-    - Arabic (Basic)
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://huggingface.co/ClinicalMetaScience/NegativeResultDetector">NegativeResultDetector</a>
-      year: 2023
-      description: Fine-tuned SciBERT text classification model for positive and negative results prediction in scientific abstracts of clinical psychology and psychotherapy.
 
 - title: Academic Interests
   type: nested_list
@@ -134,3 +90,10 @@
         - Publication bias
         - Political bias 
         - Academic decision making
+
+- title: Machine Learning Models
+  type: time_table
+  contents:
+    - title: <a href="https://huggingface.co/ClinicalMetaScience/NegativeResultDetector">NegativeResultDetector</a>
+      year: 2023
+      description: Fine-tuned SciBERT text classification model for positive and negative results prediction in scientific abstracts of clinical psychology and psychotherapy.
