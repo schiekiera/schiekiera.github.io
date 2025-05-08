@@ -12,7 +12,7 @@ This page contains a collection of projects I've worked on.
 
 ---
 
-    ## In Bocca al Lupo – Italian Flashcard App
+## In Bocca al Lupo – Italian Flashcard App
 
 ![In Bocca al Lupo App](https://schiekiera.github.io/assets/img/projects/inbocaallupo.jpg){: width="600"}
 
