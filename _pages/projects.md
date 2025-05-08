@@ -6,8 +6,6 @@ nav: true
 nav_order: 3
 ---
 
-# Overview
-
 This page contains a collection of projects I've worked on.
 
 ---
