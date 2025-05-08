@@ -74,7 +74,7 @@ predict_test = trainer.predict(tokenized_data["inference"])
 ```
 
 
-📂 [View on GitHub](https://github.com/ClinicalMetaScience/NegativeResultDetector)
+📂 [View on GitHub](https://github.com/schiekiera/NegativeResultDetector)
 
 ---
 
