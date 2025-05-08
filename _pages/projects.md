@@ -8,6 +8,8 @@ nav_order: 3
 
 # In Bocca al Lupo – Italian Flashcard App
 
+![In Bocca al Lupo App](https://schiekiera.github.io/assets/img/projects/inbocaallupo.jpg)
+
 **In Bocca al Lupo** is a free, browser-based flashcard app designed to help learners master the 562 most common Italian verbs. It supports both English and German translations, and uses simple tracking and spaced repetition to reinforce difficult vocabulary.
 
 ## Key Features
@@ -31,6 +33,8 @@ Fork the repo, contribute via PR, or give it a ⭐️ if you find it useful.
 ---
 
 # NegativeResultDetector: SciBERT Text Classification Model
+
+![SciBERT Model Architecture](https://schiekiera.github.io/assets/img/publication_preview/scibert.png)
 
 **SciBERT text classification model for positive and negative results prediction in scientific abstracts of clinical psychology and psychotherapy.**
 
@@ -75,6 +79,10 @@ predict_test = trainer.predict(tokenized_data["inference"])
 ---
 
 # ShootingBias: MATLAB's Psychtoolbox Implementation
+
+![alt text](https://www.frontiersin.org/files/Articles/483918/fpsyg-10-02140-HTML/image_m/fpsyg-10-02140-g001.jpg)
+*Figure 1 from [Harman et al. (2019)](https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02140/full): Example stimuli of a typical first-person shooter task*
+
 
 **MATLAB's Psychtoolbox Implementation of the shooter task.** The shooter task is a famous social-psychological behavioral test for measuring implicit racial bias (Correll et al., 2002; Essien et al., 2017).
 
