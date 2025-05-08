@@ -24,8 +24,6 @@ This page contains a collection of projects I've worked on.
 
 🎯 [Try the app](https://inbocaallupo-9hvgzexhtsvwsanxjvfjd4.streamlit.app/)
 
----
-
 ### Open Source & Collaboration
 
 Built with **Python and Streamlit**, the application is fully open source, welcoming contributions from developers.
