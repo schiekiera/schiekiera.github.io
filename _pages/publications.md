@@ -1,9 +1,20 @@
 ---
 layout: page
-title: publications
 permalink: /publications/
+title: publications
+description: publications by categories in reversed chronological order.
 nav: true
 nav_order: 2
 ---
 
-{% bibliography --file papers --group_by type, year --order desc %} 
+<!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>

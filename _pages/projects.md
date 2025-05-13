@@ -1,14 +1,12 @@
 ---
 layout: page
 title: projects
+description: This page contains a collection of projects I've worked on.
 permalink: /projects/
 nav: true
 nav_order: 4
----
 
-This page contains a collection of projects I've worked on.
 
----
 
 ## In Bocca al Lupo – Italian Flashcard App
 
