@@ -2,19 +2,20 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order.
+description: List of all my publications. You can filter by tag.
 nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
+<div class="publication-tags">
+  <a href="#" class="btn btn-sm z-depth-0 active" role="button" data-tag="all">All</a>
+  {% assign tags = site.data.publication_tags %}
+  {% for tag in tags %}
+    <a href="#{{ tag.tag }}" class="btn btn-sm z-depth-0" role="button" data-tag="{{ tag.tag }}">{{ tag.name }}</a>
+  {% endfor %}
+</div>
 
 <div class="publications">
-
-{% bibliography %}
-
+{% bibliography -f papers %}
 </div>
