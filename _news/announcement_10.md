@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our study "Does Scientific Productivity Increase the Publication of Positive Results?" has been published in *Collabra: Psychology*.
+Our study "Does Scientific Productivity Increase the Publication of Positive Results?" has been published in *Collabra: Psychology*. Link to the paper: [https://doi.org/10.1525/collabra.137035](https://doi.org/10.1525/collabra.137035)

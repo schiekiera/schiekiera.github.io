@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 Our paper "Political bias in historiography - an experimental investigation of preferences for publication as a function of political orientation" has been published in F1000Research.
-Link to the paper: [https://f1000research.com/articles/14-320/v1](https://f1000research.com/articles/14-320/v1)
+Link to the paper: [https://doi.org/10.12688/f1000research.160170.1](https://doi.org/10.12688/f1000research.160170.1)
