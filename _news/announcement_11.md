@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The paper “Publication Bias in Academic Decision Making in Clinical Psychology,” on which I’m first author, has been accepted in Advances in Methods and Practices in Psychological Science.
+The paper “Publication Bias in Academic Decision Making in Clinical Psychology,” on which I’m first author, has been accepted in *Advances in Methods and Practices in Psychological Science*.
