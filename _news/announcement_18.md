@@ -5,7 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Excided to share a new preprint exploring how much we can infer about LLMs' internal semantic structure from behavioral observations alone. We tested eight transformer models using psycholinguistic paradigms (free association and forced choice) on 5,000 words. We found that forced-choice tasks better recover internal semantic geometry than free association, and behavioral measurements predict hidden-state similarities beyond baseline methods. 
-
+Excited to share a new preprint asking how much of a system’s internal semantic structure can be recovered from behavior alone. Across eight LLMs and 17.5M+ trials, we compare free association and forced-choice tasks and find that forced choice recovers hidden-state semantic geometry far better. 
 
 **Preprint:** [arXiv:2602.00628 (PDF)](https://www.arxiv.org/pdf/2602.00628).
