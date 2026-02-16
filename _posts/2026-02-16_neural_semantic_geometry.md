@@ -113,11 +113,6 @@ The held-out-words ridge regression shows that behavioral similarity---especiall
   <div class="figure-caption">Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show $R^2$ for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</div>
 </div>
 
-<div class="figure-container">
-  <img src="/assets/img/blog/neural_semantic_geometry/rr_delta_heatmap.pdf" alt="Incremental behavioral contribution" style="max-width: 100%;" class="zoomable" data-zoomable>
-  <div class="figure-caption">Incremental contribution ($\Delta R^2$) of behavioral predictors to ridge regression performance, relative to a baseline with lexical and cross-model features. FC consistently provides the largest behavioral gain across models.</div>
-</div>
-
 ## Discussion and implications
 
 Our findings show that structured behavior---particularly from constrained measurement paradigms like forced choice---preserves a nontrivial projection of a model's hidden-state similarity geometry, even without access to logits or internal activations. This has implications for both interpretability research and cognitive science:
