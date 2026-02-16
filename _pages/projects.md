@@ -8,29 +8,7 @@ nav_order: 4
 --- 
 
 
-## In Bocca al Lupo – Italian Flashcard App
 
-![In Bocca al Lupo App](https://schiekiera.github.io/assets/img/projects/inbocaallupo.jpg){: width="600"}
-
-**In Bocca al Lupo** is a free, browser-based flashcard application designed to help learners efficiently master the 562 most commonly used Italian verbs. It incorporates English and German translations and employs spaced repetition alongside simple performance tracking to support effective vocabulary acquisition.
-
-### Key Features
-- Translation modes: Italian ↔ English or German
-- Adaptive repetition based on user accuracy
-- Performance tracking of challenging vocabulary
-- Comprehensive session summaries with individual word statistics
-
-🎯 [Try the app](https://inbocaallupo-9hvgzexhtsvwsanxjvfjd4.streamlit.app/)
-
-### Open Source & Collaboration
-
-Built with **Python and Streamlit**, the application is fully open source, welcoming contributions from developers.
-
-📂 [View on GitHub](https://github.com/schiekiera/in_boca_al_lupo)
-
-Fork the repository, submit pull requests, or give it a ⭐️ if you find it helpful.
-
----
 
 ## NegativeResultDetector: SciBERT Text Classification Model
 
