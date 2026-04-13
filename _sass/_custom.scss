@@ -1,4 +1,412 @@
+/*******************************************************************************
+ * Custom overrides and additions.
+ ******************************************************************************/
+
+// Baseline image behavior
 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------------------------------------------------
+  Blog index page (/blog/)
+------------------------------------------------------------------------------*/
+
+.blog-index {
+  padding: 2rem 0 4rem;
+
+  .blog-hero {
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    margin-bottom: 3rem;
+
+    .blog-title {
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+      color: var(--global-text-color);
+    }
+
+    .blog-subtitle {
+      font-size: 1.15rem;
+      color: var(--global-text-color-light);
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+
+  .section-heading {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--global-text-color-light);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  section + section {
+    margin-top: 3rem;
+  }
+}
+
+/* Featured posts */
+
+.featured-section {
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+
+      .featured-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .featured-thumb {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--global-bg-color);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .featured-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  .featured-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    line-height: 1.35;
+    transition: color 0.2s ease;
+  }
+
+  .featured-description {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin: 0 0 0.75rem;
+    line-height: 1.5;
+  }
+
+  .featured-meta {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+}
+
+/* Post series */
+
+.series-section {
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .series-card {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      transform: translateY(-1px);
+      text-decoration: none;
+
+      .series-card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .series-card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0;
+    transition: color 0.2s ease;
+  }
+
+  .series-card-description {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin: 0.4rem 0 0;
+  }
+}
+
+/* Recent posts */
+
+.recent-section {
+  .post-cards {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .post-card {
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      border-color: var(--global-theme-color);
+
+      .post-card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .post-card-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    min-height: 180px;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .post-card-thumb {
+    flex: 0 0 200px;
+    overflow: hidden;
+    background: var(--global-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--global-divider-color);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 0.75rem;
+    }
+  }
+
+  .post-card-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 0 0.6rem;
+    line-height: 1.3;
+    color: var(--global-text-color);
+    transition: color 0.2s ease;
+  }
+
+  .post-card-description {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    line-height: 1.55;
+    margin: 0 0 0.9rem;
+  }
+
+  .post-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+
+    i {
+      margin-right: 0.3rem;
+      color: var(--global-theme-color);
+    }
+  }
+
+  .post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+  }
+
+  .post-card-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+    background: rgba(53, 148, 105, 0.1);
+    color: var(--global-theme-color);
+    border-radius: 999px;
+    font-weight: 500;
+
+    i {
+      margin-right: 0.15rem;
+    }
+  }
+}
+
+// Responsive: stack thumbnail above body on narrow screens
+@media (max-width: 640px) {
+  .recent-section {
+    .post-card-link {
+      flex-direction: column;
+    }
+
+    .post-card-thumb {
+      flex: 0 0 auto;
+      width: 100%;
+      max-height: 220px;
+      border-right: none;
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+
+    .post-card-body {
+      padding: 1.25rem;
+    }
+
+    .post-card-title {
+      font-size: 1.15rem;
+    }
+  }
+
+  .blog-index .blog-hero .blog-title {
+    font-size: 2.25rem;
+  }
+}
+
+// Dark-mode tweaks
+html[data-theme="dark"] {
+  .recent-section .post-card:hover,
+  .featured-section .featured-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .recent-section .post-card-tag {
+    background: rgba(178, 148, 0, 0.15);
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Post figures
+  - Works with distill (d-article) layout and regular post layout.
+  - Distill provides default `figure { grid-column: page }` and figcaption
+    typography; we add responsive images, spacing, and dark-mode friendliness.
+------------------------------------------------------------------------------*/
+
+.post-figure {
+  margin: 2rem auto 2.5rem;
+  text-align: center;
+
+  img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
   }
+
+  figcaption {
+    display: block;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--global-text-color-light);
+    margin-top: 0.85rem;
+    padding: 0 0.25rem;
+    text-align: left;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Distill-specific overrides: use the wider `page` column and make captions
+// match the app color so they read well in dark mode.
+d-article {
+  .post-figure {
+    grid-column: page;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      text-align: left;
+      color: var(--global-distill-app-color) !important;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+  }
+}
+
+// Legacy compatibility for old .figure-container / .figure-caption divs
+.figure-container {
+  margin: 2rem auto 2.5rem;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+}
+
+.figure-caption {
+  display: block;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+  margin-top: 0.85rem;
+  padding: 0 0.25rem;
+  text-align: left;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+d-article .figure-container {
+  grid-column: page;
+}
