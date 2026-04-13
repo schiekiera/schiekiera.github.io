@@ -20,6 +20,6 @@ I am a psychologist (M.Sc.) and research associate in the <a href='https://www.p
 
 Furthemore, I am PhD candidate at the <a href='https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/'>Division of Clinical Psychological Intervention, FU Berlin</a> and write my dissertation on "Understanding Publication Bias Using Large Language Models and Behavioral Methods" using methods from machine learning, behavioral science and classical research synthesis.
 
-I earned my M.Sc. in <i>Psychology</i> from the Uni Potsdam and my B.Sc. from the Uni Hamburg, specializing in clinical psychology, longitudinal data modeling and machine learning. Furthermore, I received a B.A. in <i>Sociology and Technology Studies</i>  with a minor in Human Factors Engineering from the TU Berlin.
+I earned my M.Sc. in <i>Psychology</i> from the Uni Potsdam and my B.Sc. from the Uni Hamburg, specializing in clinical psychology, longitudinal data modeling and machine learning. Furthermore, I received a B.A. in <i>Sociology and Technology Studies</i> with a minor in Human Factors Engineering from the TU Berlin.
 
 If you want to get in touch, please email me at <b>louis.schiekiera [at] hu-berlin.de</b>.

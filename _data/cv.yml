@@ -1,4 +1,3 @@
-
 - title: Education
   type: time_table
   contents:
@@ -16,7 +15,6 @@
         - "Thesis: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
         - "Advisors: Dr. Helen Niemeyer & Dr. Jochen Laubrock"
 
-
     - title: BSc Psychology
       institution: University of Hamburg, Hamburg, Germany
       year: 2018 - 2021
@@ -31,7 +29,6 @@
         - "Thesis: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
         - "Advisors: Dr. René Tuma & Prof. Jan-Peter Voß"
         - "Minor: Human Factors Engineering"
-
 
 - title: Experience
   type: time_table
@@ -65,16 +62,14 @@
       institution: Berliner Stadtmission, Haus Leo, Berlin
       year: 2018
 
-
 - title: Academic Interests
   type: nested_list
   contents:
-
     - title: Computational Cognitive Science
       items:
         - Computational modeling of language production processes
         - Psycholinguistics
-      
+
     - title: Machine Learning
       items:
         - Biases in ML & large language models
@@ -83,7 +78,7 @@
     - title: Meta-Research & Publication Bias
       items:
         - Publication bias
-        - Political bias 
+        - Political bias
         - Academic decision making
 
 - title: Machine Learning Models

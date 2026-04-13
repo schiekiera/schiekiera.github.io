@@ -29,11 +29,13 @@ authors:
       name: Humboldt-Universität zu Berlin
 ---
 
+**📄 [Read the full preprint on arXiv](https://arxiv.org/pdf/2602.00628)** | **💻 [View code on GitHub](https://github.com/schiekiera/llm-association-geometry)**
+
 ## Motivation: Can behavior reveal internal structure?
 
-In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior <d-cite key="de2019small"></d-cite>. Word-association paradigms use exactly this logic---when a participant sees a cue (e.g., *dog*), the associations they produce or select (e.g., *cat*, *leash*, *bark*) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
+In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior <d-cite key="de2019small"></d-cite>. Word-association paradigms use exactly this logic---when a participant sees a cue (e.g., _dog_), the associations they produce or select (e.g., _cat_, _leash_, _bark_) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
 
-We transfer this measurement logic to large language models. Unlike humans, both behavior *and* internal representations are observable in LLMs. This creates a unique opportunity: we can systematically test how well an LLM's behavioral output reveals its internal semantic geometry. A key open question is not only how model behavior compares to humans, but also what a model's *own* behavior reveals about its *own* internal representations.
+We transfer this measurement logic to large language models. Unlike humans, both behavior _and_ internal representations are observable in LLMs. This creates a unique opportunity: we can systematically test how well an LLM's behavioral output reveals its internal semantic geometry. A key open question is not only how model behavior compares to humans, but also what a model's _own_ behavior reveals about its _own_ internal representations.
 
 <figure class="post-figure">
   <img src="/assets/img/blog/neural_semantic_geometry/conceptual.png" alt="Conceptual overview of the framework" class="zoomable" data-zoomable>
@@ -60,7 +62,7 @@ For each paradigm, model outputs are aggregated into a sparse cue--response coun
 For each model and each word, we extract layerwise hidden-state representations under four contextual embedding strategies:
 
 - **Averaged**: The target word embedded in 50 naturally occurring C4 sentences <d-cite key="raffel2020exploring"></d-cite>, with hidden states averaged across contexts <d-cite key="bommasani2020interpreting"></d-cite>.
-- **Meaning**: A fixed definition-style prompt (*"What is the meaning of the word {w}?"*).
+- **Meaning**: A fixed definition-style prompt (_"What is the meaning of the word {w}?"_).
 - **Task (FC)**: The target word embedded in the FC instruction prompt (without candidates).
 - **Task (FA)**: The target word embedded in the FA instruction prompt.
 
@@ -120,7 +122,7 @@ Our findings show that structured behavior---particularly from constrained measu
 
 **For interpretability**: Behavioral probing can serve as a practical tool for understanding internal representations when only black-box access is available. The FC paradigm's controlled candidate sets concentrate observations and produce a less sparse cue--response matrix, yielding higher signal-to-noise measurements of semantic geometry <d-cite key="roads2021enriching"></d-cite>.
 
-**For cognitive science**: Using our fully observable language-model setup, we can subject a core assumption to rigorous empirical tests---that structured behavior is constrained by, and can therefore partially reveal, internal states. The finding that measurement protocol strongly determines recoverability (FC vs. FA) suggests that whether a behavioral task *reveals* internal structure is not a generic property of "behavior": it depends critically on how responses are constrained and aggregated.
+**For cognitive science**: Using our fully observable language-model setup, we can subject a core assumption to rigorous empirical tests---that structured behavior is constrained by, and can therefore partially reveal, internal states. The finding that measurement protocol strongly determines recoverability (FC vs. FA) suggests that whether a behavioral task _reveals_ internal structure is not a generic property of "behavior": it depends critically on how responses are constrained and aggregated.
 
 **Cross-model consensus**: A striking finding is the strength of cross-model consensus---similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the hypothesis of a substantial common semantic subspace <d-cite key="huh2024platonic"></d-cite>.
 

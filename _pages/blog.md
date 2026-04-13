@@ -14,50 +14,52 @@ nav_order: 3
     {% endif %}
   </header>
 
-  {% assign featured_posts = site.posts | where: "featured", true %}
-  {% if featured_posts.size > 0 %}
-    <section class="featured-section">
-      <h2 class="section-heading">Featured</h2>
-      <div class="featured-grid">
-        {% for post in featured_posts %}
-          <a class="featured-card" href="{{ post.url | relative_url }}">
-            {% if post.thumbnail %}
-              <div class="featured-thumb">
-                <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
-              </div>
-            {% endif %}
-            <div class="featured-body">
-              <h3 class="featured-title">{{ post.title }}</h3>
-              {% if post.description %}
-                <p class="featured-description">{{ post.description | strip_html | truncate: 180 }}</p>
-              {% endif %}
-              <p class="featured-meta">
-                <i class="fa-solid fa-calendar fa-sm"></i>
-                {{ post.date | date: '%B %-d, %Y' }}
-              </p>
-            </div>
-          </a>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
+{% assign featured_posts = site.posts | where: "featured", true %}
+{% if featured_posts.size > 0 %}
 
-  {% assign series_posts = site.posts | where_exp: "item", "item.series_title" %}
-  {% if series_posts.size > 0 %}
-    <section class="series-section">
-      <h2 class="section-heading">Post Series</h2>
-      <div class="series-grid">
-        {% for post in series_posts %}
-          <a href="{{ post.url | relative_url }}" class="series-card">
-            <div class="series-card-title">{{ post.series_title }}</div>
-            {% if post.series_description %}
-              <div class="series-card-description">{{ post.series_description }}</div>
-            {% endif %}
-          </a>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
+<section class="featured-section">
+<h2 class="section-heading">Featured</h2>
+<div class="featured-grid">
+{% for post in featured_posts %}
+<a class="featured-card" href="{{ post.url | relative_url }}">
+{% if post.thumbnail %}
+<div class="featured-thumb">
+<img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+</div>
+{% endif %}
+<div class="featured-body">
+<h3 class="featured-title">{{ post.title }}</h3>
+{% if post.description %}
+<p class="featured-description">{{ post.description | strip_html | truncate: 180 }}</p>
+{% endif %}
+<p class="featured-meta">
+<i class="fa-solid fa-calendar fa-sm"></i>
+{{ post.date | date: '%B %-d, %Y' }}
+</p>
+</div>
+</a>
+{% endfor %}
+</div>
+</section>
+{% endif %}
+
+{% assign series_posts = site.posts | where_exp: "item", "item.series_title" %}
+{% if series_posts.size > 0 %}
+
+<section class="series-section">
+<h2 class="section-heading">Post Series</h2>
+<div class="series-grid">
+{% for post in series_posts %}
+<a href="{{ post.url | relative_url }}" class="series-card">
+<div class="series-card-title">{{ post.series_title }}</div>
+{% if post.series_description %}
+<div class="series-card-description">{{ post.series_description }}</div>
+{% endif %}
+</a>
+{% endfor %}
+</div>
+</section>
+{% endif %}
 
   <section class="recent-section">
     <h2 class="section-heading">Recent Posts</h2>

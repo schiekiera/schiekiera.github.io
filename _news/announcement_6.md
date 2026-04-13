@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 The article ["Classifying Positive Results in Clinical Psychology Using Natural Language Processing"](https://econtent.hogrefe.com/doi/10.1027/2151-2604/a000563)
- was today published in <i> Zeitschrift für Psychologie </i> for the special issue "Natural Language Processing in Psychology".
+was today published in <i> Zeitschrift für Psychologie </i> for the special issue "Natural Language Processing in Psychology".
