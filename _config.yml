@@ -118,8 +118,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: schiekiera_blog # blog_name will be displayed in your blog page
-blog_description:
+blog_name: Blog # blog_name will be displayed in your blog page
+blog_description: here i write about my research..
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -153,8 +153,6 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
