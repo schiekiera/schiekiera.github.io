@@ -378,6 +378,15 @@ d-article > * {
   grid-column: middle;
 }
 
+// Justify body text. Hyphenation keeps word spacing from blowing up on
+// narrow viewports.
+d-article p,
+d-article li {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
 // Preserve distill defaults for special elements that have their own columns.
 d-article > aside {
   grid-column: gutter;
