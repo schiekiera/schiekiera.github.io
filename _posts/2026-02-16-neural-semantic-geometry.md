@@ -14,19 +14,19 @@ related_posts: false
 authors:
   - name: Louis Schiekiera
     affiliations:
-      name: Humboldt-Universität zu Berlin & Freie Universität Berlin
+      name: HU Berlin & FU Berlin
   - name: Max Zimmer
     affiliations:
-      name: Zuse Institute Berlin & Technische Universität Berlin
+      name: Zuse Institute Berlin
   - name: Christophe Roux
     affiliations:
-      name: Zuse Institute Berlin & Technische Universität Berlin
+      name: Zuse Institute Berlin
   - name: Sebastian Pokutta
     affiliations:
-      name: Zuse Institute Berlin & Technische Universität Berlin
+      name: Zuse Institute Berlin
   - name: Fritz Günther
     affiliations:
-      name: Humboldt-Universität zu Berlin
+      name: HU Berlin
 ---
 
 **📄 [Read the full preprint on arXiv](https://arxiv.org/pdf/2602.00628)** | **💻 [View code on GitHub](https://github.com/schiekiera/llm-association-geometry)**
