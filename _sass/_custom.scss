@@ -370,11 +370,27 @@ html[data-theme="dark"] {
   }
 }
 
-// Distill-specific overrides: constrain figures to the text column so they
-// match body width, and match captions to the app color for dark mode.
+// Widen body content in distill posts. Distill's template.v2.js ships with
+// `d-article > * { grid-column: text }`, which at 1180px renders a ~704px
+// column. The `middle` column is ~888px (25% wider) and still leaves room
+// for gutters/asides.
+d-article > * {
+  grid-column: middle;
+}
+
+// Preserve distill defaults for special elements that have their own columns.
+d-article > aside {
+  grid-column: gutter;
+}
+
+d-article > hr {
+  grid-column: screen;
+}
+
+// Figures also span the middle column so the plot box matches body width.
 d-article {
   .post-figure {
-    grid-column: text;
+    grid-column: middle;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
 
