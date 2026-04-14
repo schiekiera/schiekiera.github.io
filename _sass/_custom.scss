@@ -370,8 +370,9 @@ html[data-theme="dark"] {
   }
 }
 
-// Justify body text. Hyphenation keeps word spacing from blowing up on
-// narrow viewports.
+// Justify body text and the page description (rendered inside d-title).
+// Hyphenation keeps word spacing from blowing up on narrow viewports.
+d-title p,
 d-article p,
 d-article li {
   text-align: justify;
