@@ -4,7 +4,7 @@ title: "Publication Bias in Academic Decision Making in Clinical Psychology"
 date: 2025-09-01
 description: "Our registered report in <b>Advances in Methods and Practices in Psychological Science</b> experimentally tests how statistical significance and hypothesis-consistency influence clinical psychologists' decisions to submit, read, and cite research. Across four within-subjects experiments with 303 researchers, we find a consistent preference for statistically significant abstracts, but no effect of hypothesis-consistency. Deliberation does not attenuate the bias."
 tags: [metascience, publication-bias, decision-making, dual-process-theory]
-thumbnail: /assets/img/blog/publication_bias_decision_making/figure1.png
+thumbnail: /assets/img/blog/publication_bias_decision_making/figure3.png
 bibliography: publication_bias_decision_making.bib
 publication_type: "Journal Article"
 paper_url: "https://doi.org/10.1177/25152459251338393"

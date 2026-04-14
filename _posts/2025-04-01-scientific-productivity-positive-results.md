@@ -2,7 +2,7 @@
 layout: distill
 title: "Does Scientific Productivity Increase the Publication of Positive Results?"
 date: 2025-04-01
-description: "Our paper in "Collabra: Psychology" investigates whether German clinical psychology research groups with high versus low publication outputs differ in the prevalence of positive results. Analyzing 2,280 empirical studies from 99 research groups (2013–2022), we find approximately 90% positive results across the board, with no significant difference between high- and low-output groups. Scientific productivity does not differentially explain the excess of positive results."
+description: "Our paper in <b>Collabra: Psychology</b> investigates whether German clinical psychology research groups with high versus low publication outputs differ in the prevalence of positive results. Analyzing 2,280 empirical studies from 99 research groups (2013–2022), we find approximately 90% positive results across the board, with no significant difference between high- and low-output groups. Scientific productivity does not differentially explain the excess of positive results."
 tags: [metascience, positive-results, scientific-productivity, clinical-psychology]
 thumbnail: /assets/img/blog/scientific_productivity/Figure_3.png
 bibliography: scientific_productivity.bib
