@@ -12,13 +12,13 @@ code_url: "https://github.com/schiekiera/busara_2024"
 giscus_comments: false
 related_posts: false
 toc:
-  - name: "Motivation: Who shapes psychotherapy research?"
+  - name: "Motivation: How is authorship distributed in psychotherapy research?"
   - name: "Method: 17,095 psychotherapy RCTs from PubMed"
   - name: "Results"
     subsections:
       - name: "First authorship by world region"
       - name: "Team composition: Global North vs. South"
-  - name: "Discussion and implications"
+  - name: "Discussion"
 authors:
   - name: Helen Niemeyer
     affiliations:
@@ -30,9 +30,9 @@ authors:
 
 **📄 [Read the full book chapter (PDF)](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)** | **💻 [View code on GitHub](https://github.com/schiekiera/busara_2024)**
 
-### Motivation: Who shapes psychotherapy research?
+### Motivation: How is authorship distributed in psychotherapy research?
 
-Clinical psychology research agendas are predominantly determined by Western researchers and funders <d-cite key="cheung2012mainstreaming"></d-cite>. Approaches that assume universal realities---often derived from WEIRD (Western, Educated, Industrialized, Rich, Democratic) samples---risk overlooking culturally specific expressions of distress and locally effective interventions <d-cite key="adetula2022psychology"></d-cite>. Despite growing calls for decolonizing global mental health research <d-cite key="heim2021reporting"></d-cite>, little quantitative evidence exists on how authorship in psychotherapy trials has evolved over time.
+Psychotherapy research is conducted worldwide, yet the regional distribution of authorship in this literature has received limited quantitative attention <d-cite key="cheung2012mainstreaming"></d-cite> <d-cite key="adetula2022psychology"></d-cite>. Understanding who authors psychotherapy trials---and how this has changed over time---provides an empirical basis for discussions about the geographic composition of the field <d-cite key="heim2021reporting"></d-cite>.
 
 We asked two questions: **(1)** How are first authorships in psychotherapy RCTs distributed across world regions, and how has this changed from 1990 to 2022? **(2)** What is the composition of research teams in terms of Global North vs. Global South affiliations?
 
@@ -46,7 +46,7 @@ For the team composition analysis, we classified all author affiliations per stu
 
 #### First authorship by world region
 
-The distribution of first-author affiliations was heavily skewed:
+The distribution of first-author affiliations varied considerably across regions:
 
 | Region                    |   _n_ | Share |
 | ------------------------- | ----: | ----: |
@@ -61,10 +61,10 @@ Over three decades, the landscape shifted substantially. North America's relativ
 
 <figure class="post-figure">
   <img src="/assets/img/blog/global_clinical_psychology/figure1.jpg" alt="Proportion of first-author affiliations by world region over time" class="zoomable" data-zoomable>
-  <figcaption>Proportion of first-author academic affiliations in psychotherapy RCTs by world region over time (1990–2022). North America's dominance has steadily declined while Asia has risen sharply. Africa and Latin America remain near-zero throughout.</figcaption>
+  <figcaption>Proportion of first-author academic affiliations in psychotherapy RCTs by world region over time (1990–2022). North America's share has declined while Asia's has increased. Africa and Latin America remained below 0.02 throughout the period.</figcaption>
 </figure>
 
-However, regions like Latin America and the Caribbean, Africa, and Oceania showed minimal change. Latin America increased from 0.01 to 0.02; Africa rose from 0.01 to 0.02; Oceania remained stable around 0.05--0.06. The growth in Asian countries contrasts sharply with the persistent underrepresentation of African and Latin American institutions.
+Latin America and the Caribbean, Africa, and Oceania showed smaller changes. Latin America increased from 0.01 to 0.02; Africa rose from 0.01 to 0.02; Oceania remained stable around 0.05--0.06 throughout the period.
 
 #### Team composition: Global North vs. South
 
@@ -76,20 +76,20 @@ We also examined the affiliations of _all_ authors per study:
 | Global South only   |  1,242 |  7.3% |
 | Mixed North & South |    888 |  5.2% |
 
-The temporal trends tell a story of slow diversification. In the 1990s, 98% of teams consisted exclusively of Global North authors ($M = 0.98$, SD = 0.01). By 2020--2022 this had decreased to 75% ($M = 0.75$, SD = 0.03). Global South-only teams grew from near-zero ($M = 0.01$) to 16% ($M = 0.16$, SD = 0.03). Mixed teams increased nearly fivefold, from 2% ($M = 0.02$, SD = 0.01) to 9% ($M = 0.09$, SD = 0.01).
+The composition of research teams changed over the observation period. In the 1990s, 98% of teams consisted exclusively of Global North authors ($M = 0.98$, SD = 0.01). By 2020--2022 this had decreased to 75% ($M = 0.75$, SD = 0.03). Global South-only teams increased from $M = 0.01$ to $M = 0.16$ (SD = 0.03). Mixed teams rose from $M = 0.02$ (SD = 0.01) to $M = 0.09$ (SD = 0.01).
 
 <figure class="post-figure">
   <img src="/assets/img/blog/global_clinical_psychology/figure2.jpg" alt="Proportion of authorship by UNCTAD region over time" class="zoomable" data-zoomable>
-  <figcaption>Proportion of authorship teams in psychotherapy RCTs classified by UNCTAD region (1990–2022). Global North-only teams still dominate but have declined from 98% to 75%. Global South-only and mixed teams are growing but remain a minority.</figcaption>
+  <figcaption>Proportion of authorship teams in psychotherapy RCTs classified by UNCTAD region (1990–2022). Global North-only teams decreased from 98% to 75%. Global South-only and mixed teams increased over the same period.</figcaption>
 </figure>
 
-### Discussion and implications
+### Discussion
 
-**For global mental health**: Despite growing awareness and policy discourse around decolonizing research, the quantitative picture remains stark. Africa and Latin America together account for less than 2% of first authorships in over three decades of psychotherapy trial publications. The research agenda is still overwhelmingly set by North American and European institutions.
+**Regional shifts**: North America accounted for nearly two-thirds of first authorships in the 1990s but roughly one-third by 2020--2022. Asia showed the largest increase, rising from 3% to 23%. Africa and Latin America together accounted for less than 2% of first authorships across the entire 1990--2022 period, and their shares changed little over time.
 
-**Positive trends**: Asia's eightfold increase in first-author representation and the growth of mixed North--South teams signal progress. The share of Global South-only teams has grown from essentially zero to 16%, suggesting that local research capacity is developing---even if slowly.
+**Team composition**: The share of exclusively Global North teams decreased from 98% to 75%, while Global South-only teams grew from 1% to 16% and mixed teams from 2% to 9%. These patterns indicate a shift in the geographic distribution of authorship, though the majority of studies continue to be authored by Global North-affiliated researchers.
 
-**Structural barriers**: The persistent underrepresentation of certain regions likely reflects unequal access to funding, publication infrastructure, and international collaboration networks rather than a lack of need or capacity for mental health research.
+**Limitations**: Our analysis is restricted to English-language publications indexed in PubMed and relies on affiliation data from OpenAlex. Research published in other languages or regional journals may not be captured. The UNCTAD classification groups heterogeneous countries together, and within-region variation is not examined here.
 
 If you find this work useful for your research, please consider citing our chapter:
 
