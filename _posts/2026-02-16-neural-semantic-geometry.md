@@ -155,8 +155,8 @@ If you find this interesting and if this work is helpful for your research, plea
 }
 ```
 
-📄 Read the preprint [here](https://arxiv.org/abs/2602.00628)
+📄 Read the preprint [here](https://arxiv.org/abs/2602.00628).
 
-💻 View the code on [GitHub](https://github.com/schiekiera/llm-association-geometry)
+💻 View the code on [GitHub](https://github.com/schiekiera/llm-association-geometry).
 
-🤗 View the dataset on [HuggingFace](https://huggingface.co/datasets/schiekiera/llm-association-geometry)
+🤗 View the dataset on [HuggingFace](https://huggingface.co/datasets/schiekiera/llm-association-geometry).

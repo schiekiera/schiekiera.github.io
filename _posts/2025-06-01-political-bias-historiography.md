@@ -2,7 +2,7 @@
 layout: distill
 title: "Is Partisan Bias Present in Historical Research?"
 date: 2025-06-01
-description: "Our paper in <b>F1000Research</b> investigates whether historians prefer contemporary history abstracts that align with their political orientation. In an online experiment, 75 historians evaluated 17 fictitious abstract pairs varying in political stance. We find a significant interaction: left-leaning historians prefer progressive abstracts, right-leaning historians prefer conservative ones, and moderate historians show no preference. Deliberation does not diminish this bias."
+description: "Our preprint in <b>F1000Research</b> investigates whether historians prefer contemporary history abstracts that align with their political orientation. In an online experiment, 75 historians evaluated 17 fictitious abstract pairs varying in political stance. We find a significant interaction: left-leaning historians prefer progressive abstracts, right-leaning historians prefer conservative ones, and moderate historians show no preference. Deliberation does not diminish this bias."
 tags: [metascience, political-bias, historiography, decision-making]
 thumbnail: /assets/img/blog/political_bias/Figure_4_ILoS_Main_Results.png
 bibliography: political_bias.bib
@@ -30,7 +30,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Paper (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📝 [Preregistration (OSF)](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [Code & Data (GitHub)](https://github.com/schiekiera/metascience_experiment_history)**
+**📄 [Preprint (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📝 [Preregistration (OSF)](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [Code & Data (GitHub)](https://github.com/schiekiera/metascience_experiment_history)**
 
 ### Motivation: Political preferences in science
 
@@ -95,18 +95,20 @@ Feeling of Rightness was likewise unaffected by political congruence ($b = 0.02$
 If you find this work useful for your research, please consider citing our paper:
 
 ```bibtex
-@article{schiekiera2025partisan,
-  title={Is Partisan Bias Present in Historiography? An Experimental
-         Investigation of Preferences for Publication as a Function
-         of Political Orientation},
-  author={Schiekiera, Louis and Niemeyer, Helen},
-  journal={F1000Research},
-  year={2025}
+@article{schiekiera2025political,
+  author = {Schiekiera, Louis and Niemeyer, Helen},
+  title = {Political bias in historiography --- an experimental investigation of preferences for publication as a function of political orientation [version 1; peer review: awaiting peer review]},
+  journal = {F1000Research},
+  year = {2025},
+  volume = {14},
+  pages = {320},
+  doi = {10.12688/f1000research.160170.1},
+  url = {https://doi.org/10.12688/f1000research.160170.1}
 }
 ```
 
-📄 Read the paper [here](https://doi.org/10.12688/f1000research.157553.1)
+📄 Read the preprint (F1000Research) [here](https://doi.org/10.12688/f1000research.157553.1).
 
-📝 View the preregistration on [OSF](https://doi.org/10.17605/OSF.IO/QCDV8)
+📝 View the preregistration (OSF) on [OSF](https://doi.org/10.17605/OSF.IO/QCDV8).
 
-💻 View the code and data on [GitHub](https://github.com/schiekiera/metascience_experiment_history)
+💻 View the code and data (GitHub) on [GitHub](https://github.com/schiekiera/metascience_experiment_history).

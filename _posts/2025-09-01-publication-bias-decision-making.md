@@ -132,8 +132,8 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
-📄 Read the paper [here](https://doi.org/10.1177/25152459251338393)
+📄 Read the paper [here](https://doi.org/10.1177/25152459251338393).
 
-📝 View the preregistration on [OSF](https://osf.io/6tpm7)
+📝 View the preregistration on [OSF](https://osf.io/6tpm7).
 
-💻 View the code and data on [GitHub](https://github.com/schiekiera/metascience_experiment_history)
+💻 View the code and data on [GitHub](https://github.com/schiekiera/metascience_experiment_history).
