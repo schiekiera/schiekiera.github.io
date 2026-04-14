@@ -22,10 +22,10 @@ toc:
 authors:
   - name: Helen Niemeyer
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
   - name: Louis Schiekiera
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
 ---
 
 **📄 [Read the full book chapter (PDF)](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)** | **💻 [View code on GitHub](https://github.com/schiekiera/busara_2024)**

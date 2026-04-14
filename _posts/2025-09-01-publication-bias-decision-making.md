@@ -25,22 +25,22 @@ toc:
 authors:
   - name: Louis Schiekiera
     affiliations:
-      name: Freie Universität Berlin & Humboldt-Universität zu Berlin
+      name: FU Berlin & HU Berlin
   - name: Kristina Eichel
     affiliations:
-      name: Universität Greifswald
+      name: University of Greifswald
   - name: Jacqueline Sachse
     affiliations:
-      name: Humboldt-Universität zu Berlin
+      name: HU Berlin
   - name: Sophie P. Müller
     affiliations:
-      name: Humboldt-Universität zu Berlin
+      name: HU Berlin
   - name: Felicitas Heßelmann
     affiliations:
       name: German Center for Higher Education and Science Studies
   - name: Helen Niemeyer
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
 ---
 
 **📄 [Read the full paper (AMPPS)](https://doi.org/10.1177/25152459251338393)** | **📦 [Check out the preregistration](https://osf.io/6tpm7)** | **💻 [View code on GitHub](https://github.com/schiekiera/metascience_experiment_history)**

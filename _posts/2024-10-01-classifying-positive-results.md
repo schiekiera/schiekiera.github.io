@@ -26,13 +26,13 @@ toc:
 authors:
   - name: Louis Schiekiera
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
   - name: Jonathan Diederichs
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
   - name: Helen Niemeyer
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
 ---
 
 **📄 [Read the full paper (Zeitschrift für Psychologie)](https://doi.org/10.1027/2151-2604/a000563)** | **💻 [View code on GitHub](https://github.com/schiekiera/NegativeResultDetector)** | **🤗 [NegativeResultDetector on HuggingFace](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)**

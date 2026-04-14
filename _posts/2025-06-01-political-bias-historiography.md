@@ -24,10 +24,10 @@ toc:
 authors:
   - name: Louis Schiekiera
     affiliations:
-      name: Freie Universität Berlin & Humboldt-Universität zu Berlin
+      name: FU Berlin & HU Berlin
   - name: Helen Niemeyer
     affiliations:
-      name: Freie Universität Berlin
+      name: FU Berlin
 ---
 
 **📄 [Read the full paper (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📦 [Check out the preregistration](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [View code on GitHub](https://github.com/schiekiera/metascience_experiment_history)**
