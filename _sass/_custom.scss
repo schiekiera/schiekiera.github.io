@@ -382,13 +382,26 @@ d-article li {
 
 // Sticky left-hand table of contents so readers can see their position in
 // the article as they scroll. Distill already shows d-contents at >=1024px;
-// we just pin it.
+// we just pin it and bump the font a touch above distill's 12-13px default.
 @media (min-width: 1024px) {
   d-contents {
     position: sticky;
     top: 5rem;
     max-height: calc(100vh - 6rem);
     overflow-y: auto;
+  }
+
+  d-contents nav {
+    font-size: 15px;
+    line-height: 1.5;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    li {
+      font-size: 14px;
+    }
   }
 }
 
@@ -407,7 +420,7 @@ d-article {
     figcaption {
       text-align: left;
       color: var(--global-distill-app-color) !important;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.55;
       max-width: none;
     }
