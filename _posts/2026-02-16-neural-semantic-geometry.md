@@ -11,6 +11,19 @@ paper_url: "https://arxiv.org/abs/2602.00628"
 code_url: "https://github.com/schiekiera/llm-association-geometry"
 giscus_comments: false
 related_posts: false
+toc:
+  - name: "Motivation: Can behavior reveal internal structure?"
+  - name: "Framework: Behavioral paradigms and hidden-state extraction"
+    subsections:
+      - name: "Two behavioral paradigms"
+      - name: "Hidden-state extraction"
+      - name: "Models and baselines"
+      - name: "Evaluation"
+  - name: "Results"
+    subsections:
+      - name: "Forced choice aligns substantially more than free association"
+      - name: "Behavioral similarity predicts unseen hidden-state structure"
+  - name: "Discussion and implications"
 authors:
   - name: Louis Schiekiera
     affiliations:

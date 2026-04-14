@@ -370,33 +370,6 @@ html[data-theme="dark"] {
   }
 }
 
-// Widen body content in distill posts. Distill's template.v2.js ships with
-// `d-article > * { grid-column: text }`, which at 1180px renders a ~704px
-// column. The `middle` column is ~888px (25% wider) and still leaves room
-// for gutters/asides.
-d-article > * {
-  grid-column: middle;
-}
-
-// Widen the title block, byline, and appendix to match.
-body d-title h1,
-body d-title p {
-  grid-column: middle;
-}
-
-body d-byline .byline {
-  grid-column: middle;
-}
-
-body d-appendix > * {
-  grid-column: middle;
-}
-
-// Preserve distill's sidebar-style label on appendix section headings.
-body d-appendix > h3 {
-  grid-column: page-start / text-start;
-}
-
 // Justify body text. Hyphenation keeps word spacing from blowing up on
 // narrow viewports.
 d-article p,
@@ -406,19 +379,22 @@ d-article li {
   -webkit-hyphens: auto;
 }
 
-// Preserve distill defaults for special elements that have their own columns.
-d-article > aside {
-  grid-column: gutter;
+// Sticky left-hand table of contents so readers can see their position in
+// the article as they scroll. Distill already shows d-contents at >=1024px;
+// we just pin it.
+@media (min-width: 1024px) {
+  d-contents {
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
 }
 
-d-article > hr {
-  grid-column: screen;
-}
-
-// Figures also span the middle column so the plot box matches body width.
+// Figures span the text column so the plot box matches body width.
 d-article {
   .post-figure {
-    grid-column: middle;
+    grid-column: text;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
 
