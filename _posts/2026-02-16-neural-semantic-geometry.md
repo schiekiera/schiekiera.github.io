@@ -44,7 +44,7 @@ authors:
 
 **📄 [Read the full preprint on arXiv](https://arxiv.org/pdf/2602.00628)** | **💻 [View code on GitHub](https://github.com/schiekiera/llm-association-geometry)**
 
-## Motivation: Can behavior reveal internal structure?
+### Motivation: Can behavior reveal internal structure?
 
 In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior <d-cite key="de2019small"></d-cite>. Word-association paradigms use exactly this logic---when a participant sees a cue (e.g., _dog_), the associations they produce or select (e.g., _cat_, _leash_, _bark_) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
 
@@ -55,9 +55,9 @@ We transfer this measurement logic to large language models. Unlike humans, both
   <figcaption>Conceptual overview. For a shared vocabulary, we (i) extract layer-wise word representations to form a hidden-state similarity matrix, and (ii) run behavioral association tasks (forced choice / free association) to build a behavioral similarity matrix. Representational similarity analysis (RSA) correlates the pairwise similarities to quantify behavior&ndash;activation alignment.</figcaption>
 </figure>
 
-## Framework: Behavioral paradigms and hidden-state extraction
+### Framework: Behavioral paradigms and hidden-state extraction
 
-### Two behavioral paradigms
+#### Two behavioral paradigms
 
 We use two classic psycholinguistic paradigms---forced choice (FC) and free association (FA)---to collect semantic relations from model behavior over a shared vocabulary of 5,000 high-frequency English nouns <d-cite key="brysbaert2012adding"></d-cite>.
 
@@ -70,7 +70,7 @@ In the **forced-choice** paradigm, each cue word is presented together with 16 c
 
 For each paradigm, model outputs are aggregated into a sparse cue--response count matrix $\mathbf{B}$. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue--cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.
 
-### Hidden-state extraction
+#### Hidden-state extraction
 
 For each model and each word, we extract layerwise hidden-state representations under four contextual embedding strategies:
 
@@ -81,11 +81,11 @@ For each model and each word, we extract layerwise hidden-state representations 
 
 Hidden-state similarity matrices are computed as cosine similarity between mean-centered layerwise word vectors <d-cite key="ethayarajh2019contextual"></d-cite>.
 
-### Models and baselines
+#### Models and baselines
 
 We evaluate eight instruction-tuned decoder-only transformer models ranging from 7B to 14B parameters (Falcon3, Gemma-2, Llama-3.1, Mistral-7B, Mistral-Nemo, Phi-4, Qwen2.5, and rnj-1). Beyond behavioral embeddings, we compare hidden-state similarities to three baselines: **FastText** (static word vectors) <d-cite key="bojanowski2017enriching"></d-cite>, **BERT** (contextual encoder) <d-cite key="devlin2019bert"></d-cite>, and a **cross-model consensus** geometry aggregating hidden-state similarities across all other models---motivated by recent evidence for a shared semantic subspace across diverse LLMs <d-cite key="huh2024platonic"></d-cite>.
 
-### Evaluation
+#### Evaluation
 
 We use three complementary evaluation methods:
 
@@ -95,9 +95,9 @@ We use three complementary evaluation methods:
 
 3. **Held-out-words ridge regression**: We test whether behavioral similarity predicts unseen hidden-state similarities on held-out words beyond lexical baselines and cross-model consensus.
 
-## Results
+### Results
 
-### Forced choice aligns substantially more than free association
+#### Forced choice aligns substantially more than free association
 
 Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from $r = .346$ under Averaged extraction to $r = .463$ under Task (FC), while FA shows the same pattern at considerably lower magnitude ($r = .140$ to $r = .199$).
 
@@ -120,7 +120,7 @@ The full model-by-model RSA comparison reveals that the FC advantage is consiste
   <figcaption>RSA between model hidden-state similarity and behavior-derived semantic geometries. Each panel corresponds to a model and compares hidden-state similarity to PPMI-weighted forced-choice (left) and free-association (right) behavioral embeddings across extraction strategies and layers.</figcaption>
 </figure>
 
-### Behavioral similarity predicts unseen hidden-state structure
+#### Behavioral similarity predicts unseen hidden-state structure
 
 The held-out-words ridge regression shows that behavioral similarity---especially FC---predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test $R^2$ by $+.022$, whereas FA yields a smaller gain ($+.002$). The full model reaches mean $R^2 = .587$ (vs. $.569$ for the baseline). Peak performance reaches $R^2 = .844$ for Llama-3.1-8B-Instruct.
 
@@ -129,7 +129,7 @@ The held-out-words ridge regression shows that behavioral similarity---especiall
   <figcaption>Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show $R^2$ for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</figcaption>
 </figure>
 
-## Discussion and implications
+### Discussion and implications
 
 Our findings show that structured behavior---particularly from constrained measurement paradigms like forced choice---preserves a nontrivial projection of a model's hidden-state similarity geometry, even without access to logits or internal activations. This has implications for both interpretability research and cognitive science:
 
