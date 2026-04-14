@@ -29,7 +29,7 @@ authors:
       name: Freie Universität Berlin
 ---
 
-**📄 [Read the full paper (Collabra)](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf)** | **📦 [Check out the preregistration](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3)** | **💻 [View code on GitHub](https://github.com/schiekiera/collabra_2025)**
+**📄 [Read the full paper (Collabra: Psychology)](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf)** | **📦 [Check out the preregistration](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3)** | **💻 [View code on GitHub](https://github.com/schiekiera/collabra_2025)**
 
 ### Motivation: Does publish-or-perish drive positive results?
 
@@ -41,7 +41,7 @@ Two mechanisms could link high productivity to more positive results. First, a *
 
 <figure class="post-figure">
   <img src="/assets/img/blog/scientific_productivity/Figure_1.png" alt="Data acquisition procedure" class="zoomable" data-zoomable>
-  <figcaption>Data acquisition procedure. We identified all clinical psychology research groups at German universities, compiled researcher lists, extracted publications from PubMed and OpenAlex, and applied multi-step cleaning and verification to arrive at the final corpus of 2,280 empirical studies.</figcaption>
+  <figcaption>Data acquisition procedure. We identified clinical psychology research groups at German universities, compiled researcher lists, extracted publications from PubMed and OpenAlex, and applied multi-step cleaning and verification to arrive at the final corpus of 2,280 empirical studies.</figcaption>
 </figure>
 
 ### Method: Mapping German clinical psychology output
@@ -73,7 +73,7 @@ Additionally, we conducted exploratory **abstract-level annotations** on 1,990 s
 
 #### No difference between high- and low-output groups
 
-The headline finding: **~90% of studies reported positive results, regardless of group productivity**.
+**~90% of studies reported positive results, regardless of group productivity**.
 
 - Q1 (low output): 90.00% positive (95% CI: 84.0--94.3%)
 - Q4 (high output): 89.33% positive (95% CI: 83.3--93.8%)

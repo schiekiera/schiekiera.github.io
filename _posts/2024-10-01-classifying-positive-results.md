@@ -47,11 +47,6 @@ Previous attempts to track positive results over time relied on either **manual 
 
 We asked: **Can modern NLP models learn to classify positive results from annotated abstracts, and what do they reveal about trends in clinical psychology?**
 
-<figure class="post-figure">
-  <img src="/assets/img/blog/classifying_positive_results/Abstract_Classification.png" alt="Conceptual overview of abstract classification" class="zoomable" data-zoomable>
-  <figcaption>Conceptual overview. Scientific abstracts are classified as reporting "positive results only" (PRO) or "mixed or negative results" (MNR) using supervised machine learning models trained on human annotations.</figcaption>
-</figure>
-
 ### Method: From annotations to transformers
 
 #### Annotation strategy
