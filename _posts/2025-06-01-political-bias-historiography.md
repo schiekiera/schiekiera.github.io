@@ -30,7 +30,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Read the full paper (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📦 [Check out the preregistration](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [View code on GitHub](https://github.com/schiekiera/metascience_experiment_history)**
+**📄 [Paper (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📝 [Preregistration](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [GitHub](https://github.com/schiekiera/metascience_experiment_history)**
 
 ### Motivation: Political preferences in science
 

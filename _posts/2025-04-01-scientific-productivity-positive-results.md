@@ -29,7 +29,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Read the full paper (Collabra: Psychology)](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf)** | **📦 [Check out the preregistration](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3)** | **💻 [View code on GitHub](https://github.com/schiekiera/collabra_2025)**
+**📄 [Paper (Collabra: Psychology)](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf)** | **📝 [Preregistration](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3)** | **💻 [GitHub](https://github.com/schiekiera/collabra_2025)**
 
 ### Motivation: Does publish-or-perish drive positive results?
 

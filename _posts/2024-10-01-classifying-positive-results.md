@@ -35,7 +35,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Read the paper (ZfP)](https://doi.org/10.1027/2151-2604/a000563)** | **💻 [Code on GitHub](https://github.com/schiekiera/NegativeResultDetector)** | **🤗 [Model on HuggingFace](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)**
+**📄 [Paper (ZfP)](https://doi.org/10.1027/2151-2604/a000563)** | **💻 [GitHub](https://github.com/schiekiera/NegativeResultDetector)** | **🤗 [HuggingFace Model](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)**
 
 ### Motivation: Why classify positive results?
 

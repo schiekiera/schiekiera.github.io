@@ -42,7 +42,7 @@ authors:
       name: HU Berlin
 ---
 
-**📄 [Read the full preprint on arXiv](https://arxiv.org/pdf/2602.00628)** | **💻 [View code on GitHub](https://github.com/schiekiera/llm-association-geometry)**
+**📄 [Preprint](https://arxiv.org/pdf/2602.00628)** | **💻 [GitHub](https://github.com/schiekiera/llm-association-geometry)**
 
 ### Motivation: Can behavior reveal internal structure?
 

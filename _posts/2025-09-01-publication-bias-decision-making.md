@@ -43,7 +43,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Read the full paper (AMPPS)](https://doi.org/10.1177/25152459251338393)** | **📦 [Check out the preregistration](https://osf.io/6tpm7)** | **💻 [View code on GitHub](https://github.com/schiekiera/metascience_experiment_history)**
+**📄  [Paper (AMPPS)](https://doi.org/10.1177/25152459251338393)** | **📝 [Preregistration](https://osf.io/6tpm7)** | **💻  [GitHub](https://github.com/schiekiera/metascience_experiment_history)**
 
 ### Motivation: Why do positive results dominate?
 
