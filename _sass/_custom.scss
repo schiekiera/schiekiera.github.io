@@ -378,6 +378,25 @@ d-article > * {
   grid-column: middle;
 }
 
+// Widen the title block, byline, and appendix to match.
+body d-title h1,
+body d-title p {
+  grid-column: middle;
+}
+
+body d-byline .byline {
+  grid-column: middle;
+}
+
+body d-appendix > * {
+  grid-column: middle;
+}
+
+// Preserve distill's sidebar-style label on appendix section headings.
+body d-appendix > h3 {
+  grid-column: page-start / text-start;
+}
+
 // Justify body text. Hyphenation keeps word spacing from blowing up on
 // narrow viewports.
 d-article p,
