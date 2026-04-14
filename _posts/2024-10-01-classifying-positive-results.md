@@ -35,7 +35,8 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Paper (ZfP)](https://doi.org/10.1027/2151-2604/a000563)** | **💻 [GitHub](https://github.com/schiekiera/NegativeResultDetector)** | **🤗 [HuggingFace Model](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)**
+**📄 [Paper (ZfP)](https://doi.org/10.1027/2151-2604/a000563)** | **💻 [Code & Data (GitHub)](https://github.com/schiekiera/NegativeResultDetector)** | **🤗 [Model (HuggingFace)](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)** | 
+**📝 [Preregistration (OSF)](https://osf.io/tzsqy)**
 
 ### Motivation: Why classify positive results?
 
@@ -140,10 +141,10 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
-📄 Read the paper here: [https://doi.org/10.1027/2151-2604/a000563](https://doi.org/10.1027/2151-2604/a000563)
+📄 Read the paper [here](https://doi.org/10.1027/2151-2604/a000563)
 
-💻 View the code on GitHub: [https://github.com/schiekiera/NegativeResultDetector](https://github.com/schiekiera/NegativeResultDetector)
+💻 View the code and data on [GitHub](https://github.com/schiekiera/NegativeResultDetector)
 
-🤗 View the model on HuggingFace: [https://huggingface.co/ClinicalMetaScience/NegativeResultDetector](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)
+🤗 View the model on [HuggingFace](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)
 
-📝 View the preregistration on OSF: [https://osf.io/tzsqy](https://osf.io/tzsqy)
+📝 View the preregistration on [OSF](https://osf.io/tzsqy)

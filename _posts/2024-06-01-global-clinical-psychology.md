@@ -28,7 +28,7 @@ authors:
       name: FU Berlin
 ---
 
-**📄 [Book Chapter (A Better How)](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)** | **💻 [GitHub](https://github.com/schiekiera/busara_2024)**
+**📄 [Book Chapter (A Better How)](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)** | **💻 [Code & Data (GitHub)](https://github.com/schiekiera/busara_2024)**
 
 ### Motivation: How is authorship distributed in psychotherapy research?
 
@@ -108,6 +108,6 @@ If you find this work useful for your research, please consider citing our chapt
 }
 ```
 
-📄 Read the chapter here: [https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)
+📄 Read the chapter [here](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)
 
-💻 View the code on GitHub: [https://github.com/schiekiera/busara_2024](https://github.com/schiekiera/busara_2024)
+💻 View the code and data on [GitHub](https://github.com/schiekiera/busara_2024)

@@ -42,8 +42,7 @@ authors:
       name: HU Berlin
 ---
 
-**📄 [Preprint](https://arxiv.org/pdf/2602.00628)** | **💻 [GitHub](https://github.com/schiekiera/llm-association-geometry)**
-| **🤗 [HuggingFace Dataset](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
+**📄 [Preprint (Arxiv)](https://arxiv.org/pdf/2602.00628)** | **💻 [Code (GitHub)](https://github.com/schiekiera/llm-association-geometry)** | **🤗 [Dataset (HuggingFace)](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
 
 ### Motivation: Can behavior reveal internal structure?
 
@@ -156,8 +155,8 @@ If you find this interesting and if this work is helpful for your research, plea
 }
 ```
 
-📄 Read the preprint here: [https://arxiv.org/abs/2602.00628](https://arxiv.org/abs/2602.00628)
+📄 Read the preprint [here](https://arxiv.org/abs/2602.00628)
 
-💻 View the code on GitHub: [https://github.com/schiekiera/llm-association-geometry](https://github.com/schiekiera/llm-association-geometry)
+💻 View the code on [GitHub](https://github.com/schiekiera/llm-association-geometry)
 
-🤗 View the dataset on HuggingFace: [https://huggingface.co/datasets/schiekiera/llm-association-geometry](https://huggingface.co/datasets/schiekiera/llm-association-geometry)
+🤗 View the dataset on [HuggingFace](https://huggingface.co/datasets/schiekiera/llm-association-geometry)
