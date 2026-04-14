@@ -1,8 +1,8 @@
 ---
 layout: distill
-title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
+title: "Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
 date: 2026-02-16
-description: "Our preprint <b>From Associations to Activations</b> investigates whether an LLM's internal semantic geometry can be recovered from its observable behavior. Across eight instruction-tuned transformers and 17.5M+ trials, we compare behavior-derived similarity structures from forced-choice and free-association paradigms to layerwise hidden-state geometry using representational similarity analysis. We find that forced-choice behavior aligns substantially more with internal representations than free association, and that behavioral similarity predicts unseen hidden-state similarities beyond lexical baselines."
+description: "Our preprint <b>From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs</b> investigates whether an LLM's internal semantic geometry can be recovered from its observable behavior. Across eight instruction-tuned transformers and 17.5M+ trials, we compare behavior-derived similarity structures from forced-choice and free-association paradigms to layerwise hidden-state geometry using representational similarity analysis. We find that forced-choice behavior aligns substantially more with internal representations than free association, and that behavioral similarity predicts unseen hidden-state similarities beyond lexical baselines."
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
 bibliography: neural_semantic_geometry.bib
