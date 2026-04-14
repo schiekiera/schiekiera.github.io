@@ -105,6 +105,7 @@ An exploratory finding: bottom-quartile groups used the word "significant" more 
 
 **Implications**: Since productivity differences do not appear to account for positive result rates, discussions about reforms---such as registered reports <d-cite key="scheel2021excess"></d-cite> and preregistration <d-cite key="vandenakker2023preregistration"></d-cite>---may be more productively directed at system-wide rather than group-level factors.
 
+### Citation
 If you find this work useful for your research, please consider citing our paper:
 
 ```bibtex
@@ -117,6 +118,7 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
+### Links
 📄 Read the paper (Collabra: Psychology) [here](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf).
 
 📝 View the preregistration on [OSF](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3).

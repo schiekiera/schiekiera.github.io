@@ -91,6 +91,7 @@ The composition of research teams changed over the observation period. In the 19
 
 **Limitations**: Our analysis is restricted to English-language publications indexed in PubMed and relies on affiliation data from OpenAlex. Research published in other languages or regional journals may not be captured. The UNCTAD classification groups heterogeneous countries together, and within-region variation is not examined here.
 
+### Citation
 If you find this work useful for your research, please consider citing our chapter:
 
 ```bibtex
@@ -108,6 +109,7 @@ If you find this work useful for your research, please consider citing our chapt
 }
 ```
 
+### Links
 📄 Read the chapter [here](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf).
 
 💻 View the code and data on [GitHub](https://github.com/schiekiera/busara_2024).

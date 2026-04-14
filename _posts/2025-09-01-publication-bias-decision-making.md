@@ -118,6 +118,7 @@ In most experiments, initial intuitive evaluations were **not revised** after de
 
 **Limitations**: This is a controlled vignette study; how strongly these patterns translate into real-world publication outcomes with actual manuscripts and real incentives remains to be tested in field experiments.
 
+### Citation
 If you find this work useful for your research, please consider citing our paper:
 
 ```bibtex
@@ -132,6 +133,7 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
+### Links
 📄 Read the paper [here](https://doi.org/10.1177/25152459251338393).
 
 📝 View the preregistration on [OSF](https://osf.io/6tpm7).

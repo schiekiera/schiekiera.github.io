@@ -92,6 +92,7 @@ Feeling of Rightness was likewise unaffected by political congruence ($b = 0.02$
 
 **Broader relevance**: Our study can be viewed as a case study focused on historians; such political preferences are likely relevant in other academic disciplines and should be investigated further <d-cite key="ditto2019partisan"></d-cite>.
 
+### Citation
 If you find this work useful for your research, please consider citing our paper:
 
 ```bibtex
@@ -107,6 +108,7 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
+### Links
 📄 Read the preprint (F1000Research) [here](https://doi.org/10.12688/f1000research.157553.1).
 
 📝 View the preregistration (OSF) on [OSF](https://doi.org/10.17605/OSF.IO/QCDV8).

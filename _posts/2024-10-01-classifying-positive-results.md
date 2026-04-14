@@ -127,6 +127,7 @@ A breakpoint analysis placed the inflection point around **2011** rather than th
 
 **Deployment**: The fine-tuned SciBERT model is publicly available as the [NegativeResultDetector](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector) <d-cite key="schiekiera_huggingface"></d-cite> for researchers to classify their own data. Code for training, evaluation, and inference is on [GitHub](https://github.com/schiekiera/NegativeResultDetector) <d-cite key="schiekiera_github"></d-cite>.
 
+### Citation
 If you find this work useful for your research, please consider citing our paper:
 
 ```bibtex
@@ -141,6 +142,7 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
+### Links
 📄 Read the paper (ZfP) [here](https://doi.org/10.1027/2151-2604/a000563).
 
 💻 View the code and data on [GitHub](https://github.com/schiekiera/NegativeResultDetector).

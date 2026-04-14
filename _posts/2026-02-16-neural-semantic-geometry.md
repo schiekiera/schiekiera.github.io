@@ -42,7 +42,7 @@ authors:
       name: HU Berlin
 ---
 
-**📄 [Preprint (Arxiv)](https://arxiv.org/pdf/2602.00628)** | **💻 [Code (GitHub)](https://github.com/schiekiera/llm-association-geometry)** | **🤗 [Dataset (HuggingFace)](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
+**📄 [Preprint (arxiv)](https://arxiv.org/pdf/2602.00628)** | **💻 [Code (GitHub)](https://github.com/schiekiera/llm-association-geometry)** | **🤗 [Dataset (HuggingFace)](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
 
 ### Motivation: Can behavior reveal internal structure?
 
@@ -139,6 +139,7 @@ Our findings show that structured behavior---particularly from constrained measu
 
 **Cross-model consensus**: Similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the hypothesis of a common semantic subspace <d-cite key="huh2024platonic"></d-cite>.
 
+### Citation
 If you find this interesting and if this work is helpful for your research, please consider citing our paper:
 
 ```bibtex
@@ -155,7 +156,8 @@ If you find this interesting and if this work is helpful for your research, plea
 }
 ```
 
-📄 Read the preprint [here](https://arxiv.org/abs/2602.00628).
+### Links
+📄 Read the preprint (arxiv) [here](https://arxiv.org/abs/2602.00628).
 
 💻 View the code on [GitHub](https://github.com/schiekiera/llm-association-geometry).
 
