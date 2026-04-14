@@ -32,7 +32,6 @@ authors:
 
 **📄 [Read the full paper (F1000Research)](https://doi.org/10.12688/f1000research.157553.1)** | **📦 [Check out the preregistration](https://doi.org/10.17605/OSF.IO/QCDV8)** | **💻 [View code on GitHub](https://github.com/schiekiera/metascience_experiment_history)**
 
-
 ### Motivation: Political preferences in science
 
 In quantitative research, publication bias---the selective publication of studies based on factors other than research quality---is well documented <d-cite key="fanelli2010positive"></d-cite> <d-cite key="Fanelli2011"></d-cite>. But what about disciplines where results are not framed in terms of statistical significance? In historiography, scholars have long discussed how cultural, social, and political backgrounds shape the selection of topics, methods, and interpretations <d-cite key="mccullagh2000bias"></d-cite>. Yet experimental evidence on how political orientation influences historians' publication decisions has been virtually absent.
@@ -43,7 +42,7 @@ A classic survey by Kimball <d-cite key="kimball1984influence"></d-cite> found s
 
 #### Experimental design
 
-We recruited 75 historians globally (from 7,063 contacted) to evaluate **17 fictitious contemporary history abstracts** in an online experiment. Each abstract existed in two versions---progressive and conservative---that were identical except for the political framing. Topics ranged from Italian terrorism in the 1970s to Brazilian trade unions and the British Empire. Each participant saw one version of each pair (9 progressive, 8 conservative), presented in randomized order.
+We recruited 75 historians globally (from 7,063 contacted) to evaluate **17 fictitious contemporary history abstracts** in an online experiment. Each abstract existed in two versions---progressive and conservative---that were identical except for the political framing. Each participant saw one version of each pair (9 progressive, 8 conservative), presented in randomized order.
 
 <figure class="post-figure">
   <img src="/assets/img/blog/political_bias/Figure_1_Flowchart_Procedure.png" alt="Experimental procedure flowchart" class="zoomable" data-zoomable>

@@ -106,7 +106,7 @@ Surprisingly, whether an abstract's results were consistent or inconsistent with
 
 #### Deliberation and Feeling of Rightness
 
-In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR ($b = -0.16$, $p = .006$), but higher FOR unexpectedly predicted *more* positive revision---contrary to our hypothesis.
+In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR ($b = -0.16$, $p = .006$), but higher FOR unexpectedly predicted _more_ positive revision---contrary to our hypothesis.
 
 <figure class="post-figure">
   <img src="/assets/img/blog/publication_bias_decision_making/figure4.png" alt="Mediation model results" class="zoomable" data-zoomable>
