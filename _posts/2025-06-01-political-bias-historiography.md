@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "Is Partisan Bias Present in Historiography?"
+title: "Is Partisan Bias Present in Historical Research?"
 date: 2025-06-01
 description: "Our paper in <b>F1000Research</b> investigates whether historians prefer contemporary history abstracts that align with their political orientation. In an online experiment, 75 historians evaluated 17 fictitious abstract pairs varying in political stance. We find a significant interaction: left-leaning historians prefer progressive abstracts, right-leaning historians prefer conservative ones, and moderate historians show no preference. Deliberation does not diminish this bias."
 tags: [metascience, political-bias, historiography, decision-making]
