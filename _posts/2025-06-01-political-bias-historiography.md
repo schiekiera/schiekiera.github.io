@@ -59,7 +59,7 @@ Political orientation was measured on a 7-point left-right scale <d-cite key="in
 
 #### Political stance shapes publishability judgments
 
-We found a **significant interaction** between an abstract's political stance and a historian's political orientation ($b = 1.82$, $p < .001$). The pattern is clear: right-leaning historians rated conservative abstracts higher (ILoS = 65.6) than progressive ones (57.2), left-leaning historians rated conservative abstracts lower (52.1) than progressive ones (57.5), and moderates showed no preference.
+We found a **significant interaction** between an abstract's political stance and a historian's political orientation ($b = 1.82$, $p < .001$). Right-leaning historians rated conservative abstracts higher (ILoS = 65.6) than progressive ones (57.2), left-leaning historians rated conservative abstracts lower (52.1) than progressive ones (57.5), and moderates showed no preference.
 
 Overall, progressive abstracts were rated 3.07% more favorably---reflecting the predominantly left-leaning composition of our sample.
 
@@ -86,9 +86,9 @@ Feeling of Rightness was likewise unaffected by political congruence ($b = 0.02$
 
 ### Discussion and implications
 
-**For metascience**: Our findings show that political preferences influence publication decisions in historiography---a domain where such biases are discussed theoretically but rarely tested experimentally. The persistence of bias during deliberation is particularly concerning: reflection alone may not be sufficient to counteract the influence of political alignment on scientific evaluation <d-cite key="duarte2015political"></d-cite> <d-cite key="clark2023prosocial"></d-cite>.
+**For metascience**: Our findings indicate that political preferences are associated with publication decisions in historiography---a domain where such biases are discussed theoretically but have rarely been tested experimentally. Deliberation did not attenuate this effect in our data <d-cite key="duarte2015political"></d-cite> <d-cite key="clark2023prosocial"></d-cite>.
 
-**For historiography**: If publishability depends on political preferences, certain perspectives may be systematically overrepresented while others are marginalized, regardless of scholarly quality. This parallels the file drawer problem in quantitative science but operates through political rather than statistical dimensions.
+**For historiography**: If publishability ratings depend partly on political preferences, this could affect which perspectives are more or less likely to be submitted for publication. This parallels the file drawer problem in quantitative science but operates through political rather than statistical dimensions.
 
 **Broader relevance**: Our study can be viewed as a case study focused on historians; such political preferences are likely relevant in other academic disciplines and should be investigated further <d-cite key="ditto2019partisan"></d-cite>.
 

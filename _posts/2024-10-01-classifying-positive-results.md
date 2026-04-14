@@ -101,7 +101,7 @@ The fine-tuned SciBERT model was deployed publicly as the [NegativeResultDetecto
 
 #### Trends in positive results (1990–2022)
 
-We applied SciBERT to predict result types for **20,212 unannotated psychotherapy RCT abstracts** spanning 1990--2022. The key findings:
+We applied SciBERT to predict result types for **20,212 unannotated psychotherapy RCT abstracts** spanning 1990--2022:
 
 - **1990--2005**: No significant linear increase in positive results ($b = 9.70 \times 10^{-3}$, $p = .191$).
 - **2005--2022**: A significant linear _decrease_ in positive results ($b = -6.96 \times 10^{-3}$, $p = .034$).
@@ -112,7 +112,7 @@ We applied SciBERT to predict result types for **20,212 unannotated psychotherap
   <figcaption>Predicted proportions of positive results in psychotherapy RCTs (1990–2022). The SciBERT model (M3b, inverted-U) is compared with rule-based trend lines for <i>p</i> < .05, <i>p</i> > .05, and natural language indicators. Dots represent observed yearly proportions (<i>n</i> = 20,212).</figcaption>
 </figure>
 
-The absence of an increase in the 1990s diverges from Fanelli's cross-disciplinary finding of rising positive results <d-cite key="Fanelli2011"></d-cite>. This may reflect early awareness of publication bias in clinical trials or the relatively strong funding for psychotherapy RCTs during that period. The decline after the early 2010s aligns with the growing influence of the open science movement, catalyzed by landmark publications like Ioannidis <d-cite key="ioannidis2005most"></d-cite> and the Open Science Collaboration's replication study <d-cite key="openscience2015"></d-cite>.
+The absence of an increase in the 1990s diverges from Fanelli's cross-disciplinary finding of rising positive results <d-cite key="Fanelli2011"></d-cite>. This may reflect early awareness of publication bias in clinical trials or the relatively strong funding for psychotherapy RCTs during that period. The decline after the early 2010s coincides with increased adoption of open science practices, following publications by Ioannidis <d-cite key="ioannidis2005most"></d-cite> and the Open Science Collaboration's replication study <d-cite key="openscience2015"></d-cite>, though the causal link remains speculative.
 
 A breakpoint analysis placed the inflection point around **2011** rather than the hypothesized 2005, suggesting a _time-lag effect_---research culture shifts take years to manifest in the published literature.
 
@@ -120,7 +120,7 @@ A breakpoint analysis placed the inflection point around **2011** rather than th
 
 **For metascience**: Machine learning---especially transformer-based models like SciBERT---can substantially advance the automation of research synthesis tasks <d-cite key="Marshall2019"></d-cite>. Where rule-based methods fail because of the heterogeneity of result reporting, supervised NLP models learn from the full linguistic context. This opens the door to large-scale, systematic monitoring of positive results across disciplines.
 
-**For clinical psychology**: The inverted-U trend we observe is cautiously encouraging. The decline in exclusively positive results since the early 2010s may reflect the adoption of open science practices such as registered reports and preregistration <d-cite key="Scheel2021"></d-cite>, though it could also stem from changes in statistical power, effect sizes, or reporting norms. Open science practices appear to be gaining ground even in clinical psychology, where adoption has historically lagged behind other subdisciplines <d-cite key="tackett2019"></d-cite>.
+**For clinical psychology**: The decline in exclusively positive results since the early 2010s may coincide with the adoption of open science practices such as registered reports and preregistration <d-cite key="Scheel2021"></d-cite>, though it could also stem from changes in statistical power, effect sizes, or reporting norms. Whether the trend continues remains to be seen <d-cite key="tackett2019"></d-cite>.
 
 **Limitations**: We classified abstracts (not full texts) into a binary scheme---a simplification that may obscure nuances. Larger language models with longer context windows could enable more fine-grained annotation strategies in the future. Furthermore, high rates of positive results do not necessarily imply publication bias; they could also reflect high statistical power or true effects.
 

@@ -98,7 +98,7 @@ Across all experiments involving statistical significance, non-significant abstr
 
 #### Hypothesis-consistency has no effect
 
-Surprisingly, whether an abstract's results were consistent or inconsistent with its hypothesis had **no detectable effect** on any outcome:
+Whether an abstract's results were consistent or inconsistent with its hypothesis had **no detectable effect** on any outcome:
 
 - Publishability (Exp. 2): $b = -1.21$, $p = .303$
 - Reading (Exp. 4): $b = -1.29$, $p = .281$
@@ -108,15 +108,13 @@ Surprisingly, whether an abstract's results were consistent or inconsistent with
 
 In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR ($b = -0.16$, $p = .006$), but higher FOR unexpectedly predicted _more_ positive revision---contrary to our hypothesis.
 
-
-
 ### Discussion and implications
 
-**For metascience**: Our within-subjects design provides causal evidence that statistical significance---but not hypothesis-consistency---drives researchers' immediate evaluations of abstracts for publication, reading, and citation. Effect sizes were small (1--2% of variance), reflecting the multifactorial nature of these decisions, but the pattern was remarkably consistent across four experiments.
+**For metascience**: Our within-subjects design provides experimental evidence that statistical significance---but not hypothesis-consistency---is associated with researchers' evaluations of abstracts for publication, reading, and citation. Effect sizes were small (1--2% of variance), reflecting the multifactorial nature of these decisions, but the pattern was consistent across four experiments.
 
 **For decision-making research**: The two-response paradigm revealed that deliberation does not attenuate the significance bias. This suggests that the preference for significant results operates as a persistent heuristic rather than a correctable first impression.
 
-**For clinical psychology**: Given that clinical decisions should be evidence-based <d-cite key="tackett2019replication"></d-cite>, the systematic devaluation of non-significant findings---even at the level of reading and citation---risks distorting the evidence base on which treatments are evaluated.
+**For clinical psychology**: If non-significant findings are less likely to be read and cited <d-cite key="tackett2019replication"></d-cite>, this could affect the composition of the evidence base that informs treatment evaluation.
 
 **Limitations**: This is a controlled vignette study; how strongly these patterns translate into real-world publication outcomes with actual manuscripts and real incentives remains to be tested in field experiments.
 

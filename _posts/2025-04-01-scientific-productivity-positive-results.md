@@ -33,7 +33,7 @@ authors:
 
 ### Motivation: Does publish-or-perish drive positive results?
 
-Positive results dominate the psychology literature: rates between 91--97% are consistently reported for hypothesis-testing studies <d-cite key="fanelli2010positive"></d-cite> <d-cite key="fanelli2012negative"></d-cite> <d-cite key="scheel2021excess"></d-cite> <d-cite key="sterling1959publication"></d-cite>. This overrepresentation is often framed as a symptom of publish-or-perish culture, where competition and pressure to publish distort scientific knowledge production. Fanelli <d-cite key="fanelli2010pressures"></d-cite> showed that US states with stronger publication pressures exhibited higher rates of positive results.
+Positive results are common in the psychology literature: rates between 91--97% are consistently reported for hypothesis-testing studies <d-cite key="fanelli2010positive"></d-cite> <d-cite key="fanelli2012negative"></d-cite> <d-cite key="scheel2021excess"></d-cite> <d-cite key="sterling1959publication"></d-cite>. One proposed explanation is publish-or-perish culture, where competition and pressure to publish may contribute to selective reporting. Fanelli <d-cite key="fanelli2010pressures"></d-cite> showed that US states with stronger publication pressures exhibited higher rates of positive results.
 
 But previous work has measured pressure at the macro level (state-wide or discipline-wide). We asked: **does publication pressure at the organizational (meso) level---specifically, the scientific productivity of a research group---predict higher rates of positive results?**
 
@@ -95,15 +95,15 @@ When extending to abstract-level annotations across all four quartiles, **97.19%
   <figcaption>Exploratory abstract-level analysis: Rates of positive results across all four quartiles of scientific productivity. No significant differences emerge. Error bars indicate 95% confidence intervals.</figcaption>
 </figure>
 
-One interesting finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, $p = .048$), possibly reflecting that researchers in less productive groups feel greater need to explicitly emphasize statistical significance.
+An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, $p = .048$).
 
 ### Discussion and implications
 
-**For metascience**: Our results suggest that the excess of positive results in clinical psychology is **pervasive and not differentially explained by scientific productivity** at the research group level. This contrasts with Fanelli's <d-cite key="fanelli2010pressures"></d-cite> macro-level finding and suggests that the mechanisms driving positive results may operate at the individual or system-wide level rather than at the organizational level.
+**For metascience**: We did not find evidence that scientific productivity at the research group level differentially explains the high rate of positive results. This contrasts with Fanelli's <d-cite key="fanelli2010pressures"></d-cite> macro-level finding and may suggest that the mechanisms involved operate at the individual or system-wide level rather than at the organizational level.
 
-**For clinical psychology**: With approximately 9 in 10 studies supporting their first hypothesis, and no difference by group productivity, the high rate of positive results appears to be a structural feature of the field. Our observed rate of 89.67% is consistent with Fanelli <d-cite key="fanelli2010positive"></d-cite> (91.5%) but significantly lower than Scheel et al. <d-cite key="scheel2021excess"></d-cite> (96.05%), possibly reflecting our broader inclusion criteria (all empirical studies, not just those explicitly "testing hypotheses").
+**For clinical psychology**: Approximately 9 in 10 studies supported their first hypothesis, with no difference by group productivity. Our observed rate of 89.67% is consistent with Fanelli <d-cite key="fanelli2010positive"></d-cite> (91.5%) but lower than Scheel et al. <d-cite key="scheel2021excess"></d-cite> (96.05%), possibly reflecting our broader inclusion criteria (all empirical studies, not just those explicitly "testing hypotheses").
 
-**For policy**: Since productivity differences do not account for positive result rates, interventions should focus on system-wide reforms---such as registered reports <d-cite key="scheel2021excess"></d-cite> and preregistration <d-cite key="vandenakker2023preregistration"></d-cite>---rather than targeting high-output groups specifically.
+**Implications**: Since productivity differences do not appear to account for positive result rates, discussions about reforms---such as registered reports <d-cite key="scheel2021excess"></d-cite> and preregistration <d-cite key="vandenakker2023preregistration"></d-cite>---may be more productively directed at system-wide rather than group-level factors.
 
 If you find this work useful for your research, please consider citing our paper:
 

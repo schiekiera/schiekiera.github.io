@@ -137,7 +137,7 @@ Our findings show that structured behavior---particularly from constrained measu
 
 **For cognitive science**: Using our fully observable language-model setup, we can subject a core assumption to rigorous empirical tests---that structured behavior is constrained by, and can therefore partially reveal, internal states. The finding that measurement protocol strongly determines recoverability (FC vs. FA) suggests that whether a behavioral task _reveals_ internal structure is not a generic property of "behavior": it depends critically on how responses are constrained and aggregated.
 
-**Cross-model consensus**: A striking finding is the strength of cross-model consensus---similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the hypothesis of a substantial common semantic subspace <d-cite key="huh2024platonic"></d-cite>.
+**Cross-model consensus**: Similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the hypothesis of a common semantic subspace <d-cite key="huh2024platonic"></d-cite>.
 
 If you find this interesting and if this work is helpful for your research, please consider citing our paper:
 
