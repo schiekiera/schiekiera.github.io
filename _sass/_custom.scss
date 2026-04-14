@@ -26,6 +26,8 @@ $post-card-meta-size: 0.85rem;
 $post-card-tag-size: 0.75rem;
 
 // Distill post body
+$post-title-size: 22px; // d-title h1 on a single post (< 768px)
+$post-title-size-wide: 22px; // d-title h1 on a single post (>= 768px)
 $figure-caption-size: 18px; // in-article figure caption (distill)
 $figure-caption-size-legacy: 0.88rem; // legacy .post-figure / .figure-caption
 
@@ -399,6 +401,18 @@ html[data-theme="dark"] {
     padding: 0 0.25rem;
     text-align: left;
     max-width: none;
+  }
+}
+
+// Shrink the distill post title. Distill's runtime CSS sets d-title h1 to
+// 40px (50px at >=768px); we override to match the rest of the page.
+d-title h1 {
+  font-size: $post-title-size !important;
+}
+
+@media (min-width: 768px) {
+  d-title h1 {
+    font-size: $post-title-size-wide !important;
   }
 }
 
