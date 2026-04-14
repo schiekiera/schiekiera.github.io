@@ -107,3 +107,7 @@ If you find this work useful for your research, please consider citing our chapt
   doi = {10.62372/ISCI6112}
 }
 ```
+
+📄 Read the chapter here: [https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf](https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf)
+
+💻 View the code on GitHub: [https://github.com/schiekiera/busara_2024](https://github.com/schiekiera/busara_2024)

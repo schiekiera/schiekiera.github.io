@@ -116,3 +116,9 @@ If you find this work useful for your research, please consider citing our paper
   year={2025}
 }
 ```
+
+📄 Read the paper here: [https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf](https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf)
+
+📝 View the preregistration on OSF: [https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3](https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3)
+
+💻 View the code on GitHub: [https://github.com/schiekiera/collabra_2025](https://github.com/schiekiera/collabra_2025)

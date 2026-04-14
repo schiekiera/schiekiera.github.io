@@ -104,3 +104,9 @@ If you find this work useful for your research, please consider citing our paper
   year={2025}
 }
 ```
+
+📄 Read the paper here: [https://doi.org/10.12688/f1000research.157553.1](https://doi.org/10.12688/f1000research.157553.1)
+
+📝 View the preregistration on OSF: [https://doi.org/10.17605/OSF.IO/QCDV8](https://doi.org/10.17605/OSF.IO/QCDV8)
+
+💻 View the code on GitHub: [https://github.com/schiekiera/metascience_experiment_history](https://github.com/schiekiera/metascience_experiment_history)

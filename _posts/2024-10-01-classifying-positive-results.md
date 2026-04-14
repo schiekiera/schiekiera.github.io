@@ -139,3 +139,11 @@ If you find this work useful for your research, please consider citing our paper
   doi={10.1027/2151-2604/a000563}
 }
 ```
+
+📄 Read the paper here: [https://doi.org/10.1027/2151-2604/a000563](https://doi.org/10.1027/2151-2604/a000563)
+
+💻 View the code on GitHub: [https://github.com/schiekiera/NegativeResultDetector](https://github.com/schiekiera/NegativeResultDetector)
+
+🤗 View the model on HuggingFace: [https://huggingface.co/ClinicalMetaScience/NegativeResultDetector](https://huggingface.co/ClinicalMetaScience/NegativeResultDetector)
+
+📝 View the preregistration on OSF: [https://osf.io/tzsqy](https://osf.io/tzsqy)
