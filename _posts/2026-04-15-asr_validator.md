@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "ASR-Based Content Validation for Spoken-Word Production Annotation"
+title: "Automated Validation of Verbal Responses in Language-Production Research"
 date: 2026-04-15
 description: "In this blog post, Vincent Gruber presents a pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600)."
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
@@ -82,6 +82,11 @@ We validate the pipeline on two established English-language datasets: the Audit
 
 Across both datasets, the pipeline automatically verified **1,493 trials** (93.3%), with  **107 cases (~6.7%) flagged** for manual review. Per-dataset match rates were 94.5% for AELP (567/600) and 92.6% for MALD (926/1,000), across 7 speakers in total.
 
+<figure class="post-figure">
+  <img src="/assets/img/blog/asr_validator/results_barplot.png" alt="Validator interface" class="zoomable" data-zoomable>
+  <figcaption>Match rates for the two datasets.</figcaption>
+</figure>
+
 #### Annotated workflow
 
 The flagged cases can be reviewed directly by a expert annotator targeting the  non-matches  — that is, expert time is concentrated on the genuinely ambiguous cases (phonetic near-misses, multi-word splits, noise artifacts) rather than distributed uniformly across all trials. This design ensures quality assurance without inflating the manual workload.
@@ -95,6 +100,11 @@ Manual inspection of the 107 non-matches revealed three categories of failure:
 **Multi-word splits (22%, n = 24)** — Whisper segments a single target word into two tokens (e.g., *waterspout* → *what a spout*, *indisposition* → *in this position*). This is a well-documented behavior of Whisper for polysyllabic compound words and morphologically complex forms. It affects MALD (n = 17) and AELP (n = 7) similarly.
 
 **Accent confusion (8%, n = 9)** — Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., *halt* → *hold*, *detour* → *die Tür*). This category was found exclusively in AELP, which includes non-native speaker varieties, and reflects the sensitivity of large-vocabulary ASR models to speaker-specific phonological variation.
+
+<figure class="post-figure">
+  <img src="/assets/img/blog/asr_validator/error_analysis_barplot.png" alt="Validator interface" class="zoomable" data-zoomable>
+  <figcaption>Error analysis for the two datasets.</figcaption>
+</figure>
 
 ### Discussion and Future Directions
 
