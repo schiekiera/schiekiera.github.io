@@ -55,7 +55,7 @@ We address three gaps: **(A)** within-subjects experiments on publication bias i
 
 <figure class="post-figure">
   <img src="/assets/img/blog/publication_bias_decision_making/figure1.png" alt="Hypothesized relationships between variables" class="zoomable" data-zoomable>
-  <figcaption>Hypothesized relationships. Left: Direct effect of the treatment (statistical significance or hypothesis-consistency) on intuitive responses. Right: Mediation model where Feeling of Rightness (FOR) mediates the effect of treatment on response change between intuitive and considered evaluations.</figcaption>
+  <figcaption>Hypothesized relationships. Left: Direct effect of the treatment (statistical significance or hypothesis-consistency) on intuitive responses (LoSRC = Likelihood of Submission, Reading or Citing). Right: Mediation model where Feeling of Rightness (FOR) mediates the effect of treatment on response change between intuitive and considered evaluations.</figcaption>
 </figure>
 
 ### Method: Four within-subjects experiments
@@ -92,7 +92,7 @@ Across all experiments involving statistical significance, non-significant abstr
 - **Citation likelihood** (Exp. 3): $b = -6.32$, $p < .001$
 
 <figure class="post-figure">
-  <img src="/assets/img/blog/publication_bias_decision_making/figure3.png" alt="Main results across experiments" class="zoomable" data-zoomable>
+  <img src="/assets/img/blog/publication_bias_decision_making/figure4.png" alt="Main results across experiments" class="zoomable" data-zoomable>
   <figcaption>Treatment effects across all four experiments. Statistical significance consistently reduces the likelihood of submission, reading, and citation. Hypothesis-consistency shows no significant effect in any experiment.</figcaption>
 </figure>
 
