@@ -55,7 +55,7 @@ We address three gaps: **(A)** within-subjects experiments on publication bias i
 
 <figure class="post-figure">
   <img src="/assets/img/blog/publication_bias_decision_making/figure1.png" alt="Hypothesized relationships between variables" class="zoomable" data-zoomable>
-  <figcaption>Hypothesized relationships. Left: Direct effect of the treatment (statistical significance or hypothesis-consistency) on intuitive responses (LoSRC = Likelihood of Submission, Reading or Citing). Right: Mediation model where Feeling of Rightness (FOR) mediates the effect of treatment on response change between intuitive and considered evaluations.</figcaption>
+  <figcaption>Hypothesized relationships. Left: Direct effect of the treatment (statistical significance or hypothesis-consistency) on intuitive responses (LoSRC = Likelihood of Submission, Reading or Citing). Right: Mediation model where Feeling of Rightness (FOR) mediates the effect of treatment on response change between intuitive and considered evaluations (C-LoSRC = Considered Likelihood of Submission, Reading or Citing).</figcaption>
 </figure>
 
 ### Method: Four within-subjects experiments
