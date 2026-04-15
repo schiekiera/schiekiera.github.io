@@ -4,7 +4,7 @@ title: "Automated Validation of Verbal Responses in Language-Production Research
 date: 2026-04-15
 description: "In this blog post, Vincent Gruber presents a pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600)."
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
-thumbnail: /assets/img/blog/asr_validator/figure1.png
+thumbnail: /assets/img/blog/asr_validator/error_analysis_barplot.png
 publication_type: "Conference Poster"
 bibliography: asr_validator.bib
 paper_url: "https://schiekiera.github.io/assets/pdf/poster_TeaP2026.pdf"
@@ -68,8 +68,8 @@ Trials that pass any of the three stages are marked as automatically verified. T
 Trials are presented in a browser-based annotation interface that displays the waveform, a mel spectrogram, the ASR transcription, and the target word alongside its recognition probability.
 
 <figure class="post-figure">
-  <img src="/assets/img/blog/asr_validator/figure1.png" alt="Validator interface" class="zoomable" data-zoomable>
-  <figcaption>The Speech Onset Validator interface. Each trial shows the waveform with a draggable onset marker, the mel spectrogram, and the ASR recognition result with token probability. The annotator can play, loop, and confirm or correct the response using keyboard shortcuts.</figcaption>
+  <img src="/assets/img/blog/asr_validator/figure1.png" alt="Screenshot of the browser-based Speech Onset Validator annotation interface" class="zoomable" data-zoomable>
+  <figcaption>The browser-based Speech Onset Validator interface for manual review of flagged trials. Each trial displays the audio waveform with a draggable onset marker, a spectrogram, and the ASR transcription alongside its token-level recognition probability. Annotators operate the interface entirely via keyboard shortcuts to play, loop, and confirm or correct each response.</figcaption>
 </figure>
 
 The interface is operated entirely via keyboard shortcuts. Annotators can mark a response as correct, incorrect, or uncertain, and manually enter the spoken word if the ASR transcription was wrong.
@@ -83,8 +83,8 @@ We validate the pipeline on two established English-language datasets: the Audit
 Across both datasets, the pipeline automatically verified **1,493 trials** (93.3%), with  **107 cases (~6.7%) flagged** for manual review. Per-dataset match rates were 94.5% for AELP (567/600) and 92.6% for MALD (926/1,000), across 7 speakers in total.
 
 <figure class="post-figure">
-  <img src="/assets/img/blog/asr_validator/results_barplot.png" alt="Validator interface" class="zoomable" data-zoomable>
-  <figcaption>Match rates for the two datasets.</figcaption>
+  <img src="/assets/img/blog/asr_validator/results_barplot.png" alt="Horizontal bar chart showing automatic match rates of 94.5% for AELP and 92.6% for MALD" class="zoomable" data-zoomable>
+  <figcaption>Automatic match rates per dataset. The pipeline verified 94.5% of AELP trials (567/600, 6 speaker varieties) and 92.6% of MALD trials (926/1,000, Canadian English) without manual intervention, yielding a combined match rate of 93.3% across 1,600 trials. Amber segments indicate trials flagged for manual review.</figcaption>
 </figure>
 
 #### Annotated workflow
@@ -102,8 +102,8 @@ Manual inspection of the 107 non-matches revealed three categories of failure:
 **Accent confusion (8%, n = 9)** — Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., *halt* → *hold*, *detour* → *die Tür*). This category was found exclusively in AELP, which includes non-native speaker varieties, and reflects the sensitivity of large-vocabulary ASR models to speaker-specific phonological variation.
 
 <figure class="post-figure">
-  <img src="/assets/img/blog/asr_validator/error_analysis_barplot.png" alt="Validator interface" class="zoomable" data-zoomable>
-  <figcaption>Error analysis for the two datasets.</figcaption>
+  <img src="/assets/img/blog/asr_validator/error_analysis_barplot.png" alt="Horizontal bar chart showing error categories: phonetic near-misses (69%), multi-word splits (22%), and accent confusion (8%)" class="zoomable" data-zoomable>
+  <figcaption>Breakdown of the 107 flagged trials by error category and dataset. Phonetic near-misses account for the majority of failures in both MALD and AELP. Multi-word splits affect both datasets similarly, while accent confusion occurs exclusively in AELP, reflecting its inclusion of non-native speaker varieties.</figcaption>
 </figure>
 
 ### Discussion and Future Directions
