@@ -1,14 +1,14 @@
 ---
 layout: distill
-title: "Beyond Onset Detection: Integrating ASR-Based Content Validation into Spoken-Word Production Annotation"
+title: "ASR-Based Content Validation for Spoken-Word Production Annotation"
 date: 2026-04-15
-description: "This poster presents an ASR-based pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure — exact string comparison, homophone checking via CMUdict, and phonetic Levenshtein distance on ARPABET sequences — the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600, 6 speaker varieties), reducing manual annotation to 107 flagged cases (~6.7%). Non-matches decompose into phonetic near-misses (69%, n=74), multi-word splits (22%, n=24), and accent confusion (8%, n=9)."
+description: "In this blog post, Vincent Gruber presents a pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600)."
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
 thumbnail: /assets/img/blog/asr_validator/figure1.png
 publication_type: "Conference Poster"
 bibliography: asr_validator.bib
-paper_url: ""
-code_url: ""
+paper_url: "https://schiekiera.github.io/assets/pdf/poster_TeaP2026.pdf"
+code_url: "https://github.com/vincentgruber/voice-onset-validation-pipeline"
 giscus_comments: false
 related_posts: false
 toc:
