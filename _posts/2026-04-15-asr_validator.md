@@ -6,6 +6,7 @@ description: "This poster presents an ASR-based pipeline for the automated valid
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
 thumbnail: /assets/img/blog/asr_validator/figure1.png
 publication_type: "Conference Poster"
+bibliography: asr_validator.bib
 paper_url: ""
 code_url: ""
 giscus_comments: false
@@ -35,11 +36,11 @@ authors:
       name: HU Berlin
 ---
 
-**🖼️ [Poster (TeaP 2026)](#)** | **💻 [Code (GitHub)](#)**
+**🖼️ [Poster (TeaP 2026)](https://schiekiera.github.io/assets/pdf/poster_TeaP2026.pdf)** | **💻 [Code (GitHub)](https://github.com/vincentgruber/voice-onset-validation-pipeline)**
 
 ### Motivation
 
-In word-production research — picture naming, primed production, lexical decision — participants produce verbal responses that must subsequently be validated: was the target word produced correctly, or does the response constitute an error? This manual annotation step is time-intensive, observer-dependent, and scales poorly as stimulus sets grow. A dataset of 1,000 trials can require several hours of careful listening and coding, and inter-rater reliability tends to decrease with fatigue and set size.
+In picture naming experiments, participants produce verbal responses that must subsequently be validated: was the target word produced correctly, or does the response constitute an error? This manual annotation step is time-intensive, observer-dependent, and scales poorly as stimulus sets grow. A dataset of 1,000 trials can require several hours of careful listening and coding, and inter-rater reliability tends to decrease with fatigue and set size.
 
 Automated approaches to adjacent problems exist. LeCoder <d-cite key="hu2026lecoder"></d-cite>, for instance, automates the *classification* of speech errors in picture naming using Word2Vec-based semantic similarity and normalized Levenshtein distance on IPA transcriptions. However, LeCoder operates on pre-transcribed responses and targets fine-grained error categorization in clinical populations — it is not designed for the more fundamental binary question of whether a response is correct or not, which arises in virtually every word-production experiment with healthy participants.
 
