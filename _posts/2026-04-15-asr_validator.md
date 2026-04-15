@@ -2,7 +2,7 @@
 layout: distill
 title: "Automated Validation of Verbal Responses in Language-Production Research"
 date: 2026-04-15
-description: "In this blog post, Vincent Gruber presents a pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600)."
+description: "In this blog post, [Vincent Gruber](https://www.linkedin.com/in/vincent-gruber-4a97863b4/) presents a pipeline for the automated validation of verbal responses in word-production experiments. Using Faster-Whisper (large-v3-turbo) and a three-stage matching procedure the pipeline achieved a 93.3% automatic match rate across two English datasets (MALD: 926/1000, Canadian English; AELP: 567/600)."
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
 thumbnail: /assets/img/blog/asr_validator/error_analysis_barplot.png
 publication_type: "Conference Poster"
