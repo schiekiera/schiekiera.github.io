@@ -204,7 +204,7 @@ const defined = {
       },
       {
         tag: "Metascience",
-        title: "Publication Bias, Measured Directly",
+        title: "Publication Bias in Decision-Making",
         desc: "A dual-process theory informed within-subjects experiment on biases in academic decision-making.",
         date: "Sep 2025",
         url: "https://schiekiera.github.io/blog/2025/publication-bias-decision-making/"
