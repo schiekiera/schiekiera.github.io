@@ -1,0 +1,127 @@
+/* ==================================================================
+ * /intro/ — animations
+ * ================================================================== */
+
+/* ---- Keyframes ---- */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulseDown {
+  0%, 100% { transform: translate(-50%, 0); opacity: 0.5; }
+  50%      { transform: translate(-50%, 8px); opacity: 1; }
+}
+
+/* ---- Hero cascade ---- */
+
+.section--hero .hero__name,
+.section--hero .hero__subtitle,
+.section--hero .hero__tagline,
+.section--hero .hero__logos,
+.section--hero .hero__website {
+  opacity: 0;
+  animation: fadeInUp .8s ease-out forwards;
+}
+.section--hero .hero__name      { animation-delay: 0.10s; }
+.section--hero .hero__subtitle  { animation-delay: 0.30s; }
+.section--hero .hero__tagline   { animation-delay: 0.55s; }
+.section--hero .hero__logos     { animation-delay: 0.80s; }
+.section--hero .hero__website   { animation-delay: 1.00s; }
+
+.section--hero .hero__scroll-hint {
+  animation: pulseDown 1.8s ease-in-out infinite;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+/* ---- Scroll reveal base ---- */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .55s ease-out, transform .55s ease-out;
+}
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Stagger: research cards ---- */
+
+.research-grid .research-card.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(4) { transition-delay: 210ms; }
+
+/* ---- Stagger: highlights ---- */
+
+.highlights-list .highlight-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+
+/* ---- Stagger: work rows ---- */
+
+.work-list .work-row.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.work-list .work-row.animate-on-scroll:nth-child(2) { transition-delay: 120ms; }
+.work-list .work-row.animate-on-scroll:nth-child(3) { transition-delay: 240ms; }
+.work-list .work-row.animate-on-scroll:nth-child(4) { transition-delay: 360ms; }
+
+/* ---- Stagger: blog items ---- */
+
+.blog-grid .blog-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(4) { transition-delay: 210ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(5) { transition-delay: 280ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(6) { transition-delay: 350ms; }
+
+/* ---- Stagger: about background items ---- */
+
+.about__bg-list .about__bg-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.about__bg-list .about__bg-item.animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+.about__bg-list .about__bg-item.animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+
+/* ---- Stagger: role list ---- */
+
+.role-list .role-list__item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.role-list .role-list__item.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
+.role-list .role-list__item.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
+
+/* ---- Reduced motion ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0.001ms !important;
+  }
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .section--hero .hero__name,
+  .section--hero .hero__subtitle,
+  .section--hero .hero__tagline,
+  .section--hero .hero__logos,
+  .section--hero .hero__website {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .section--hero .hero__scroll-hint {
+    opacity: 0.5 !important;
+    animation: none !important;
+  }
+}
