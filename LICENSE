@@ -18,3 +18,31 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+===============================================================================
+Content License
+===============================================================================
+
+The MIT license above applies only to the al-folio theme source code
+(layouts, includes, SCSS, plugins, and other files derived from the upstream
+al-folio project: https://github.com/alshedivat/al-folio).
+
+All original content added by the site owner — including but not limited to:
+
+  - text in _pages/, _posts/, _news/, _projects/, and intro/
+  - figures, photographs, and images under assets/img/ (including
+    assets/img/publication_preview/)
+  - bibliography entries and project descriptions under _bibliography/
+  - research figures generated from the site owner's data or papers
+
+is Copyright (c) 2024–2026 Louis Schiekiera. All rights reserved.
+
+No license is granted to reproduce, redistribute, adapt, use for machine-
+learning training, or otherwise exploit this content without the prior
+written permission of the author. Brief quotation with attribution for
+academic, journalistic, or personal non-commercial purposes is permitted
+under fair use / fair dealing principles.
+
+For permissions inquiries, contact the author via the channels listed at
+https://schiekiera.github.io/.
