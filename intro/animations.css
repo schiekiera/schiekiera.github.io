@@ -46,8 +46,9 @@
 
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity .55s ease-out, transform .55s ease-out;
+  transform: translateY(28px);
+  transition: opacity .95s cubic-bezier(.22, .61, .36, 1),
+              transform .95s cubic-bezier(.22, .61, .36, 1);
 }
 .animate-on-scroll.is-visible {
   opacity: 1;
@@ -57,48 +58,48 @@
 /* ---- Stagger: research cards ---- */
 
 .research-grid .research-card.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.research-grid .research-card.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
-.research-grid .research-card.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
-.research-grid .research-card.animate-on-scroll:nth-child(4) { transition-delay: 210ms; }
-.research-grid .research-card.animate-on-scroll:nth-child(5) { transition-delay: 280ms; }
-.research-grid .research-card.animate-on-scroll:nth-child(6) { transition-delay: 350ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(2) { transition-delay: 120ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(3) { transition-delay: 240ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(4) { transition-delay: 360ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(5) { transition-delay: 480ms; }
+.research-grid .research-card.animate-on-scroll:nth-child(6) { transition-delay: 600ms; }
 
 /* ---- Stagger: highlights ---- */
 
 .highlights-list .highlight-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.highlights-list .highlight-item.animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
-.highlights-list .highlight-item.animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
-.highlights-list .highlight-item.animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
-.highlights-list .highlight-item.animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(2) { transition-delay: 140ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(3) { transition-delay: 280ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(4) { transition-delay: 420ms; }
+.highlights-list .highlight-item.animate-on-scroll:nth-child(5) { transition-delay: 560ms; }
 
 /* ---- Stagger: work rows ---- */
 
 .work-list .work-row.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.work-list .work-row.animate-on-scroll:nth-child(2) { transition-delay: 120ms; }
-.work-list .work-row.animate-on-scroll:nth-child(3) { transition-delay: 240ms; }
-.work-list .work-row.animate-on-scroll:nth-child(4) { transition-delay: 360ms; }
-.work-list .work-row.animate-on-scroll:nth-child(5) { transition-delay: 480ms; }
+.work-list .work-row.animate-on-scroll:nth-child(2) { transition-delay: 200ms; }
+.work-list .work-row.animate-on-scroll:nth-child(3) { transition-delay: 400ms; }
+.work-list .work-row.animate-on-scroll:nth-child(4) { transition-delay: 600ms; }
+.work-list .work-row.animate-on-scroll:nth-child(5) { transition-delay: 800ms; }
 
 /* ---- Stagger: blog items ---- */
 
 .blog-grid .blog-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.blog-grid .blog-item.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
-.blog-grid .blog-item.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
-.blog-grid .blog-item.animate-on-scroll:nth-child(4) { transition-delay: 210ms; }
-.blog-grid .blog-item.animate-on-scroll:nth-child(5) { transition-delay: 280ms; }
-.blog-grid .blog-item.animate-on-scroll:nth-child(6) { transition-delay: 350ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(2) { transition-delay: 120ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(3) { transition-delay: 240ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(4) { transition-delay: 360ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(5) { transition-delay: 480ms; }
+.blog-grid .blog-item.animate-on-scroll:nth-child(6) { transition-delay: 600ms; }
 
 /* ---- Stagger: about background items ---- */
 
 .about__bg-list .about__bg-item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.about__bg-list .about__bg-item.animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
-.about__bg-list .about__bg-item.animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+.about__bg-list .about__bg-item.animate-on-scroll:nth-child(2) { transition-delay: 140ms; }
+.about__bg-list .about__bg-item.animate-on-scroll:nth-child(3) { transition-delay: 280ms; }
 
 /* ---- Stagger: role list ---- */
 
 .role-list .role-list__item.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.role-list .role-list__item.animate-on-scroll:nth-child(2) { transition-delay: 70ms; }
-.role-list .role-list__item.animate-on-scroll:nth-child(3) { transition-delay: 140ms; }
+.role-list .role-list__item.animate-on-scroll:nth-child(2) { transition-delay: 120ms; }
+.role-list .role-list__item.animate-on-scroll:nth-child(3) { transition-delay: 240ms; }
 
 /* ---- Reduced motion ---- */
 
