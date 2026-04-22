@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /intro/
+Disallow: /assets/pdf/CV_Schiekiera.pdf
 
 # AI / LLM training crawlers — full block
 User-agent: GPTBot
