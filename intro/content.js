@@ -32,14 +32,14 @@ const defined = {
         url: "https://www.psychologie.hu-berlin.de/en/staff/1696407"
       },
       {
-        title: "PhD Candidate",
+        title: "Ph.D. Candidate",
         org: "Division of Clinical Psychological Intervention, FU Berlin",
         url: "https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html"
       }
     ],
     education: [
       {
-        degree: "PhD Psychology",
+        degree: "Ph.D. Psychology",
         inst: "Freie Universität Berlin",
         year: "2023-present",
         detail: "Focus: Publication bias, machine learning, statistics"
