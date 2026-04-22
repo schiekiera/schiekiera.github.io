@@ -229,7 +229,7 @@ const defined = {
         title: " Automating Validation of Verbal Responses",
         desc: "A pipeline for the automated validation of verbal responses in word-production experiments in psycholinguistics.",
         date: "2026",
-        url: "https://schiekiera.github.io/blog/"
+        url: "https://schiekiera.github.io/blog/2026/asr_validator/"
       },
       {
         tag: "Metascience",
