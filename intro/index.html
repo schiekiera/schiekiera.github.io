@@ -24,13 +24,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css?v=5">
-  <link rel="stylesheet" href="animations.css?v=5">
+  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="animations.css?v=9">
 
   <!-- Favicon (boar emoji, matches site) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%97%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+
+  <!-- Reading-progress bar -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- Sections -->
   <section id="hero" class="section section--hero"></section>
@@ -223,6 +226,26 @@
       document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
     }
 
+    /* ---- Reading-progress bar ---- */
+
+    function initScrollProgress() {
+      const bar = document.getElementById('scroll-progress');
+      if (!bar) return;
+      let ticking = false;
+      const update = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - doc.clientHeight;
+        const p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+        bar.style.transform = `scaleX(${p})`;
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) { requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    }
+
     /* ---- Init ---- */
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -234,6 +257,7 @@
       renderBlog();
       renderFooter();
       initAnimations();
+      initScrollProgress();
     });
   </script>
 
