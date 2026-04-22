@@ -119,7 +119,7 @@ const defined = {
         icon: "fa-solid fa-comments",
         name: "Psycholinguistics",
         desc:
-          "Studying the cognitive mechanisms of language production — how lexical cohorts compete, how semantic context facilitates or interferes, and how picture-naming paradigms expose the underlying geometry of the mental lexicon."
+          "Studying the cognitive mechanisms of language production: how lexical cohorts compete, how semantic context facilitates or interferes, and how picture-naming paradigms expose the underlying geometry of the mental lexicon."
       },
       {
         icon: "fa-solid fa-flask",
@@ -154,7 +154,7 @@ const defined = {
         title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
         venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · arXiv 2026",
         desc:
-          "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms — similarity-based forced choice and free association — over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
+          "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
         preview: "/assets/img/publication_preview/neural_semantic.jpg",
         links: [
           { label: "PDF",   url: "https://arxiv.org/pdf/2602.00628" },
