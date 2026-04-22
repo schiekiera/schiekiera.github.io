@@ -107,7 +107,7 @@ const defined = {
         icon: "fa-solid fa-diagram-project",
         name: "Computational Cognitive Modeling",
         desc:
-          "Turning verbal psychological theories into runnable, falsifiable models. Current focus: the Swinging Lexical Network account of semantic context effects in language production."
+          "Turning verbal psychological theories into runnable models grounded in distributional semantics. Current focus: the Swinging Lexical Network account of semantic context effects in language production."
       },
       {
         icon: "fa-solid fa-layer-group",
@@ -116,10 +116,28 @@ const defined = {
           "Recovering hidden-state geometry from behavioral signals. Using representational similarity analysis to align layerwise activations with machine-derived semantic structure."
       },
       {
-        icon: "fa-solid fa-magnifying-glass-chart",
-        name: "Metascience",
+        icon: "fa-solid fa-comments",
+        name: "Psycholinguistics",
         desc:
-          "Using LLMs and behavioral experiments to study how scientific knowledge is produced, evaluated, and distorted: from publication bias to political bias."
+          "Studying the cognitive mechanisms of language production — how lexical cohorts compete, how semantic context facilitates or interferes, and how picture-naming paradigms expose the underlying geometry of the mental lexicon."
+      },
+      {
+        icon: "fa-solid fa-flask",
+        name: "Mega Studies",
+        desc:
+          "I am interested in planning and conducting large-scale behavioral studies. Currently, I am involved in the data collection for the German Lexicon Project."
+      },
+      {
+        icon: "fa-solid fa-magnifying-glass-chart",
+        name: "Publication Bias",
+        desc:
+          "Measuring and explaining the bias against statistically non-significant results in psychology. Combining within-subjects experiments, dual-process decision theory, and NLP-based field-scale analyses."
+      },
+      {
+        icon: "fa-solid fa-scale-balanced",
+        name: "Political Bias",
+        desc:
+          "I study how scholars' political orientations shape the evaluation and reception of scientific claims, and whether deliberation corrects it."
       }
     ]
   },
@@ -170,7 +188,7 @@ const defined = {
         ]
       },
       {
-        tag: "Computational Cognitive Modeling · 2026",
+        tag: "Computational Cognitive Modeling · In progress",
         title: "Swinging Lexical Network — a computational implementation",
         venue: "With Abdel Rahman & Günther · HU Berlin",
         desc:
@@ -178,6 +196,17 @@ const defined = {
         preview: "/assets/img/publication_preview/csln.png",
           links: [
           { label: "DFG page", url: "https://gepris.dfg.de/gepris/projekt/532390335?language=en" }
+        ]
+      },
+      {
+        tag: "Mega Study · in progress",
+        title: "German Lexicon Project",
+        venue: "Multi-lab collaboration · 30+ participating labs",
+        desc:
+          "A large-scale mega study collecting lexical-decision data for a broad sample of German words across more than 30 labs in Germany, Austria, Switzerland, Italy, and the Netherlands. I co-coordinate the data collection and built an automated monitoring pipeline that tracks per-lab progress toward the target of 2,453 participants in near real time.",
+        preview: "/assets/img/publication_preview/glp.png",
+        links: [
+          { label: "GitHub", url: "https://github.com/schiekiera/German_Lexicon_Multilab_Monitoring" }
         ]
       }
     ]
