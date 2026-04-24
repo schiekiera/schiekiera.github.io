@@ -91,7 +91,7 @@ const defined = {
       {
         role: "Student Research Assistant",
         inst: "Technische Universität Berlin · General Sociology",
-        year: "2018–2021",
+        year: "2018–2019",
         detail: "Phenomenology, sociology of knowledge"
       }
     ]
