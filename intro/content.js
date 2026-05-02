@@ -150,9 +150,9 @@ const defined = {
     allUrl: "https://schiekiera.github.io/publications/",
     items: [
       {
-        tag: "Machine Psychology · 2026",
+        tag: "Machine Psychology · ICML 2026",
         title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
-        venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · arXiv 2026",
+        venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · ICML 2026",
         desc:
           "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
         preview: "/assets/img/publication_preview/neural_semantic.jpg",

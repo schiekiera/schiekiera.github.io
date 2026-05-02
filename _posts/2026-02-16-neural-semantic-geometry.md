@@ -2,11 +2,11 @@
 layout: distill
 title: "Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
 date: 2026-02-16
-description: "Our preprint <b>From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs</b> investigates whether an LLM's internal semantic geometry can be recovered from its observable behavior. Across eight instruction-tuned transformers and 17.5M+ trials, we compare behavior-derived similarity structures from forced-choice and free-association paradigms to layerwise hidden-state geometry using representational similarity analysis. We find that forced-choice behavior aligns substantially more with internal representations than free association, and that behavioral similarity predicts unseen hidden-state similarities beyond lexical baselines."
+description: "Our paper <b>From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs</b> (accepted at <b>ICML 2026</b>) investigates whether an LLM's internal semantic geometry can be recovered from its observable behavior. Across eight instruction-tuned transformers and 17.5M+ trials, we compare behavior-derived similarity structures from forced-choice and free-association paradigms to layerwise hidden-state geometry using representational similarity analysis. We find that forced-choice behavior aligns substantially more with internal representations than free association, and that behavioral similarity predicts unseen hidden-state similarities beyond lexical baselines."
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
 bibliography: neural_semantic_geometry.bib
-publication_type: "Preprint"
+publication_type: "ICML 2026"
 paper_url: "https://arxiv.org/abs/2602.00628"
 code_url: "https://github.com/schiekiera/llm-association-geometry"
 giscus_comments: false
@@ -42,7 +42,9 @@ authors:
       name: HU Berlin
 ---
 
-**📄 [Preprint (arxiv)](https://arxiv.org/pdf/2602.00628)** | **💻 [Code (GitHub)](https://github.com/schiekiera/llm-association-geometry)** | **🤗 [Dataset (HuggingFace)](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
+_Accepted at **ICML 2026**._
+
+**📄 [Paper (arxiv)](https://arxiv.org/pdf/2602.00628)** | **💻 [Code (GitHub)](https://github.com/schiekiera/llm-association-geometry)** | **🤗 [Dataset (HuggingFace)](https://huggingface.co/datasets/schiekiera/llm-association-geometry)**
 
 ### Motivation: Can behavior reveal internal structure?
 
@@ -143,21 +145,20 @@ Our findings show that structured behavior---particularly from constrained measu
 If you find this interesting and if this work is helpful for your research, please consider citing our paper:
 
 ```bibtex
-@misc{schiekiera2026associations,
+@inproceedings{schiekiera2026associations,
   title={From Associations to Activations: Comparing Behavioral and
          Hidden-State Semantic Geometry in {LLMs}},
   author={Schiekiera, Louis and Zimmer, Max and Roux, Christophe
           and Pokutta, Sebastian and G{\"u}nther, Fritz},
+  booktitle={Proceedings of the 43rd International Conference on
+             Machine Learning (ICML)},
   year={2026},
-  eprint={2602.00628},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2602.00628},
+  publisher={PMLR},
 }
 ```
 
 ### Links
-📄 Read the preprint (arxiv) [here](https://arxiv.org/abs/2602.00628).
+📄 Read the paper (arxiv) [here](https://arxiv.org/abs/2602.00628).
 
 💻 View the code on [GitHub](https://github.com/schiekiera/llm-association-geometry).
 
