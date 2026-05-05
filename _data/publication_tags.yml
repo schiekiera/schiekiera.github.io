@@ -7,9 +7,6 @@
 - tag: psycholinguistics
   name: Psycholinguistics
 
-- tag: language_production
-  name: Language Production
-
 - tag: NLP
   name: Natural Language Processing
 
@@ -18,9 +15,3 @@
 
 - tag: public_health
   name: Public Health
-
-- tag: history
-  name: History
-
-- tag: oncology
-  name: Psychooncology
