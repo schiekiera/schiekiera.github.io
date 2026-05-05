@@ -150,6 +150,18 @@ const defined = {
     allUrl: "https://schiekiera.github.io/publications/",
     items: [
       {
+        tag: "Open Data · 2026 Preprint",
+        title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
+        venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
+        desc:
+          "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
+        preview: "/assets/img/publication_preview/pwi_data_collection_process.png",
+        links: [
+          { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
+          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
+        ]
+      },
+      {
         tag: "Machine Psychology · ICML 2026",
         title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
         venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · ICML 2026",
@@ -217,6 +229,13 @@ const defined = {
     tldr: "Short notes on language models, cognition, and the science of science.",
     allUrl: "https://schiekiera.github.io/blog/",
     items: [
+      {
+        tag: "Open Data",
+        title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
+        desc: "688,976 trials from 86 PWI experiments across 42 studies, harmonized into a single 28-variable schema with an extensible cleaning pipeline.",
+        date: "May 2026",
+        url: "https://schiekiera.github.io/blog/2026/pwi-dataset/"
+      },
       {
         tag: "Machine Psychology",
         title: "From Associations to Activations",
