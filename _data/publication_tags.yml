@@ -1,14 +1,26 @@
-- tag: clinical_psychology
-  name: Clinical Psychology
-
-- tag: history
-  name: History
-
 - tag: metascience
   name: Metascience
 
+- tag: clinical_psychology
+  name: Clinical Psychology
+
+- tag: psycholinguistics
+  name: Psycholinguistics
+
+- tag: language_production
+  name: Language Production
+
 - tag: NLP
   name: Natural Language Processing
+
+- tag: LLM
+  name: Large Language Models
+
+- tag: public_health
+  name: Public Health
+
+- tag: history
+  name: History
 
 - tag: oncology
   name: Psychooncology

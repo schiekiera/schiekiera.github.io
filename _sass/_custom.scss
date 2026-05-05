@@ -631,3 +631,86 @@ article > p:first-of-type {
   font-size: 1.06rem;
   line-height: 1.65;
 }
+
+/*------------------------------------------------------------------------------
+  Publications: tag filter bar + per-entry tag chips.
+------------------------------------------------------------------------------*/
+
+.pub-tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.pub-tag-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--global-divider-color);
+  background: transparent;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    transform: translateY(-1px);
+  }
+
+  &.active {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: white;
+  }
+}
+
+.pub-empty-state {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--global-card-bg-color);
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 10px;
+  color: var(--global-text-color-light);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.bib-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+
+.bib-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(53, 148, 105, 0.1);
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background: var(--global-theme-color);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+html[data-theme="dark"] .bib-tag {
+  background: rgba(178, 148, 0, 0.15);
+}

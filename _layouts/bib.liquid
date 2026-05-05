@@ -254,6 +254,18 @@
       {% endif %}
     {% endif %}
 
+    {% if entry.tags %}
+      {% assign normalized_tags = entry.tags | downcase | replace: ' ', '' %}
+      <div class="bib-tags" data-tags="{{ normalized_tags }}">
+        {% assign tag_list = entry.tags | split: ',' %}
+        {% for raw_tag in tag_list %}
+          {% assign t = raw_tag | strip %}
+          {% assign tag_meta = site.data.publication_tags | where: 'tag', t | first %}
+          <a class="bib-tag" data-tag="{{ t | downcase }}" href="#" tabindex="0">{% if tag_meta %}{{ tag_meta.name }}{% else %}{{ t }}{% endif %}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
