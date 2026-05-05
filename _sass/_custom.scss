@@ -515,3 +515,119 @@ d-article {
 d-article .figure-container {
   grid-column: page;
 }
+
+/*------------------------------------------------------------------------------
+  Polish pass — homepage hero, section dividers, publication cards, hovers.
+------------------------------------------------------------------------------*/
+
+// --- Hero: subtle halo behind the circular profile picture
+.profile {
+  .img-fluid.rounded-circle {
+    box-shadow:
+      0 0 0 6px rgba(53, 148, 105, 0.06),
+      0 12px 36px -12px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.4s ease,
+      box-shadow 0.4s ease;
+  }
+
+  &:hover .img-fluid.rounded-circle {
+    transform: translateY(-2px);
+    box-shadow:
+      0 0 0 8px rgba(53, 148, 105, 0.1),
+      0 18px 42px -14px rgba(0, 0, 0, 0.22);
+  }
+}
+
+html[data-theme="dark"] .profile {
+  .img-fluid.rounded-circle {
+    box-shadow:
+      0 0 0 6px rgba(178, 148, 0, 0.08),
+      0 12px 36px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover .img-fluid.rounded-circle {
+    box-shadow:
+      0 0 0 8px rgba(178, 148, 0, 0.14),
+      0 18px 42px -14px rgba(0, 0, 0, 0.6);
+  }
+}
+
+// --- Section header stripe: applies to the homepage section links (`news`,
+// `publications`) and to the `.talks-section-header` blocks on the talks page.
+// Adds a left accent bar so the page reads as designed sections rather than
+// a flat list of headings.
+.post > article > h2,
+.talks-section-header {
+  position: relative;
+  padding-left: 0.85rem;
+  margin-top: 2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    bottom: 0.15em;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--global-theme-color);
+    opacity: 0.85;
+  }
+}
+
+// --- Selected papers / publications: turn each entry into a card.
+.publications ol.bibliography {
+  li {
+    position: relative;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px -10px rgba(0, 0, 0, 0.12);
+      border-color: var(--global-theme-color);
+
+      .title {
+        color: var(--global-theme-color);
+      }
+    }
+
+    .title {
+      transition: color 0.2s ease;
+    }
+
+    // Keep the preview image neatly contained within the card.
+    .preview {
+      border-radius: 8px;
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li:hover {
+  box-shadow: 0 8px 28px -10px rgba(0, 0, 0, 0.55);
+}
+
+// --- Universal hover lift for social icons in the contact bar.
+.social .contact-icons a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// --- Typography: lead paragraph on the about page reads with more presence
+// without changing layout or font.
+article > p:first-of-type {
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
