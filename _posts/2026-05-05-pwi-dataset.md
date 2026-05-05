@@ -4,7 +4,7 @@ title: "A Harmonized Trial-Level Dataset of Picture-Word Interference"
 date: 2026-05-05
 description: "We release a harmonized, openly accessible dataset of 688,976 trials from 86 picture-word interference experiments across 42 studies — assembled from five sources, unified into a 28-variable schema, and shipped with the full cleaning pipeline so future studies can be added without rebuilding the infrastructure."
 tags: [psycholinguistics, language-production, open-data, mega-analysis]
-thumbnail: /assets/img/blog/pwi_data/pwi_data_folder_structure.png
+thumbnail: /assets/img/blog/pwi_data/pwi_data_collection_process.png
 publication_type: "Preprint (PsyArXiv)"
 paper_url: "https://osf.io/preprints/psyarxiv/xp69t_v1"
 giscus_comments: false
