@@ -1,17 +1,20 @@
 - tag: metascience
   name: Metascience
 
+- tag: publication_bias
+  name: Publication Bias
+
 - tag: clinical_psychology
   name: Clinical Psychology
 
 - tag: psycholinguistics
   name: Psycholinguistics
 
-- tag: NLP
-  name: Natural Language Processing
-
 - tag: LLM
   name: Large Language Models
 
+- tag: NLP
+  name: Natural Language Processing
+  
 - tag: public_health
   name: Public Health
