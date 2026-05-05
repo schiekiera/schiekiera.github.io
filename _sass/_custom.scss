@@ -763,12 +763,16 @@ html[data-theme="dark"] .bib-tag {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
   &.home-post-thumb--placeholder {
