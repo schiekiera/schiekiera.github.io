@@ -1,0 +1,73 @@
+
+- date: 2023-03-15
+  venue: STS-hub.de 2023 Circulations
+  description: 'Publication Bias in Academic Publishing: Researchers’ Accounts of Publication Decisions'
+  presentation_type: talk
+  link: https://sts-hub.de/STShubDe2023Programme.pdf
+  location: RWTH Aachen, DE
+  speaker: 'Jacqueline Sachse'
+
+- date: 2025-04-03
+  venue: 4. Deutscher Psychotherapie Kongress (DPK 2025)
+  description: 'Publication Bias in Psychology: Positive Results and Scientific Productivity of Research Groups'
+  presentation_type: talk
+  slides: https://github.com/schiekiera/talks/blob/main/pdfs/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf
+  location: Berlin, DE
+  speaker: 'Louis Schiekiera'
+
+- date: 2025-09-03
+  venue: ESCOP 2025
+  description: 'Modeling Lexical Competition in Language Production: A Computational Approach to the Swinging Lexical Network'
+  presentation_type: poster
+  poster: https://github.com/schiekiera/talks/blob/main/pdfs/poster_cSLN_schiekiera_2025-08-17.pdf
+  link: https://github.com/schiekiera/cSLN_ESCOP_2025
+  location: Sheffield, UK
+  speaker: 'Louis Schiekiera'
+
+- date: 2025-11-12
+  venue: 18th European Public Health Conference (EPH 2025)
+  description: 'Climate Change and Health Sector Planning: A Mixed-Methods Analysis of National Health Strategies'
+  presentation_type: poster
+  link: https://doi.org/10.1093/eurpub/ckaf161.1440
+  location: Helsinki, FI
+  speaker: 'Mirna Al Masri'
+
+- date: 2026-03-02
+  venue: TRUST Network Meeting
+  description: 'Data Collection Process for the German Lexicon Project'
+  presentation_type: talk
+  link: https://trust-network-guidelines.readthedocs.io/en/latest/
+  location: Cologne, DE
+  speaker: 'Louis Schiekiera'
+
+- date: 2026-03-16
+  venue: TEAP 2026 (Symposium Chair)
+  description: 'Symposium: Computational Modeling of Language Generation (co-chaired with Hanna Wołoszyn, Cologne)'
+  presentation_type: talk
+  link: https://coms.app/teap26/welcome.html
+  location: Tübingen, DE
+  speaker: 'Louis Schiekiera'
+
+- date: 2026-03-16
+  venue: TEAP 2026
+  description: 'Beyond Lemmas: Modeling the Picture in Picture-Word Interference?'
+  presentation_type: talk
+  link: https://coms.app/teap26/welcome.html
+  location: Tübingen, DE
+  speaker: 'Louis Schiekiera'
+
+- date: 2026-04-10
+  venue: 16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP 2026)
+  description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
+  presentation_type: poster
+  link: https://www.oegps.at/aktuelletagung
+  location: Salzburg, AT
+  speaker: 'Benjaming Gagl'
+
+- date: 2026-07-16
+  venue: SSSR 2026 Annual Conference
+  description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
+  presentation_type: poster
+  link: https://www.triplesr.org/submissions-and-programme
+  location: Rotterdam, NL
+  speaker: 'Jana Hasenäcker'
