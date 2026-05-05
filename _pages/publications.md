@@ -51,21 +51,44 @@ nav_order: 2
       if (emptyState) emptyState.hidden = visibleCount > 0;
     }
 
+    function activate(tag) {
+      var match = bar.querySelector('.pub-tag-btn[data-tag="' + tag + '"]');
+      if (!match) return false;
+      buttons.forEach(function (b) { b.classList.toggle('active', b === match); });
+      applyFilter(tag);
+      return true;
+    }
+
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
-        applyFilter(btn.getAttribute('data-tag'));
+        var tag = btn.getAttribute('data-tag');
+        activate(tag);
+        // Reflect filter in the URL so it's shareable / back-button friendly.
+        var url = new URL(window.location.href);
+        if (tag === 'all') url.searchParams.delete('tag'); else url.searchParams.set('tag', tag);
+        history.replaceState(null, '', url);
       });
     });
 
     document.querySelectorAll('.publications .bib-tag').forEach(function (chip) {
       chip.addEventListener('click', function (e) {
+        // Stay on the page when clicked from /publications/ — the global
+        // bar handles state. From the homepage the chip's href takes the
+        // user here with ?tag=… already set, so the load-time block below
+        // applies it.
         e.preventDefault();
         var tag = chip.getAttribute('data-tag');
-        var target = bar.querySelector('.pub-tag-btn[data-tag="' + tag + '"]');
-        if (target) target.click();
+        if (activate(tag)) {
+          var url = new URL(window.location.href);
+          url.searchParams.set('tag', tag);
+          history.replaceState(null, '', url);
+        }
       });
     });
+
+    // Apply ?tag=… from the URL on first load.
+    var initialTag = new URLSearchParams(window.location.search).get('tag');
+    if (initialTag) activate(initialTag);
   }
 
   if (document.readyState === 'loading') {

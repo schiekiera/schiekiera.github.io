@@ -261,7 +261,7 @@
         {% for raw_tag in tag_list %}
           {% assign t = raw_tag | strip %}
           {% assign tag_meta = site.data.publication_tags | where: 'tag', t | first %}
-          <a class="bib-tag" data-tag="{{ t | downcase }}" href="#" tabindex="0">{% if tag_meta %}{{ tag_meta.name }}{% else %}{{ t }}{% endif %}</a>
+          <a class="bib-tag" data-tag="{{ t | downcase }}" href="{{ '/publications/' | relative_url }}?tag={{ t | downcase }}" tabindex="0">{% if tag_meta %}{{ tag_meta.name }}{% else %}{{ t }}{% endif %}</a>
         {% endfor %}
       </div>
     {% endif %}
