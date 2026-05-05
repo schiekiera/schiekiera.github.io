@@ -140,6 +140,25 @@ nav_order: 5
 </div>
 {% endif %}
 
+{% assign teaching_activities = site.data.teaching | sort: "date" | reverse %}
+{% if teaching_activities.size > 0 %}
+<div class="talks-section">
+  <h3 class="talks-section-header">teaching</h3>
+  <ul class="talks-list">
+  {% for activity in teaching_activities %}
+    <li>
+      <span class="talk-date">{{ activity.semester }}</span>
+      <span class="talk-venue">{{ activity.course }}</span>{% if activity.type %} <span class="talk-location">({{ activity.type }})</span>{% endif %}
+      <div class="talk-details">
+        <em>{{ activity.institution }}{% if activity.location %}, {{ activity.location }}{% endif %}</em>
+        {% if activity.seminar %}<div class="talk-speaker">in seminar: {{ activity.seminar }}{% if activity.host %} — taught by {{ activity.host }}{% endif %}</div>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 {% assign reviewing_activities = site.data.other | where: "type", "reviewing" | sort: "date" | reverse %}
 {% if reviewing_activities.size > 0 %}
 <div class="talks-section">

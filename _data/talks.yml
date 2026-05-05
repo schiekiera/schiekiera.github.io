@@ -40,6 +40,14 @@
   location: Helsinki, FI
   speaker: 'Mirna Al Masri'
 
+- date: 2026-02-05
+  venue: Research Colloquium at the Department of Psychology, Humboldt-Universität zu Berlin
+  description: 'LLMs as Agents in Psycholinguistic Research'
+  presentation_type: talk
+  link: https://agnes.hu-berlin.de/lupo/rds?state=medialoader&application=lsf&objectid=4556
+  location: Berlin, DE
+  speaker: 'Louis Schiekiera'
+
 - date: 2026-03-02
   venue: TRUST Network Meeting
   description: 'Data Collection Process for the German Lexicon Project'
