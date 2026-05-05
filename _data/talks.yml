@@ -56,6 +56,14 @@
   location: Tübingen, DE
   speaker: 'Louis Schiekiera'
 
+- date: 2026-03-17
+  venue: TEAP 2026
+  description: 'Automated Validation of Verbal Responses in Language-Production Research'
+  presentation_type: poster
+  link: https://github.com/vincentgruber/voice-onset-validation-pipeline
+  location: Tübingen, DE
+  speaker: 'Vincent Gruber'
+
 - date: 2026-04-10
   venue: 16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP 2026)
   description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
