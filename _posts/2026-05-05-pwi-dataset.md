@@ -25,25 +25,25 @@ This release is an attempt to fix that.
 
 ### What's in it
 
-| | |
-|---|---|
-| **Trials** | 688,976 |
-| **Experiments** | 86 |
-| **Studies** | 42 |
-| **Participants** | 3,353 |
-| **Languages** | English & German |
-| **License** | CC-BY 4.0 |
+|                  |                  |
+| ---------------- | ---------------- |
+| **Trials**       | 688,976          |
+| **Experiments**  | 86               |
+| **Studies**      | 42               |
+| **Participants** | 3,353            |
+| **Languages**    | English & German |
+| **License**      | CC-BY 4.0        |
 
 The data come from five complementary sources:
 
-| Source | Studies | Experiments | Participants | Trials |
-|---|---:|---:|---:|---:|
-| In-house archive (NKP, HU Berlin) | 12 | 16 | 591 | 204,658 |
-| OSF API search | 11 | 30 | 1,303 | 282,806 |
-| Author contributions (data-sharing requests) | 6 | 12 | 364 | 86,224 |
-| Bürki et al. (2020) meta-analysis | 8 | 20 | 618 | 40,960 |
-| OpenAlex + PubMed full-text searches | 5 | 8 | 477 | 74,328 |
-| **Total** | **42** | **86** | **3,353** | **688,976** |
+| Source                                       | Studies | Experiments | Participants |      Trials |
+| -------------------------------------------- | ------: | ----------: | -----------: | ----------: |
+| In-house archive (NKP, HU Berlin)            |      12 |          16 |          591 |     204,658 |
+| OSF API search                               |      11 |          30 |        1,303 |     282,806 |
+| Author contributions (data-sharing requests) |       6 |          12 |          364 |      86,224 |
+| Bürki et al. (2020) meta-analysis            |       8 |          20 |          618 |      40,960 |
+| OpenAlex + PubMed full-text searches         |       5 |           8 |          477 |      74,328 |
+| **Total**                                    |  **42** |      **86** |    **3,353** | **688,976** |
 
 Across the funnel — programmatic searches, full-text screening, OSF queries, and direct author contact — we identified 165 eligible studies and ended up with 42 that met our criteria *and* had usable trial-level data we could clean and merge.
 
@@ -73,7 +73,7 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
 4. **Target–distractor relationship** — categorical, associative, phonological, and other relatedness indicators.
 5. **Psycholinguistic properties** — target / distractor word length and Zipf-scale frequency from the deWaC (German) and ukWaC (English) corpora.
 
-### A three-stage pipeline, not just a CSV
+### A three-stage pipeline
 
 Rather than dumping a single merged file, we ship the **pipeline** that produced it:
 
