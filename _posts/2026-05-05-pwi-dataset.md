@@ -4,7 +4,7 @@ title: "A Harmonized Trial-Level Dataset of Picture-Word Interference"
 date: 2026-05-05
 description: "We release a harmonized, openly accessible dataset of 688,976 trials from 86 picture-word interference experiments across 42 studies — assembled from five sources, unified into a 28-variable schema, and shipped with the full cleaning pipeline so future studies can be added without rebuilding the infrastructure."
 tags: [psycholinguistics, language-production, open-data, mega-analysis]
-thumbnail: /assets/img/blog/pwi_data/pwi_data_collection_process.png
+thumbnail: /assets/img/blog/pwi_data/pwi_data_folder_structure.png
 publication_type: "Preprint (PsyArXiv)"
 paper_url: "https://osf.io/preprints/psyarxiv/xp69t_v1"
 giscus_comments: false
@@ -17,9 +17,9 @@ _Preprint on **PsyArXiv**. Data and pipeline on **OSF**: [10.17605/OSF.IO/2B3SX]
 
 ### Why we did this
 
-Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical selection, inhibitory control, semantic and phonological encoding, and individual differences.
+Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
 
-But the trial-level data underlying those findings live in study-specific formats, scattered across personal archives, university servers, and assorted repositories — with inconsistent variable names, accuracy codes, and exclusion criteria. That fragmentation makes mega-analyses, cross-study comparisons, and computational modeling at scale much harder than it needs to be.
+But the trial-level data underlying those findings live in study-specific formats, scattered across personal archives, university servers, and assorted repositories with inconsistent variable names, accuracy codes, and exclusion criteria. That fragmentation makes mega-analyses, cross-study comparisons, and computational modeling at scale much harder than it needs to be.
 
 This release is an attempt to fix that.
 
@@ -38,14 +38,14 @@ The data come from five complementary sources:
 
 | Source                                       | Studies | Experiments | Participants |      Trials |
 | -------------------------------------------- | ------: | ----------: | -----------: | ----------: |
-| In-house archive (NKP, HU Berlin)            |      12 |          16 |          591 |     204,658 |
+| In-house archive (HU Berlin)                 |      12 |          16 |          591 |     204,658 |
 | OSF API search                               |      11 |          30 |        1,303 |     282,806 |
 | Author contributions (data-sharing requests) |       6 |          12 |          364 |      86,224 |
 | Bürki et al. (2020) meta-analysis            |       8 |          20 |          618 |      40,960 |
 | OpenAlex + PubMed full-text searches         |       5 |           8 |          477 |      74,328 |
 | **Total**                                    |  **42** |      **86** |    **3,353** | **688,976** |
 
-Across the funnel — programmatic searches, full-text screening, OSF queries, and direct author contact — we identified 165 eligible studies and ended up with 42 that met our criteria *and* had usable trial-level data we could clean and merge.
+Across the funnel — programmatic searches, full-text screening, OSF queries, and direct author contact — we ended up with 42 that met our criteria *and* had usable trial-level data we could clean and merge.
 
 <div class="figure-container">
   <img src="/assets/img/blog/pwi_data/pwi_data_collection_process.png" alt="Data collection and harmonization process across the five sources" data-zoomable>
@@ -90,7 +90,7 @@ Adding a new study means writing one cleaning script in the Stage-1 convention a
 
 ### What this enables
 
-- **Mega-analyses** with statistical power well beyond what any single experiment provides — particularly for second-order questions (e.g., interactions of design features with the canonical semantic-interference effect).
+- **Mega-analyses** with statistical power well beyond what any single experiment provides.
 - **Computational modeling** of naming latencies on a unified trial-level scale, with consistent psycholinguistic predictors.
 - **Replication and robustness work** at the trial level rather than at the level of summary statistics.
 - **Methodological research** on how design choices (SOA, collection setting, distractor type) shape PWI effects.
