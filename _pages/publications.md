@@ -7,18 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-
-<div class="pub-tag-filter" id="pub-tag-filter">
-  <button type="button" class="pub-tag-btn active" data-tag="all">All</button>
-  {% for t in site.data.publication_tags %}
-    <button type="button" class="pub-tag-btn" data-tag="{{ t.tag | downcase }}">{{ t.name }}</button>
-  {% endfor %}
-</div>
-
-<div class="pub-empty-state" id="pub-empty-state" hidden>
-  No publications match this tag.
-</div>
+{% include pub_tag_filter.liquid %}
 
 <div class="publications">
 
@@ -50,15 +39,11 @@ nav_order: 2
         li.style.display = match ? '' : 'none';
         if (match) visibleCount++;
       });
-      // Hide year separators that have no visible entries beneath them.
       headers.forEach(function (h2) {
         var sib = h2.nextElementSibling;
         var anyVisible = false;
         while (sib && !(sib.tagName === 'H2' && sib.classList.contains('bibliography'))) {
-          if (sib.tagName === 'LI' && sib.style.display !== 'none') {
-            anyVisible = true;
-            break;
-          }
+          if (sib.tagName === 'LI' && sib.style.display !== 'none') { anyVisible = true; break; }
           sib = sib.nextElementSibling;
         }
         h2.style.display = anyVisible ? '' : 'none';
@@ -73,7 +58,6 @@ nav_order: 2
       });
     });
 
-    // Click any chip inside an entry to filter to that tag.
     document.querySelectorAll('.publications .bib-tag').forEach(function (chip) {
       chip.addEventListener('click', function (e) {
         e.preventDefault();

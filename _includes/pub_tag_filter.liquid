@@ -1,0 +1,5 @@
+<div class="pub-tag-filter" id="pub-tag-filter">
+  <button type="button" class="pub-tag-btn active" data-tag="all">All</button>
+  {% for t in site.data.publication_tags %}<button type="button" class="pub-tag-btn" data-tag="{{ t.tag | downcase }}">{{ t.name }}</button>{% endfor %}
+</div>
+<div class="pub-empty-state" id="pub-empty-state" hidden>No publications match this tag.</div>
