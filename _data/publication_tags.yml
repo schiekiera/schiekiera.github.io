@@ -1,12 +1,3 @@
-- tag: metascience
-  name: Metascience
-
-- tag: publication_bias
-  name: Publication Bias
-
-- tag: clinical_psychology
-  name: Clinical Psychology
-
 - tag: psycholinguistics
   name: Psycholinguistics
 
@@ -18,3 +9,12 @@
 
 - tag: mega_analysis
   name: Mega-Analysis
+
+- tag: metascience
+  name: Metascience
+
+- tag: publication_bias
+  name: Publication Bias
+
+- tag: clinical_psychology
+  name: Clinical Psychology
