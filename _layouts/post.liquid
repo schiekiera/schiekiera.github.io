@@ -14,47 +14,64 @@ layout: default
 {% endif %}
 
 {% assign url_beginning = page.url | slice: 0, 6 %}
+{% assign is_blog_post = false %}
+{% if url_beginning == '/blog/' %}
+  {% assign is_blog_post = true %}
+{% endif %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-      {{ page.date | date: '%B %d, %Y' }}
-      {% if page.author %}• {{ page.author }}{% endif %}
-      {% if page.meta %}• {{ page.meta }}{% endif %}
-    </p>
-    <p class="post-tags">
-      {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-      {% else %}
-        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-      {% endif %}
+<!-- Auto-built sticky section nav. Hidden by default; post_section_nav.js
+     reveals it once it has been populated with at least two H2 links. -->
+<nav class="post-section-nav" id="post-section-nav" hidden aria-label="On this page">
+  <div class="post-section-nav__inner" id="post-section-nav-inner"></div>
+</nav>
+
+<div class="post post--polished">
+  <header class="post-header post-hero">
+    {% if page.publication_type %}
+      <div class="post-hero__kind">{{ page.publication_type }}</div>
+    {% endif %}
+
+    <h1 class="post-title post-hero__title">{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="post-hero__desc">{{ page.description }}</p>
+    {% endif %}
+
+    <p class="post-hero__meta">
+      <span class="post-hero__date"><i class="fa-regular fa-calendar"></i> {{ page.date | date: '%B %-d, %Y' }}</span>
+      {% if page.author %}<span class="post-hero__sep">·</span><span>{{ page.author }}</span>{% endif %}
+      {% if page.meta %}<span class="post-hero__sep">·</span><span>{{ page.meta }}</span>{% endif %}
       {% if tags != '' %}
-        &nbsp; &middot; &nbsp;
+        <span class="post-hero__sep">·</span>
         {% for tag in page.tags %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-            &nbsp;
+          {% if is_blog_post %}
+            <a class="post-hero__tag" href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl }}"><i class="fa-solid fa-hashtag"></i>{{ tag }}</a>
           {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }} &nbsp;
+            <span class="post-hero__tag"><i class="fa-solid fa-hashtag"></i>{{ tag }}</span>
           {% endif %}
         {% endfor %}
       {% endif %}
-
       {% if categories != '' %}
-        &nbsp; &middot; &nbsp;
+        <span class="post-hero__sep">·</span>
         {% for category in page.categories %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}
-            </a>
-            &nbsp;
+          {% if is_blog_post %}
+            <a class="post-hero__tag" href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl }}"><i class="fa-solid fa-tag"></i>{{ category }}</a>
           {% else %}
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }} &nbsp;
+            <span class="post-hero__tag"><i class="fa-solid fa-tag"></i>{{ category }}</span>
           {% endif %}
         {% endfor %}
       {% endif %}
     </p>
+
+    {% if page.paper_url or page.code_url or page.data_url or page.dataset_url or page.slides_url %}
+      <div class="post-hero__buttons">
+        {% if page.paper_url %}<a class="post-hero__btn post-hero__btn--primary" href="{{ page.paper_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-lines"></i> Paper</a>{% endif %}
+        {% if page.code_url %}<a class="post-hero__btn" href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
+        {% if page.data_url %}<a class="post-hero__btn" href="{{ page.data_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database"></i> Data</a>{% endif %}
+        {% if page.dataset_url %}<a class="post-hero__btn" href="{{ page.dataset_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database"></i> Dataset</a>{% endif %}
+        {% if page.slides_url %}<a class="post-hero__btn" href="{{ page.slides_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-powerpoint"></i> Slides</a>{% endif %}
+      </div>
+    {% endif %}
   </header>
 
   <article class="post-content">
