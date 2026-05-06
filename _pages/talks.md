@@ -7,66 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-<style>
-.talks-section {
-  margin-bottom: 2rem;
-}
-.talks-section-header {
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-.talks-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.talks-list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--global-divider-color);
-}
-.talks-list li:last-child {
-  border-bottom: none;
-}
-.talk-date {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
-  margin-right: 0.5rem;
-}
-.talk-venue {
-  font-weight: 600;
-}
-.talk-location {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
-}
-.talk-details {
-  margin-top: 0.15rem;
-  font-size: 0.9rem;
-}
-.talk-links {
-  font-size: 0.85rem;
-}
-.talk-links a {
-  color: var(--global-theme-color);
-  text-decoration: none;
-}
-.talk-links a:hover {
-  text-decoration: underline;
-}
-.talk-sep {
-  color: var(--global-text-color-light);
-  padding: 0 0.15rem;
-}
-.reviewing-inline {
-  margin: 0.25rem 0 0;
-}
-.talk-speaker {
-  font-size: 0.8rem;
-  color: var(--global-text-color-light);
-  margin-top: 0.15rem;
-}
-</style>
-
 {% assign all_presentations = site.data.talks | sort: "date" | reverse %}
 {% assign talks_only = "" | split: "" %}
 {% assign posters_only = "" | split: "" %}
@@ -81,47 +21,63 @@ nav_order: 5
 {% if talks_only.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">talks</h3>
-  <ul class="talks-list">
-  {% for activity in talks_only %}
-    <li>
-      <span class="talk-date">{{ activity.date | date: "%m/%Y" }}</span>
-      <span class="talk-venue">{{ activity.venue }}</span><span class="talk-location">, {{ activity.location }}</span>
-      <div class="talk-details">
-        <span class="talk-links">
-          {% if activity.slides %}<a href="{{ activity.slides }}">slides</a>{% endif %}
-          {% if activity.video %}{% if activity.slides %}<span class="talk-sep"> · </span>{% endif %}<a href="{{ activity.video }}">video</a>{% endif %}
-        </span>
-        {% if activity.slides or activity.video %}<span class="talk-sep"> · </span>{% endif %}
-        {% if activity.link %}<em><a href="{{ activity.link }}">{{ activity.description }}</a></em>{% else %}<em>{{ activity.description }}</em>{% endif %}
-        {% if activity.speaker %}<div class="talk-speaker">speaker: {{ activity.speaker }}</div>{% endif %}
-      </div>
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="talks-grid">
+    {% for activity in talks_only %}
+      <article class="talk-card talk-card--talk">
+        <header class="talk-card__head">
+          <span class="talk-card__kind">talk</span>
+          <span class="talk-card__date"><i class="fa-regular fa-calendar"></i> {{ activity.date | date: "%b %Y" }}</span>
+        </header>
+        <h4 class="talk-card__venue">{{ activity.venue }}</h4>
+        {% if activity.location %}<p class="talk-card__loc"><i class="fa-solid fa-location-dot"></i> {{ activity.location }}</p>{% endif %}
+        {% if activity.description %}
+          <p class="talk-card__desc">
+            {% if activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
+          </p>
+        {% endif %}
+        {% if activity.speaker %}<p class="talk-card__speaker"><i class="fa-regular fa-user"></i> presented by {{ activity.speaker }}</p>{% endif %}
+        {% if activity.slides or activity.video or activity.link %}
+          <footer class="talk-card__actions">
+            {% if activity.slides %}<a class="talk-card__chip" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
+            {% if activity.video %}<a class="talk-card__chip" href="{{ activity.video }}"><i class="fa-solid fa-video"></i> video</a>{% endif %}
+            {% if activity.link and activity.description %}<a class="talk-card__chip" href="{{ activity.link }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> info</a>{% endif %}
+          </footer>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
 </div>
 {% endif %}
 
 {% if posters_only.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">posters</h3>
-  <ul class="talks-list">
-  {% for activity in posters_only %}
-    <li>
-      <span class="talk-date">{{ activity.date | date: "%m/%Y" }}</span>
-      <span class="talk-venue">{{ activity.venue }}</span><span class="talk-location">, {{ activity.location }}</span>
-      <div class="talk-details">
-        <span class="talk-links">
-          {% if activity.poster %}<a href="{{ activity.poster }}">poster</a>{% endif %}
-          {% if activity.slides %}{% if activity.poster %}<span class="talk-sep"> · </span>{% endif %}<a href="{{ activity.slides }}">slides</a>{% endif %}
-          {% if activity.video %}{% if activity.poster or activity.slides %}<span class="talk-sep"> · </span>{% endif %}<a href="{{ activity.video }}">video</a>{% endif %}
-        </span>
-        {% if activity.poster or activity.slides or activity.video %}<span class="talk-sep"> · </span>{% endif %}
-        {% if activity.link %}<em><a href="{{ activity.link }}">{{ activity.description }}</a></em>{% else %}<em>{{ activity.description }}</em>{% endif %}
-        {% if activity.speaker %}<div class="talk-speaker">presented by: {{ activity.speaker }}</div>{% endif %}
-      </div>
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="talks-grid">
+    {% for activity in posters_only %}
+      <article class="talk-card talk-card--poster">
+        <header class="talk-card__head">
+          <span class="talk-card__kind">poster</span>
+          <span class="talk-card__date"><i class="fa-regular fa-calendar"></i> {{ activity.date | date: "%b %Y" }}</span>
+        </header>
+        <h4 class="talk-card__venue">{{ activity.venue }}</h4>
+        {% if activity.location %}<p class="talk-card__loc"><i class="fa-solid fa-location-dot"></i> {{ activity.location }}</p>{% endif %}
+        {% if activity.description %}
+          <p class="talk-card__desc">
+            {% if activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
+          </p>
+        {% endif %}
+        {% if activity.speaker %}<p class="talk-card__speaker"><i class="fa-regular fa-user"></i> presented by {{ activity.speaker }}</p>{% endif %}
+        {% if activity.poster or activity.slides or activity.video or activity.link %}
+          <footer class="talk-card__actions">
+            {% if activity.poster %}<a class="talk-card__chip" href="{{ activity.poster }}"><i class="fa-regular fa-image"></i> poster</a>{% endif %}
+            {% if activity.slides %}<a class="talk-card__chip" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
+            {% if activity.video %}<a class="talk-card__chip" href="{{ activity.video }}"><i class="fa-solid fa-video"></i> video</a>{% endif %}
+            {% if activity.link and activity.description %}<a class="talk-card__chip" href="{{ activity.link }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> info</a>{% endif %}
+          </footer>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
 </div>
 {% endif %}
 
@@ -129,11 +85,14 @@ nav_order: 5
 {% if all_events.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">event participation</h3>
-  <ul class="talks-list">
+  <ul class="activity-list">
   {% for activity in all_events %}
-    <li>
-      <span class="talk-date">{{ activity.date | date: "%m/%Y" }}</span>
-      {% if activity.link %}<a href="{{ activity.link }}" class="talk-venue">{{ activity.venue }}</a>{% else %}<span class="talk-venue">{{ activity.venue }}</span>{% endif %}<span class="talk-location">, {{ activity.location }}</span>
+    <li class="activity-row">
+      <span class="activity-row__date">{{ activity.date | date: "%b %Y" }}</span>
+      <span class="activity-row__main">
+        {% if activity.link %}<a class="activity-row__venue" href="{{ activity.link }}">{{ activity.venue }}</a>{% else %}<span class="activity-row__venue">{{ activity.venue }}</span>{% endif %}
+        {% if activity.location %}<span class="activity-row__loc">— {{ activity.location }}</span>{% endif %}
+      </span>
     </li>
   {% endfor %}
   </ul>
@@ -144,15 +103,14 @@ nav_order: 5
 {% if teaching_activities.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">teaching</h3>
-  <ul class="talks-list">
+  <ul class="activity-list">
   {% for activity in teaching_activities %}
-    <li>
-      <span class="talk-date">{{ activity.semester }}</span>
-      <span class="talk-venue">{{ activity.course }}</span>{% if activity.type %} <span class="talk-location">({{ activity.type }})</span>{% endif %}
-      <div class="talk-details">
-        <em>{{ activity.institution }}{% if activity.location %}, {{ activity.location }}{% endif %}</em>
-        {% if activity.seminar %}<div class="talk-speaker">in seminar: {{ activity.seminar }}{% if activity.host %} — taught by {{ activity.host }}{% endif %}</div>{% endif %}
-      </div>
+    <li class="activity-row">
+      <span class="activity-row__date">{{ activity.semester }}</span>
+      <span class="activity-row__main">
+        <span class="activity-row__venue">{{ activity.course }}</span>{% if activity.type %} <span class="activity-row__loc">({{ activity.type }})</span>{% endif %}
+        <span class="activity-row__sub">{{ activity.institution }}{% if activity.location %}, {{ activity.location }}{% endif %}{% if activity.seminar %} — in seminar “{{ activity.seminar }}”{% if activity.host %}, taught by {{ activity.host }}{% endif %}{% endif %}</span>
+      </span>
     </li>
   {% endfor %}
   </ul>
@@ -163,7 +121,9 @@ nav_order: 5
 {% if reviewing_activities.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">reviewing</h3>
-  <p class="reviewing-inline">{% for activity in reviewing_activities %}{{ activity.venue }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  <div class="reviewing-pills">
+    {% for activity in reviewing_activities %}<span class="reviewing-pill">{{ activity.venue }}</span>{% endfor %}
+  </div>
 </div>
 {% endif %}
 
@@ -171,11 +131,13 @@ nav_order: 5
 {% if media_activities.size > 0 %}
 <div class="talks-section">
   <h3 class="talks-section-header">media & interviews</h3>
-  <ul class="talks-list">
+  <ul class="activity-list">
   {% for activity in media_activities %}
-    <li>
-      <span class="talk-date">{{ activity.date | date: "%m/%Y" }}</span>
-      {% if activity.link %}<a href="{{ activity.link }}" class="talk-venue">{{ activity.venue }}</a>{% else %}<span class="talk-venue">{{ activity.venue }}</span>{% endif %}
+    <li class="activity-row">
+      <span class="activity-row__date">{{ activity.date | date: "%b %Y" }}</span>
+      <span class="activity-row__main">
+        {% if activity.link %}<a class="activity-row__venue" href="{{ activity.link }}">{{ activity.venue }}</a>{% else %}<span class="activity-row__venue">{{ activity.venue }}</span>{% endif %}
+      </span>
     </li>
   {% endfor %}
   </ul>

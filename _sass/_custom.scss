@@ -856,3 +856,245 @@ html[data-theme="dark"] {
     color: var(--global-theme-color);
   }
 }
+
+/*-----------------------------------------------------------------------------
+  Talks & activities page — card grid for talks/posters, compact rows for
+  events / teaching / media, pill cluster for reviewing venues.
+------------------------------------------------------------------------------*/
+
+.talks-section {
+  margin-bottom: 2.25rem;
+}
+
+.talks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.talk-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.15rem;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.12);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.talk-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.talk-card__kind {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(53, 148, 105, 0.12);
+  color: var(--global-theme-color);
+}
+
+.talk-card--poster .talk-card__kind {
+  background: rgba(178, 148, 0, 0.14);
+  color: #b29400;
+}
+
+.talk-card__date {
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+
+  i {
+    margin-right: 0.25rem;
+    color: var(--global-theme-color);
+  }
+}
+
+.talk-card__venue {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 0.3rem;
+  color: var(--global-text-color);
+}
+
+.talk-card__loc {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.45rem;
+
+  i {
+    margin-right: 0.3rem;
+    color: var(--global-theme-color);
+  }
+}
+
+.talk-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--global-text-color);
+  margin: 0 0 0.45rem;
+  font-style: italic;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--global-theme-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.talk-card__speaker {
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.5rem;
+
+  i {
+    margin-right: 0.3rem;
+    color: var(--global-theme-color);
+  }
+}
+
+.talk-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--global-divider-color);
+}
+
+.talk-card__chip {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(53, 148, 105, 0.08);
+  color: var(--global-theme-color);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  i {
+    margin-right: 0.3rem;
+  }
+
+  &:hover {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+/* --- Compact activity rows for events / teaching / media. */
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+}
+
+.activity-row {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  align-items: baseline;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.activity-row__date {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.activity-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.activity-row__venue {
+  font-weight: 600;
+  color: var(--global-text-color);
+
+  &[href]:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+.activity-row__loc {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+}
+
+.activity-row__sub {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .activity-row {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+/* --- Reviewing pills: each venue as a small chip. */
+
+.reviewing-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.reviewing-pill {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+}
+
+html[data-theme="dark"] {
+  .talk-card:hover {
+    box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.55);
+  }
+  .talk-card--poster .talk-card__kind {
+    background: rgba(178, 148, 0, 0.18);
+    color: var(--global-theme-color);
+  }
+  .talk-card__chip {
+    background: rgba(178, 148, 0, 0.12);
+  }
+}
