@@ -63,10 +63,10 @@ Across the funnel (programmatic searches, full-text screening, OSF queries, and 
 
 To keep the harmonized dataset coherent, we restricted inclusion to:
 
-- The **classical PWI paradigm**: a single target picture with a single distractor word.
-- **English or German** stimuli.
-- **Non-clinical adult** participants.
-- **Trial-level** data with identifiable target and distractor words on every trial.
+- The *classical PWI paradigm*: a single target picture with a single distractor word.
+- *English or German* stimuli.
+- *Non-clinical adult* participants.
+- *Trial-level* data with identifiable target and distractor words on every trial.
 
 
 #### Variable types
@@ -76,7 +76,7 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
 <div class="project-grid cols-2">
   <div class="project-card">
     <h4 class="highlight-text">Trial-level response</h4>
-    <p>Response time plus a single harmonized <code>accuracy</code> vocabulary. </p>
+    <p>Response time plus a single harmonized accuracy vocabulary. </p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Experimental design</h4>
@@ -107,7 +107,7 @@ Rather than dumping a single merged file, we ship the **pipeline** that produced
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Stage 3 · Merging</h4>
-    <p>English and German are combined and the final 28-column merged dataset is written to <code>data/03_merged_data/</code>.</p>
+    <p>English and German are combined and the final dataset is written to <code>data/03_merged_data/</code>.</p>
   </div>
 </div>
 
@@ -163,8 +163,3 @@ If you find this dataset useful for your research, please consider citing the pr
   url          = {https://osf.io/preprints/psyarxiv/xp69t_v1}
 }
 ```
-
-### Links
-📄 Read the paper (PsyArxiv) [here](https://osf.io/preprints/psyarxiv/xp69t_v1).
-
-💻 View the data and code on [OSF](https://doi.org/10.17605/OSF.IO/2B3SX).
