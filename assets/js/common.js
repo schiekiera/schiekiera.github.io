@@ -10,6 +10,18 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  // Navbar elevation on scroll: add `.is-scrolled` once the page has moved
+  // away from the very top so the navbar visually separates from content.
+  var navbar = document.getElementById("navbar");
+  if (navbar) {
+    var syncNavbarScroll = function () {
+      if (window.scrollY > 4) navbar.classList.add("is-scrolled");
+      else navbar.classList.remove("is-scrolled");
+    };
+    syncNavbarScroll();
+    window.addEventListener("scroll", syncNavbarScroll, { passive: true });
+  }
+
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     var navSelector = "#toc-sidebar";

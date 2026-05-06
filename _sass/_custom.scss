@@ -1098,3 +1098,68 @@ html[data-theme="dark"] {
     background: rgba(178, 148, 0, 0.12);
   }
 }
+
+/*-----------------------------------------------------------------------------
+  Navbar — active-page indicator (animated underline that grows from center on
+  hover, sticks at full width for the active page) plus a subtle elevation
+  effect when the page has been scrolled past the very top.
+------------------------------------------------------------------------------*/
+
+@media (min-width: 576px) {
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0.15rem;
+      width: 0;
+      height: 2px;
+      background: var(--global-theme-color);
+      border-radius: 2px;
+      transform: translateX(-50%);
+      transition: width 0.25s ease;
+      pointer-events: none;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: calc(100% - 1rem);
+    }
+  }
+
+  // Persistent indicator for the active page (and active dropdown root).
+  .navbar-nav .nav-item.active > .nav-link::after,
+  .navbar-nav .nav-item.dropdown.active > .nav-link::after {
+    width: calc(100% - 1rem);
+  }
+}
+
+// Mobile (collapsed): a left accent bar on the active item instead of an
+// underline, since stacked items don't suit a centered-grow underline.
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-item.active > .nav-link {
+    border-left: 3px solid var(--global-theme-color);
+    padding-left: calc(1rem - 3px);
+  }
+}
+
+// Elevation on scroll: navbar picks up a soft shadow + frosted backdrop once
+// the user scrolls past the top, so it visually separates from page content.
+.navbar {
+  transition:
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    backdrop-filter 0.2s ease;
+}
+
+.navbar.is-scrolled {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.12);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+}
+
+html[data-theme="dark"] .navbar.is-scrolled {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.5);
+}
