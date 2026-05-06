@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Talk at the _4th German Psychotherapy Congress_ (Berlin) on publication bias and positive results in clinical psychology.
+Talk at the _4th German Psychotherapy Congress_ (Berlin) on publication bias and positive results in clinical psychology ([Slides](https://github.com/schiekiera/talks/blob/main/pdfs/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf)).

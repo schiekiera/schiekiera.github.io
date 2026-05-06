@@ -894,10 +894,14 @@ html[data-theme="dark"] {
 
 .talk-card__head {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.4rem 0.5rem;
   margin-bottom: 0.45rem;
+}
+
+.talk-card__head .talk-card__date {
+  margin-left: auto;
 }
 
 .talk-card__kind {
@@ -915,6 +919,26 @@ html[data-theme="dark"] {
 .talk-card--poster .talk-card__kind {
   background: rgba(178, 148, 0, 0.14);
   color: #b29400;
+}
+
+// "Accepted, upcoming" badge — sits between the kind tag and the date when
+// the talk/poster is in the future and has been accepted.
+.talk-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+
+  i {
+    font-size: 0.7rem;
+  }
 }
 
 .talk-card__date {

@@ -92,6 +92,7 @@
   venue: WoProc 2026
   description: 'The German Lexicon Project'
   presentation_type: talk
+  status: accepted
   link: https://www.woproc2026.com/
   location: Lisbon, PT
   speaker: 'Aliona Petrenco'
@@ -100,6 +101,7 @@
   venue: WoProc 2026
   description: 'What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties'
   presentation_type: talk
+  status: accepted
   link: https://www.woproc2026.com/
   location: Lisbon, PT
   speaker: 'TBA'
@@ -108,6 +110,7 @@
   venue: ICML 2026
   description: 'From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs'
   presentation_type: poster
+  status: accepted
   link: https://arxiv.org/abs/2602.00628
   location: Seoul, KR
   speaker: 'Louis Schiekiera'
@@ -124,6 +127,7 @@
   venue: SSSR 2026 Annual Conference
   description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
   presentation_type: poster
+  status: accepted
   link: https://www.triplesr.org/submissions-and-programme
   location: Rotterdam, NL
   speaker: 'Jana Hasenäcker'

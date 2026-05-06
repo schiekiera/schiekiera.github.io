@@ -26,6 +26,7 @@ nav_order: 5
       <article class="talk-card talk-card--talk">
         <header class="talk-card__head">
           <span class="talk-card__kind">talk</span>
+          {% if activity.status == "accepted" %}<span class="talk-card__status" title="Accepted, upcoming"><i class="fa-solid fa-circle-check"></i> Accepted</span>{% endif %}
           <span class="talk-card__date"><i class="fa-regular fa-calendar"></i> {{ activity.date | date: "%b %Y" }}</span>
         </header>
         <h4 class="talk-card__venue">{{ activity.venue }}</h4>
@@ -57,6 +58,7 @@ nav_order: 5
       <article class="talk-card talk-card--poster">
         <header class="talk-card__head">
           <span class="talk-card__kind">poster</span>
+          {% if activity.status == "accepted" %}<span class="talk-card__status" title="Accepted, upcoming"><i class="fa-solid fa-circle-check"></i> Accepted</span>{% endif %}
           <span class="talk-card__date"><i class="fa-regular fa-calendar"></i> {{ activity.date | date: "%b %Y" }}</span>
         </header>
         <h4 class="talk-card__venue">{{ activity.venue }}</h4>
