@@ -101,4 +101,17 @@ Everything — raw data, study-specific cleaning scripts, harmonization code, an
 
 If you have a PWI dataset (English, German, or any other language) you'd like added, or you spot something you'd improve in the schema or pipeline, please get in touch — `louis.schiekiera [at] hu-berlin.de`.
 
-**Cite as:** Schiekiera, L., Abdel Rahman, R., Gruber, V., Bürki, A., Lorenz, A., Stark, K., & Günther, F. (2026). *A harmonized trial-level dataset of picture-word interference.* PsyArXiv preprint. [osf.io/preprints/psyarxiv/xp69t_v1](https://osf.io/preprints/psyarxiv/xp69t_v1)
+### Citation
+If you find this dataset useful for your research, please consider citing the preprint:
+
+```bibtex
+@misc{schiekiera2026pwi_dataset,
+  title        = {A harmonized trial-level dataset of picture-word interference},
+  author       = {Schiekiera, Louis and Abdel Rahman, Rasha and Gruber, Vincent
+                  and B{\"u}rki, Audrey and Lorenz, Antje and Stark, Kirsten
+                  and G{\"u}nther, Fritz},
+  year         = {2026},
+  howpublished = {Preprint, PsyArXiv},
+  url          = {https://osf.io/preprints/psyarxiv/xp69t_v1}
+}
+```
