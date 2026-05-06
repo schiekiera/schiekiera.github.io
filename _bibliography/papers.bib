@@ -40,7 +40,7 @@
   supp           = {https://huggingface.co/datasets/schiekiera/llm-association-geometry},
   preview        = {https://schiekiera.github.io/assets/img/publication_preview/neural_semantic2.jpg},
   tldr           = {/blog/2026/neural-semantic-geometry/},
-  tags           = {LLM, NLP, psycholinguistics, mega_analysis},
+  tags           = {LLM, psycholinguistics, mega_analysis},
   abstract       = {We investigate the extent to which an LLM’s hidden-state geometry can be recovered from its behavior in psycholinguistic experiments. Across eight instruction-tuned transformer models, we run two experimental paradigms—similarity-based forced choice and free association—over a shared 5,000-word vocabulary, collecting 17.5M+ trials to build behavior-based similarity matrices. Using representational similarity analysis, we compare behavioral geometries to layerwise hidden-state similarity and benchmark against FastText, BERT, and cross-model consensus. We find that forced-choice behavior aligns substantially more with hidden-state geometry than free association. In a held-out-words regression, behavioral similarity (especially forced choice) predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus, indicating that behavior-only measurements retain recoverable information about internal semantic geometry. Finally, we discuss implications for the ability of behavioral tasks to uncover hidden cognitive states.}
 }
 
@@ -64,7 +64,7 @@
   tldr           = {/blog/2025/publication-bias-decision-making/},
   doi            = {10.1177/25152459251372134},
   abstract       = {Review studies suggest that results that are statistically significant or consistent with hypotheses are preferred in the publication process and in reception. The mechanisms underlying this bias remain unclear, and prior research has focused on between-subjects rather than within-subjects designs. We conducted a within-subjects study, grounded in dual-process decision-making theories, to examine these dynamics. Across four online experiments, 303 clinical-psychology researchers evaluated 16 fictitious abstracts varying in statistical significance and hypothesis consistency. Participants provided fast, intuitive judgments about each abstract’s likelihood of being submitted, read, or cited, rated their feeling of rightness (FOR), and gave deliberated evaluations. We analyzed the data using multilevel and mediation models. Researchers rated statistically nonsignificant abstracts as less likely to be submitted, read, or cited compared with significant ones. No such bias was found for hypothesis-inconsistent results. Intuitive judgments were rarely revised, and FOR did not predict response changes. Overall, researchers favored statistically significant results, with deliberation and FOR playing minimal roles.},
-  tags           = {metascience, publication_bias, clinical_psychology}
+  tags           = {metascience, clinical_psychology}
 }
 
 
@@ -90,7 +90,7 @@
   preview        = {https://schiekiera.github.io/assets/img/publication_preview/ap2_psych.jpg},
   tldr           = {/blog/2025/scientific-productivity-positive-results/},
   abstract       = {The overrepresentation of positive results in psychology is often attributed in part to publication bias. However, the impact of research group output on the prevalence of positive results has not yet been investigated. The present study examines whether German clinical psychology research groups with high versus low publication outputs differ in the prevalence of positive outcomes in their publications. Scientific productivity was defined as the ratio of quantitative-empirical publications to the number of academic staff per chair. We analyzed publications authored by clinical psychology researchers at German universities from 2013 to 2022, sourced from PubMed and OpenAlex. After excluding meta-analyses, reviews, and non-empirical studies, 2,280 empirical studies from 99 research groups were identified. We then randomly sampled and coded 300 papers, evenly split between the highest and lowest output quartiles, and examined the first hypothesis. There was no statistically significant difference between the highest and the lowest output quartiles, with both reporting approximately 90% positive results. Higher group paper counts were not associated with more positive results. Exploratory abstract-level analyses showed no significant differences in positive result rates between all four output quartiles. Our results suggest a general excess of positive results in clinical psychology. Contrary to our hypothesis, German clinical psychology research groups with high and low publication outputs do not differ in the prevalence of positive outcomes in their publications.},
-  tags           = {metascience, clinical_psychology, publication_bias}
+  tags           = {metascience, clinical_psychology}
 }
 
 @article{schiekiera_niemeyer_2025_ap1_history,
@@ -110,7 +110,7 @@
   preview        = {https://schiekiera.github.io/assets/img/publication_preview/f1000.jpg},
   tldr           = {/blog/2025/political-bias-historiography/},
   abstract       = {Background: This study examines the influence of political preferences on historians’ assessments of the publishability of contemporary history abstracts by investigating whether historians favor abstracts that align with their political orientation.Methods: In an online experiment, 75 historians evaluated 17 fictitious contemporary history abstracts from 17 pairs, each presented with either a progressive or conservative stance. The participants made initial intuitive assessments regarding the publishability of each abstract and later provided more considered responses, also rating their Feeling of Rightness (FOR) regarding their initial judgments.Results: The results revealed a significant interaction effect between an abstract’s political stance and historians’ political orientation, consistent with the observation that right-wing historians prefer conservative abstracts, left-wing historians prefer progressive abstracts, and moderate historians show no preference for either. Overall, participants preferred progressive abstracts, largely reflecting a majority of left-leaning historians in our sample. Moreover, after reconsidering their responses and providing FOR ratings, participants’ FOR ratings were more positive for progressive abstracts than for conservative abstracts. Conclusions: Our study suggests that political preferences influence research evaluations and are not diminished by more deliberate processing, as demonstrated through the case study of historians.},
-  tags           = {metascience, publication_bias}
+  tags           = {metascience}
 }
 
 @article{Schiekiera2024_master_thesis,
@@ -132,7 +132,7 @@
   tldr        = {/blog/2024/classifying-positive-results/},
   supp        = {https://econtent.hogrefe.com/doi/suppl/10.1027/2151-2604/a000563/suppl_file/2151-2604_a000563_esm1.pdf},
   abstract    = {This study addresses the gap in machine learning tools for positive results classification by evaluating the performance of SciBERT, a transformer model pretrained on scientific text, and random forest in clinical psychology abstracts. Over 1,900 abstracts were annotated into two categories: positive results only and mixed or negative results. Model performance was evaluated on three benchmarks. The best-performing model was utilized to analyze trends in over 20,000 psychotherapy study abstracts. SciBERT outperformed all benchmarks and random forest in in-domain and out-of-domain data. The trend analysis revealed nonsignificant effects of publication year on positive results for 1990–2005, but a significant decrease in positive results between 2005 and 2022. When examining the entire time span, significant positive linear and negative quadratic effects were observed. Machine learning could support future efforts to understand patterns of positive results in large data sets. The fine-tuned SciBERT model was deployed for public use.},
-  tags        = {metascience, NLP, clinical_psychology, publication_bias, mega_analysis}
+  tags        = {metascience, LLM, clinical_psychology, mega_analysis}
 }
 
 @incollection{niemeyer_schiekiera_2024_bookchapter,

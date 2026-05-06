@@ -4,17 +4,11 @@
 - tag: LLM
   name: Large Language Models
 
-- tag: NLP
-  name: Natural Language Processing
-
 - tag: mega_analysis
   name: Mega-Analysis
 
 - tag: metascience
   name: Metascience
-
-- tag: publication_bias
-  name: Publication Bias
 
 - tag: clinical_psychology
   name: Clinical Psychology
