@@ -22,6 +22,7 @@ This release is an attempt to fix that.
 
 ## Method
 ### Data structure
+
 |                  |                  |
 | ---------------- | ---------------- |
 | **Trials**       | 688,976          |
