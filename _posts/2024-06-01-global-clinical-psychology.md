@@ -12,13 +12,13 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: How is authorship distributed in psychotherapy research?
+## Motivation
 
 Psychotherapy research is conducted worldwide, yet the regional distribution of authorship in this literature has received limited quantitative attention. Understanding who authors psychotherapy trials, and how this has changed over time, provides an empirical basis for discussions about the geographic composition of the field.
 
 We asked two questions: **(1)** How are first authorships in psychotherapy RCTs distributed across world regions, and how has this changed from 1990 to 2022? **(2)** What is the composition of research teams in terms of Global North vs. Global South affiliations?
 
-## Method: 17,095 psychotherapy RCTs from PubMed
+## Method
 
 We searched PubMed for all randomized controlled trials in psychotherapy published between 1990 and 2022 using the query `(Psychotherapy[MeSH Terms]) AND ("1990"[Date - Publication]: "2022"[Date - Publication]) AND (Randomized Controlled Trial[Filter]) AND English[Language]`. This yielded 20,862 abstracts. After excluding 275 without an abstract, 93 non-English abstracts (detected via the cld2 R library), and 61 with missing publication years, we obtained affiliation data for 17,095 studies through OpenAlex, using ISO 3166-1 alpha-2 country codes for the first author's institution.
 

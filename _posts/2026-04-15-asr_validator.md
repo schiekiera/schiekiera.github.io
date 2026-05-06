@@ -79,18 +79,18 @@ The flagged cases can be reviewed directly by an expert annotator targeting the 
 
 Manual inspection of the 107 non-matches revealed three categories of failure:
 
-<div class="project-grid cols-3">
+<div class="project-grid cols-1">
   <div class="project-card">
     <h4 class="highlight-text">Phonetic near-misses (69%, n = 74)</h4>
-    <p>Whisper transcribes a phonetically proximate but distinct word (e.g., <em>ban</em> → <em>ben</em>, <em>bomber</em> → <em>bummer</em>). These cases reflect the interaction between Whisper's language-model prior and phonetically ambiguous or low-frequency targets. In principle, the phonetic Levenshtein threshold could be relaxed to absorb many of these, at the cost of increased false positives.</p>
+    <p>Whisper transcribes a phonetically close but distinct word (e.g., <em>ban</em> → <em>ben</em>, <em>bomber</em> → <em>bummer</em>), reflecting its language-model prior on ambiguous or low-frequency targets. Relaxing the Levenshtein threshold would absorb many of these at the cost of more false positives.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Multi-word splits (22%, n = 24)</h4>
-    <p>Whisper segments a single target word into two tokens (e.g., <em>waterspout</em> → <em>what a spout</em>, <em>indisposition</em> → <em>in this position</em>). A well-documented behavior of Whisper for polysyllabic compound and morphologically complex forms; affects MALD (n = 17) and AELP (n = 7) similarly.</p>
+    <p>Whisper segments one target into two tokens (e.g., <em>waterspout</em> → <em>what a spout</em>, <em>indisposition</em> → <em>in this position</em>), a known behavior on polysyllabic and morphologically complex forms. Affects MALD (n = 17) and AELP (n = 7) similarly.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Accent confusion (8%, n = 9)</h4>
-    <p>Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., <em>halt</em> → <em>hold</em>, <em>detour</em> → <em>die Tür</em>). Found exclusively in AELP, which includes non-native speaker varieties.</p>
+    <p>Whisper maps non-native vowels or prosody to the nearest lexical entry in its prior (e.g., <em>halt</em> → <em>hold</em>, <em>detour</em> → <em>die Tür</em>). Found only in AELP, which includes non-native speakers.</p>
   </div>
 </div>
 
@@ -99,13 +99,13 @@ Manual inspection of the 107 non-matches revealed three categories of failure:
   <span class="figure-caption">Breakdown of the 107 flagged trials by error category and dataset. Phonetic near-misses account for the majority of failures in both MALD and AELP. Multi-word splits affect both datasets similarly, while accent confusion occurs exclusively in AELP, reflecting its inclusion of non-native speaker varieties.</span>
 </div>
 
-## Discussion and Future Directions
+## Discussion
 
 <div class="insight-box">
   <strong>Bottom line:</strong> the manual annotation workload in word-production research can be substantially reduced through ASR-based automation. On a dataset of 1,000 trials the pipeline reduces manual review to fewer than 110 cases (under 7% of the original workload), while ensuring that no trial is discarded without human inspection.
 </div>
 
-<div class="project-grid cols-3">
+<div class="project-grid cols-1">
   <div class="project-card">
     <h4 class="highlight-text">Generalizability</h4>
     <p>The pipeline is language-agnostic by design. Target language, model, and matching thresholds live in a single configuration file. Initial tests with German stimulus materials have been successful, and the system has been validated on speaker varieties from Canadian English to non-native L2 production.</p>

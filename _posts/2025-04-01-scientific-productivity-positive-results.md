@@ -13,7 +13,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Does publish-or-perish drive positive results?
+## Motivation
 
 Positive results are common in the psychology literature: rates between 91–97% are consistently reported for hypothesis-testing studies. One proposed explanation is publish-or-perish culture, where competition and pressure to publish may contribute to selective reporting. Fanelli (2010) showed that US states with stronger publication pressures exhibited higher rates of positive results.
 
@@ -37,7 +37,7 @@ Two mechanisms could link high productivity to more positive results:
   <span class="figure-caption">Data acquisition procedure. We identified clinical psychology research groups at German universities, compiled researcher lists, extracted publications from PubMed and OpenAlex, and applied multi-step cleaning and verification to arrive at the final corpus of 2,280 empirical studies.</span>
 </div>
 
-## Method: Mapping German clinical psychology output
+## Method
 
 ### Data collection
 
@@ -97,7 +97,7 @@ When extending to abstract-level annotations across all four quartiles, **97.19%
 
 An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, $p = .048$).
 
-## Discussion and implications
+## Discussion
 
 <div class="project-grid cols-1">
   <div class="project-card">

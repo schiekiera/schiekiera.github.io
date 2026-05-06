@@ -13,13 +13,13 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Political preferences in science
+## Motivation
 
 In quantitative research, publication bias (the selective publication of studies based on factors other than research quality) is well documented. But what about disciplines where results are not framed in terms of statistical significance? In historiography, scholars have long discussed how cultural, social, and political backgrounds shape the selection of topics, methods, and interpretations. Yet experimental evidence on how political orientation influences historians' publication decisions has been virtually absent.
 
 A classic survey by Kimball found strong correlations between historians' ideological standpoints and their explanations of historical events. The only experimental study in this space, by Abramowitz and colleagues in psychology, showed that reviewers' political orientation influenced their publication decisions, but it used only a single manuscript. We extend this work to historiography with a **within-subjects design** and **17 stimulus pairs**, allowing us to isolate the effect of political stance while controlling for abstract-specific characteristics.
 
-## Method: A within-subjects experiment with historians
+## Method
 
 ### Experimental design
 

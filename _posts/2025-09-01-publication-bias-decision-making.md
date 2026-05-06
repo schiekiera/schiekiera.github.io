@@ -13,7 +13,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Why do positive results dominate?
+## Motivation
 
 Over 60 years ago, Sterling (1959) documented a publication bias toward statistically significant findings in psychology journals. Since then, reviews have consistently shown that significant and hypothesis-consistent results are more likely to be published. But where exactly does this bias enter the research pipeline? Greenwald (1975) identified four choice points: hypothesis formulation, data collection, results evaluation, and editorial judgment.
 
@@ -41,11 +41,11 @@ We address three gaps:
   <span class="figure-caption">Hypothesized relationships. Left: Direct effect of the treatment (statistical significance or hypothesis-consistency) on intuitive responses (LoSRC = Likelihood of Submission, Reading or Citing). Right: Mediation model where Feeling of Rightness (FOR) mediates the effect of treatment on response change between intuitive and considered evaluations (C-LoSRC).</span>
 </div>
 
-## Method: Four within-subjects experiments
+## Method
 
 ### Experimental design and two-response paradigm
 
-We conducted **four online experiments** with clinical psychology researchers ($n = 303$ total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
+We conducted **four online experiments** with clinical psychology researchers (*n = 303* total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
 
 <div class="project-grid cols-1">
   <div class="project-card">
@@ -84,15 +84,15 @@ Across all experiments involving statistical significance, non-significant abstr
 <div class="project-grid cols-3">
   <div class="project-card">
     <h4 class="highlight-text">Publishability (Exp. 1)</h4>
-    <p>$b = -6.49$, $p < .001$.</p>
+    <p>*b = -6.49*, *p < .001*.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Reading likelihood (Exp. 3)</h4>
-    <p>$b = -7.14$, $p < .001$.</p>
+    <p>*b = -7.14*, *p < .001*.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Citation likelihood (Exp. 3)</h4>
-    <p>$b = -6.32$, $p < .001$.</p>
+    <p>*b = -6.32*, *p < .001*.</p>
   </div>
 </div>
 
@@ -108,23 +108,23 @@ Whether an abstract's results were consistent or inconsistent with its hypothesi
 <div class="project-grid cols-3">
   <div class="project-card">
     <h4 class="highlight-text">Publishability (Exp. 2)</h4>
-    <p>$b = -1.21$, $p = .303$.</p>
+    <p>*b = -1.21*, *p = .303*.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Reading (Exp. 4)</h4>
-    <p>$b = -1.29$, $p = .281$.</p>
+    <p>*b = -1.29*, *p = .281*.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Citation (Exp. 4)</h4>
-    <p>$b = -1.44$, $p = .222$.</p>
+    <p>*b = -1.44*, *p = .222*.</p>
   </div>
 </div>
 
 ### Deliberation and Feeling of Rightness
 
-In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR ($b = -0.16$, $p = .006$), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
+In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR (*b = -0.16*, *p = .006*), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
 
-## Discussion and implications
+## Discussion
 
 <div class="project-grid cols-1">
   <div class="project-card">

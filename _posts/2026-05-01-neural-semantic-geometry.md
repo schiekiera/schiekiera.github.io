@@ -13,7 +13,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Can behavior reveal internal structure?
+## Motivation
 
 In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior. Word-association paradigms use exactly this logic, when a participant sees a cue (e.g., _dog_), the associations they produce or select (e.g., _cat_, _leash_, _bark_) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
 
@@ -24,7 +24,7 @@ We transfer this measurement logic to large language models. Unlike humans, both
   <span class="figure-caption">Conceptual overview. For a shared vocabulary, we (i) extract layer-wise word representations to form a hidden-state similarity matrix, and (ii) run behavioral association tasks (forced choice / free association) to build a behavioral similarity matrix. Representational similarity analysis (RSA) correlates the pairwise similarities to quantify behavior–activation alignment.</span>
 </div>
 
-## Framework: Behavioral paradigms and hidden-state extraction
+## Framework
 
 ### Two behavioral paradigms
 
@@ -33,11 +33,10 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
 <div class="project-grid cols-2">
   <div class="project-card">
     <h4 class="highlight-text">Forced choice (FC)</h4>
-    <p>Each cue word is presented together with 16 candidate words, from which the model must select exactly two words that are most semantically related to the cue. Candidate sets are constructed by a deterministic shuffle of the remaining vocabulary, yielding 313 FC trials per cue.</p>
-  </div>
+   <p>Each cue word appears with 16 candidates; the model picks the two most semantically related to the cue.</p>  </div>
   <div class="project-card">
     <h4 class="highlight-text">Free association (FA)</h4>
-    <p>The model is prompted with a single cue word and asked to generate exactly five single-word associates. This is repeated across 126 stochastic runs per cue.</p>
+    <p>The model is prompted with a single cue word and asked to generate exactly five single-word associates.</p>
   </div>
 </div>
 
@@ -46,7 +45,7 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
   <span class="figure-caption">Behavioral paradigms and derived semantic geometries. Left (forced choice): given a cue word and a candidate set, the model selects the most related words. Right (free association): given a cue word alone, the model generates multiple associates. From the resulting cue–response count matrices, we compute similarity matrices by cosine similarity between rows.</span>
 </div>
 
-For each paradigm, model outputs are aggregated into a sparse cue–response count matrix $\mathbf{B}$. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue–cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.
+For each paradigm, model outputs are aggregated into a sparse cue–response count matrix **B**. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue–cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.
 
 ### Hidden-state extraction
 
@@ -55,8 +54,7 @@ For each model and each word, we extract layerwise hidden-state representations 
 <div class="project-grid cols-2">
   <div class="project-card">
     <h4 class="highlight-text">Averaged</h4>
-    <p>The target word embedded in 50 naturally occurring C4 sentences, with hidden states averaged across contexts.</p>
-  </div>
+<p>Target word in 50 C4 sentences, hidden states averaged across contexts.</p>  </div>
   <div class="project-card">
     <h4 class="highlight-text">Meaning</h4>
     <p>A fixed definition-style prompt (<em>"What is the meaning of the word {w}?"</em>).</p>
@@ -88,7 +86,7 @@ We use three complementary evaluation methods:
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Nearest-neighbor overlap (NN@k)</h4>
-    <p>We quantify how well the $k$-nearest-neighbor neighborhoods induced by hidden-state similarity match those of the reference spaces.</p>
+    <p>We quantify how well the *k*-nearest-neighbor neighborhoods induced by hidden-state similarity match those of the reference spaces.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Held-out-words ridge regression</h4>
@@ -100,11 +98,11 @@ We use three complementary evaluation methods:
 
 ### Forced choice aligns substantially more than free association
 
-Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from $r = .346$ under Averaged extraction to $r = .463$ under Task (FC), while FA shows the same pattern at considerably lower magnitude ($r = .140$ to $r = .199$).
+Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from *r = .346* under Averaged extraction to *r = .463* under Task (FC), while FA shows the same pattern at considerably lower magnitude (*r = .140* to *r = .199*).
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rsa_nn_grid_1x2.png" alt="Summary RSA and nearest-neighbor overlap results" data-zoomable>
-  <span class="figure-caption">Summary of RSA and neighborhood-overlap results (means across models). Left: mean RSA Pearson correlation as a function of layer. Right: mean nearest-neighbor overlap as a function of neighborhood size $k$ (log scale). FC behavior (green) aligns substantially more with hidden-state geometry than FA behavior (red), while cross-model consensus (black) provides the strongest reference.</span>
+  <span class="figure-caption">Summary of RSA and neighborhood-overlap results (means across models). Left: mean RSA Pearson correlation as a function of layer. Right: mean nearest-neighbor overlap as a function of neighborhood size *k* (log scale). FC behavior (green) aligns substantially more with hidden-state geometry than FA behavior (red), while cross-model consensus (black) provides the strongest reference.</span>
 </div>
 
 Task-aligned and meaning-based extraction strategies yield the strongest alignment at earlier, mid-depth layers, whereas averaging over natural contexts shifts alignment peaks to later layers.
@@ -123,14 +121,14 @@ The full model-by-model RSA comparison reveals that the FC advantage is consiste
 
 ### Behavioral similarity predicts unseen hidden-state structure
 
-The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test $R^2$ by $+.022$, whereas FA yields a smaller gain ($+.002$). The full model reaches mean $R^2 = .587$ (vs. $.569$ for the baseline). Peak performance reaches $R^2 = .844$ for Llama-3.1-8B-Instruct.
+The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test *R^2* by *+.022*, whereas FA yields a smaller gain (*+.002*). The full model reaches mean *R^2 = .587* (vs. *.569* for the baseline). Peak performance reaches *R^2 = .844* for Llama-3.1-8B-Instruct.
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rr_model_performance_grid_2x4.png" alt="Ridge regression performance across models" data-zoomable>
-  <span class="figure-caption">Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show $R^2$ for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</span>
+  <span class="figure-caption">Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show *R^2* for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</span>
 </div>
 
-## Discussion and implications
+## Discussion
 
 Our findings show that structured behavior, particularly from constrained measurement paradigms like forced choice, preserves a nontrivial projection of a model's hidden-state similarity geometry, even without access to logits or internal activations. This has implications for both interpretability research and cognitive science:
 

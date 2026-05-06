@@ -13,7 +13,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Why classify positive results?
+## Motivation
 
 High rates of positive results are observed throughout the sciences. In psychology, rates between 84–97% have been reported, with clinical psychology and psychiatry reaching up to 100%. Given the typically small effect sizes and sample sizes in psychological research, these rates cannot be fully explained by high statistical power, suggesting the influence of publication bias or questionable research practices.
 
@@ -23,7 +23,7 @@ Previous attempts to track positive results over time relied on either **manual 
 
 We asked: **Can modern NLP models learn to classify positive results from annotated abstracts, and what do they reveal about trends in clinical psychology?**
 
-## Method: From annotations to transformers
+## Method
 
 ### Annotation strategy
 
@@ -108,7 +108,7 @@ We applied SciBERT to predict result types for **20,212 unannotated psychotherap
 
 A breakpoint analysis placed the inflection point around **2011** rather than the hypothesized 2005, suggesting a _time-lag effect_: research culture shifts take years to manifest in the published literature.
 
-## Discussion and implications
+## Discussion
 
 <div class="project-grid cols-1">
   <div class="project-card">
