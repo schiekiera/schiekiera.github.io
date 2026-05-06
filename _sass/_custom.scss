@@ -2073,7 +2073,12 @@ html[data-theme="dark"] {
   margin-left: 0.4rem;
 }
 
-.bio-facts__pill {
+// Scoped to .bio-facts__text so the selector specificity beats the generic
+// `.bio-facts__text a:hover { color: var(--global-theme-color) }` rule above —
+// otherwise the pill text would flip to theme-green on a theme-green background
+// and disappear. Explicit border (not border-bottom dotted) likewise overrides
+// the parent dotted-underline link style.
+.bio-facts__text a.bio-facts__pill {
   display: inline-block;
   font-size: 0.78rem;
   line-height: 1.2;
