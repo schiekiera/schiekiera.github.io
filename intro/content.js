@@ -22,7 +22,7 @@ const defined = {
   /* ---- About ---- */
   about: {
     bio:
-    "I’m a computational scientist at the intersection of cognitive psychology and machine learning. By combining behavioral experiments with computational modeling, I study how meaning is represented across human minds and artificial systems. Currently, I work as a research assistant in the Computational Modeling Group at HU Berlin under the supervision of Fritz Günther.",
+      "I’m a computational scientist at the intersection of cognitive psychology and machine learning. By combining behavioral experiments with computational modeling, I study how meaning is represented across human minds and artificial systems. Currently, I work as a research assistant in the Computational Modeling Group at HU Berlin under the supervision of Fritz Günther.",
     photo: "/assets/img/ls.jpg",
     photoAlt: "Louis Schiekiera",
     roles: [
@@ -107,28 +107,28 @@ const defined = {
         icon: "fa-solid fa-microchip",
         name: "Large Language Models",
         desc:
-          "Hidden-state geometry, representational alignment with behavioral signals, and using LLMs as cognitive subjects in psycholinguistic paradigms.",
+          "Hidden-state geometry, representational alignment with behavioral signals, and using LLMs as tools for metascience research.",
         url: "https://schiekiera.github.io/publications/?tag=llm"
       },
       {
         icon: "fa-solid fa-comments",
         name: "Psycholinguistics",
         desc:
-          "Lexical access during language production: how cohorts compete, how semantic context modulates naming latencies, and what picture-naming paradigms reveal about the mental lexicon.",
+          "Lexical access and the geometry of semantic memory, studied with picture naming, free association, and forced-choice paradigms.",
         url: "https://schiekiera.github.io/publications/?tag=psycholinguistics"
       },
       {
         icon: "fa-solid fa-flask",
         name: "Megastudies",
         desc:
-          "Large-scale, multi-lab, trial-level datasets that enable mega-analyses, computational modeling, and methodological work no single experiment can support.",
+          "Large-scale datasets for computational modeling, metascience and  LLM behavior.",
         url: "https://schiekiera.github.io/publications/?tag=mega_studies"
       },
       {
         icon: "fa-solid fa-magnifying-glass-chart",
         name: "Metascience",
         desc:
-          "Publication bias, political bias in evaluation, and dual-process accounts of academic decision-making — measured with within-subjects experiments and NLP at field scale.",
+          "Publication bias, political bias measured with experiments, classical research synthesis methods and NLP.",
         url: "https://schiekiera.github.io/publications/?tag=metascience"
       }
     ]
@@ -196,17 +196,17 @@ const defined = {
   /* ---- Footer ---- */
   footer: {
     links: [
-      { label: "Home",         url: "https://schiekiera.github.io/" },
+      { label: "Home", url: "https://schiekiera.github.io/" },
       { label: "Publications", url: "https://schiekiera.github.io/publications/" },
-      { label: "CV",           url: "https://schiekiera.github.io/cv/" },
-      { label: "Blog",         url: "https://schiekiera.github.io/blog/" }
+      { label: "CV", url: "https://schiekiera.github.io/cv/" },
+      { label: "Blog", url: "https://schiekiera.github.io/blog/" }
     ],
     social: [
-      { icon: "fa-solid fa-envelope",   label: "Email",        url: "mailto:louis.schiekiera@hu-berlin.de" },
-      { icon: "fa-brands fa-github",    label: "GitHub",       url: "https://github.com/schiekiera" },
-      { icon: "fa-brands fa-x-twitter", label: "X / Twitter",  url: "https://twitter.com/LJS_Berlin" },
-      { icon: "fa-brands fa-linkedin",  label: "LinkedIn",     url: "https://www.linkedin.com/in/louis-schiekiera" },
-      { icon: "fa-brands fa-orcid",     label: "ORCID",        url: "https://orcid.org/0000-0003-0082-175X" }
+      { icon: "fa-solid fa-envelope", label: "Email", url: "mailto:louis.schiekiera@hu-berlin.de" },
+      { icon: "fa-brands fa-github", label: "GitHub", url: "https://github.com/schiekiera" },
+      { icon: "fa-brands fa-x-twitter", label: "X / Twitter", url: "https://twitter.com/LJS_Berlin" },
+      { icon: "fa-brands fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/louis-schiekiera" },
+      { icon: "fa-brands fa-orcid", label: "ORCID", url: "https://orcid.org/0000-0003-0082-175X" }
     ],
     meta: "© Louis Schiekiera · Berlin"
   }
