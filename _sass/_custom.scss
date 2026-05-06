@@ -1932,3 +1932,136 @@ html[data-theme="dark"] {
     box-shadow: 0 6px 16px -10px rgba(0, 0, 0, 0.55);
   }
 }
+
+/*-----------------------------------------------------------------------------
+  About-page bio facts — compact iconified key-info panel that replaces the
+  running-text bio. Each row is a small icon (theme-coloured) + text, with
+  research interests rendered as clickable filter pills that link into
+  /publications/?tag=…. Email row shows the obfuscated `[at]` form while the
+  href is a real mailto: so click-to-mail still works.
+------------------------------------------------------------------------------*/
+
+.bio-facts {
+  list-style: none;
+  margin: 0.25rem 0 1.5rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.bio-facts__row {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  align-items: start;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.bio-facts__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: rgba(53, 148, 105, 0.1);
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.bio-facts__text {
+  color: var(--global-text-color);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--global-theme-color);
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.bio-facts__pills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-left: 0.4rem;
+}
+
+.bio-facts__pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(53, 148, 105, 0.08);
+  color: var(--global-theme-color);
+  border: 1px solid var(--global-divider-color);
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// Email row: mailto link, but the displayed text keeps the [at] obfuscation.
+.bio-facts__email {
+  font-variant-numeric: tabular-nums;
+}
+
+.bio-facts__at {
+  display: inline-block;
+  margin: 0 0.1rem;
+  padding: 0 0.25rem;
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  border-bottom: none !important;
+}
+
+@media (max-width: 480px) {
+  .bio-facts {
+    padding: 0.95rem 1rem;
+  }
+  .bio-facts__row {
+    grid-template-columns: 1.4rem 1fr;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+  }
+  .bio-facts__icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .bio-facts__pills {
+    margin-left: 0;
+    margin-top: 0.4rem;
+  }
+}
+
+html[data-theme="dark"] {
+  .bio-facts__icon {
+    background: rgba(178, 148, 0, 0.15);
+  }
+  .bio-facts__pill {
+    background: rgba(178, 148, 0, 0.12);
+  }
+}
