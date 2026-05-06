@@ -42,7 +42,7 @@ authors:
 
 In picture naming experiments, participants produce verbal responses that must subsequently be validated: was the target word produced correctly, or does the response constitute an error? This manual annotation step is time-intensive, observer-dependent, and scales poorly as stimulus sets grow. A dataset of 1,000 trials can require several hours of careful listening and coding, and inter-rater reliability tends to decrease with fatigue and set size.
 
-Automated approaches to adjacent problems exist. LeCoder <d-cite key="hu2026lecoder"></d-cite>, for instance, automates the *classification* of speech errors in picture naming using Word2Vec-based semantic similarity and normalized Levenshtein distance on IPA transcriptions. However, LeCoder operates on pre-transcribed responses and targets fine-grained error categorization in clinical populations — it is not designed for the more fundamental binary question of whether a response is correct or not, which arises in virtually every word-production experiment with healthy participants.
+Automated approaches to adjacent problems exist. LeCoder <d-cite key="hu2026lecoder"></d-cite>, for instance, automates the *classification* of speech errors in picture naming using Word2Vec-based semantic similarity and normalized Levenshtein distance on IPA transcriptions. However, LeCoder operates on pre-transcribed responses and targets fine-grained error categorization in clinical populations. It is not designed for the more fundamental binary question of whether a response is correct or not, which arises in virtually every word-production experiment with healthy participants.
 
 We present an ASR-based validation pipeline that closes this gap. The system transcribes raw audio recordings automatically using Faster-Whisper and resolves target–response matches through a three-stage phonetic matching procedure, routing only unresolved cases to a lightweight browser-based annotation interface for manual review.
 
@@ -89,17 +89,17 @@ Across both datasets, the pipeline automatically verified **1,493 trials** (93.3
 
 #### Annotated workflow
 
-The flagged cases can be reviewed directly by a expert annotator targeting the  non-matches  — that is, expert time is concentrated on the genuinely ambiguous cases (phonetic near-misses, multi-word splits, noise artifacts) rather than distributed uniformly across all trials. This design ensures quality assurance without inflating the manual workload.
+The flagged cases can be reviewed directly by a expert annotator targeting the non-matches: that is, expert time is concentrated on the genuinely ambiguous cases (phonetic near-misses, multi-word splits, noise artifacts) rather than distributed uniformly across all trials. This design ensures quality assurance without inflating the manual workload.
 
 #### Error analysis
 
 Manual inspection of the 107 non-matches revealed three categories of failure:
 
-**Phonetic near-misses (69%, n = 74)** — Whisper transcribes a phonetically proximate but distinct word (e.g., *ban* → *ben*, *bomber* → *bummer*). These cases reflect the interaction between Whisper's language-model prior and phonetically ambiguous or low-frequency targets. In principle, the phonetic Levenshtein threshold could be relaxed to absorb many of these, at the cost of increased false positives.
+**Phonetic near-misses (69%, n = 74).** Whisper transcribes a phonetically proximate but distinct word (e.g., *ban* → *ben*, *bomber* → *bummer*). These cases reflect the interaction between Whisper's language-model prior and phonetically ambiguous or low-frequency targets. In principle, the phonetic Levenshtein threshold could be relaxed to absorb many of these, at the cost of increased false positives.
 
-**Multi-word splits (22%, n = 24)** — Whisper segments a single target word into two tokens (e.g., *waterspout* → *what a spout*, *indisposition* → *in this position*). This is a well-documented behavior of Whisper for polysyllabic compound words and morphologically complex forms. It affects MALD (n = 17) and AELP (n = 7) similarly.
+**Multi-word splits (22%, n = 24).** Whisper segments a single target word into two tokens (e.g., *waterspout* → *what a spout*, *indisposition* → *in this position*). This is a well-documented behavior of Whisper for polysyllabic compound words and morphologically complex forms. It affects MALD (n = 17) and AELP (n = 7) similarly.
 
-**Accent confusion (8%, n = 9)** — Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., *halt* → *hold*, *detour* → *die Tür*). This category was found exclusively in AELP, which includes non-native speaker varieties, and reflects the sensitivity of large-vocabulary ASR models to speaker-specific phonological variation.
+**Accent confusion (8%, n = 9).** Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., *halt* → *hold*, *detour* → *die Tür*). This category was found exclusively in AELP, which includes non-native speaker varieties, and reflects the sensitivity of large-vocabulary ASR models to speaker-specific phonological variation.
 
 <figure class="post-figure">
   <img src="/assets/img/blog/asr_validator/error_analysis_barplot.png" alt="Horizontal bar chart showing error categories: phonetic near-misses (69%), multi-word splits (22%), and accent confusion (8%)" class="zoomable" data-zoomable>
@@ -108,11 +108,11 @@ Manual inspection of the 107 non-matches revealed three categories of failure:
 
 ### Discussion and Future Directions
 
-The results demonstrate that the manual annotation workload in word-production research can be substantially reduced through ASR-based automation. On a dataset of 1,000 trials, the pipeline reduces manual review to fewer than 110 cases — under 7% of the original workload — while ensuring that no trial is discarded without human inspection.
+The results demonstrate that the manual annotation workload in word-production research can be substantially reduced through ASR-based automation. On a dataset of 1,000 trials, the pipeline reduces manual review to fewer than 110 cases (under 7% of the original workload), while ensuring that no trial is discarded without human inspection.
 
 **Generalizability**: The pipeline is language-agnostic by design. The target language, model, and matching thresholds are specified in a single configuration file. Initial tests with German-language stimulus materials have been successful, and the system has been validated on speaker varieties ranging from Canadian English to non-native L2 production.
 
-**Limitations**: The two main failure modes — phonetic near-misses and multi-word splits — are structurally distinct. Near-misses are addressable through threshold tuning or post-hoc lexical filtering; multi-word splits require either a different segmentation strategy or post-processing rules for compound words. Accent-conditioned failures are harder to mitigate without speaker-specific fine-tuning of the ASR model.
+**Limitations**: The two main failure modes, phonetic near-misses and multi-word splits, are structurally distinct. Near-misses are addressable through threshold tuning or post-hoc lexical filtering; multi-word splits require either a different segmentation strategy or post-processing rules for compound words. Accent-conditioned failures are harder to mitigate without speaker-specific fine-tuning of the ASR model.
 
 **Future directions**: We plan to (i) Multi language extension (same pipeline applicable to different languages), (ii) direct integration of Chronset via Matlab, and (iii) lab vs online recording robustness (SNR comparison).
 
