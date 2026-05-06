@@ -32,7 +32,7 @@ social: true # includes social icons at the bottom of the page
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
     <span class="bio-facts__text">
-      Research interests
+      Research interests:
       <span class="bio-facts__pills">
         <a class="bio-facts__pill" href="/publications/?tag=llm">LLMs</a>
         <a class="bio-facts__pill" href="/publications/?tag=psycholinguistics">Psycholinguistics</a>
