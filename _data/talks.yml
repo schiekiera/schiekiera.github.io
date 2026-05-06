@@ -80,6 +80,22 @@
   location: Tübingen, DE
   speaker: 'Vincent Gruber'
 
+- date: 2026-03-18
+  venue: TEAP 2026 (Symposium 'Neuro-Cognitive Advances in Visual Word Recognition Research')
+  description: 'The TRUST Guidelines for Psycholinguistic Reading Studies and the German Lexicon Project'
+  presentation_type: talk
+  link: https://coms.app/teap26/welcome.html
+  location: Tübingen, DE
+  speaker: 'Jana Hasenäcker'
+
+- date: 2026-07-06
+  venue: WoProc 2026
+  description: 'The German Lexicon Project'
+  presentation_type: talk
+  link: https://www.woproc2026.com/
+  location: Lisbon, PT
+  speaker: 'Aliona Petrenco'
+
 - date: 2026-04-10
   venue: 16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP 2026)
   description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
