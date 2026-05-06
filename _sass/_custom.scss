@@ -1863,6 +1863,9 @@ html[data-theme="dark"] {
   gap: 1.25rem;
   margin: 1.6rem 0;
 
+  &.cols-1 {
+    grid-template-columns: 1fr;
+  }
   &.cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }

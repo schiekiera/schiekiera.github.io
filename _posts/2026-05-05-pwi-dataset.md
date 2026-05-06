@@ -77,11 +77,11 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
 <div class="project-grid cols-3">
   <div class="project-card">
     <h4 class="highlight-text">Identifiers</h4>
-    <p><code>study_id</code>, <code>experiment_id</code>, anonymized <code>participant_id</code> — unique across the merged file even if the original studies reused IDs.</p>
+    <p><code>study_id</code>, <code>experiment_id</code>, anonymized <code>participant_id</code>.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Trial-level response</h4>
-    <p>Response time plus a single harmonized <code>accuracy</code> vocabulary: <code>correct</code>, <code>wrong_word</code>, <code>other_error</code>, <code>technical_error</code>. Subject-side errors stay in the file so users can apply their own exclusion criteria; only <code>technical_error</code> is dropped centrally.</p>
+    <p>Response time plus a single harmonized <code>accuracy</code> vocabulary. </p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Experimental design</h4>
@@ -93,7 +93,7 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Psycholinguistic properties</h4>
-    <p>Target / distractor word length and Zipf-scale frequency from the deWaC (German) and ukWaC (English) corpora.</p>
+    <p>Target / distractor word length and Zipf-scale frequency.</p>
   </div>
 </div>
 
@@ -101,7 +101,7 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
 
 Rather than dumping a single merged file, we ship the **pipeline** that produced it:
 
-<div class="project-grid cols-3">
+<div class="project-grid cols-1">
   <div class="project-card">
     <h4 class="highlight-text">Stage 1 · Study-specific cleaning</h4>
     <p>Each source dataset gets its own R cleaning script in <code>data/01_single_studies/&lt;study&gt;/Scripts/</code>. The script harmonizes per-study response codes into the common <code>accuracy</code> vocabulary, standardizes variable names, and assigns unique participant IDs. A runner executes all study-specific scripts in isolated environments.</p>
