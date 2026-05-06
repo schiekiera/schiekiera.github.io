@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Talk _What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties_ (Schiekiera, Gruber, Abdel Rahman, Stark, Lorenz & Günther) accepted as an oral presentation at [_WoProc 2026_](https://www.woproc2026.com/) (Lisbon, 6–8 July); presenter TBA (Louis will be at _ICML 2026_).
+Talk _What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties_ (Schiekiera, Gruber, Abdel Rahman, Stark, Lorenz & Günther) accepted as an oral presentation at [_WoProc 2026_](https://www.woproc2026.com/) (Lisbon, 6–8 July); presenter TBA (I will be at _ICML 2026_).
