@@ -15,7 +15,7 @@ _Preprint on **PsyArXiv**. Data and pipeline on **OSF**: [10.17605/OSF.IO/2B3SX]
 
 **📄 [Preprint](https://osf.io/preprints/psyarxiv/xp69t_v1)** · **🗂️ [Dataset & pipeline (OSF)](https://doi.org/10.17605/OSF.IO/2B3SX)**
 
-### Why we did this
+### Motivation: Why we did this
 
 Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
 
@@ -23,7 +23,7 @@ But the trial-level data underlying those findings live in study-specific format
 
 This release is an attempt to fix that.
 
-### What's in it
+### Method: What's in it
 
 |                  |                  |
 | ---------------- | ---------------- |
@@ -59,18 +59,17 @@ Across the funnel (programmatic searches, full-text screening, OSF queries, and 
   <span class="figure-caption">Data collection and screening process. The five colored streams converge into the final 42-study dataset, with exclusions tracked at each stage.</span>
 </div>
 
-### Inclusion criteria
+#### Inclusion criteria
 
 To keep the harmonized dataset coherent, we restricted inclusion to:
 
 - The **classical PWI paradigm**: a single target picture with a single distractor word.
-- **English or German** stimuli (where most shareable trial-level data exist, and the languages the authors can validate categorical / associative / phonological relations in).
-- **Non-clinical adult** participants (native or non-native speakers).
+- **English or German** stimuli.
+- **Non-clinical adult** participants.
 - **Trial-level** data with identifiable target and distractor words on every trial.
 
-Tasks that bend the paradigm (Stroop, picture-word matching, delayed naming, sentence production, multiple distractors) were excluded. Extending to additional languages is a natural future direction; the pipeline is designed to make that straightforward.
 
-### A 28-variable schema
+#### Variable types
 
 Every dataset, regardless of source, gets harmonized into a single 28-variable schema organized into five thematic groups:
 
@@ -97,22 +96,22 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
   </div>
 </div>
 
-### A three-stage pipeline
+#### The pipeline
 
 Rather than dumping a single merged file, we ship the **pipeline** that produced it:
 
 <div class="project-grid cols-1">
   <div class="project-card">
     <h4 class="highlight-text">Stage 1 · Study-specific cleaning</h4>
-    <p>Each source dataset gets its own R cleaning script in <code>data/01_single_studies/&lt;study&gt;/Scripts/</code>. The script harmonizes per-study response codes into the common <code>accuracy</code> vocabulary, standardizes variable names, and assigns unique participant IDs. A runner executes all study-specific scripts in isolated environments.</p>
+    <p>Each source dataset gets its own R cleaning script in <code>data/01_single_studies/&lt;study&gt;/Scripts/</code>.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Stage 2 · Language-specific loading</h4>
-    <p>RTs ≤ 150 ms or > 3,000 ms are excluded (conservative thresholds attested across the prior literature), and word-frequency information is added on the Zipf scale.</p>
+    <p>RTs ≤ 150 ms or > 3,000 ms are excluded and word-frequency information is added on the Zipf scale.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Stage 3 · Merging</h4>
-    <p>English and German are combined; binary variables stored as human-readable factor labels (<code>yes/no</code>, <code>text/audio</code>, <code>related/unrelated</code>); trials flagged as <code>technical_error</code> are dropped; the final 28-column merged dataset is written to <code>data/03_merged_data/</code>.</p>
+    <p>English and German are combined and the final 28-column merged dataset is written to <code>data/03_merged_data/</code>.</p>
   </div>
 </div>
 
@@ -149,7 +148,7 @@ Adding a new study means writing one cleaning script in the Stage-1 convention a
 Everything (raw data, study-specific cleaning scripts, harmonization code, and the merged file) is on OSF: [10.17605/OSF.IO/2B3SX](https://doi.org/10.17605/OSF.IO/2B3SX). All 42 studies are released under CC-BY 4.0, with explicit author permission obtained for the 34 studies that had not previously released trial-level data under that license.
 
 <div class="insight-box">
-  <strong>Want to contribute?</strong> If you have a PWI dataset (English, German, or any other language) you'd like added, or you spot something you'd improve in the schema or pipeline, please get in touch: <code>louis.schiekiera [at] hu-berlin.de</code>.
+  <strong>Want to contribute?</strong> If you have a PWI dataset (English, German, or any other language) you'd like added, please get in touch: <code>louis.schiekiera [at] hu-berlin.de</code>.
 </div>
 
 <br>
