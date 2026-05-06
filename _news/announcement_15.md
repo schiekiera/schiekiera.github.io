@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our poster _"Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)"_ has been accepted for presentation at the _16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP)_ (Salzburg, Austria; 9–11 April 2026). More info: [ÖGP Tagung 2026](https://www.oegps.at/aktuelletagung).
+Poster on the _TRUST Guidelines_ and the _German Lexicon Project_ accepted at the [_ÖGP Tagung_](https://www.oegps.at/aktuelletagung) (Salzburg, 9–11 April 2026).

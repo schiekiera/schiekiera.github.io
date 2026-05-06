@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a talk at the [TRUST Network Meeting](https://trust-network-guidelines.readthedocs.io/en/latest/) on the data collection process for the [German Lexicon Project](https://github.com/schiekiera/German_Lexicon_Multilab_Monitoring).
+Talk at the [_TRUST Network Meeting_](https://trust-network-guidelines.readthedocs.io/en/latest/) on data collection for the _German Lexicon Project_.

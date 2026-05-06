@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://osf.io/preprints/psyarxiv/uxyzh">Preprint</a> available!
+Stage 1 RR preprint posted: _Publication Bias in Academic Decision Making in Clinical Psychology_ ([Preprint](https://osf.io/preprints/psyarxiv/uxyzh), [TLDR](/blog/2025/publication-bias-decision-making/)).

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was interviewed by the Association for Psychological Science _Observer_ about our work on publication bias and the overvaluation of statistical significance in psychology. You can read the piece here: [Are Psychological Scientists Overvaluing Significance?](https://www.psychologicalscience.org/publications/observer/overvaluing-significance.html).
+Interviewed by the [_APS Observer_](https://www.psychologicalscience.org/publications/observer/overvaluing-significance.html) on overvaluing significance in psychology.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Succesfully defended MSc thesis!
+Successfully defended MSc thesis.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "Publication Bias in Academic Decision Making in Clinical Psychology" has been published in _Advances in Methods and Practices in Psychological Science_. You can find the paper [here](https://journals.sagepub.com/doi/epub/10.1177/25152459251372134).
+Paper _Publication Bias in Academic Decision Making in Clinical Psychology_ published in _AMPPS_ ([Paper](https://journals.sagepub.com/doi/epub/10.1177/25152459251372134), [TLDR](/blog/2025/publication-bias-decision-making/)).

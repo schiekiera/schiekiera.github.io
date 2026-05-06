@@ -5,6 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am pleased to share that I have joined the Computational Modelling Lab in the Department of Psychology at Humboldt University of Berlin as a research associate, starting October 1, 2024 for three years.
-
-Our project, funded by the DFG, focuses on developing a computational implementation of the _Swinging Lexical Network_ model for language production. This model will integrate distributional semantic models (word embeddings) with spreading activation dynamics in networks to address conceptual-semantic processing during speech planning.
+Joined the _Computational Modelling Lab_ at HU Berlin as a research associate (DFG project on the _Swinging Lexical Network_ model of language production).

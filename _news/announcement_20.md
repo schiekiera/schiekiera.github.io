@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Happy to share that I chaired a symposium on "Computational Modeling of Language Generation" at  [TEAP 2026 Conference](https://coms.app/teap26/welcome.html) together with Hanna Wołoszyn (Cologne). I also gave a talk on "Beyond Lemmas: Modeling the Picture in Picture-Word Interference?" in this symposium. Also very great poster by our student assistant Vincent Gruber on "Integrating ASR-Based Content Validation into Spoken-Word Production Annotation" ([Github](https://github.com/vincentgruber/voice-onset-validation-pipeline)).
+Chaired the symposium _Computational Modeling of Language Generation_ at [_TEAP 2026_](https://coms.app/teap26/welcome.html) (with Hanna Wołoszyn, Cologne); gave a talk in the symposium on _Beyond Lemmas: Modeling the Picture in Picture-Word Interference?_.

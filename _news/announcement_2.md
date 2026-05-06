@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a research assistant at the Division of Clinical Psychological Intervention, FU Berlin.
+Started as a research assistant at the _Division of Clinical Psychological Intervention, FU Berlin_.

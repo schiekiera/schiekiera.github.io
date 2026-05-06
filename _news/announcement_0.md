@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our Stage 1 pre-data registered report "Publication Bias in Academic Decision Making in Clinical Psychology" by Kristina Eichel, Jacqueline Sachse, Sophie Müller, Felicitas Hesselmann, Helen Niemeyer, and myself (first author) has provisionally been accepted for publication in <i> Advances in Methods and Practices in Psychological Science </i>.
+Stage 1 RR _Publication Bias in Academic Decision Making in Clinical Psychology_ provisionally accepted at _AMPPS_ ([Preprint](https://osf.io/preprints/psyarxiv/uxyzh), [TLDR](/blog/2025/publication-bias-decision-making/)).

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "Classifying Positive Results in Clinical Psychology Using Natural Language Processing" by Jonathan Diederichs, Helen Niemeyer, and myself (first author) has been accepted for publication in <i> Zeitschrift für Psychologie </i> for the special issue "Natural Language Processing in Psychology".
+Paper _Classifying Positive Results in Clinical Psychology Using NLP_ accepted at _Zeitschrift für Psychologie_ ([Paper](https://doi.org/10.1027/2151-2604/a000563), [TLDR](/blog/2024/classifying-positive-results/)).
