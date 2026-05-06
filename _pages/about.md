@@ -34,7 +34,7 @@ social: true # includes social icons at the bottom of the page
     <span class="bio-facts__text">
       Research interests
       <span class="bio-facts__pills">
-        <a class="bio-facts__pill" href="/publications/?tag=llm">Large Language Models</a>
+        <a class="bio-facts__pill" href="/publications/?tag=llm">LLMs</a>
         <a class="bio-facts__pill" href="/publications/?tag=psycholinguistics">Psycholinguistics</a>
         <a class="bio-facts__pill" href="/publications/?tag=megastudies">Megastudies</a>
         <a class="bio-facts__pill" href="/publications/?tag=metascience">Metascience</a>
