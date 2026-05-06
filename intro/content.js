@@ -142,18 +142,6 @@ const defined = {
     allUrl: "https://schiekiera.github.io/publications/",
     items: [
       {
-        tag: "Open Data · 2026 Preprint",
-        title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
-        venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
-        desc:
-          "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
-        preview: "/assets/img/publication_preview/pwi_data_distribution.png",
-        links: [
-          { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
-          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
-        ]
-      },
-      {
         tag: "Machine Psychology · ICML 2026",
         title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
         venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · ICML 2026",
@@ -165,6 +153,18 @@ const defined = {
           { label: "arXiv", url: "https://arxiv.org/abs/2602.00628" },
           { label: "Code", url: "https://github.com/schiekiera/llm-association-geometry" },
           { label: "Data", url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" }
+        ]
+      },
+      {
+        tag: "Open Data · 2026 PsyArXiv Preprint",
+        title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
+        venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
+        desc:
+          "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
+        preview: "/assets/img/publication_preview/pwi_data_distribution.png",
+        links: [
+          { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
+          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
         ]
       },
       {
