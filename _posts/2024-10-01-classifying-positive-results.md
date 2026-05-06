@@ -4,7 +4,7 @@ title: "Classifying Positive Results in Clinical Psychology Using Natural Langua
 date: 2024-10-01
 description: "Our paper in the <b>Zeitschrift für Psychologie</b> evaluates SciBERT and random forest for classifying whether clinical psychology abstracts report exclusively positive results. Trained on 1,900+ annotated abstracts, SciBERT reaches 86% accuracy and generalizes to out-of-domain data. Applied to 20,000+ psychotherapy RCT abstracts (1990–2022), the model reveals an inverted-U trend: positive results rose until the early 2010s and then declined."
 tags: [metascience, nlp, publication-bias, text-classification]
-thumbnail: /assets/img/blog/classifying_positive_results/Flowchart_SciBERT_and_RF.png
+thumbnail: assets/img/publication_preview/attention.png
 publication_type: "Journal Article"
 paper_url: "https://doi.org/10.1027/2151-2604/a000563"
 code_url: "https://github.com/schiekiera/NegativeResultDetector"
@@ -32,7 +32,7 @@ We annotated 1,978 English-language abstracts from clinical psychology researche
 - **Positive Results Only (PRO)**: All reported results support the tested hypotheses.
 - **Mixed or Negative Results (MNR)**: At least one reported result is null, negative, or hypothesis-inconsistent.
 
-Interrater reliability was solid ($\kappa = .768$, 88% agreement on a subset of 198 independently double-coded abstracts).
+Interrater reliability was solid (*κ* = .768, 88% agreement on a subset of 198 independently double-coded abstracts).
 
 ### Supervised learning pipelines
 
@@ -89,11 +89,11 @@ We applied SciBERT to predict result types for **20,212 unannotated psychotherap
 <div class="project-grid cols-1">
   <div class="project-card">
     <h4 class="highlight-text">1990–2005</h4>
-    <p>No significant linear increase in positive results ($b = 9.70 \times 10^{-3}$, $p = .191$).</p>
+    <p>No significant linear increase in positive results (<em>b</em> = 9.70 × 10⁻³, <em>p</em> = .191).</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">2005–2022</h4>
-    <p>A significant linear <em>decrease</em> in positive results ($b = -6.96 \times 10^{-3}$, $p = .034$).</p>
+    <p>A significant linear <em>decrease</em> in positive results (<em>b</em> = -6.96 × 10⁻³, <em>p</em> = .034).</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Full span (1990–2022)</h4>

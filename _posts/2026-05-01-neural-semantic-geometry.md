@@ -125,7 +125,7 @@ The held-out-words ridge regression shows that behavioral similarity, especially
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rr_model_performance_grid_2x4.png" alt="Ridge regression performance across models" data-zoomable>
-  <span class="figure-caption">Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show *R^2* for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</span>
+  <span class="figure-caption">Ridge regression performance for predicting hidden-state similarity from behavioral and lexical features across eight models. Bold values show <em>R</em>² for the full model (behavioral + baselines); parenthetical values show the baseline without behavioral features.</span>
 </div>
 
 ## Discussion

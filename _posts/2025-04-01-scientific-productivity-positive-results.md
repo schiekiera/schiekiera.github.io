@@ -58,7 +58,7 @@ The final corpus comprised **2,280 empirical studies**. Scientific productivity 
 
 ### Annotation and analysis
 
-We randomly sampled **300 papers** (150 from the bottom quartile Q1 and 150 from the top quartile Q4 of scientific productivity) and annotated the result of the first reported hypothesis. Each paper was classified as providing full support, partial support, or no support. Interrater reliability was high ($\kappa = .800$, 90% agreement).
+We randomly sampled **300 papers** (150 from the bottom quartile Q1 and 150 from the top quartile Q4 of scientific productivity) and annotated the result of the first reported hypothesis. Each paper was classified as providing full support, partial support, or no support. Interrater reliability was high (*κ* = .800, 90% agreement).
 
 Additionally, we conducted exploratory **abstract-level annotations** on 1,990 studies across all four quartiles, classifying each abstract based on all reported results.
 
@@ -79,7 +79,7 @@ Additionally, we conducted exploratory **abstract-level annotations** on 1,990 s
   </div>
 </div>
 
-Difference: $-0.67\%$, $p = .500$ (one-sided proportion test). A logistic regression testing whether raw group paper count predicted positive results found no significant effect (OR = 1.00, $p = .356$).
+Difference: -0.67%, *p* = .500 (one-sided proportion test). A logistic regression testing whether raw group paper count predicted positive results found no significant effect (OR = 1.00, *p* = .356).
 
 <div class="figure-container">
   <img src="/assets/img/blog/scientific_productivity/Figure_3.png" alt="Rates of positive results Q1 vs Q4" data-zoomable>

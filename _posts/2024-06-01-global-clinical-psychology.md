@@ -39,7 +39,7 @@ The distribution of first-author affiliations varied considerably across regions
 | Latin America & Caribbean |   226 |  1.3% |
 | Africa                    |   108 |  0.6% |
 
-Over three decades, the landscape shifted substantially. North America's relative share declined from $M = 0.65$ (SD = 0.03) in the 1990s to $M = 0.36$ (SD = 0.03) by 2020–2022. Europe rose and then plateaued (from 0.27 to 0.32). The most dramatic change was in Asia, increasing from $M = 0.03$ (SD = 0.01) to $M = 0.23$ (SD = 0.03), nearly an eightfold increase, driven in particular by China (0.08 in 2022) and Iran (0.05 in 2022), both of which had no publications before 1994.
+Over three decades, the landscape shifted substantially. North America's relative share declined from *M* = 0.65 (*SD* = 0.03) in the 1990s to *M* = 0.36 (*SD* = 0.03) by 2020–2022. Europe rose and then plateaued (from 0.27 to 0.32). The most dramatic change was in Asia, increasing from *M* = 0.03 (*SD* = 0.01) to *M* = 0.23 (*SD* = 0.03), nearly an eightfold increase, driven in particular by China (0.08 in 2022) and Iran (0.05 in 2022), both of which had no publications before 1994.
 
 <div class="figure-container">
   <img src="/assets/img/blog/global_clinical_psychology/figure1.jpg" alt="Proportion of first-author affiliations by world region over time" data-zoomable>
@@ -58,7 +58,7 @@ We also examined the affiliations of _all_ authors per study:
 | Global South only   |  1,242 |  7.3% |
 | Mixed North & South |    888 |  5.2% |
 
-The composition of research teams changed over the observation period. In the 1990s, 98% of teams consisted exclusively of Global North authors ($M = 0.98$, SD = 0.01). By 2020–2022 this had decreased to 75% ($M = 0.75$, SD = 0.03). Global South-only teams increased from $M = 0.01$ to $M = 0.16$ (SD = 0.03). Mixed teams rose from $M = 0.02$ (SD = 0.01) to $M = 0.09$ (SD = 0.01).
+The composition of research teams changed over the observation period. In the 1990s, 98% of teams consisted exclusively of Global North authors (*M* = 0.98, *SD* = 0.01). By 2020–2022 this had decreased to 75% (*M* = 0.75, *SD* = 0.03). Global South-only teams increased from *M* = 0.01 to *M* = 0.16 (*SD* = 0.03). Mixed teams rose from *M* = 0.02 (*SD* = 0.01) to *M* = 0.09 (*SD* = 0.01).
 
 <div class="figure-container">
   <img src="/assets/img/blog/global_clinical_psychology/figure2.jpg" alt="Proportion of authorship by UNCTAD region over time" data-zoomable>
