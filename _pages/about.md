@@ -19,11 +19,11 @@ social: true # includes social icons at the bottom of the page
 <ul class="bio-facts">
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
-    <span class="bio-facts__text"> *PhD*: Third-year PhD candidate, <a href="https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html">Freie Universität Berlin</a></span>
+    <span class="bio-facts__text"> *PhD*: Third-year PhD candidate, <a href="https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html">FU Berlin</a></span>
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
-    <span class="bio-facts__text"> *Job*: Researcher at the <a href="https://www.psychology.hu-berlin.de/en/prof/emmy/kompmod/kompmod">Computational Modeling Lab, HU Berlin</a></span>
+    <span class="bio-facts__text"> *Job*: Researcher, <a href="https://www.psychology.hu-berlin.de/en/prof/emmy/kompmod/kompmod">Computational Modeling Lab, HU Berlin</a></span>
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span>
