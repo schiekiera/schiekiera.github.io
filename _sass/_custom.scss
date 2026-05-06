@@ -1511,3 +1511,154 @@ html[data-theme="dark"] {
     }
   }
 }
+
+/*-----------------------------------------------------------------------------
+  Mini TOC — auto-built right-side floating section navigator with scroll-spy.
+  Default: a thin column of dots anchored to the right edge. Hover or focus the
+  rail to expand: each dot reveals its section label as a pill that slides in
+  from the right. Hidden on viewports below 992px so the rail never crowds
+  content. Active section is highlighted via a theme-coloured, slightly larger
+  dot plus (when expanded) a theme-coloured pill border.
+------------------------------------------------------------------------------*/
+
+.mini-toc {
+  position: fixed;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 75vh;
+  overflow-y: auto;
+  overflow-x: visible;
+  padding: 0.6rem 0.4rem;
+  z-index: 50;
+  scrollbar-width: none;
+}
+
+.mini-toc::-webkit-scrollbar {
+  display: none;
+}
+
+.mini-toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-items: flex-end;
+}
+
+.mini-toc__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.mini-toc__item a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.15rem 0.2rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.mini-toc__dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--global-divider-color);
+  flex-shrink: 0;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mini-toc__item--h3 .mini-toc__dot {
+  width: 4px;
+  height: 4px;
+  margin-right: 1px;
+}
+
+.mini-toc__item--h4 .mini-toc__dot {
+  width: 3px;
+  height: 3px;
+  margin-right: 2px;
+}
+
+// The label sits to the left of the dot but is positioned absolutely so that
+// when collapsed it doesn't reserve any width — the rail stays a thin sliver.
+.mini-toc__label {
+  position: absolute;
+  right: calc(100% + 0.45rem);
+  top: 50%;
+  transform: translate(8px, -50%);
+  white-space: nowrap;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+  box-shadow: 0 4px 14px -8px rgba(0, 0, 0, 0.2);
+}
+
+.mini-toc__item--h3 .mini-toc__label {
+  font-size: 0.74rem;
+  padding: 0.15rem 0.55rem;
+}
+
+.mini-toc__item--h4 .mini-toc__label {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.mini-toc:hover .mini-toc__label,
+.mini-toc:focus-within .mini-toc__label {
+  opacity: 1;
+  transform: translate(0, -50%);
+  pointer-events: auto;
+}
+
+// Hover state on a single item pre-empts the colour even before we expand —
+// the dot turns theme colour to confirm the click target.
+.mini-toc__item a:hover .mini-toc__dot {
+  background: var(--global-theme-color);
+}
+.mini-toc__item a:hover .mini-toc__label {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
+// Active section: theme dot + scaled up; expanded label gets the theme
+// border + colour + bold.
+.mini-toc__item.is-active .mini-toc__dot {
+  background: var(--global-theme-color);
+  transform: scale(1.5);
+}
+.mini-toc__item.is-active .mini-toc__label {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+  .mini-toc {
+    display: none;
+  }
+}
+
+html[data-theme="dark"] {
+  .mini-toc__label {
+    box-shadow: 0 4px 14px -8px rgba(0, 0, 0, 0.6);
+  }
+}
