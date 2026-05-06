@@ -95,11 +95,20 @@ The flagged cases can be reviewed directly by a expert annotator targeting the n
 
 Manual inspection of the 107 non-matches revealed three categories of failure:
 
-**Phonetic near-misses (69%, n = 74).** Whisper transcribes a phonetically proximate but distinct word (e.g., *ban* → *ben*, *bomber* → *bummer*). These cases reflect the interaction between Whisper's language-model prior and phonetically ambiguous or low-frequency targets. In principle, the phonetic Levenshtein threshold could be relaxed to absorb many of these, at the cost of increased false positives.
-
-**Multi-word splits (22%, n = 24).** Whisper segments a single target word into two tokens (e.g., *waterspout* → *what a spout*, *indisposition* → *in this position*). This is a well-documented behavior of Whisper for polysyllabic compound words and morphologically complex forms. It affects MALD (n = 17) and AELP (n = 7) similarly.
-
-**Accent confusion (8%, n = 9).** Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., *halt* → *hold*, *detour* → *die Tür*). This category was found exclusively in AELP, which includes non-native speaker varieties, and reflects the sensitivity of large-vocabulary ASR models to speaker-specific phonological variation.
+<div class="project-grid cols-3">
+  <div class="project-card">
+    <h4 class="highlight-text">Phonetic near-misses (69%, n = 74)</h4>
+    <p>Whisper transcribes a phonetically proximate but distinct word (e.g., <em>ban</em> → <em>ben</em>, <em>bomber</em> → <em>bummer</em>). These cases reflect the interaction between Whisper's language-model prior and phonetically ambiguous or low-frequency targets. In principle, the phonetic Levenshtein threshold could be relaxed to absorb many of these, at the cost of increased false positives.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Multi-word splits (22%, n = 24)</h4>
+    <p>Whisper segments a single target word into two tokens (e.g., <em>waterspout</em> → <em>what a spout</em>, <em>indisposition</em> → <em>in this position</em>). A well-documented behavior of Whisper for polysyllabic compound and morphologically complex forms; affects MALD (n = 17) and AELP (n = 7) similarly.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Accent confusion (8%, n = 9)</h4>
+    <p>Whisper maps non-native vowels or prosodic patterns to the nearest lexical entry in its prior (e.g., <em>halt</em> → <em>hold</em>, <em>detour</em> → <em>die Tür</em>). Found exclusively in AELP, which includes non-native speaker varieties.</p>
+  </div>
+</div>
 
 <figure class="post-figure">
   <img src="/assets/img/blog/asr_validator/error_analysis_barplot.png" alt="Horizontal bar chart showing error categories: phonetic near-misses (69%), multi-word splits (22%), and accent confusion (8%)" class="zoomable" data-zoomable>
@@ -108,13 +117,24 @@ Manual inspection of the 107 non-matches revealed three categories of failure:
 
 ### Discussion and Future Directions
 
-The results demonstrate that the manual annotation workload in word-production research can be substantially reduced through ASR-based automation. On a dataset of 1,000 trials, the pipeline reduces manual review to fewer than 110 cases (under 7% of the original workload), while ensuring that no trial is discarded without human inspection.
+<div class="insight-box">
+  <strong>Bottom line:</strong> the manual annotation workload in word-production research can be substantially reduced through ASR-based automation. On a dataset of 1,000 trials the pipeline reduces manual review to fewer than 110 cases (under 7% of the original workload), while ensuring that no trial is discarded without human inspection.
+</div>
 
-**Generalizability**: The pipeline is language-agnostic by design. The target language, model, and matching thresholds are specified in a single configuration file. Initial tests with German-language stimulus materials have been successful, and the system has been validated on speaker varieties ranging from Canadian English to non-native L2 production.
-
-**Limitations**: The two main failure modes, phonetic near-misses and multi-word splits, are structurally distinct. Near-misses are addressable through threshold tuning or post-hoc lexical filtering; multi-word splits require either a different segmentation strategy or post-processing rules for compound words. Accent-conditioned failures are harder to mitigate without speaker-specific fine-tuning of the ASR model.
-
-**Future directions**: We plan to (i) Multi language extension (same pipeline applicable to different languages), (ii) direct integration of Chronset via Matlab, and (iii) lab vs online recording robustness (SNR comparison).
+<div class="project-grid cols-3">
+  <div class="project-card">
+    <h4 class="highlight-text">Generalizability</h4>
+    <p>The pipeline is language-agnostic by design. Target language, model, and matching thresholds live in a single configuration file. Initial tests with German stimulus materials have been successful, and the system has been validated on speaker varieties from Canadian English to non-native L2 production.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Limitations</h4>
+    <p>Phonetic near-misses are addressable via threshold tuning or post-hoc lexical filtering; multi-word splits require a different segmentation strategy or post-processing rules for compound words. Accent-conditioned failures are harder to mitigate without speaker-specific fine-tuning.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Future directions</h4>
+    <p>(i) Multi-language extension (same pipeline applicable to different languages); (ii) direct integration of Chronset via Matlab; (iii) lab vs. online recording robustness (SNR comparison).</p>
+  </div>
+</div>
 
 
 ### Links

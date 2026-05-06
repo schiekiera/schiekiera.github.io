@@ -74,19 +74,47 @@ Tasks that bend the paradigm (Stroop, picture-word matching, delayed naming, sen
 
 Every dataset, regardless of source, gets harmonized into a single 28-variable schema organized into five thematic groups:
 
-1. **Identifiers**: `study_id`, `experiment_id`, anonymized `participant_id` (unique across the merged file, even if original studies reused IDs).
-2. **Trial-level response**: response time and a single harmonized `accuracy` vocabulary: `correct`, `wrong_word`, `other_error`, `technical_error`. Subject-side errors stay in the file so users can apply their own exclusion criteria; only `technical_error` (voice-key failures, microphone artefacts) is dropped centrally.
-3. **Experimental design**: stimulus onset asynchrony, collection setting, and other design features that vary across labs.
-4. **Target–distractor relationship**: categorical, associative, phonological, and other relatedness indicators.
-5. **Psycholinguistic properties**: target / distractor word length and Zipf-scale frequency from the deWaC (German) and ukWaC (English) corpora.
+<div class="project-grid cols-3">
+  <div class="project-card">
+    <h4 class="highlight-text">Identifiers</h4>
+    <p><code>study_id</code>, <code>experiment_id</code>, anonymized <code>participant_id</code> — unique across the merged file even if the original studies reused IDs.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Trial-level response</h4>
+    <p>Response time plus a single harmonized <code>accuracy</code> vocabulary: <code>correct</code>, <code>wrong_word</code>, <code>other_error</code>, <code>technical_error</code>. Subject-side errors stay in the file so users can apply their own exclusion criteria; only <code>technical_error</code> is dropped centrally.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Experimental design</h4>
+    <p>Stimulus onset asynchrony, collection setting, and other design features that vary across labs.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Target–distractor relationship</h4>
+    <p>Categorical, associative, phonological, and other relatedness indicators.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Psycholinguistic properties</h4>
+    <p>Target / distractor word length and Zipf-scale frequency from the deWaC (German) and ukWaC (English) corpora.</p>
+  </div>
+</div>
 
 ### A three-stage pipeline
 
 Rather than dumping a single merged file, we ship the **pipeline** that produced it:
 
-- **Stage 1: Study-specific cleaning.** Each source dataset gets its own R cleaning script in `data/01_single_studies/<study>/Scripts/`. The script harmonizes per-study response codes into the common `accuracy` vocabulary, standardizes variable names, and assigns unique participant IDs. A runner executes all study-specific scripts in isolated environments.
-- **Stage 2: Language-specific loading.** RTs ≤ 150 ms or > 3,000 ms are excluded (conservative thresholds attested across the prior literature), and word-frequency information is added on the Zipf scale.
-- **Stage 3: Merging.** English and German are combined; binary variables are stored as human-readable factor labels (`yes/no`, `text/audio`, `related/unrelated`) so the file can be inspected without an extra coding lookup; trials flagged as `technical_error` are dropped; the final 28-column merged dataset is written to `data/03_merged_data/`.
+<div class="project-grid cols-3">
+  <div class="project-card">
+    <h4 class="highlight-text">Stage 1 · Study-specific cleaning</h4>
+    <p>Each source dataset gets its own R cleaning script in <code>data/01_single_studies/&lt;study&gt;/Scripts/</code>. The script harmonizes per-study response codes into the common <code>accuracy</code> vocabulary, standardizes variable names, and assigns unique participant IDs. A runner executes all study-specific scripts in isolated environments.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Stage 2 · Language-specific loading</h4>
+    <p>RTs ≤ 150 ms or > 3,000 ms are excluded (conservative thresholds attested across the prior literature), and word-frequency information is added on the Zipf scale.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Stage 3 · Merging</h4>
+    <p>English and German are combined; binary variables stored as human-readable factor labels (<code>yes/no</code>, <code>text/audio</code>, <code>related/unrelated</code>); trials flagged as <code>technical_error</code> are dropped; the final 28-column merged dataset is written to <code>data/03_merged_data/</code>.</p>
+  </div>
+</div>
 
 <div class="figure-container">
   <img src="/assets/img/blog/pwi_data/pwi_data_folder_structure.png" alt="Folder structure of the released OSF repository" data-zoomable>
@@ -97,16 +125,32 @@ Adding a new study means writing one cleaning script in the Stage-1 convention a
 
 ### What this enables
 
-- **Mega-analyses** with statistical power well beyond what any single experiment provides.
-- **Computational modeling** of naming latencies on a unified trial-level scale, with consistent psycholinguistic predictors.
-- **Replication and robustness work** at the trial level rather than at the level of summary statistics.
-- **Methodological research** on how design choices (SOA, collection setting, distractor type) shape PWI effects.
+<div class="project-grid cols-2">
+  <div class="project-card">
+    <h4 class="highlight-text">Mega-analyses</h4>
+    <p>Statistical power well beyond what any single experiment provides.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Computational modeling</h4>
+    <p>Naming latencies on a unified trial-level scale, with consistent psycholinguistic predictors.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Replication &amp; robustness work</h4>
+    <p>At the trial level rather than at the level of summary statistics.</p>
+  </div>
+  <div class="project-card">
+    <h4 class="highlight-text">Methodological research</h4>
+    <p>How design choices (SOA, collection setting, distractor type) shape PWI effects.</p>
+  </div>
+</div>
 
 ### Get it / contribute
 
 Everything (raw data, study-specific cleaning scripts, harmonization code, and the merged file) is on OSF: [10.17605/OSF.IO/2B3SX](https://doi.org/10.17605/OSF.IO/2B3SX). All 42 studies are released under CC-BY 4.0, with explicit author permission obtained for the 34 studies that had not previously released trial-level data under that license.
 
-If you have a PWI dataset (English, German, or any other language) you'd like added, or you spot something you'd improve in the schema or pipeline, please get in touch: `louis.schiekiera [at] hu-berlin.de`.
+<div class="insight-box">
+  <strong>Want to contribute?</strong> If you have a PWI dataset (English, German, or any other language) you'd like added, or you spot something you'd improve in the schema or pipeline, please get in touch: <code>louis.schiekiera [at] hu-berlin.de</code>.
+</div>
 
 <br>
 
