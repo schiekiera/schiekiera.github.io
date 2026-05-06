@@ -63,12 +63,13 @@ layout: default
       {% endif %}
     </p>
 
-    {% if page.paper_url or page.code_url or page.data_url or page.dataset_url or page.slides_url %}
+    {% if page.paper_url or page.code_url or page.data_url or page.dataset_url or page.preregistration_url or page.slides_url %}
       <div class="post-hero__buttons">
         {% if page.paper_url %}<a class="post-hero__btn post-hero__btn--primary" href="{{ page.paper_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-lines"></i> Paper</a>{% endif %}
         {% if page.code_url %}<a class="post-hero__btn" href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
         {% if page.data_url %}<a class="post-hero__btn" href="{{ page.data_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database"></i> Data</a>{% endif %}
         {% if page.dataset_url %}<a class="post-hero__btn" href="{{ page.dataset_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database"></i> Dataset</a>{% endif %}
+        {% if page.preregistration_url %}<a class="post-hero__btn" href="{{ page.preregistration_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-clipboard"></i> Preregistration</a>{% endif %}
         {% if page.slides_url %}<a class="post-hero__btn" href="{{ page.slides_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-powerpoint"></i> Slides</a>{% endif %}
       </div>
     {% endif %}

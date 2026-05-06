@@ -1749,14 +1749,14 @@ html[data-theme="dark"] {
     line-height: 1.72;
     color: var(--global-text-color);
 
-    #markdown-content > p,
-    #markdown-content > ul,
-    #markdown-content > ol,
-    #markdown-content > blockquote {
+    p,
+    ul:not(.bio-facts):not(.project-grid),
+    ol,
+    blockquote {
       margin-bottom: 1.25rem;
     }
 
-    #markdown-content > h2 {
+    h2 {
       font-size: 1.55rem;
       font-weight: 600;
       line-height: 1.3;
@@ -1766,7 +1766,7 @@ html[data-theme="dark"] {
       color: var(--global-text-color);
     }
 
-    #markdown-content > h3 {
+    h3 {
       font-size: 1.18rem;
       font-weight: 600;
       margin: 1.85rem 0 0.7rem;
@@ -1775,7 +1775,7 @@ html[data-theme="dark"] {
       color: var(--global-text-color);
     }
 
-    #markdown-content > h4 {
+    h4:not(.highlight-text) {
       font-size: 1.02rem;
       font-weight: 600;
       margin: 1.4rem 0 0.5rem;
@@ -1802,6 +1802,45 @@ html[data-theme="dark"] {
     table {
       margin-bottom: 1.5rem;
     }
+  }
+
+  // --- Auto-wrapped post sections (alternating background, full-width)
+  // post_section_nav.js wraps each H2 + following content into a .post-section
+  // and toggles .post-section--alt on every other one. The alternating one
+  // gets a soft accent background that breaks out of the .container via the
+  // box-shadow + clip-path technique, so the band visually spans edge-to-edge
+  // while the inner content stays in the centered reading column.
+  .post-content .post-section {
+    padding: 2.4rem 0;
+    margin: 0;
+
+    > h2:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .post-content .post-section--alt {
+    background: var(--global-code-bg-color);
+    box-shadow: 0 0 0 100vmax var(--global-code-bg-color);
+    clip-path: inset(0 -100vmax);
+
+    p code,
+    li code {
+      background: var(--global-bg-color);
+    }
+
+    blockquote {
+      background: var(--global-bg-color);
+    }
+  }
+
+  // Tighter spacing between adjacent sections so they read as a flow.
+  .post-content .post-section + .post-section {
+    margin-top: 0;
   }
 
   .figure-container {
@@ -1898,13 +1937,17 @@ html[data-theme="dark"] {
   font-weight: 600;
 }
 
-// --- Reveal-on-scroll: figures and (optionally) other blocks
+// --- Reveal-on-scroll: applied to every direct child of #markdown-content
+// (and of each auto-wrapped .post-section) so paragraphs, lists, headings,
+// figures, cards, code blocks, and tables all gently fade up into view.
+// Skipped under prefers-reduced-motion (handled in post_section_nav.js).
 .post-reveal {
   opacity: 0;
-  transform: translateY(16px);
+  transform: translateY(20px);
   transition:
-    opacity 0.55s ease,
-    transform 0.55s ease;
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
 }
 
 .post-reveal.is-visible {

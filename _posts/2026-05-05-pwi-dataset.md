@@ -7,15 +7,12 @@ tags: [psycholinguistics, language-production, open-data, megastudies]
 thumbnail: /assets/img/blog/pwi_data/pwi_data_collection_process.png
 publication_type: "Preprint (PsyArXiv)"
 paper_url: "https://osf.io/preprints/psyarxiv/xp69t_v1"
+data_url: "https://doi.org/10.17605/OSF.IO/2B3SX"
 giscus_comments: false
 related_posts: false
 ---
 
-_Preprint on **PsyArXiv**. Data and pipeline on **OSF**: [10.17605/OSF.IO/2B3SX](https://doi.org/10.17605/OSF.IO/2B3SX)._
-
-**📄 [Preprint](https://osf.io/preprints/psyarxiv/xp69t_v1)** · **🗂️ [Dataset & pipeline (OSF)](https://doi.org/10.17605/OSF.IO/2B3SX)**
-
-### Motivation: Why we did this
+## Motivation: Why we did this
 
 Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
 
@@ -23,7 +20,7 @@ But the trial-level data underlying those findings live in study-specific format
 
 This release is an attempt to fix that.
 
-### Method: What's in it
+## Method: What's in it
 
 |                  |                  |
 | ---------------- | ---------------- |
@@ -59,7 +56,7 @@ Across the funnel (programmatic searches, full-text screening, OSF queries, and 
   <span class="figure-caption">Data collection and screening process. The five colored streams converge into the final 42-study dataset, with exclusions tracked at each stage.</span>
 </div>
 
-#### Inclusion criteria
+### Inclusion criteria
 
 To keep the harmonized dataset coherent, we restricted inclusion to:
 
@@ -69,7 +66,7 @@ To keep the harmonized dataset coherent, we restricted inclusion to:
 - *Trial-level* data with identifiable target and distractor words on every trial.
 
 
-#### Variable types
+### Variable types
 
 Every dataset, regardless of source, gets harmonized into a single 28-variable schema organized into five thematic groups:
 
@@ -92,7 +89,7 @@ Every dataset, regardless of source, gets harmonized into a single 28-variable s
   </div>
 </div>
 
-#### The pipeline
+### The pipeline
 
 Rather than dumping a single merged file, we ship the **pipeline** that produced it:
 
@@ -118,7 +115,7 @@ Rather than dumping a single merged file, we ship the **pipeline** that produced
 
 Adding a new study means writing one cleaning script in the Stage-1 convention and re-running the pipeline. No infrastructure rebuild.
 
-### What this enables
+## What this enables
 
 <div class="project-grid cols-2">
   <div class="project-card">
@@ -139,7 +136,7 @@ Adding a new study means writing one cleaning script in the Stage-1 convention a
   </div>
 </div>
 
-### Get it / contribute
+## Get it / contribute
 
 Everything (raw data, study-specific cleaning scripts, harmonization code, and the merged file) is on OSF: [10.17605/OSF.IO/2B3SX](https://doi.org/10.17605/OSF.IO/2B3SX). All 42 studies are released under CC-BY 4.0, with explicit author permission obtained for the 34 studies that had not previously released trial-level data under that license.
 
@@ -149,7 +146,8 @@ Everything (raw data, study-specific cleaning scripts, harmonization code, and t
 
 <br>
 
-### Citation
+## Citation
+
 If you find this dataset useful for your research, please consider citing the preprint:
 
 ```bibtex
