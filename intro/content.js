@@ -147,7 +147,7 @@ const defined = {
         venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
         desc:
           "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
-        preview: "/assets/img/publication_preview/pwi_data_collection_process.png",
+        preview: "/assets/img/publication_preview/pwi_data_distribution.png",
         links: [
           { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
           { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
