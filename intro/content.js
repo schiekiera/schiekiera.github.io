@@ -100,129 +100,41 @@ const defined = {
   /* ---- Research focus ---- */
   research: {
     tldr:
-      "My work connects cognitive science, language models, and metascience.",
- 
+      "My work spans cognitive science, language models, and the science of science. Click any focus area to see the related publications.",
+
     cards: [
       {
-        icon: "fa-solid fa-diagram-project",
-        name: "Computational Cognitive Modeling",
+        icon: "fa-solid fa-microchip",
+        name: "Large Language Models",
         desc:
-          "Turning verbal psychological theories into runnable models grounded in distributional semantics. Current focus: the Swinging Lexical Network account of semantic context effects in language production."
-      },
-      {
-        icon: "fa-solid fa-layer-group",
-        name: "LLM Interpretability",
-        desc:
-          "Recovering hidden-state geometry from behavioral signals. Using representational similarity analysis to align layerwise activations with machine-derived semantic structure."
+          "Hidden-state geometry, representational alignment with behavioral signals, and using LLMs as cognitive subjects in psycholinguistic paradigms.",
+        url: "https://schiekiera.github.io/publications/?tag=llm"
       },
       {
         icon: "fa-solid fa-comments",
         name: "Psycholinguistics",
         desc:
-          "Studying the cognitive mechanisms of language production: how lexical cohorts compete, how semantic context facilitates or interferes, and how picture-naming paradigms expose the underlying geometry of the mental lexicon."
+          "Lexical access during language production: how cohorts compete, how semantic context modulates naming latencies, and what picture-naming paradigms reveal about the mental lexicon.",
+        url: "https://schiekiera.github.io/publications/?tag=psycholinguistics"
       },
       {
         icon: "fa-solid fa-flask",
-        name: "Mega Studies",
+        name: "Megastudies",
         desc:
-          "I am interested in planning and conducting large-scale behavioral studies. Currently, I am involved in the data collection for the German Lexicon Project."
+          "Large-scale, multi-lab, trial-level datasets that enable mega-analyses, computational modeling, and methodological work no single experiment can support.",
+        url: "https://schiekiera.github.io/publications/?tag=mega_studies"
       },
       {
         icon: "fa-solid fa-magnifying-glass-chart",
-        name: "Publication Bias",
+        name: "Metascience",
         desc:
-          "Measuring and explaining the bias against statistically non-significant results in psychology. Combining within-subjects experiments, dual-process decision theory, and NLP-based field-scale analyses."
-      },
-      {
-        icon: "fa-solid fa-scale-balanced",
-        name: "Political Bias",
-        desc:
-          "I study how scholars' political orientations shape the evaluation and reception of scientific claims, and whether deliberation corrects it."
+          "Publication bias, political bias in evaluation, and dual-process accounts of academic decision-making — measured with within-subjects experiments and NLP at field scale.",
+        url: "https://schiekiera.github.io/publications/?tag=metascience"
       }
     ]
   },
 
 
-
-  /* ---- Selected work ---- */
-  selectedWork: {
-    tldr: "Recent works across my research areas.",
-    allUrl: "https://schiekiera.github.io/publications/",
-    items: [
-      {
-        tag: "Open Data · 2026 Preprint",
-        title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
-        venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
-        desc:
-          "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
-        preview: "/assets/img/publication_preview/pwi_data_collection_process.png",
-        links: [
-          { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
-          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
-        ]
-      },
-      {
-        tag: "Machine Psychology · ICML 2026",
-        title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
-        venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · ICML 2026",
-        desc:
-          "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
-        preview: "/assets/img/publication_preview/neural_semantic.jpg",
-        links: [
-          { label: "PDF",   url: "https://arxiv.org/pdf/2602.00628" },
-          { label: "arXiv", url: "https://arxiv.org/abs/2602.00628" },
-          { label: "Code",  url: "https://github.com/schiekiera/llm-association-geometry" },
-          { label: "Data",  url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" }
-        ]
-      },
-      {
-        tag: "NLP · 2024",
-        title: "Classifying Positive Results Using NLP",
-        venue: "Schiekiera, Niemeyer & Diederichs · Zeitschrift für Psychologie",
-        desc:
-          "Fine-tuned SciBERT on ~1,900 manually annotated abstracts, then scanned 20,000+ studies. SciBERT outperformed random-forest baselines in and out of domain; the trend analysis revealed a significant decrease in the share of exclusively positive results between 2005 and 2022.",
-        preview: "/assets/img/publication_preview/attention.png",
-        links: [
-          { label: "PDF",  url: "https://refubium.fu-berlin.de/bitstream/handle/fub188/45033/schiekiera-et-al-2024-classifying-positive-results-in-clinical-psychology-using-natural-language-processing.pdf?sequence=1&isAllowed=y" },
-          { label: "Code", url: "https://github.com/schiekiera/NegativeResultDetector" }
-        ]
-      },
-      {
-        tag: "Metascience · 2025",
-        title: "Publication Bias in Psychological Science",
-        venue: "Schiekiera et al. · Advances in Methods and Practices in Psychological Science & Collabra Psychology",
-        desc:
-          "A within-subjects study grounded in dual-process decision-making: 303 psychology researchers evaluated fictitious abstracts varying in statistical significance and hypothesis consistency. Significant results were systematically favored; intuitive judgments were rarely revised, and feeling-of-rightness did not predict revision.",
-        preview: "/assets/img/publication_preview/ampps_bias.png",
-        links: [
-          { label: "PDF",  url: "https://journals.sagepub.com/doi/epub/10.1177/25152459251372134" },
-          { label: "Code", url: "https://github.com/schiekiera/metascience_experiment_psychology" }
-        ]
-      },
-      {
-        tag: "Computational Cognitive Modeling · In progress",
-        title: "Swinging Lexical Network — a computational implementation",
-        venue: "With Abdel Rahman & Günther · HU Berlin",
-        desc:
-          "Work in progress: Turning a verbal cognitive theory into a runnable model: distributional semantics as semantic memory, Kintsch's construction–integration algorithm for cohort co-activation, parameter estimation from published context-effect studies, and empirical validation in new picture-naming experiments.",
-        preview: "/assets/img/publication_preview/csln.png",
-          links: [
-          { label: "DFG page", url: "https://gepris.dfg.de/gepris/projekt/532390335?language=en" }
-        ]
-      },
-      {
-        tag: "Mega Study · in progress",
-        title: "German Lexicon Project",
-        venue: "Multi-lab collaboration · 30+ participating labs",
-        desc:
-          "A large-scale mega study collecting lexical-decision data for a broad sample of German words across more than 30 labs in Germany, Austria, Switzerland, Italy, and the Netherlands. I co-coordinate the data collection and built an automated monitoring pipeline that tracks per-lab progress toward the target of 2,453 participants in near real time.",
-        preview: "/assets/img/publication_preview/glp.png",
-        links: [
-          { label: "GitHub", url: "https://github.com/schiekiera/German_Lexicon_Multilab_Monitoring" }
-        ]
-      }
-    ]
-  },
 
   /* ---- Blog ---- */
   blog: {

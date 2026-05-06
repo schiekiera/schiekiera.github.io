@@ -47,14 +47,13 @@
   <section id="about" class="section"></section>
   <section id="research" class="section"></section>
   <section id="highlights" class="section"></section>
-  <section id="selected-work" class="section"></section>
   <section id="blog" class="section"></section>
 
   <!-- Footer -->
   <footer class="intro-footer" id="footer"></footer>
 
   <!-- Data -->
-  <script src="content.js?v=5"></script>
+  <script src="content.js?v=6"></script>
 
   <!-- Rendering -->
   <script>
@@ -132,11 +131,15 @@
           <p class="section__tldr animate-on-scroll">${d.tldr}</p>
           <div class="research-grid">
             ${d.cards.map(r => `
-              <div class="research-card animate-on-scroll">
+              <a class="research-card animate-on-scroll" href="${r.url}" aria-label="See publications tagged ${r.name}">
                 <div class="research-card__icon"><i class="${r.icon}"></i></div>
                 <div class="research-card__name">${r.name}</div>
                 <div class="research-card__desc">${r.desc}</div>
-              </div>`).join('')}
+                <div class="research-card__cta">
+                  <span>View publications</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </div>
+              </a>`).join('')}
           </div>
         </div>`;
     }
@@ -155,34 +158,6 @@
                 <div class="highlight-item__detail">${h.detail}</div>
               </li>`).join('')}
           </ul>
-        </div>`;
-    }
-
-    function renderSelectedWork() {
-      const d = defined.selectedWork;
-      document.getElementById('selected-work').innerHTML = `
-        <div class="container">
-          <div class="kicker animate-on-scroll">Selected projects</div>
-          <p class="section__tldr animate-on-scroll">${d.tldr} <a href="${d.allUrl}" class="section__tldr-link">View all &rarr;</a></p>
-          <div class="work-list">
-            ${d.items.map((p, i) => `
-              <article class="work-row work-row--${i % 2 === 0 ? 'img-left' : 'img-right'} animate-on-scroll">
-                <div class="work-row__img-wrap">
-                  ${p.preview
-          ? `<img class="work-row__img" src="${p.preview}" alt="${p.title}">`
-          : `<div class="work-row__img work-row__img--placeholder"><i class="${p.placeholderIcon || 'fa-solid fa-flask'}"></i></div>`}
-                </div>
-                <div class="work-row__body">
-                  <div class="work-row__tag">${p.tag}</div>
-                  <h3 class="work-row__title">${p.title}</h3>
-                  <div class="work-row__venue">${p.venue}</div>
-                  <p class="work-row__desc">${p.desc}</p>
-                  <div class="work-row__links">
-                    ${(p.links || []).map(l => `<a class="work-btn" href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`).join('')}
-                  </div>
-                </div>
-              </article>`).join('')}
-          </div>
         </div>`;
     }
 
@@ -260,7 +235,6 @@
       renderAbout();
       renderResearch();
       renderHighlights();
-      renderSelectedWork();
       renderBlog();
       renderFooter();
       initAnimations();
