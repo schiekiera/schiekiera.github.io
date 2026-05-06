@@ -121,7 +121,7 @@ The full model-by-model RSA comparison reveals that the FC advantage is consiste
 
 ### Behavioral similarity predicts unseen hidden-state structure
 
-The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test *R^2* by *+.022*, whereas FA yields a smaller gain (*+.002*). The full model reaches mean *R^2 = .587* (vs. *.569* for the baseline). Peak performance reaches *R^2 = .844* for Llama-3.1-8B-Instruct.
+The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test *R*² by +.022, whereas FA yields a smaller gain (+.002). The full model reaches mean *R*² = .587 (vs. .569 for the baseline). Peak performance reaches *R*² = .844 for Llama-3.1-8B-Instruct.
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rr_model_performance_grid_2x4.png" alt="Ridge regression performance across models" data-zoomable>
