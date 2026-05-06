@@ -53,7 +53,7 @@
   <footer class="intro-footer" id="footer"></footer>
 
   <!-- Data -->
-  <script src="content.js?v=6"></script>
+  <script src="content.js?v=7"></script>
 
   <!-- Rendering -->
   <script>
@@ -150,14 +150,27 @@
       if (!d || !section) { if (section) section.remove(); return; }
       section.innerHTML = `
         <div class="container">
-          <div class="kicker animate-on-scroll">Highlights</div>
-          <ul class="highlights-list">
-            ${d.map(h => `
-              <li class="highlight-item animate-on-scroll">
-                <div class="highlight-item__text">${h.text}</div>
-                <div class="highlight-item__detail">${h.detail}</div>
-              </li>`).join('')}
-          </ul>
+          <div class="kicker animate-on-scroll">Research highlights</div>
+          <p class="section__tldr animate-on-scroll">${d.tldr} <a href="${d.allUrl}" class="section__tldr-link">View all &rarr;</a></p>
+          <div class="work-list">
+            ${d.items.map((p, i) => `
+              <article class="work-row work-row--${i % 2 === 0 ? 'img-left' : 'img-right'} animate-on-scroll">
+                <div class="work-row__img-wrap">
+                  ${p.preview
+          ? `<img class="work-row__img" src="${p.preview}" alt="${p.title}">`
+          : `<div class="work-row__img work-row__img--placeholder"><i class="${p.placeholderIcon || 'fa-solid fa-flask'}"></i></div>`}
+                </div>
+                <div class="work-row__body">
+                  <div class="work-row__tag">${p.tag}</div>
+                  <h3 class="work-row__title">${p.title}</h3>
+                  <div class="work-row__venue">${p.venue}</div>
+                  <p class="work-row__desc">${p.desc}</p>
+                  <div class="work-row__links">
+                    ${(p.links || []).map(l => `<a class="work-btn" href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`).join('')}
+                  </div>
+                </div>
+              </article>`).join('')}
+          </div>
         </div>`;
     }
 
@@ -165,12 +178,14 @@
       const d = defined.blog;
       const section = document.getElementById('blog');
       if (!d || !section) { if (section) section.remove(); return; }
+      // Cap the homepage blog grid at 6 items so it always lays out as a 3x2 block.
+      const items = (d.items || []).slice(0, 6);
       section.innerHTML = `
         <div class="container">
           <div class="kicker animate-on-scroll">Blog</div>
           <p class="section__tldr animate-on-scroll">${d.tldr} <a href="${d.allUrl}" class="section__tldr-link">View all &rarr;</a></p>
           <div class="blog-grid">
-            ${d.items.map(b => `
+            ${items.map(b => `
               <a class="blog-item animate-on-scroll" href="${b.url}" target="_blank" rel="noopener">
                 <div class="blog-item__tag">${b.tag}</div>
                 <div class="blog-item__title">${b.title}</div>
