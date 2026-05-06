@@ -19,7 +19,14 @@
         {% if content.title %}<h6 class="cv-tl-title">{{ content.title }}</h6>{% endif %}
 
         {% if content.institution %}
-          <p class="cv-tl-inst"><i class="fa-solid fa-building-columns"></i> {{ content.institution }}</p>
+          <p class="cv-tl-inst">
+            <i class="fa-solid fa-building-columns"></i>
+            {% if content.institution_url %}
+              <a href="{{ content.institution_url }}" target="_blank" rel="noopener noreferrer">{{ content.institution }}<i class="cv-tl-extlink fa-solid fa-arrow-up-right-from-square"></i></a>
+            {% else %}
+              {{ content.institution }}
+            {% endif %}
+          </p>
         {% endif %}
         {% if content.department %}
           <p class="cv-tl-dept"><i class="fa-regular fa-circle-dot"></i> {{ content.department }}</p>

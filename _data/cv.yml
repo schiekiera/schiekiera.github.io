@@ -1,8 +1,42 @@
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Assistant
+      institution: Computational Modeling Group, Institute for Psychology, Humboldt Universität zu Berlin
+      institution_url: https://www.psychologie.hu-berlin.de/en/staff/1696407
+      year: 2024 - now
+
+    - title: Research Assistant
+      institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
+      institution_url: https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html
+      year: 2023 - 2024
+
+    - title: Student Research Assistant
+      institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
+      institution_url: https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html
+      year: 2021 - 2023
+
+    - title: Student Research Assistant
+      institution: Institute for Medical Psychology, University Medical Center Hamburg-Eppendorf
+      institution_url: https://www.uke.de/english/departments-institutes/institutes/medical-psychology/index.html
+      year: 2019 - 2021
+
+    - title: Student Research Assistant
+      institution: Institute for Medical Sociology, University Medical Center Hamburg-Eppendorf
+      institution_url: https://www.uke.de/english/departments-institutes/institutes/medical-sociology/index.html
+      year: 2018 - 2019
+
+    - title: Student Research Assistant
+      institution: Department of General Sociology and Theory of Modern Societies, Technical University of Berlin
+      institution_url: https://www.tu.berlin/en/as
+      year: 2018 - 2019
+
 - title: Education
   type: time_table
   contents:
     - title: PhD Psychology
       institution: Freie Universität Berlin, Berlin, Germany
+      institution_url: https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html
       year: 2024 - now
       description:
         - "Thesis: Understanding Publication Bias Using Large Language Models and Behavioral Methods"
@@ -10,6 +44,7 @@
 
     - title: MSc Psychology
       institution: University of Potsdam, Potsdam, Germany
+      institution_url: https://www.uni-potsdam.de/en/university-of-potsdam
       year: 2021 - 2023
       description:
         - "Thesis: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
@@ -17,6 +52,7 @@
 
     - title: BSc Psychology
       institution: University of Hamburg, Hamburg, Germany
+      institution_url: https://www.uni-hamburg.de/en.html
       year: 2018 - 2021
       description:
         - "Thesis: Parental Quality of Life After the Child's Intensive Therapy: A Longitudinal Study on Parents of Pediatric Cancer Patients"
@@ -24,59 +60,9 @@
 
     - title: BA Sociology and Technology Studies
       institution: Technical University of Berlin, Berlin, Germany
+      institution_url: https://www.tu.berlin/en
       year: 2014 - 2018
       description:
         - "Thesis: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
         - "Advisors: Dr. René Tuma & Prof. Jan-Peter Voß"
         - "Minor: Human Factors Engineering"
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Research Assistant
-      institution: Computational Modeling Group, Institute for Psychology, Humboldt Universität zu Berlin
-      year: 2024 - now
-      description:
-
-    - title: Research Assistant
-      institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
-      year: 2023 - 2024
-
-    - title: Student Research Assistant
-      institution: Division of Clinical Psychological Intervention, Freie Universität Berlin
-      year: 2021 - 2023
-
-    - title: Student Research Assistant
-      institution: Institute for Medical Psychology, University Medical Center Hamburg-Eppendorf
-      year: 2019 - 2021
-
-    - title: Student Research Assistant
-      institution: Institute for Medical Sociology, University Medical Center Hamburg-Eppendorf
-      year: 2018 - 2019
-
-    - title: Student Research Assistant
-      institution: Department of General Sociology and Theory of Modern Societies, Technical University of Berlin
-      year: 2018 - 2019
-
-    - title: Intern
-      institution: Berliner Stadtmission, Haus Leo, Berlin
-      year: 2018
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Computational Cognitive Science
-      items:
-        - Computational modeling of language production
-        - Distributational semantics
-
-    - title: Machine Learning
-      items:
-        - Representational Alignment 
-        - Interpretability
-        - Cognitive Biases in LLMs
-
-    - title: Meta-Research & Publication Bias
-      items:
-        - Publication bias
-        - Political bias
