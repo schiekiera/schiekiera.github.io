@@ -12,7 +12,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-## Motivation: Why we did this
+## Motivation
 
 Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
 
@@ -20,8 +20,8 @@ But the trial-level data underlying those findings live in study-specific format
 
 This release is an attempt to fix that.
 
-## Method: What's in it
-
+## Method
+### Data structure
 |                  |                  |
 | ---------------- | ---------------- |
 | **Trials**       | 688,976          |
