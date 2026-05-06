@@ -115,7 +115,7 @@ Rather than dumping a single merged file, we ship the **pipeline** that produced
 
 Adding a new study means writing one cleaning script in the Stage-1 convention and re-running the pipeline. No infrastructure rebuild.
 
-## What this enables
+### What this enables
 
 <div class="project-grid cols-2">
   <div class="project-card">
@@ -136,7 +136,7 @@ Adding a new study means writing one cleaning script in the Stage-1 convention a
   </div>
 </div>
 
-## Get it / contribute
+## Using the data
 
 Everything (raw data, study-specific cleaning scripts, harmonization code, and the merged file) is on OSF: [10.17605/OSF.IO/2B3SX](https://doi.org/10.17605/OSF.IO/2B3SX). All 42 studies are released under CC-BY 4.0, with explicit author permission obtained for the 34 studies that had not previously released trial-level data under that license.
 
