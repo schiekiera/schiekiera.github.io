@@ -122,7 +122,7 @@ const defined = {
         name: "Megastudies",
         desc:
           "Large-scale datasets for computational modeling, metascience and  LLM behavior.",
-        url: "https://schiekiera.github.io/publications/?tag=mega_studies"
+        url: "https://schiekiera.github.io/publications/?tag=megastudies"
       },
       {
         icon: "fa-solid fa-magnifying-glass-chart",
@@ -161,10 +161,10 @@ const defined = {
           "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
         preview: "/assets/img/publication_preview/neural_semantic.jpg",
         links: [
-          { label: "PDF",   url: "https://arxiv.org/pdf/2602.00628" },
+          { label: "PDF", url: "https://arxiv.org/pdf/2602.00628" },
           { label: "arXiv", url: "https://arxiv.org/abs/2602.00628" },
-          { label: "Code",  url: "https://github.com/schiekiera/llm-association-geometry" },
-          { label: "Data",  url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" }
+          { label: "Code", url: "https://github.com/schiekiera/llm-association-geometry" },
+          { label: "Data", url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" }
         ]
       },
       {
@@ -175,7 +175,7 @@ const defined = {
           "Fine-tuned SciBERT on ~1,900 manually annotated abstracts, then scanned 20,000+ studies. SciBERT outperformed random-forest baselines in and out of domain; the trend analysis revealed a significant decrease in the share of exclusively positive results between 2005 and 2022.",
         preview: "/assets/img/publication_preview/attention.png",
         links: [
-          { label: "PDF",  url: "https://refubium.fu-berlin.de/bitstream/handle/fub188/45033/schiekiera-et-al-2024-classifying-positive-results-in-clinical-psychology-using-natural-language-processing.pdf?sequence=1&isAllowed=y" },
+          { label: "PDF", url: "https://refubium.fu-berlin.de/bitstream/handle/fub188/45033/schiekiera-et-al-2024-classifying-positive-results-in-clinical-psychology-using-natural-language-processing.pdf?sequence=1&isAllowed=y" },
           { label: "Code", url: "https://github.com/schiekiera/NegativeResultDetector" }
         ]
       },
@@ -187,7 +187,7 @@ const defined = {
           "A within-subjects study grounded in dual-process decision-making: 303 psychology researchers evaluated fictitious abstracts varying in statistical significance and hypothesis consistency. Significant results were systematically favored; intuitive judgments were rarely revised, and feeling-of-rightness did not predict revision.",
         preview: "/assets/img/publication_preview/ampps_bias.png",
         links: [
-          { label: "PDF",  url: "https://journals.sagepub.com/doi/epub/10.1177/25152459251372134" },
+          { label: "PDF", url: "https://journals.sagepub.com/doi/epub/10.1177/25152459251372134" },
           { label: "Code", url: "https://github.com/schiekiera/metascience_experiment_psychology" }
         ]
       },
