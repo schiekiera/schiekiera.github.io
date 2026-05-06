@@ -98,7 +98,7 @@ We use three complementary evaluation methods:
 
 ### Forced choice aligns substantially more than free association
 
-Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from *r = .346* under Averaged extraction to *r = .463* under Task (FC), while FA shows the same pattern at considerably lower magnitude (*r = .140* to *r = .199*).
+Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from *r* = .346 under Averaged extraction to *r* = .463 under Task (FC), while FA shows the same pattern at considerably lower magnitude (*r* = .140 to *r* = .199).
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rsa_nn_grid_1x2.png" alt="Summary RSA and nearest-neighbor overlap results" data-zoomable>
