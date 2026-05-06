@@ -1652,6 +1652,9 @@ html[data-theme="dark"] {
     color: var(--global-text-color-light);
     max-width: 720px;
     margin: 0 auto 1.25rem;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   .post-hero__meta {
@@ -1748,6 +1751,28 @@ html[data-theme="dark"] {
     font-size: 1.025rem;
     line-height: 1.72;
     color: var(--global-text-color);
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+
+    // Justification looks awful on headings, the figure-caption metadata, and
+    // any centered helper blocks — keep them in their natural alignment.
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .figure-caption,
+    figcaption,
+    .figure-container,
+    table,
+    pre,
+    code {
+      text-align: initial;
+      hyphens: manual;
+      -webkit-hyphens: manual;
+    }
 
     p,
     ul:not(.bio-facts):not(.project-grid),
