@@ -19,20 +19,19 @@ social: true # includes social icons at the bottom of the page
 <ul class="bio-facts">
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
-    <span class="bio-facts__text"> *PhD*: Third-year PhD candidate, <a href="https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html">FU Berlin</a></span>
+    <span class="bio-facts__text"><em>PhD</em>: Third-year PhD candidate, <a href="https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html">FU Berlin</a></span>
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
-    <span class="bio-facts__text"> *Job*: Researcher, <a href="https://www.psychology.hu-berlin.de/en/prof/emmy/kompmod/kompmod">Computational Modeling Lab, HU Berlin</a></span>
+    <span class="bio-facts__text"><em>Job</em>: Researcher, <a href="https://www.psychology.hu-berlin.de/en/prof/emmy/kompmod/kompmod">Computational Modeling Lab, HU Berlin</a></span>
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span>
-    <span class="bio-facts__text">*Supervisor*: <a href="https://sites.google.com/site/fritzgntr/home">Prof. Dr. Fritz Günther</a></span>
+    <span class="bio-facts__text"><em>Supervisor</em>: <a href="https://sites.google.com/site/fritzgntr/home">Prof. Dr. Fritz Günther</a></span>
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
-    <span class="bio-facts__text">
-      *Research interests*:
+    <span class="bio-facts__text"><em>Research interests</em>:
       <span class="bio-facts__pills">
         <a class="bio-facts__pill" href="/publications/?tag=llm">LLMs</a>
         <a class="bio-facts__pill" href="/publications/?tag=psycholinguistics">Psycholinguistics</a>
@@ -42,9 +41,6 @@ social: true # includes social icons at the bottom of the page
   </li>
   <li class="bio-facts__row">
     <span class="bio-facts__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-    <span class="bio-facts__text"> 
-    *Mail me*:
-      <a class="bio-facts__email" href="mailto:louis.schiekiera@hu-berlin.de">louis.schiekiera <span class="bio-facts__at">[at]</span> hu-berlin.de</a>
-    </span>
+    <span class="bio-facts__text"><em>Mail me</em>: <a class="bio-facts__email" href="mailto:louis.schiekiera@hu-berlin.de">louis.schiekiera <span class="bio-facts__at">[at]</span> hu-berlin.de</a></span>
   </li>
 </ul>
