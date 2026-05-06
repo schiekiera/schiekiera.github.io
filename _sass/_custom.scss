@@ -2066,9 +2066,10 @@ html[data-theme="dark"] {
 }
 
 .bio-facts__pills {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
+  // Plain inline (not inline-flex) so pills flow with the label text — the
+  // first pill stays on the same line as "Research interests:" and only
+  // subsequent pills wrap if the row runs out of room.
+  display: inline;
   margin-left: 0.4rem;
 }
 
@@ -2082,6 +2083,7 @@ html[data-theme="dark"] {
   color: var(--global-theme-color);
   border: 1px solid var(--global-divider-color);
   text-decoration: none;
+  margin: 0 0.2rem 0.2rem 0;
   transition:
     background 0.15s ease,
     border-color 0.15s ease,
