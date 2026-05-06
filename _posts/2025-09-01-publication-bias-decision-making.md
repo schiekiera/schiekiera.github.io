@@ -45,7 +45,7 @@ We address three gaps:
 
 ### Experimental design and two-response paradigm
 
-We conducted **four online experiments** with clinical psychology researchers (*n = 303* total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
+We conducted **four online experiments** with clinical psychology researchers (*n* = 303 total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
 
 <div class="project-grid cols-1">
   <div class="project-card">
@@ -84,15 +84,15 @@ Across all experiments involving statistical significance, non-significant abstr
 <div class="project-grid cols-3">
   <div class="project-card">
     <h4 class="highlight-text">Publishability (Exp. 1)</h4>
-    <p>*b = -6.49*, *p < .001*.</p>
+    <p><em>b</em> = -6.49, <em>p</em> &lt; .001.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Reading likelihood (Exp. 3)</h4>
-    <p>*b = -7.14*, *p < .001*.</p>
+    <p><em>b</em> = -7.14, <em>p</em> &lt; .001.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Citation likelihood (Exp. 3)</h4>
-    <p>*b = -6.32*, *p < .001*.</p>
+    <p><em>b</em> = -6.32, <em>p</em> &lt; .001.</p>
   </div>
 </div>
 
@@ -108,21 +108,21 @@ Whether an abstract's results were consistent or inconsistent with its hypothesi
 <div class="project-grid cols-3">
   <div class="project-card">
     <h4 class="highlight-text">Publishability (Exp. 2)</h4>
-    <p>*b = -1.21*, *p = .303*.</p>
+    <p><em>b</em> = -1.21, <em>p</em> = .303.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Reading (Exp. 4)</h4>
-    <p>*b = -1.29*, *p = .281*.</p>
+    <p><em>b</em> = -1.29, <em>p</em> = .281.</p>
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Citation (Exp. 4)</h4>
-    <p>*b = -1.44*, *p = .222*.</p>
+    <p><em>b</em> = -1.44, <em>p</em> = .222.</p>
   </div>
 </div>
 
 ### Deliberation and Feeling of Rightness
 
-In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR (*b = -0.16*, *p = .006*), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
+In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR (*b* = -0.16, *p* = .006), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
 
 ## Discussion
 
