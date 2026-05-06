@@ -73,11 +73,7 @@ To keep the harmonized dataset coherent, we restricted inclusion to:
 
 Every dataset, regardless of source, gets harmonized into a single 28-variable schema organized into five thematic groups:
 
-<div class="project-grid cols-3">
-  <div class="project-card">
-    <h4 class="highlight-text">Identifiers</h4>
-    <p><code>study_id</code>, <code>experiment_id</code>, anonymized <code>participant_id</code>.</p>
-  </div>
+<div class="project-grid cols-2">
   <div class="project-card">
     <h4 class="highlight-text">Trial-level response</h4>
     <p>Response time plus a single harmonized <code>accuracy</code> vocabulary. </p>
