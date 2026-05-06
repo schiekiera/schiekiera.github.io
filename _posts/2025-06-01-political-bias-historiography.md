@@ -40,7 +40,7 @@ Political orientation was measured on a 7-point left-right scale. Our sample was
 
 ### Political stance shapes publishability judgments
 
-We found a **significant interaction** between an abstract's political stance and a historian's political orientation ($b = 1.82$, $p < .001$).
+We found a **significant interaction** between an abstract's political stance and a historian's political orientation (*b* = 1.82, *p* < .001).
 
 <div class="project-grid cols-1">
   <div class="project-card">
@@ -71,9 +71,9 @@ Overall, progressive abstracts were rated 3.07% more favorably, reflecting the p
 
 ### Deliberation does not reduce bias
 
-Contrary to our expectation, the Type 2 (considered) responses did not significantly differ from the Type 1 (intuitive) responses. The interaction of political stance and political orientation on response change ($\Delta$LoS) was not significant ($b = 0.11$, $p = .547$). Even when given time to reflect, historians did not revise their politically influenced judgments.
+Contrary to our expectation, the Type 2 (considered) responses did not significantly differ from the Type 1 (intuitive) responses. The interaction of political stance and political orientation on response change (ΔLoS) was not significant (*b* = 0.11, *p* = .547). Even when given time to reflect, historians did not revise their politically influenced judgments.
 
-Feeling of Rightness was likewise unaffected by political congruence ($b = 0.02$, $p = .334$), suggesting that political preferences in this context do not trigger the metacognitive conflict that typically prompts re-evaluation in logical reasoning tasks.
+Feeling of Rightness was likewise unaffected by political congruence (*b* = 0.02, *p* = .334), suggesting that political preferences in this context do not trigger the metacognitive conflict that typically prompts re-evaluation in logical reasoning tasks.
 
 <div class="figure-container">
   <img src="/assets/img/blog/political_bias/Figure_3_Descriptive_Responses_Political_Scale.png" alt="Political orientation distribution" data-zoomable>

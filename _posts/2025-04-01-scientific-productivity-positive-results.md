@@ -88,14 +88,14 @@ Difference: -0.67%, *p* = .500 (one-sided proportion test). A logistic regressio
 
 ### Abstract-level analyses across all quartiles
 
-When extending to abstract-level annotations across all four quartiles, **97.19%** of 1,990 abstracts reported full or partial support. A chi-square test found no significant association between productivity quartile and support category ($\chi^2(6) = 6.67$, $p = .353$). Logistic regression with scientific productivity as a continuous predictor was likewise non-significant ($p = .432$).
+When extending to abstract-level annotations across all four quartiles, **97.19%** of 1,990 abstracts reported full or partial support. A chi-square test found no significant association between productivity quartile and support category (*χ*²(6) = 6.67, *p* = .353). Logistic regression with scientific productivity as a continuous predictor was likewise non-significant (*p* = .432).
 
 <div class="figure-container">
   <img src="/assets/img/blog/scientific_productivity/Figure_4.png" alt="Rates of positive results across all quartiles" data-zoomable>
   <span class="figure-caption">Exploratory abstract-level analysis: Rates of positive results across all four quartiles of scientific productivity. No significant differences emerge. Error bars indicate 95% confidence intervals.</span>
 </div>
 
-An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, $p = .048$).
+An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, *p* = .048).
 
 ## Discussion
 
