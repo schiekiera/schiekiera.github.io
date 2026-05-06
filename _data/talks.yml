@@ -104,6 +104,14 @@
   location: Lisbon, PT
   speaker: 'TBA'
 
+- date: 2026-07-07
+  venue: ICML 2026
+  description: 'From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs'
+  presentation_type: poster
+  link: https://arxiv.org/abs/2602.00628
+  location: Seoul, KR
+  speaker: 'Louis Schiekiera'
+
 - date: 2026-04-10
   venue: 16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP 2026)
   description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
