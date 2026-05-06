@@ -49,7 +49,10 @@ The data come from five complementary sources:
 | OpenAlex + PubMed full-text searches         |       5 |           8 |          477 |      74,328 |
 | **Total**                                    |  **42** |      **86** |    **3,353** | **688,976** |
 
+<br>
+
 Across the funnel (programmatic searches, full-text screening, OSF queries, and direct author contact), we ended up with 42 that met our criteria *and* had usable trial-level data we could clean and merge.
+<br>
 
 <div class="figure-container">
   <img src="/assets/img/blog/pwi_data/pwi_data_collection_process.png" alt="Data collection and harmonization process across the five sources" data-zoomable>
@@ -105,6 +108,8 @@ Everything (raw data, study-specific cleaning scripts, harmonization code, and t
 
 If you have a PWI dataset (English, German, or any other language) you'd like added, or you spot something you'd improve in the schema or pipeline, please get in touch: `louis.schiekiera [at] hu-berlin.de`.
 
+<br>
+
 ### Citation
 If you find this dataset useful for your research, please consider citing the preprint:
 
@@ -119,3 +124,8 @@ If you find this dataset useful for your research, please consider citing the pr
   url          = {https://osf.io/preprints/psyarxiv/xp69t_v1}
 }
 ```
+
+### Links
+📄 Read the paper (PsyArxiv) [here](https://osf.io/preprints/psyarxiv/xp69t_v1).
+
+💻 View the data and code on [OSF](https://doi.org/10.17605/OSF.IO/2B3SX).
