@@ -3,6 +3,12 @@ layout: post
 title: "Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
 date: 2026-05-01
 description: "Our paper <b>From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs</b> (accepted at <b>ICML 2026</b>) investigates whether an LLM's internal semantic geometry can be recovered from its observable behavior. Across eight instruction-tuned transformers and 17.5M+ trials, we compare behavior-derived similarity structures from forced-choice and free-association paradigms to layerwise hidden-state geometry using representational similarity analysis. We find that forced-choice behavior aligns substantially more with internal representations than free association, and that behavioral similarity predicts unseen hidden-state similarities beyond lexical baselines."
+authors:
+  - Louis Schiekiera
+  - Max Zimmer
+  - Christophe Roux
+  - Sebastian Pokutta
+  - Fritz Günther
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
 publication_type: "ICML 2026"

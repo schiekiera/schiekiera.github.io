@@ -3,6 +3,9 @@ layout: post
 title: "Mapping Global Representation in Psychotherapy Trials: Who Gets First Authorship?"
 date: 2024-06-01
 description: "Our book chapter in <b>A Better How: Notes on Developmental Meta-Research</b> investigates regional representation in psychotherapy RCTs. Analyzing 17,095 first-author affiliations from 1990 to 2022, we find that North America and Europe dominate but North America's share has halved, while Asia's share has risen eightfold. Global South-only and mixed North–South teams are growing but remain a small minority."
+authors:
+  - Helen Niemeyer
+  - Louis Schiekiera
 tags: [metascience, global-south, clinical-psychology, authorship]
 thumbnail: /assets/img/blog/global_clinical_psychology/figure1.jpg
 publication_type: "Book Chapter"

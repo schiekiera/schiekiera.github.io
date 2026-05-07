@@ -3,6 +3,10 @@ layout: post
 title: "Classifying Positive Results in Clinical Psychology Using Natural Language Processing"
 date: 2024-10-01
 description: "Our paper in the <b>Zeitschrift für Psychologie</b> evaluates SciBERT and random forest for classifying whether clinical psychology abstracts report exclusively positive results. Trained on 1,900+ annotated abstracts, SciBERT reaches 86% accuracy and generalizes to out-of-domain data. Applied to 20,000+ psychotherapy RCT abstracts (1990–2022), the model reveals an inverted-U trend: positive results rose until the early 2010s and then declined."
+authors:
+  - Louis Schiekiera
+  - Helen Niemeyer
+  - Jonathan Diederichs
 tags: [metascience, nlp, publication-bias, text-classification]
 thumbnail: assets/img/publication_preview/attention.png
 publication_type: "Journal Article"

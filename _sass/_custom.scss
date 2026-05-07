@@ -1657,6 +1657,15 @@ html[data-theme="dark"] {
     -webkit-hyphens: auto;
   }
 
+  .post-hero__authors {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--global-text-color);
+    max-width: 720px;
+    margin: 0 auto 1rem;
+    letter-spacing: 0.01em;
+  }
+
   .post-hero__meta {
     font-size: 0.85rem;
     color: var(--global-text-color-light);

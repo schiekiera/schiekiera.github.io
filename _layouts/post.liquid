@@ -37,9 +37,12 @@ layout: default
       <p class="post-hero__desc">{{ page.description }}</p>
     {% endif %}
 
+    {% if page.authors %}
+      <p class="post-hero__authors">{{ page.authors | join: ' · ' }}</p>
+    {% endif %}
+
     <p class="post-hero__meta">
       <span class="post-hero__date"><i class="fa-regular fa-calendar"></i> {{ page.date | date: '%B %-d, %Y' }}</span>
-      {% if page.author %}<span class="post-hero__sep">·</span><span>{{ page.author }}</span>{% endif %}
       {% if page.meta %}<span class="post-hero__sep">·</span><span>{{ page.meta }}</span>{% endif %}
       {% if tags != '' %}
         <span class="post-hero__sep">·</span>
