@@ -21,3 +21,4 @@ context/
 *.key
 credentials.json
 secrets.json
+.vscode/
