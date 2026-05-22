@@ -122,3 +122,11 @@
   link: https://www.oegps.at/aktuelletagung
   location: Salzburg, AT
   speaker: 'Benjaming Gagl'
+
+- date: 2026-05-20
+  venue: Behavioral Clones Workshop 2026
+  description: 'Aligning Behavioral and Hidden-State Semantic Geometry in LLMs'
+  presentation_type: talk
+  link: https://machinebehavior.science/behavioral-clones-ws
+  location: Berlin, DE
+  speaker: 'Louis Schiekiera'
