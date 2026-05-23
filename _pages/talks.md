@@ -119,6 +119,24 @@ nav_order: 5
 </div>
 {% endif %}
 
+{% assign consulting_activities = site.data.consulting | sort: "date" | reverse %}
+{% if consulting_activities.size > 0 %}
+<div class="talks-section">
+  <h3 class="talks-section-header">consulting</h3>
+  <ul class="activity-list">
+  {% for activity in consulting_activities %}
+    <li class="activity-row">
+      <span class="activity-row__date">{% if activity.start %}{{ activity.start | date: "%b %Y" }} – {% if activity.end %}{{ activity.end | date: "%b %Y" }}{% else %}present{% endif %}{% else %}{{ activity.date | date: "%b %Y" }}{% endif %}</span>
+      <span class="activity-row__main">
+        <span class="activity-row__venue">{{ activity.role }}</span>
+        <span class="activity-row__sub">{% if activity.link %}<a href="{{ activity.link }}">{{ activity.organization }}</a>{% else %}{{ activity.organization }}{% endif %}{% if activity.institution %}, {{ activity.institution }}{% endif %}{% if activity.location %}, {{ activity.location }}{% endif %}{% if activity.description %} — {{ activity.description }}{% endif %}</span>
+      </span>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 {% assign reviewing_activities = site.data.other | where: "type", "reviewing" | sort: "date" | reverse %}
 {% if reviewing_activities.size > 0 %}
 <div class="talks-section">
