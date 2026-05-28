@@ -33,7 +33,7 @@ nav_order: 5
         {% if activity.location %}<p class="talk-card__loc"><i class="fa-solid fa-location-dot"></i> {{ activity.location }}</p>{% endif %}
         {% if activity.description %}
           <p class="talk-card__desc">
-            {% if activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
+            {% if activity.poster %}<a href="{{ activity.poster }}">{{ activity.description }}</a>{% elsif activity.slides %}<a href="{{ activity.slides }}">{{ activity.description }}</a>{% elsif activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
           </p>
         {% endif %}
         {% if activity.speaker %}<p class="talk-card__speaker"><i class="fa-regular fa-user"></i> presented by {{ activity.speaker }}</p>{% endif %}
@@ -65,7 +65,7 @@ nav_order: 5
         {% if activity.location %}<p class="talk-card__loc"><i class="fa-solid fa-location-dot"></i> {{ activity.location }}</p>{% endif %}
         {% if activity.description %}
           <p class="talk-card__desc">
-            {% if activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
+            {% if activity.poster %}<a href="{{ activity.poster }}">{{ activity.description }}</a>{% elsif activity.slides %}<a href="{{ activity.slides }}">{{ activity.description }}</a>{% elsif activity.link %}<a href="{{ activity.link }}">{{ activity.description }}</a>{% else %}{{ activity.description }}{% endif %}
           </p>
         {% endif %}
         {% if activity.speaker %}<p class="talk-card__speaker"><i class="fa-regular fa-user"></i> presented by {{ activity.speaker }}</p>{% endif %}
