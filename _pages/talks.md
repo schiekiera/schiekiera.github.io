@@ -142,7 +142,7 @@ nav_order: 5
 <div class="talks-section">
   <h3 class="talks-section-header">reviewing</h3>
   <div class="reviewing-pills">
-    {% for activity in reviewing_activities %}<span class="reviewing-pill">{{ activity.venue }}</span>{% endfor %}
+    {% for activity in reviewing_activities %}{% if activity.link %}<a class="reviewing-pill" href="{{ activity.link }}">{{ activity.venue }}</a>{% else %}<span class="reviewing-pill">{{ activity.venue }}</span>{% endif %}{% endfor %}
   </div>
 </div>
 {% endif %}
