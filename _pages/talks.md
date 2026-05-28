@@ -40,7 +40,7 @@ nav_order: 5
         {% if activity.slides or activity.video or activity.link %}
           <footer class="talk-card__actions">
             {% if activity.link and activity.description %}<a class="talk-card__chip" href="{{ activity.link }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> info</a>{% endif %}
-            {% if activity.slides %}<a class="talk-card__chip" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
+            {% if activity.slides %}<a class="talk-card__chip talk-card__chip--asset" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
             {% if activity.video %}<a class="talk-card__chip" href="{{ activity.video }}"><i class="fa-solid fa-video"></i> video</a>{% endif %}
           </footer>
         {% endif %}
@@ -72,8 +72,8 @@ nav_order: 5
         {% if activity.poster or activity.slides or activity.video or activity.link %}
           <footer class="talk-card__actions">
             {% if activity.link and activity.description %}<a class="talk-card__chip" href="{{ activity.link }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> info</a>{% endif %}
-            {% if activity.poster %}<a class="talk-card__chip" href="{{ activity.poster }}"><i class="fa-regular fa-image"></i> poster</a>{% endif %}
-            {% if activity.slides %}<a class="talk-card__chip" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
+            {% if activity.poster %}<a class="talk-card__chip talk-card__chip--asset" href="{{ activity.poster }}"><i class="fa-regular fa-image"></i> poster</a>{% endif %}
+            {% if activity.slides %}<a class="talk-card__chip talk-card__chip--asset" href="{{ activity.slides }}"><i class="fa-regular fa-file-powerpoint"></i> slides</a>{% endif %}
             {% if activity.video %}<a class="talk-card__chip" href="{{ activity.video }}"><i class="fa-solid fa-video"></i> video</a>{% endif %}
           </footer>
         {% endif %}

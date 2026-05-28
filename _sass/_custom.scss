@@ -1035,28 +1035,30 @@ html[data-theme="dark"] {
   }
 }
 
-// Link chips inherit the card's kind color (red for talks, gold for posters)
-// with a slightly stronger tint so they read as a touch more saturated than
-// the kind label above.
-.talk-card--talk .talk-card__chip {
-  background: rgba(37, 99, 235, 0.2);
-  color: #2563eb;
+// Info / video chips keep the default green. The slides/poster download chips
+// take the card's kind color (blue for talks, gold for posters) as a solid,
+// darker fill so they read as more saturated than the kind label above.
+.talk-card--talk .talk-card__chip--asset {
+  background: #1d4ed8;
+  color: #fff;
+  border-color: #1d4ed8;
 
   &:hover {
-    background: #2563eb;
+    background: #1e40af;
     color: #fff;
-    border-color: #2563eb;
+    border-color: #1e40af;
   }
 }
 
-.talk-card--poster .talk-card__chip {
-  background: rgba(178, 148, 0, 0.22);
-  color: #b29400;
+.talk-card--poster .talk-card__chip--asset {
+  background: #997d00;
+  color: #fff;
+  border-color: #997d00;
 
   &:hover {
-    background: #b29400;
+    background: #806800;
     color: #fff;
-    border-color: #b29400;
+    border-color: #806800;
   }
 }
 
@@ -1162,24 +1164,26 @@ html[data-theme="dark"] {
     background: rgba(217, 179, 0, 0.18);
     color: #d9b300;
   }
-  .talk-card--talk .talk-card__chip {
-    background: rgba(96, 165, 250, 0.26);
-    color: #60a5fa;
+  .talk-card--talk .talk-card__chip--asset {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
 
     &:hover {
-      background: #3b82f6;
+      background: #1d4ed8;
       color: #fff;
-      border-color: #3b82f6;
+      border-color: #1d4ed8;
     }
   }
-  .talk-card--poster .talk-card__chip {
-    background: rgba(217, 179, 0, 0.26);
-    color: #d9b300;
+  .talk-card--poster .talk-card__chip--asset {
+    background: #c79f00;
+    color: #1a1a1a;
+    border-color: #c79f00;
 
     &:hover {
-      background: #d9b300;
+      background: #b29400;
       color: #1a1a1a;
-      border-color: #d9b300;
+      border-color: #b29400;
     }
   }
 }
