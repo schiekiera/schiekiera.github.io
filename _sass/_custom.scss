@@ -1030,6 +1030,21 @@ html[data-theme="dark"] {
   }
 }
 
+// Slides / poster download chips — highlighted with a saturated purple so the
+// downloadable material stands out from the info/video chips.
+.talk-card__chip--asset {
+  font-weight: 600;
+  background: rgba(124, 26, 240, 0.16);
+  color: #7c1af0;
+  border-color: rgba(124, 26, 240, 0.4);
+
+  &:hover {
+    background: #7c1af0;
+    color: #fff;
+    border-color: #7c1af0;
+  }
+}
+
 /* --- Compact activity rows for events / teaching / media. */
 
 .activity-list {
@@ -1120,6 +1135,17 @@ html[data-theme="dark"] {
   }
   .talk-card__chip {
     background: rgba(178, 148, 0, 0.12);
+  }
+  .talk-card__chip--asset {
+    background: rgba(167, 110, 250, 0.2);
+    color: #c4a6ff;
+    border-color: rgba(167, 110, 250, 0.45);
+
+    &:hover {
+      background: #8b3ff5;
+      color: #fff;
+      border-color: #8b3ff5;
+    }
   }
 }
 

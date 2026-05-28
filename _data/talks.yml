@@ -11,7 +11,7 @@
   venue: 4. Deutscher Psychotherapie Kongress (DPK 2025)
   description: 'Publication Bias in Psychology: Positive Results and Scientific Productivity of Research Groups'
   presentation_type: talk
-  slides: https://github.com/schiekiera/talks/blob/main/pdfs/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf
+  slides: /assets/pdf/talks/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf
   location: Berlin, DE
   speaker: 'Louis Schiekiera'
 
@@ -19,7 +19,7 @@
   venue: ESCOP 2025
   description: 'Modeling Lexical Competition in Language Production: A Computational Approach to the Swinging Lexical Network'
   presentation_type: poster
-  poster: https://github.com/schiekiera/talks/blob/main/pdfs/poster_cSLN_schiekiera_2025-08-17.pdf
+  poster: /assets/pdf/poster/poster_cSLN_schiekiera_2025-08-17.pdf
   link: https://github.com/schiekiera/cSLN_ESCOP_2025
   location: Sheffield, UK
   speaker: 'Louis Schiekiera'
@@ -44,6 +44,7 @@
   venue: Research Colloquium 'Methods', HU Berlin
   description: 'LLMs as Agents in Psycholinguistic Research'
   presentation_type: talk
+  slides: /assets/pdf/talks/presentation_research_colloqium.pdf
   link: https://agnes.hu-berlin.de/lupo/rds?state=medialoader&application=lsf&objectid=4556
   location: Berlin, DE
   speaker: 'Louis Schiekiera'
@@ -52,6 +53,7 @@
   venue: TRUST Network Meeting
   description: 'Data Collection Process for the German Lexicon Project'
   presentation_type: talk
+  slides: /assets/pdf/talks/glp_data.pdf
   link: https://trust-network-guidelines.readthedocs.io/en/latest/
   location: Cologne, DE
   speaker: 'Louis Schiekiera'
@@ -60,6 +62,7 @@
   venue: TEAP 2026 (Symposium Chair)
   description: 'Symposium: Computational Modeling of Language Generation (co-chaired with Hanna Wołoszyn, Cologne)'
   presentation_type: talk
+  slides: /assets/pdf/talks/symposium.pdf
   link: https://coms.app/teap26/welcome.html
   location: Tübingen, DE
   speaker: 'Louis Schiekiera'
@@ -68,6 +71,7 @@
   venue: TEAP 2026
   description: 'Beyond Lemmas: Modeling the Picture in Picture-Word Interference?'
   presentation_type: talk
+  slides: /assets/pdf/talks/presentation_pictures.pdf
   link: https://coms.app/teap26/welcome.html
   location: Tübingen, DE
   speaker: 'Louis Schiekiera'
@@ -76,6 +80,7 @@
   venue: TEAP 2026
   description: 'Automated Validation of Verbal Responses in Language-Production Research'
   presentation_type: poster
+  poster: /assets/pdf/poster/poster_TeaP2026.pdf
   link: https://github.com/vincentgruber/voice-onset-validation-pipeline
   location: Tübingen, DE
   speaker: 'Vincent Gruber'
@@ -104,7 +109,7 @@
   status: accepted
   link: https://www.woproc2026.com/
   location: Lisbon, PT
-  speaker: 'TBA'
+  speaker: 'Kirsten Stark'
 
 - date: 2026-07-07
   venue: ICML 2026
@@ -127,6 +132,7 @@
   venue: Behavioral Clones Workshop 2026
   description: 'Aligning Behavioral and Hidden-State Semantic Geometry in LLMs'
   presentation_type: talk
+  slides: /assets/pdf/talks/presentation_behavioral_clones.pdf
   link: https://machinebehavior.science/behavioral-clones-ws
   location: Berlin, DE
   speaker: 'Louis Schiekiera'

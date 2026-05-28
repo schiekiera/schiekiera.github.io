@@ -10,7 +10,7 @@ authors:
 tags: [psycholinguistics, speech-recognition, word-production, annotation, asr]
 thumbnail: /assets/img/blog/asr_validator/error_analysis_barplot_thumb.png
 publication_type: "Conference Poster"
-paper_url: "https://schiekiera.github.io/assets/pdf/poster_TeaP2026.pdf"
+paper_url: "https://schiekiera.github.io/assets/pdf/poster/poster_TeaP2026.pdf"
 code_url: "https://github.com/vincentgruber/voice-onset-validation-pipeline"
 giscus_comments: false
 related_posts: false
