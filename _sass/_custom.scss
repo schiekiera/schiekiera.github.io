@@ -1035,18 +1035,28 @@ html[data-theme="dark"] {
   }
 }
 
-// Slides / poster download chips — highlighted with a saturated purple so the
-// downloadable material stands out from the info/video chips.
-.talk-card__chip--asset {
-  font-weight: 600;
-  background: rgba(124, 26, 240, 0.16);
-  color: #7c1af0;
-  border-color: rgba(124, 26, 240, 0.4);
+// Link chips inherit the card's kind color (red for talks, gold for posters)
+// with a slightly stronger tint so they read as a touch more saturated than
+// the kind label above.
+.talk-card--talk .talk-card__chip {
+  background: rgba(220, 38, 38, 0.2);
+  color: #dc2626;
 
   &:hover {
-    background: #7c1af0;
+    background: #dc2626;
     color: #fff;
-    border-color: #7c1af0;
+    border-color: #dc2626;
+  }
+}
+
+.talk-card--poster .talk-card__chip {
+  background: rgba(178, 148, 0, 0.22);
+  color: #b29400;
+
+  &:hover {
+    background: #b29400;
+    color: #fff;
+    border-color: #b29400;
   }
 }
 
@@ -1139,21 +1149,27 @@ html[data-theme="dark"] {
     color: #f87171;
   }
   .talk-card--poster .talk-card__kind {
-    background: rgba(178, 148, 0, 0.18);
-    color: var(--global-theme-color);
+    background: rgba(217, 179, 0, 0.18);
+    color: #d9b300;
   }
-  .talk-card__chip {
-    background: rgba(178, 148, 0, 0.12);
-  }
-  .talk-card__chip--asset {
-    background: rgba(167, 110, 250, 0.2);
-    color: #c4a6ff;
-    border-color: rgba(167, 110, 250, 0.45);
+  .talk-card--talk .talk-card__chip {
+    background: rgba(248, 113, 113, 0.26);
+    color: #f87171;
 
     &:hover {
-      background: #8b3ff5;
+      background: #ef4444;
       color: #fff;
-      border-color: #8b3ff5;
+      border-color: #ef4444;
+    }
+  }
+  .talk-card--poster .talk-card__chip {
+    background: rgba(217, 179, 0, 0.26);
+    color: #d9b300;
+
+    &:hover {
+      background: #d9b300;
+      color: #1a1a1a;
+      border-color: #d9b300;
     }
   }
 }
