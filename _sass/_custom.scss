@@ -917,8 +917,8 @@ html[data-theme="dark"] {
 }
 
 .talk-card--talk .talk-card__kind {
-  background: rgba(220, 38, 38, 0.12);
-  color: #dc2626;
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
 }
 
 .talk-card--poster .talk-card__kind {
@@ -1039,13 +1039,13 @@ html[data-theme="dark"] {
 // with a slightly stronger tint so they read as a touch more saturated than
 // the kind label above.
 .talk-card--talk .talk-card__chip {
-  background: rgba(220, 38, 38, 0.2);
-  color: #dc2626;
+  background: rgba(37, 99, 235, 0.2);
+  color: #2563eb;
 
   &:hover {
-    background: #dc2626;
+    background: #2563eb;
     color: #fff;
-    border-color: #dc2626;
+    border-color: #2563eb;
   }
 }
 
@@ -1145,21 +1145,21 @@ html[data-theme="dark"] {
     box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.55);
   }
   .talk-card--talk .talk-card__kind {
-    background: rgba(248, 113, 113, 0.18);
-    color: #f87171;
+    background: rgba(96, 165, 250, 0.18);
+    color: #60a5fa;
   }
   .talk-card--poster .talk-card__kind {
     background: rgba(217, 179, 0, 0.18);
     color: #d9b300;
   }
   .talk-card--talk .talk-card__chip {
-    background: rgba(248, 113, 113, 0.26);
-    color: #f87171;
+    background: rgba(96, 165, 250, 0.26);
+    color: #60a5fa;
 
     &:hover {
-      background: #ef4444;
+      background: #3b82f6;
       color: #fff;
-      border-color: #ef4444;
+      border-color: #3b82f6;
     }
   }
   .talk-card--poster .talk-card__chip {
