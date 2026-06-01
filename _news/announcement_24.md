@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Jana Hasenäcker presented our talk _The TRUST Guidelines for Psycholinguistic Reading Studies and the German Lexicon Project_ at _TEAP 2026_ (symposium _Neuro-Cognitive Advances in Visual Word Recognition Research_, chaired by Benjamin Gagl).
+Jana Hasenäcker presented our talk _The TRUST Guidelines for Psycholinguistic Reading Studies and the German Lexicon Project_ at _TEAP 2026_ (symposium _Neuro-Cognitive Advances in Visual Word Recognition Research_, chaired by Benjamin Gagl) ([Slides](/assets/pdf/talks/TeaP_TRUST.pdf)).
