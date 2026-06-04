@@ -6,7 +6,7 @@ subtitle: Berlin, Germany.
 
 profile:
   align: right
-  image: ls2.png
+  image: ls.png
   image_circular: true # crops the image to make it circular
   more_info: false
 

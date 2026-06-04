@@ -23,7 +23,7 @@ const defined = {
   about: {
     bio:
       "I’m a computational scientist at the intersection of cognitive psychology and machine learning. By combining behavioral experiments with computational modeling, I study how meaning is represented across human minds and artificial systems. Currently, I work as a research assistant in the Computational Modeling Group at HU Berlin under the supervision of Fritz Günther.",
-    photo: "/assets/img/ls.jpg",
+    photo: "/assets/img/ls.png",
     photoAlt: "Louis Schiekiera",
     roles: [
       {
