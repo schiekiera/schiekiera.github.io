@@ -110,6 +110,7 @@
   description: 'What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties'
   presentation_type: talk
   link: https://www.woproc2026.com/
+  slides: /assets/pdf/talks/presentation_woproc2026.pdf
   location: Lisbon, PT
   speaker: 'Kirsten Stark'
 
@@ -118,6 +119,7 @@
   description: 'From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs'
   presentation_type: poster
   link: https://arxiv.org/abs/2602.00628
+  poster: /assets/pdf/poster/poster_icml2026.pdf
   location: Seoul, KR
   speaker: 'Louis Schiekiera'
 

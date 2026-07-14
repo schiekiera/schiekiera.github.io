@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented our main track paper _From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs_ at [_ICML 2026_](https://arxiv.org/abs/2602.00628) in Seoul, Korea 🇰🇷.
+I presented our main track paper _From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs_ at [_ICML 2026_](https://arxiv.org/abs/2602.00628) in Seoul, Korea 🇰🇷 ([ICML 2026 paper](https://arxiv.org/abs/2602.00628), [Poster](assets/pdf/poster/poster_ICML_2026.pdf)).
