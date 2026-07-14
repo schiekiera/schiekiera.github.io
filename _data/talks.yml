@@ -103,7 +103,7 @@
   description: 'The German Lexicon Project'
   presentation_type: talk
   link: https://www.woproc2026.com/
-  slides: assets/pdf/talks/WoProc2026_Petrenco.pdf
+  slides: /assets/pdf/talks/WoProc2026_Petrenco.pdf
   location: Lisbon, PT
   speaker: 'Aliona Petrenco'
 
@@ -112,7 +112,7 @@
   description: 'What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties'
   presentation_type: talk
   link: https://www.woproc2026.com/
-  slides: assets/pdf/talks/woproc_presentation.pdf
+  slides: /assets/pdf/talks/woproc_presentation.pdf
   location: Lisbon, PT
   speaker: 'Kirsten Stark'
 
@@ -121,7 +121,7 @@
   description: 'From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs'
   presentation_type: poster
   link: https://arxiv.org/abs/2602.00628
-  poster: assets/pdf/poster/poster_ICML_2026.pdf
+  poster: /assets/pdf/poster/poster_ICML_2026.pdf
   location: Seoul, KR
   speaker: 'Louis Schiekiera'
 
