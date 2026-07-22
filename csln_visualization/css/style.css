@@ -1,0 +1,136 @@
+/* cSLN webviz — paper palette (luminance-ordered) */
+:root {
+  --target-yellow: #FDE725;
+  --distractor-blue: #3B4CC0;
+  --relationship-green: #35B779;
+  --design-orange: #F9603B;
+  --neutral-grey: #D9D9D9;
+  --ink: #333333;
+  --muted: #777777;
+  --hairline: #e3e3e3;
+  --bg: #ffffff;
+  --panel-bg: #fafafa;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+#app { display: flex; flex-direction: column; height: 100vh; }
+
+/* ---- top bar -------------------------------------------------------- */
+#topbar {
+  display: flex; align-items: center; gap: 1.25rem;
+  padding: 0.55rem 1rem; border-bottom: 1px solid var(--hairline);
+}
+#topbar h1 { font-size: 1rem; font-weight: 600; margin: 0 1rem 0 0; }
+.sel { font-size: 0.85rem; color: var(--muted); display: flex; align-items: center; gap: 0.4rem; }
+.sel select {
+  font-size: 0.9rem; padding: 0.25rem 0.4rem;
+  border: 1px solid var(--hairline); border-radius: 6px; background: #fff; color: var(--ink);
+}
+#lang-badge {
+  margin-left: auto; font-size: 0.75rem; letter-spacing: 0.06em;
+  color: var(--muted); border: 1px solid var(--hairline); border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+#random-btn {
+  font-size: 0.82rem; border: 1px solid var(--hairline); background: #fff; color: var(--ink);
+  border-radius: 6px; padding: 0.25rem 0.6rem; cursor: pointer;
+}
+#random-btn:hover { border-color: var(--design-orange); color: var(--design-orange); }
+
+/* ---- main ----------------------------------------------------------- */
+#main { flex: 1; display: flex; min-height: 0; }
+#scatter-wrap { flex: 1; position: relative; min-width: 0; }
+#scatter-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+#scatter { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
+#scatter:active { cursor: grabbing; }
+
+#legend {
+  position: absolute; left: 0.9rem; top: 0.7rem;
+  display: flex; flex-direction: column; gap: 0.2rem;
+  font-size: 0.72rem; color: var(--muted);
+  background: rgba(255,255,255,0.85); border-radius: 8px; padding: 0.45rem 0.6rem;
+  pointer-events: none;
+}
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 0.35rem; }
+.dot.target { background: var(--target-yellow); border: 1px solid var(--ink); }
+.dot.distractor { background: var(--distractor-blue); }
+.dot.nb { background: var(--relationship-green); }
+.dot.nb.dust { opacity: 0.3; }
+.dot.bg { background: var(--neutral-grey); }
+
+#tooltip {
+  position: absolute; pointer-events: none; z-index: 10;
+  background: rgba(20,20,20,0.92); color: #fff;
+  font-size: 0.75rem; line-height: 1.35;
+  padding: 0.4rem 0.55rem; border-radius: 6px; max-width: 240px;
+  transform: translate(-50%, calc(-100% - 10px));
+}
+#tooltip .tt-word { font-weight: 600; }
+#tooltip.hidden { display: none; }
+
+/* ---- variables panel ------------------------------------------------- */
+#panel {
+  width: 265px; flex: none; overflow-y: auto;
+  border-left: 1px solid var(--hairline); background: var(--panel-bg);
+  padding: 0.8rem 0.9rem; font-size: 0.82rem;
+}
+#panel h2 { font-size: 0.9rem; margin: 0 0 0.7rem; font-weight: 600; }
+#panel h2 .pair-t { border-bottom: 3px solid var(--target-yellow); }
+#panel h2 .pair-d { border-bottom: 3px solid var(--distractor-blue); }
+.rung { margin-bottom: 0.65rem; padding-bottom: 0.55rem; border-bottom: 1px dashed var(--hairline); }
+.rung:last-child { border-bottom: none; }
+.rung-tag {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em;
+  color: #fff; background: var(--relationship-green);
+  border-radius: 4px; padding: 0.05rem 0.35rem; margin-right: 0.4rem;
+}
+.rung-name { font-size: 0.72rem; color: var(--muted); }
+.varblock { margin-top: 0.3rem; }
+.varrow { display: flex; justify-content: space-between; }
+.varrow .vlab { color: var(--ink); }
+.varrow .vval { font-variant-numeric: tabular-nums; font-weight: 600; }
+.varrow.sub .vlab, .varrow.sub .vval { color: var(--muted); font-weight: 400; font-size: 0.76rem; }
+.vbar { height: 4px; margin-top: 3px; background: #ececec; border-radius: 2px; }
+.vbar-fill { height: 100%; background: var(--relationship-green); border-radius: 2px; }
+.panel-meta { margin-top: 0.6rem; font-size: 0.74rem; color: var(--muted); }
+
+/* ---- bottom controls -------------------------------------------------- */
+#controls { border-top: 1px solid var(--hairline); padding: 0.5rem 1rem 0.55rem; }
+#step-row { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.ctl-label { font-size: 0.78rem; color: var(--muted); }
+#step-chips { display: flex; gap: 0.25rem; }
+#step-chips button, #play-btn {
+  font-size: 0.82rem; border: 1px solid var(--hairline); background: #fff; color: var(--ink);
+  border-radius: 6px; padding: 0.28rem 0.6rem; cursor: pointer;
+}
+#step-chips button.active {
+  background: var(--design-orange); border-color: var(--design-orange); color: #fff; font-weight: 600;
+}
+#step-chips button:hover:not(.active), #play-btn:hover {
+  border-color: var(--design-orange); color: var(--design-orange);
+}
+#play-btn { margin-left: 0.4rem; }
+#caption { margin-top: 0.35rem; font-size: 0.74rem; color: var(--muted); min-height: 1.1em; }
+
+/* ---- svg layers -------------------------------------------------------- */
+/* edges from the target use a one-step darker amber than the node yellow —
+   #FDE725 at partial opacity is illegible on white (deviation noted in README) */
+.edge-t { stroke: #E3C71E; fill: none; }
+.edge-d { stroke: var(--distractor-blue); fill: none; }
+.nb-node { fill: var(--relationship-green); stroke: #fff; stroke-width: 0.6; }
+.stim-node.target { fill: var(--target-yellow); stroke: var(--ink); stroke-width: 1.4; }
+.stim-node.distractor { fill: var(--distractor-blue); stroke: #fff; stroke-width: 1.2; }
+.stim-ring { fill: none; stroke: var(--distractor-blue); stroke-width: 2; }
+.node-label {
+  font-size: 11px; fill: var(--ink);
+  paint-order: stroke; stroke: rgba(255,255,255,0.9); stroke-width: 3px;
+  pointer-events: none;
+}
+.node-label.stim { font-weight: 700; font-size: 12.5px; }

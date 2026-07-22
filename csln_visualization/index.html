@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cSLN — spreading activation</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%2335B779'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header id="topbar">
+      <h1>cSLN spreading activation</h1>
+      <label class="sel">Target
+        <select id="target-select"></select>
+      </label>
+      <label class="sel">Distractor
+        <select id="distractor-select"></select>
+      </label>
+      <button id="random-btn" title="pick a random pair">⚄ random</button>
+      <label class="sel">show top
+        <select id="topn-select"></select>
+      </label>
+      <span id="lang-badge">EN</span>
+    </header>
+
+    <main id="main">
+      <div id="scatter-wrap">
+        <canvas id="scatter-canvas"></canvas>
+        <svg id="scatter" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet"></svg>
+        <div id="legend">
+          <span><i class="dot target"></i> target</span>
+          <span><i class="dot distractor"></i> distractor</span>
+          <span><i class="dot nb"></i> top-N neighbors</span>
+          <span><i class="dot nb dust"></i> tail (avg. activation)</span>
+          <span><i class="dot bg"></i> vocabulary</span>
+        </div>
+        <div id="tooltip" class="hidden"></div>
+      </div>
+      <aside id="panel"></aside>
+    </main>
+
+    <footer id="controls">
+      <div id="step-row">
+        <span class="ctl-label">step&nbsp;k</span>
+        <div id="step-chips"></div>
+        <button id="play-btn" title="animate through the steps">▶ play</button>
+      </div>
+      <div id="caption"></div>
+    </footer>
+  </div>
+
+  <script src="lib/d3.v7.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
