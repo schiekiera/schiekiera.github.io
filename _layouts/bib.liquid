@@ -160,7 +160,12 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
       {% if entry.tldr %}
-        <a href="{% if entry.tldr contains '://' %}{{ entry.tldr }}{% else %}{{ entry.tldr | relative_url }}{% endif %}" class="btn btn-sm z-depth-0" role="button">TLDR</a>
+        <a
+          href="{% if entry.tldr contains '://' %}{{ entry.tldr }}{% else %}{{ entry.tldr | relative_url }}{% endif %}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          >TLDR</a
+        >
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -264,7 +269,9 @@
         {% for raw_tag in tag_list %}
           {% assign t = raw_tag | strip %}
           {% assign tag_meta = site.data.publication_tags | where: 'tag', t | first %}
-          <a class="bib-tag" data-tag="{{ t | downcase }}" href="{{ '/publications/' | relative_url }}?tag={{ t | downcase }}" tabindex="0">{% if tag_meta %}{{ tag_meta.name }}{% else %}{{ t }}{% endif %}</a>
+          <a class="bib-tag" data-tag="{{ t | downcase }}" href="{{ '/publications/' | relative_url }}?tag={{ t | downcase }}" tabindex="0">
+            {%- if tag_meta %}{{ tag_meta.name }}{% else %}{{ t }}{% endif -%}
+          </a>
         {% endfor %}
       </div>
     {% endif %}

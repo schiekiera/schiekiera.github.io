@@ -11,11 +11,11 @@ nav_order: 5
 {% assign talks_only = "" | split: "" %}
 {% assign posters_only = "" | split: "" %}
 {% for activity in all_presentations %}
-  {% if activity.presentation_type == "talk" %}
-    {% assign talks_only = talks_only | push: activity %}
-  {% else %}
-    {% assign posters_only = posters_only | push: activity %}
-  {% endif %}
+{% if activity.presentation_type == "talk" %}
+{% assign talks_only = talks_only | push: activity %}
+{% else %}
+{% assign posters_only = posters_only | push: activity %}
+{% endif %}
 {% endfor %}
 
 {% if talks_only.size > 0 %}

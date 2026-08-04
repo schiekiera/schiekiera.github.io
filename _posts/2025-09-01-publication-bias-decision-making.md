@@ -52,7 +52,7 @@ We address three gaps:
 
 ### Experimental design and two-response paradigm
 
-We conducted **four online experiments** with clinical psychology researchers (*n* = 303 total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
+We conducted **four online experiments** with clinical psychology researchers (_n_ = 303 total, ~75 per experiment). In each experiment, participants evaluated **16 fictitious abstracts** (from 16 pairs) using a two-response paradigm:
 
 <div class="project-grid cols-1">
   <div class="project-card">
@@ -129,7 +129,7 @@ Whether an abstract's results were consistent or inconsistent with its hypothesi
 
 ### Deliberation and Feeling of Rightness
 
-In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR (*b* = -0.16, *p* = .006), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
+In most experiments, initial intuitive evaluations were **not revised** after deliberation. FOR did not systematically mediate response changes. One exception: in Experiment 1, non-significant abstracts lowered FOR (_b_ = -0.16, _p_ = .006), but higher FOR unexpectedly predicted _more_ positive revision, contrary to our hypothesis.
 
 ## Discussion
 

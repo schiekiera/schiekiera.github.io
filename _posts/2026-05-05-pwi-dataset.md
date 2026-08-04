@@ -22,13 +22,14 @@ related_posts: false
 
 ## Motivation
 
-Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the *target*) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
+Picture-word interference (PWI) is one of the most widely used experimental tools for investigating lexical access during language production: a participant names a picture (the _target_) while ignoring a distractor word, and naming latencies are modulated by the relationship between target and distractor. Four decades of PWI research have produced a rich literature on lexical competition, inhibitory control, semantic and phonological encoding, and individual differences.
 
 But the trial-level data underlying those findings live in study-specific formats, scattered across personal archives, university servers, and assorted repositories with inconsistent variable names, accuracy codes, and exclusion criteria. That fragmentation makes mega-analyses, cross-study comparisons, and computational modeling at scale much harder than it needs to be.
 
 This release is an attempt to fix that.
 
 ## Method
+
 ### Data structure
 
 |                  |                  |
@@ -57,7 +58,7 @@ The data come from five complementary sources:
 
 <br>
 
-Across the funnel (programmatic searches, full-text screening, OSF queries, and direct author contact), we ended up with 42 that met our criteria *and* had usable trial-level data we could clean and merge.
+Across the funnel (programmatic searches, full-text screening, OSF queries, and direct author contact), we ended up with 42 that met our criteria _and_ had usable trial-level data we could clean and merge.
 <br>
 
 <div class="figure-container">
@@ -69,11 +70,10 @@ Across the funnel (programmatic searches, full-text screening, OSF queries, and 
 
 To keep the harmonized dataset coherent, we restricted inclusion to:
 
-- The *classical PWI paradigm*: a single target picture with a single distractor word.
-- *English or German* stimuli.
-- *Non-clinical adult* participants.
-- *Trial-level* data with identifiable target and distractor words on every trial.
-
+- The _classical PWI paradigm_: a single target picture with a single distractor word.
+- _English or German_ stimuli.
+- _Non-clinical adult_ participants.
+- _Trial-level_ data with identifiable target and distractor words on every trial.
 
 ### Variable types
 

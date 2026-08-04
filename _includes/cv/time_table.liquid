@@ -8,21 +8,30 @@
       <span class="cv-tl-node" aria-hidden="true"></span>
 
       <div class="cv-tl-meta">
-        {% if content.year %}<span class="cv-tl-year">{{ content.year }}</span>{% endif %}
-        {% if is_current %}<span class="cv-tl-now">now</span>{% endif %}
+        {% if content.year -%}
+          <span class="cv-tl-year">{{ content.year }}</span>
+        {%- endif %}
+        {% if is_current -%}
+          <span class="cv-tl-now">now</span>
+        {%- endif %}
         {% if content.location %}
           <span class="cv-tl-loc"><i class="fa-solid fa-location-dot"></i> {{ content.location }}</span>
         {% endif %}
       </div>
 
       <div class="cv-tl-body">
-        {% if content.title %}<h6 class="cv-tl-title">{{ content.title }}</h6>{% endif %}
+        {% if content.title %}
+          <h6 class="cv-tl-title">{{ content.title }}</h6>
+        {% endif %}
 
         {% if content.institution %}
           <p class="cv-tl-inst">
             <i class="fa-solid fa-building-columns"></i>
             {% if content.institution_url %}
-              <a href="{{ content.institution_url }}" target="_blank" rel="noopener noreferrer">{{ content.institution }}<i class="cv-tl-extlink fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="{{ content.institution_url }}" target="_blank" rel="noopener noreferrer">
+                {{- content.institution -}}
+                <i class="cv-tl-extlink fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             {% else %}
               {{ content.institution }}
             {% endif %}

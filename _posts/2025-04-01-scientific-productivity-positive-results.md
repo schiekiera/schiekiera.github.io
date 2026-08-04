@@ -61,7 +61,7 @@ The final corpus comprised **2,280 empirical studies**. Scientific productivity 
 
 ### Annotation and analysis
 
-We randomly sampled **300 papers** (150 from the bottom quartile Q1 and 150 from the top quartile Q4 of scientific productivity) and annotated the result of the first reported hypothesis. Each paper was classified as providing full support, partial support, or no support. Interrater reliability was high (*κ* = .800, 90% agreement).
+We randomly sampled **300 papers** (150 from the bottom quartile Q1 and 150 from the top quartile Q4 of scientific productivity) and annotated the result of the first reported hypothesis. Each paper was classified as providing full support, partial support, or no support. Interrater reliability was high (_κ_ = .800, 90% agreement).
 
 Additionally, we conducted exploratory **abstract-level annotations** on 1,990 studies across all four quartiles, classifying each abstract based on all reported results.
 
@@ -82,7 +82,7 @@ Additionally, we conducted exploratory **abstract-level annotations** on 1,990 s
   </div>
 </div>
 
-Difference: -0.67%, *p* = .500 (one-sided proportion test). A logistic regression testing whether raw group paper count predicted positive results found no significant effect (OR = 1.00, *p* = .356).
+Difference: -0.67%, _p_ = .500 (one-sided proportion test). A logistic regression testing whether raw group paper count predicted positive results found no significant effect (OR = 1.00, _p_ = .356).
 
 <div class="figure-container">
   <img src="/assets/img/blog/scientific_productivity/Figure_3.png" alt="Rates of positive results Q1 vs Q4" data-zoomable>
@@ -91,14 +91,14 @@ Difference: -0.67%, *p* = .500 (one-sided proportion test). A logistic regressio
 
 ### Abstract-level analyses across all quartiles
 
-When extending to abstract-level annotations across all four quartiles, **97.19%** of 1,990 abstracts reported full or partial support. A chi-square test found no significant association between productivity quartile and support category (*χ*²(6) = 6.67, *p* = .353). Logistic regression with scientific productivity as a continuous predictor was likewise non-significant (*p* = .432).
+When extending to abstract-level annotations across all four quartiles, **97.19%** of 1,990 abstracts reported full or partial support. A chi-square test found no significant association between productivity quartile and support category (*χ*²(6) = 6.67, _p_ = .353). Logistic regression with scientific productivity as a continuous predictor was likewise non-significant (_p_ = .432).
 
 <div class="figure-container">
   <img src="/assets/img/blog/scientific_productivity/Figure_4.png" alt="Rates of positive results across all quartiles" data-zoomable>
   <span class="figure-caption">Exploratory abstract-level analysis: Rates of positive results across all four quartiles of scientific productivity. No significant differences emerge. Error bars indicate 95% confidence intervals.</span>
 </div>
 
-An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, *p* = .048).
+An exploratory finding: bottom-quartile groups used the word "significant" more often when describing their first hypothesis results (38% vs. 27%, _p_ = .048).
 
 ## Discussion
 

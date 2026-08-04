@@ -36,7 +36,7 @@ We annotated 1,978 English-language abstracts from clinical psychology researche
 - **Positive Results Only (PRO)**: All reported results support the tested hypotheses.
 - **Mixed or Negative Results (MNR)**: At least one reported result is null, negative, or hypothesis-inconsistent.
 
-Interrater reliability was solid (*κ* = .768, 88% agreement on a subset of 198 independently double-coded abstracts).
+Interrater reliability was solid (_κ_ = .768, 88% agreement on a subset of 198 independently double-coded abstracts).
 
 ### Supervised learning pipelines
 

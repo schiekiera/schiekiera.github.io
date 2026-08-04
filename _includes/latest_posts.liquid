@@ -17,7 +17,13 @@
         {% assign post_href = item.redirect | relative_url %}
         {% assign post_external = false %}
       {% endif %}
-      <a class="home-post-card" href="{{ post_href }}"{% if post_external %} target="_blank" rel="noopener"{% endif %}>
+      <a
+        class="home-post-card"
+        href="{{ post_href }}"
+        {% if post_external %}
+          target="_blank" rel="noopener"
+        {% endif %}
+      >
         {% if item.thumbnail %}
           <div class="home-post-thumb">
             <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title | strip_html }}" loading="lazy">

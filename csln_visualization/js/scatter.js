@@ -9,7 +9,7 @@ const H = 800;
 const PAD = 45;
 const DUR = 450;
 const N_LABELS = 10;
-const EDGE_MAX = 100;   // edges drawn for at most this many head words
+const EDGE_MAX = 100; // edges drawn for at most this many head words
 const R_MIN = 1.4;
 const R_MAX = 15;
 
@@ -20,13 +20,13 @@ export class Scatter {
     this.wrap = wrapEl;
     this.tip = tooltipEl;
 
-    this.pt = new Map();      // word -> [x, y] in SVG units
+    this.pt = new Map(); // word -> [x, y] in SVG units
     this.wordIdx = new Map(); // word -> vocab index
     this.words = [];
-    this.xy = null;           // Float64Array 2n, SVG units
-    this.pi = null;           // stationary distribution, aligned with words
-    this.piOrder = null;      // vocab indices sorted by pi desc
-    this.dustList = [];       // [[vocabIdx, r_svg], ...] for the canvas
+    this.xy = null; // Float64Array 2n, SVG units
+    this.pi = null; // stationary distribution, aligned with words
+    this.piOrder = null; // vocab indices sorted by pi desc
+    this.dustList = []; // [[vocabIdx, r_svg], ...] for the canvas
     this.transform = d3.zoomIdentity;
 
     this.root = this.svg.append("g").attr("class", "root");
@@ -36,7 +36,8 @@ export class Scatter {
     this.gLabels = this.root.append("g");
 
     this.svg.call(
-      d3.zoom()
+      d3
+        .zoom()
         .scaleExtent([0.5, 14])
         .on("zoom", (e) => {
           this.transform = e.transform;
@@ -53,8 +54,14 @@ export class Scatter {
     this.pi = coords.pi;
     const xs = coords.xy.map((p) => p[0]);
     const ys = coords.xy.map((p) => p[1]);
-    const x = d3.scaleLinear().domain(d3.extent(xs)).range([PAD, W - PAD]);
-    const y = d3.scaleLinear().domain(d3.extent(ys)).range([H - PAD, PAD]);
+    const x = d3
+      .scaleLinear()
+      .domain(d3.extent(xs))
+      .range([PAD, W - PAD]);
+    const y = d3
+      .scaleLinear()
+      .domain(d3.extent(ys))
+      .range([H - PAD, PAD]);
     this.xy = new Float64Array(2 * n);
     this.pt.clear();
     this.wordIdx.clear();
@@ -66,8 +73,7 @@ export class Scatter {
       this.pt.set(coords.words[i], [px, py]);
       this.wordIdx.set(coords.words[i], i);
     }
-    this.piOrder = Array.from({ length: n }, (_, i) => i)
-      .sort((a, b) => coords.pi[b] - coords.pi[a]);
+    this.piOrder = Array.from({ length: n }, (_, i) => i).sort((a, b) => coords.pi[b] - coords.pi[a]);
     this.scheduleRedraw();
   }
 
@@ -89,7 +95,10 @@ export class Scatter {
     });
 
     const rScale = (q) => this.rOf(q, qMax);
-    const wScale = d3.scaleLinear().domain([0, Math.max(qMax, 1e-12)]).range([0, 5.5]);
+    const wScale = d3
+      .scaleLinear()
+      .domain([0, Math.max(qMax, 1e-12)])
+      .range([0, 5.5]);
     const alpha = (q) => 0.35 + 0.65 * Math.min(q / Math.max(qMax, 1e-12), 1);
     const t = d3.transition().duration(DUR).ease(d3.easeCubicOut);
 

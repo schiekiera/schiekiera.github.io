@@ -19,9 +19,7 @@ export class Controls {
   }
 
   setActiveStep(k) {
-    this.chipsEl.querySelectorAll("button").forEach((b) =>
-      b.classList.toggle("active", b.dataset.step === String(k))
-    );
+    this.chipsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.step === String(k)));
   }
 
   setPlaying(on) {

@@ -4,137 +4,130 @@
  * ------------------------------------------------------------------ */
 
 const defined = {
-
   /* ---- Hero ---- */
   hero: {
     name: "Louis Schiekiera",
     subtitle: "Computational Cognitive Science",
-    tagline:
-      "Modeling meaning across humans and machines.",
+    tagline: "Modeling meaning across humans and machines.",
     affiliations: [
       { abbr: "HU Berlin", url: "https://www.psychologie.hu-berlin.de/en/staff/1696407" },
-      { abbr: "FU Berlin", url: "https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html" }
+      {
+        abbr: "FU Berlin",
+        url: "https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html",
+      },
     ],
     siteUrl: "https://schiekiera.github.io",
-    siteLabel: "schiekiera.github.io"
+    siteLabel: "schiekiera.github.io",
   },
 
   /* ---- About ---- */
   about: {
-    bio:
-      "I’m a computational scientist at the intersection of cognitive psychology and machine learning. By combining behavioral experiments with computational modeling, I study how meaning is represented across human minds and artificial systems. Currently, I work as a research assistant in the Computational Modeling Group at HU Berlin under the supervision of Fritz Günther.",
+    bio: "I’m a computational scientist at the intersection of cognitive psychology and machine learning. By combining behavioral experiments with computational modeling, I study how meaning is represented across human minds and artificial systems. Currently, I work as a research assistant in the Computational Modeling Group at HU Berlin under the supervision of Fritz Günther.",
     photo: "/assets/img/ls.png",
     photoAlt: "Louis Schiekiera",
     roles: [
       {
         title: "Research Associate",
         org: "Computational Modeling Lab, HU Berlin",
-        url: "https://www.psychologie.hu-berlin.de/en/staff/1696407"
+        url: "https://www.psychologie.hu-berlin.de/en/staff/1696407",
       },
       {
         title: "Ph.D. Candidate",
         org: "Division of Clinical Psychological Intervention, FU Berlin",
-        url: "https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html"
-      }
+        url: "https://www.ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/lschiekiera/index.html",
+      },
     ],
     education: [
       {
         degree: "Ph.D. Psychology",
         inst: "Freie Universität Berlin",
         year: "2023-present",
-        detail: "Focus: Publication bias, machine learning, statistics"
+        detail: "Focus: Publication bias, machine learning, statistics",
       },
       {
         degree: "M.Sc. Psychology",
         inst: "Universität Potsdam",
         year: "2021–2023",
-        detail: "Focus: Statistics, machine learning, clinical psychology"
+        detail: "Focus: Statistics, machine learning, clinical psychology",
       },
       {
         degree: "B.Sc. Psychology",
         inst: "Universität Hamburg",
         year: "2018–2021",
-        detail: "Focus: Statistics, clinical psychology"
+        detail: "Focus: Statistics, clinical psychology",
       },
       {
         degree: "B.A. Sociology & Technology Studies",
         inst: "TU Berlin",
         year: "2014–2018",
-        detail: "Minor: Human Factors Engineering"
-      }
+        detail: "Minor: Human Factors Engineering",
+      },
     ],
     experience: [
       {
         role: "Research Assistant",
         inst: "HU Berlin · Computational Modeling Lab",
         year: "2024–present",
-        detail: "Computational modeling of language production; LLM interpretability"
+        detail: "Computational modeling of language production; LLM interpretability",
       },
       {
         role: "Research Assistant",
         inst: "FU Berlin · Clinical Psychological Intervention",
         year: "2023–2024",
-        detail: "Metascience of clinical psychology, publication bias"
+        detail: "Metascience of clinical psychology, publication bias",
       },
       {
         role: "Student Research Assistant",
         inst: "FU Berlin · Clinical Psychological Intervention",
         year: "2021–2023",
-        detail: "Metascience of clinical psychology, publication bias"
+        detail: "Metascience of clinical psychology, publication bias",
       },
       {
         role: "Student Research Assistant",
         inst: "University of Hamburg · University Hospital Eppendorf",
         year: "2018–2021",
-        detail: "Statistics, medical psychology, medical sociology"
+        detail: "Statistics, medical psychology, medical sociology",
       },
       {
         role: "Student Research Assistant",
         inst: "Technische Universität Berlin · General Sociology",
         year: "2018–2019",
-        detail: "Phenomenology, sociology of knowledge"
-      }
-    ]
+        detail: "Phenomenology, sociology of knowledge",
+      },
+    ],
   },
 
   /* ---- Research focus ---- */
   research: {
-    tldr:
-      "My work spans cognitive science, language models, and the science of science. Click any focus area to see the related publications.",
+    tldr: "My work spans cognitive science, language models, and the science of science. Click any focus area to see the related publications.",
 
     cards: [
       {
         icon: "fa-solid fa-microchip",
         name: "Large Language Models",
-        desc:
-          "Hidden-state geometry, representational alignment with behavioral signals, and using LLMs as tools for metascience research.",
-        url: "https://schiekiera.github.io/publications/?tag=llm"
+        desc: "Hidden-state geometry, representational alignment with behavioral signals, and using LLMs as tools for metascience research.",
+        url: "https://schiekiera.github.io/publications/?tag=llm",
       },
       {
         icon: "fa-solid fa-comments",
         name: "Psycholinguistics",
-        desc:
-          "Lexical access and the geometry of semantic memory, studied with picture naming, free association, and forced-choice paradigms.",
-        url: "https://schiekiera.github.io/publications/?tag=psycholinguistics"
+        desc: "Lexical access and the geometry of semantic memory, studied with picture naming, free association, and forced-choice paradigms.",
+        url: "https://schiekiera.github.io/publications/?tag=psycholinguistics",
       },
       {
         icon: "fa-solid fa-flask",
         name: "Megastudies",
-        desc:
-          "Large-scale datasets for computational modeling, metascience and  LLM behavior.",
-        url: "https://schiekiera.github.io/publications/?tag=megastudies"
+        desc: "Large-scale datasets for computational modeling, metascience and  LLM behavior.",
+        url: "https://schiekiera.github.io/publications/?tag=megastudies",
       },
       {
         icon: "fa-solid fa-magnifying-glass-chart",
         name: "Metascience",
-        desc:
-          "Publication bias, political bias measured with experiments, classical research synthesis methods and NLP.",
-        url: "https://schiekiera.github.io/publications/?tag=metascience"
-      }
-    ]
+        desc: "Publication bias, political bias measured with experiments, classical research synthesis methods and NLP.",
+        url: "https://schiekiera.github.io/publications/?tag=metascience",
+      },
+    ],
   },
-
-
 
   /* ---- Research highlights (selected works with previews) ---- */
   highlights: {
@@ -145,75 +138,68 @@ const defined = {
         tag: "Machine Psychology · ICML 2026",
         title: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs",
         venue: "Schiekiera, Zimmer, Roux, Pokutta & Günther · ICML 2026",
-        desc:
-          "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
+        desc: "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
         preview: "/assets/img/publication_preview/neural_semantic.jpg",
         links: [
           { label: "PDF", url: "https://arxiv.org/pdf/2602.00628" },
           { label: "arXiv", url: "https://arxiv.org/abs/2602.00628" },
           { label: "Code", url: "https://github.com/schiekiera/llm-association-geometry" },
-          { label: "Data", url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" }
-        ]
+          { label: "Data", url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" },
+        ],
       },
       {
         tag: "Open Data · 2026 PsyArXiv Preprint",
         title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
         venue: "Schiekiera, Abdel Rahman, Gruber, Bürki, Lorenz, Stark & Günther · PsyArXiv",
-        desc:
-          "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
+        desc: "An openly accessible dataset of 688,976 trials from 86 PWI experiments across 42 studies (3,353 English- and German-speaking participants). Five sources are harmonized into a single 28-variable schema, and the cleaning pipeline ships with the data so the resource can grow.",
         preview: "/assets/img/publication_preview/pwi_data_distribution.png",
         links: [
           { label: "Preprint", url: "https://osf.io/preprints/psyarxiv/xp69t_v1" },
-          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" }
-        ]
+          { label: "Blog", url: "https://schiekiera.github.io/blog/2026/pwi-dataset/" },
+        ],
       },
       {
         tag: "NLP · 2024",
         title: "Classifying Positive Results Using NLP",
         venue: "Schiekiera, Niemeyer & Diederichs · Zeitschrift für Psychologie",
-        desc:
-          "Fine-tuned SciBERT on ~1,900 manually annotated abstracts, then scanned 20,000+ studies. SciBERT outperformed random-forest baselines in and out of domain; the trend analysis revealed a significant decrease in the share of exclusively positive results between 2005 and 2022.",
+        desc: "Fine-tuned SciBERT on ~1,900 manually annotated abstracts, then scanned 20,000+ studies. SciBERT outperformed random-forest baselines in and out of domain; the trend analysis revealed a significant decrease in the share of exclusively positive results between 2005 and 2022.",
         preview: "/assets/img/publication_preview/attention.png",
         links: [
-          { label: "PDF", url: "https://refubium.fu-berlin.de/bitstream/handle/fub188/45033/schiekiera-et-al-2024-classifying-positive-results-in-clinical-psychology-using-natural-language-processing.pdf?sequence=1&isAllowed=y" },
-          { label: "Code", url: "https://github.com/schiekiera/NegativeResultDetector" }
-        ]
+          {
+            label: "PDF",
+            url: "https://refubium.fu-berlin.de/bitstream/handle/fub188/45033/schiekiera-et-al-2024-classifying-positive-results-in-clinical-psychology-using-natural-language-processing.pdf?sequence=1&isAllowed=y",
+          },
+          { label: "Code", url: "https://github.com/schiekiera/NegativeResultDetector" },
+        ],
       },
       {
         tag: "Metascience · 2025",
         title: "Publication Bias in Psychological Science",
         venue: "Schiekiera et al. · Advances in Methods and Practices in Psychological Science & Collabra Psychology",
-        desc:
-          "A within-subjects study grounded in dual-process decision-making: 303 psychology researchers evaluated fictitious abstracts varying in statistical significance and hypothesis consistency. Significant results were systematically favored; intuitive judgments were rarely revised, and feeling-of-rightness did not predict revision.",
+        desc: "A within-subjects study grounded in dual-process decision-making: 303 psychology researchers evaluated fictitious abstracts varying in statistical significance and hypothesis consistency. Significant results were systematically favored; intuitive judgments were rarely revised, and feeling-of-rightness did not predict revision.",
         preview: "/assets/img/publication_preview/ampps_bias.png",
         links: [
           { label: "PDF", url: "https://journals.sagepub.com/doi/epub/10.1177/25152459251372134" },
-          { label: "Code", url: "https://github.com/schiekiera/metascience_experiment_psychology" }
-        ]
+          { label: "Code", url: "https://github.com/schiekiera/metascience_experiment_psychology" },
+        ],
       },
       {
         tag: "Computational Cognitive Modeling · In progress",
         title: "Swinging Lexical Network — a computational implementation",
         venue: "With Abdel Rahman & Günther · HU Berlin",
-        desc:
-          "Work in progress: Turning a verbal cognitive theory into a runnable model: distributional semantics as semantic memory, Kintsch's construction–integration algorithm for cohort co-activation, parameter estimation from published context-effect studies, and empirical validation in new picture-naming experiments.",
+        desc: "Work in progress: Turning a verbal cognitive theory into a runnable model: distributional semantics as semantic memory, Kintsch's construction–integration algorithm for cohort co-activation, parameter estimation from published context-effect studies, and empirical validation in new picture-naming experiments.",
         preview: "/assets/img/publication_preview/csln.png",
-        links: [
-          { label: "DFG page", url: "https://gepris.dfg.de/gepris/projekt/532390335?language=en" }
-        ]
+        links: [{ label: "DFG page", url: "https://gepris.dfg.de/gepris/projekt/532390335?language=en" }],
       },
       {
         tag: "Mega Study · in progress",
         title: "German Lexicon Project",
         venue: "Multi-lab collaboration · 30+ participating labs",
-        desc:
-          "A large-scale mega study collecting lexical-decision data for a broad sample of German words across more than 30 labs in Germany, Austria, Switzerland, Italy, and the Netherlands. I co-coordinate the data collection and built an automated monitoring pipeline that tracks per-lab progress toward the target of 2,453 participants in near real time.",
+        desc: "A large-scale mega study collecting lexical-decision data for a broad sample of German words across more than 30 labs in Germany, Austria, Switzerland, Italy, and the Netherlands. I co-coordinate the data collection and built an automated monitoring pipeline that tracks per-lab progress toward the target of 2,453 participants in near real time.",
         preview: "/assets/img/publication_preview/glp.png",
-        links: [
-          { label: "GitHub", url: "https://github.com/schiekiera/German_Lexicon_Multilab_Monitoring" }
-        ]
-      }
-    ]
+        links: [{ label: "GitHub", url: "https://github.com/schiekiera/German_Lexicon_Multilab_Monitoring" }],
+      },
+    ],
   },
 
   /* ---- Blog ---- */
@@ -226,44 +212,44 @@ const defined = {
         title: "From Associations to Activations",
         desc: "How behavioral similarity judgments predict hidden-state geometry in instruction-tuned LLMs.",
         date: "Feb 2026",
-        url: "https://schiekiera.github.io/blog/2026/neural-semantic-geometry/"
+        url: "https://schiekiera.github.io/blog/2026/neural-semantic-geometry/",
       },
       {
         tag: "Open Data",
         title: "A Harmonized Trial-Level Dataset of Picture-Word Interference",
         desc: "688,976 trials from 86 PWI experiments across 42 studies, harmonized into a single 28-variable schema with an extensible cleaning pipeline.",
         date: "May 2026",
-        url: "https://schiekiera.github.io/blog/2026/pwi-dataset/"
+        url: "https://schiekiera.github.io/blog/2026/pwi-dataset/",
       },
       {
         tag: "Research Methods",
         title: " Automating Validation of Verbal Responses",
         desc: "A pipeline for the automated validation of verbal responses in word-production experiments in psycholinguistics.",
         date: "2026",
-        url: "https://schiekiera.github.io/blog/2026/asr_validator/"
+        url: "https://schiekiera.github.io/blog/2026/asr_validator/",
       },
       {
         tag: "Metascience",
         title: "Publication Bias in Decision-Making",
         desc: "A dual-process theory informed within-subjects experiment on biases in academic decision-making.",
         date: "Sep 2025",
-        url: "https://schiekiera.github.io/blog/2025/publication-bias-decision-making/"
+        url: "https://schiekiera.github.io/blog/2025/publication-bias-decision-making/",
       },
       {
         tag: "NLP for Science",
         title: "SciBERT for Positive Results",
         desc: "Fine-tuning SciBERT to classify positive vs. mixed/negative results in psychotherapy abstracts.",
         date: "2024",
-        url: "https://schiekiera.github.io/blog/2024/classifying-positive-results/"
+        url: "https://schiekiera.github.io/blog/2024/classifying-positive-results/",
       },
       {
         tag: "Metascience",
         title: "Political Bias in Historical Research",
         desc: "Historians preferred abstracts matching their political orientation and deliberation didn't correct it.",
         date: "May 2025",
-        url: "https://schiekiera.github.io/blog/2025/political-bias-historiography/"
-      }
-    ]
+        url: "https://schiekiera.github.io/blog/2025/political-bias-historiography/",
+      },
+    ],
   },
 
   /* ---- Footer ---- */
@@ -272,15 +258,15 @@ const defined = {
       { label: "Home", url: "https://schiekiera.github.io/" },
       { label: "Publications", url: "https://schiekiera.github.io/publications/" },
       { label: "CV", url: "https://schiekiera.github.io/cv/" },
-      { label: "Blog", url: "https://schiekiera.github.io/blog/" }
+      { label: "Blog", url: "https://schiekiera.github.io/blog/" },
     ],
     social: [
       { icon: "fa-solid fa-envelope", label: "Email", url: "mailto:louis.schiekiera@hu-berlin.de" },
       { icon: "fa-brands fa-github", label: "GitHub", url: "https://github.com/schiekiera" },
       { icon: "fa-brands fa-x-twitter", label: "X / Twitter", url: "https://twitter.com/LJS_Berlin" },
       { icon: "fa-brands fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/louis-schiekiera" },
-      { icon: "fa-brands fa-orcid", label: "ORCID", url: "https://orcid.org/0000-0003-0082-175X" }
+      { icon: "fa-brands fa-orcid", label: "ORCID", url: "https://orcid.org/0000-0003-0082-175X" },
     ],
-    meta: "© Louis Schiekiera · Berlin"
-  }
+    meta: "© Louis Schiekiera · Berlin",
+  },
 };

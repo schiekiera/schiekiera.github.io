@@ -1,8 +1,8 @@
 - date: 2026-06-30
-  course: 'Understanding Representations Using Language Statistics'
+  course: "Understanding Representations Using Language Statistics"
   type: Guest lecture
   semester: SoSe 26
-  seminar: 'Unfinished Business: Open Questions Across Mind, Brain, and Behavior'
+  seminar: "Unfinished Business: Open Questions Across Mind, Brain, and Behavior"
   institution: Humboldt-Universität zu Berlin
   location: Berlin, DE
 
@@ -14,7 +14,7 @@
   location: Berlin, DE
 
 - date: 2025-10-01
-  course: 'Reproducibility in Clinical Psychology Research'
+  course: "Reproducibility in Clinical Psychology Research"
   type: Guest lecture
   semester: WiSe 25/26
   seminar: "Clinical Implications of Open Science and Reproducibility: Confronting Psychology's Credibility Crisis"
@@ -23,10 +23,10 @@
   location: Berlin, DE
 
 - date: 2025-10-01
-  course: 'Metaphors in Large Language Models'
+  course: "Metaphors in Large Language Models"
   type: Guest lecture
   semester: SoSe 25
-  seminar: 'Large Language Models and Human Cognition'
+  seminar: "Large Language Models and Human Cognition"
   host: Fritz Günther
   institution: Humboldt-Universität zu Berlin
   location: Berlin, DE

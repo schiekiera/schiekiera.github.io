@@ -37,20 +37,22 @@ export function renderPanel(el, target, distractor, vars, sv, ranges) {
   const rs = sv.kKey ? ranges.steps[sv.kKey] : null;
   el.innerHTML = `
     <h2><span class="pair-t">${target}</span> – <span class="pair-d">${distractor}</span></h2>
-    ${rung("M1", "pairwise similarity",
-      row("cos(t,d)", vars.cosine_similarity, { range: ranges.cosine_similarity }))}
-    ${rung("M2", "neighborhood density",
+    ${rung("M1", "pairwise similarity", row("cos(t,d)", vars.cosine_similarity, { range: ranges.cosine_similarity }))}
+    ${rung(
+      "M2",
+      "neighborhood density",
       row("Density<sub>fixed</sub>(t)", vars.fixed_density_target, { range: ranges.fixed_density }) +
-      row("Density<sub>fixed</sub>(d)", vars.fixed_density_context, { range: ranges.fixed_density }))}
-    ${rung("M3", "asymmetric spreading",
+        row("Density<sub>fixed</sub>(d)", vars.fixed_density_context, { range: ranges.fixed_density })
+    )}
+    ${rung(
+      "M3",
+      "asymmetric spreading",
       row(`diff<sub>p,${kl}</sub>`, sv.dp, { range: rs?.diff_p }) +
-      row(`p<sub>${kl}</sub>(t→d)`, sv.ptd, { sub: true }) +
-      row(`p<sub>${kl}</sub>(d→t)`, sv.pdt, { sub: true }))}
-    ${rung("M4", "cohort breadth",
-      row(`H<sub>${kl}</sub>`, sv.H, { range: rs?.H }))}
-    ${rung("M5", "multi-step swing",
-      row(`KL(p<sub>${kl}</sub>‖π)`, sv.KL, { range: rs?.KL }) +
-      row(`H(p<sub>${kl}</sub>,π)`, sv.CE, { sub: true }))}
+        row(`p<sub>${kl}</sub>(t→d)`, sv.ptd, { sub: true }) +
+        row(`p<sub>${kl}</sub>(d→t)`, sv.pdt, { sub: true })
+    )}
+    ${rung("M4", "cohort breadth", row(`H<sub>${kl}</sub>`, sv.H, { range: rs?.H }))}
+    ${rung("M5", "multi-step swing", row(`KL(p<sub>${kl}</sub>‖π)`, sv.KL, { range: rs?.KL }) + row(`H(p<sub>${kl}</sub>,π)`, sv.CE, { sub: true }))}
     <div class="panel-meta">${vars.n_trials} trials in df_final · ${sv.note} ·
       bars: min–max across this tool's stimuli</div>
   `;

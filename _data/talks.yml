@@ -1,144 +1,143 @@
-
 - date: 2023-03-15
   venue: STS-hub.de 2023 Circulations
-  description: 'Publication Bias in Academic Publishing: Researchers’ Accounts of Publication Decisions'
+  description: "Publication Bias in Academic Publishing: Researchers’ Accounts of Publication Decisions"
   presentation_type: talk
   link: https://sts-hub.de/STShubDe2023Programme.pdf
   location: RWTH Aachen, DE
   slides: https://sts-hub.de/STShubDe2023Programme.pdf
-  speaker: 'Jacqueline Sachse'
+  speaker: "Jacqueline Sachse"
 
 - date: 2025-04-03
   venue: 4. Deutscher Psychotherapie Kongress (DPK 2025)
-  description: 'Publication Bias in Psychology: Positive Results and Scientific Productivity of Research Groups'
+  description: "Publication Bias in Psychology: Positive Results and Scientific Productivity of Research Groups"
   presentation_type: talk
   slides: /assets/pdf/talks/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf
   link: https://deutscher-psychotherapie-kongress.de
   location: Berlin, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2025-09-03
   venue: ESCOP 2025
-  description: 'Modeling Lexical Competition in Language Production: A Computational Approach to the Swinging Lexical Network'
+  description: "Modeling Lexical Competition in Language Production: A Computational Approach to the Swinging Lexical Network"
   presentation_type: poster
   poster: /assets/pdf/poster/poster_cSLN_schiekiera_2025-08-17.pdf
   link: https://github.com/schiekiera/cSLN_ESCOP_2025
   location: Sheffield, UK
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2025-10-07
   venue: 2025 Planetary Health Annual Meeting
-  description: 'Climate Change and Health Sector Planning: A Mixed-Methods Analysis of National Health Strategies'
+  description: "Climate Change and Health Sector Planning: A Mixed-Methods Analysis of National Health Strategies"
   presentation_type: poster
   poster: /assets/pdf/poster/NHSP_PHAM_Poster.pdf
   link: https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1440/8303144
   location: Rotterdam, NL
-  speaker: 'Mirna Al Masri'
+  speaker: "Mirna Al Masri"
 
 - date: 2025-11-12
   venue: 18th European Public Health Conference (EPH 2025)
-  description: 'Climate Change and Health Sector Planning: A Mixed-Methods Analysis of National Health Strategies'
+  description: "Climate Change and Health Sector Planning: A Mixed-Methods Analysis of National Health Strategies"
   presentation_type: poster
   poster: /assets/pdf/poster/NHSP_EPH_Poster.pdf
   link: https://doi.org/10.1093/eurpub/ckaf161.1440
   location: Helsinki, FI
-  speaker: 'Mirna Al Masri'
+  speaker: "Mirna Al Masri"
 
 - date: 2026-02-05
   venue: Research Colloquium 'Methods', HU Berlin
-  description: 'LLMs as Agents in Psycholinguistic Research'
+  description: "LLMs as Agents in Psycholinguistic Research"
   presentation_type: talk
   slides: /assets/pdf/talks/presentation_research_colloqium.pdf
   link: https://agnes.hu-berlin.de/lupo/rds?state=medialoader&application=lsf&objectid=4556
   location: Berlin, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2026-03-02
   venue: TRUST Network Meeting
-  description: 'Data Collection Process for the German Lexicon Project'
+  description: "Data Collection Process for the German Lexicon Project"
   presentation_type: talk
   slides: /assets/pdf/talks/glp_data.pdf
   link: https://trust-network-guidelines.readthedocs.io/en/latest/
   location: Cologne, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2026-03-16
   venue: TEAP 2026 (Symposium Chair)
-  description: 'Symposium: Computational Modeling of Language Generation (co-chaired with Hanna Wołoszyn, Cologne)'
+  description: "Symposium: Computational Modeling of Language Generation (co-chaired with Hanna Wołoszyn, Cologne)"
   presentation_type: talk
   slides: /assets/pdf/talks/symposium.pdf
   link: https://coms.app/teap26/welcome.html
   location: Tübingen, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2026-03-16
   venue: TEAP 2026
-  description: 'Beyond Lemmas: Modeling the Picture in Picture-Word Interference?'
+  description: "Beyond Lemmas: Modeling the Picture in Picture-Word Interference?"
   presentation_type: talk
   slides: /assets/pdf/talks/presentation_pictures.pdf
   link: https://coms.app/teap26/welcome.html
   location: Tübingen, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2026-03-17
   venue: TEAP 2026
-  description: 'Automated Validation of Verbal Responses in Language-Production Research'
+  description: "Automated Validation of Verbal Responses in Language-Production Research"
   presentation_type: poster
   poster: /assets/pdf/poster/poster_TeaP2026.pdf
   link: https://github.com/vincentgruber/voice-onset-validation-pipeline
   location: Tübingen, DE
-  speaker: 'Vincent Gruber'
+  speaker: "Vincent Gruber"
 
 - date: 2026-03-18
   venue: TEAP 2026
-  description: 'The TRUST Guidelines for Psycholinguistic Reading Studies and the German Lexicon Project'
+  description: "The TRUST Guidelines for Psycholinguistic Reading Studies and the German Lexicon Project"
   presentation_type: talk
   slides: /assets/pdf/talks/TeaP_TRUST.pdf
   link: https://coms.app/teap26/welcome.html
   location: Tübingen, DE
-  speaker: 'Jana Hasenäcker'
+  speaker: "Jana Hasenäcker"
 
 - date: 2026-07-06
   venue: WoProc 2026
-  description: 'The German Lexicon Project'
+  description: "The German Lexicon Project"
   presentation_type: talk
   link: https://www.woproc2026.com/
   slides: /assets/pdf/talks/WoProc2026_Petrenco.pdf
   location: Lisbon, PT
-  speaker: 'Aliona Petrenco'
+  speaker: "Aliona Petrenco"
 
 - date: 2026-07-06
   venue: WoProc 2026
-  description: 'What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties'
+  description: "What Drives Interference? A Mega-Analytic Approach to Predicting Reaction Times from Word Properties"
   presentation_type: talk
   link: https://www.woproc2026.com/
   slides: /assets/pdf/talks/woproc_presentation.pdf
   location: Lisbon, PT
-  speaker: 'Kirsten Stark'
+  speaker: "Kirsten Stark"
 
 - date: 2026-07-07
   venue: ICML 2026
-  description: 'From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs'
+  description: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
   presentation_type: poster
   link: https://arxiv.org/abs/2602.00628
   poster: /assets/pdf/poster/poster_ICML_2026.pdf
   location: Seoul, KR
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"
 
 - date: 2026-04-10
   venue: 16. Tagung der Österreichischen Gesellschaft für Psychologie (ÖGP 2026)
-  description: 'Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)'
+  description: "Transparent, Transferable, and Sustainable Foundation for Psycholinguistic Reading Studies in German, the TRUST Guidelines, and the German Lexicon Project (GLP)"
   presentation_type: poster
   poster: /assets/pdf/poster/ögp_poster.pdf
   link: https://www.oegps.at/aktuelletagung
   location: Salzburg, AT
-  speaker: 'Benjaming Gagl'
+  speaker: "Benjaming Gagl"
 
 - date: 2026-05-20
   venue: Behavioral Clones Workshop 2026
-  description: 'Aligning Behavioral and Hidden-State Semantic Geometry in LLMs'
+  description: "Aligning Behavioral and Hidden-State Semantic Geometry in LLMs"
   presentation_type: talk
   slides: /assets/pdf/talks/presentation_behavioral_clones.pdf
   link: https://machinebehavior.science/behavioral-clones-ws
   location: Berlin, DE
-  speaker: 'Louis Schiekiera'
+  speaker: "Louis Schiekiera"

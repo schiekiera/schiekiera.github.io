@@ -1,3 +1,10 @@
 *.min.css
+*.min.js
 assets/css/main.scss
 assets/plotly/demo.html
+
+# Vendored third-party libraries
+assets/js/distillpub/
+
+# Generated visualization data (single-line JSON; reformatting would inflate it)
+csln_visualization/data/

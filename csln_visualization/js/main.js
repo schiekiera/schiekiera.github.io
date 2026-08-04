@@ -60,9 +60,13 @@ function stepItems(k) {
     const dustN = N - items.length;
     const exclude = new Set([state.target, state.distractor, ...items.map((it) => it.word)]);
     return {
-      items, qMax: items[0]?.q ?? 1, showEdges: false,
+      items,
+      qMax: items[0]?.q ?? 1,
+      showEdges: false,
       dust: dustN > 0 ? { mode: "pi", n: dustN, exclude } : null,
-      shownMass: null, nNeigh, nShown: N,
+      shownMass: null,
+      nNeigh,
+      nShown: N,
     };
   }
   const st = pair.steps[k];
@@ -76,7 +80,9 @@ function stepItems(k) {
   if (N > st.idx.length) {
     const avg = (1 - st.mass) / (nNeigh - st.idx.length);
     dust = {
-      mode: "uniform", q: avg, n: N - st.idx.length,
+      mode: "uniform",
+      q: avg,
+      n: N - st.idx.length,
       exclude: new Set([state.target, state.distractor, ...items.map((it) => it.word)]),
     };
   }
@@ -102,22 +108,38 @@ function panelStepVals(k) {
   const pair = pairData();
   const identity = state.target === state.distractor;
   if (k === "0") {
-    return { kLabel: "0", kKey: null, ptd: identity ? 1 : 0, pdt: identity ? 1 : 0,
-             dp: 0, H: null, CE: null, KL: null, note: "no spreading yet at k = 0" };
+    return {
+      kLabel: "0",
+      kKey: null,
+      ptd: identity ? 1 : 0,
+      pdt: identity ? 1 : 0,
+      dp: 0,
+      H: null,
+      CE: null,
+      KL: null,
+      note: "no spreading yet at k = 0",
+    };
   }
   if (k === "1") {
     const v = pair.vars;
-    return { kLabel: "1", kKey: "1", ptd: v.p1_td, pdt: v.p1_dt, dp: v.diff_p1,
-             H: v.H_k1, CE: v.CE_pi_k1, KL: v.KL_1pi, note: "k = 1 values verbatim from df_final" };
+    return {
+      kLabel: "1",
+      kKey: "1",
+      ptd: v.p1_td,
+      pdt: v.p1_dt,
+      dp: v.diff_p1,
+      H: v.H_k1,
+      CE: v.CE_pi_k1,
+      KL: v.KL_1pi,
+      note: "k = 1 values verbatim from df_final",
+    };
   }
   if (k === "inf") {
     const s = pair.inf;
-    return { kLabel: "∞", kKey: "inf", ptd: s.ptd, pdt: s.pdt, dp: s.dp,
-             H: s.H, CE: s.CE, KL: s.KL, note: "stationary limit (recomputed)" };
+    return { kLabel: "∞", kKey: "inf", ptd: s.ptd, pdt: s.pdt, dp: s.dp, H: s.H, CE: s.CE, KL: s.KL, note: "stationary limit (recomputed)" };
   }
   const s = pair.steps[k];
-  return { kLabel: k, kKey: k, ptd: s.ptd, pdt: s.pdt, dp: s.dp,
-           H: s.H, CE: s.CE, KL: s.KL, note: `M3–M5 recomputed at k = ${k}` };
+  return { kLabel: k, kKey: k, ptd: s.ptd, pdt: s.pdt, dp: s.dp, H: s.H, CE: s.CE, KL: s.KL, note: `M3–M5 recomputed at k = ${k}` };
 }
 
 function render() {
@@ -130,8 +152,7 @@ function render() {
     showEdges: view.showEdges,
     dust: view.dust,
   });
-  renderPanel(document.getElementById("panel"), state.target, state.distractor,
-              pairData().vars, panelStepVals(state.k), state.index.ranges);
+  renderPanel(document.getElementById("panel"), state.target, state.distractor, pairData().vars, panelStepVals(state.k), state.index.ranges);
   controls.setActiveStep(state.k);
   controls.setCaption(caption(state.k, view));
 }
@@ -182,9 +203,12 @@ async function setTarget(word, preferredDistractor = null) {
     o.value = o.textContent = d;
     distractorSel.appendChild(o);
   }
-  let pick = preferredDistractor && entry.distractors.includes(preferredDistractor)
-    ? preferredDistractor
-    : (word === "bed" && entry.distractors.includes("sofa") ? "sofa" : entry.distractors[0]);
+  let pick =
+    preferredDistractor && entry.distractors.includes(preferredDistractor)
+      ? preferredDistractor
+      : word === "bed" && entry.distractors.includes("sofa")
+        ? "sofa"
+        : entry.distractors[0];
   distractorSel.value = pick;
   setDistractor(pick);
 }
@@ -249,6 +273,5 @@ async function boot() {
 
 boot().catch((e) => {
   console.error(e);
-  document.getElementById("caption").textContent =
-    `failed to load data — run precompute.py first (${e.message})`;
+  document.getElementById("caption").textContent = `failed to load data — run precompute.py first (${e.message})`;
 });
