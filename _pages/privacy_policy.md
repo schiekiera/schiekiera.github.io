@@ -48,6 +48,7 @@ Personal data are stored only as long as necessary to achieve the purposes state
 ### 6. Your Rights
 
 You have the right to request:
+
 <div class="enumsBlue" markdown="1">
 - access, correction, deletion, or restriction of your data  
 - to object to processing (Art. 21 GDPR)  

@@ -19,6 +19,7 @@ nav_order: 5
 {% endfor %}
 
 {% if talks_only.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">talks</h3>
   <div class="talks-grid">
@@ -51,6 +52,7 @@ nav_order: 5
 {% endif %}
 
 {% if posters_only.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">posters</h3>
   <div class="talks-grid">
@@ -85,6 +87,7 @@ nav_order: 5
 
 {% assign all_events = site.data.events | sort: "date" | reverse %}
 {% if all_events.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">event participation</h3>
   <ul class="activity-list">
@@ -103,6 +106,7 @@ nav_order: 5
 
 {% assign teaching_activities = site.data.teaching | sort: "date" | reverse %}
 {% if teaching_activities.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">teaching</h3>
   <ul class="activity-list">
@@ -121,6 +125,7 @@ nav_order: 5
 
 {% assign consulting_activities = site.data.consulting | sort: "date" | reverse %}
 {% if consulting_activities.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">consulting</h3>
   <ul class="activity-list">
@@ -139,6 +144,7 @@ nav_order: 5
 
 {% assign reviewing_activities = site.data.other | where: "type", "reviewing" | sort: "date" | reverse %}
 {% if reviewing_activities.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">reviewing</h3>
   <div class="reviewing-pills">
@@ -149,6 +155,7 @@ nav_order: 5
 
 {% assign media_activities = site.data.other | where: "type", "media" | sort: "date" | reverse %}
 {% if media_activities.size > 0 %}
+
 <div class="talks-section">
   <h3 class="talks-section-header">media & interviews</h3>
   <ul class="activity-list">

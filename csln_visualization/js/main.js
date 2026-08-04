@@ -94,12 +94,16 @@ function caption(k, view) {
   if (k === "0") return "k = 0 — only target and distractor are active; step through k or press play.";
   if (k === "inf") {
     return view.dust
-      ? `k = ∞: stationary distribution π over the full vocabulary — top ${view.items.length} marked, remaining ${view.dust.n.toLocaleString()} words sized by π (exact).`
+      ? `k = ∞: stationary distribution π over the full vocabulary — top ${
+          view.items.length
+        } marked, remaining ${view.dust.n.toLocaleString()} words sized by π (exact).`
       : `k = ∞: top ${view.items.length} of the stationary distribution π.`;
   }
   const massPct = (view.shownMass * 100).toFixed(1);
   if (!view.dust) {
-    return `k = ${k}: joint activation of target + distractor · top ${view.items.length} of ${view.nNeigh.toLocaleString()} neighbours · shown mass = ${massPct}%.`;
+    return `k = ${k}: joint activation of target + distractor · top ${
+      view.items.length
+    } of ${view.nNeigh.toLocaleString()} neighbours · shown mass = ${massPct}%.`;
   }
   return `k = ${k}: top ${HEAD} exact (${massPct}% of the mass) + ${view.dust.n.toLocaleString()} tail words at their average activation — the model itself always uses all ${view.nNeigh.toLocaleString()} neighbours.`;
 }
