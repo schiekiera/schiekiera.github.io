@@ -244,9 +244,15 @@
         const d = defined.footer;
         document.getElementById("footer").innerHTML = `
         <div class="intro-footer__inner">
-          <div class="intro-footer__links">${d.links.map((l) => `<a href="${l.url}">${l.label}</a>`).join('<span class="intro-footer__sep">·</span>')}</div>
+          <div class="intro-footer__links">${d.links
+            .map((l) => `<a href="${l.url}">${l.label}</a>`)
+            .join('<span class="intro-footer__sep">·</span>')}</div>
           <div class="intro-footer__social">
-            ${d.social.map((s) => `<a href="${s.url}" target="_blank" rel="noopener" title="${s.label}" aria-label="${s.label}"><i class="${s.icon}"></i></a>`).join("")}
+            ${d.social
+              .map(
+                (s) => `<a href="${s.url}" target="_blank" rel="noopener" title="${s.label}" aria-label="${s.label}"><i class="${s.icon}"></i></a>`
+              )
+              .join("")}
           </div>
           <div class="intro-footer__meta">${d.meta}</div>
         </div>`;
