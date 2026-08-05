@@ -35,11 +35,13 @@ Legal basis: Art. 6(1)(f) GDPR (legitimate interest in the secure and stable pro
 
 #### b) Emails
 
-If you contact me via email, your message and contact data will be stored to process your inquiry. No data are shared with third parties unless required by law.
+If you contact me via email, your message and contact data will be stored to process your inquiry. No data are shared with third parties unless required by law. Your message is deleted once the inquiry has been dealt with conclusively, unless statutory retention periods apply.
+
+Legal basis: Art. 6(1)(f) GDPR (legitimate interest in responding to your inquiry).
 
 ### 4. No Analytics and No Tracking
 
-This website uses **no web analytics, no tracking, and no advertising**. No usage profiles are created, and no data are transmitted to analytics providers.
+This website uses **no web analytics, no tracking, and no advertising**. No usage profiles are created, and no data are transmitted to analytics providers. The site offers no comment function, no newsletter, and no user accounts. Apart from email correspondence, I therefore store no personal data about visitors.
 
 ### 5. Cookies and Local Storage
 
@@ -61,11 +63,7 @@ In order to deliver this website, some resources are loaded from third-party ser
 
 Legal basis: Art. 6(1)(f) GDPR (legitimate interest in the technically reliable presentation of the website and in displaying bibliometric information alongside publications).
 
-### 7. Data Retention
-
-Personal data are stored only as long as necessary to achieve the purposes stated above or as required by law. Email correspondence is deleted once your inquiry has been dealt with conclusively and no statutory retention periods apply. This website offers no comment function and no user accounts.
-
-### 8. Your Rights
+### 7. Your Rights
 
 You have the right to request:
 
@@ -76,11 +74,11 @@ You have the right to request:
 - and to lodge a complaint with a supervisory authority.
 </div>
 
-### 9. Security
+### 8. Security
 
 All reasonable technical and organizational measures are taken to protect your data. However, Internet transmission cannot be guaranteed to be 100% secure.
 
-### 10. Updates
+### 9. Updates
 
 This Privacy Policy may be updated from time to time. The latest version is always available at [https://schiekiera.github.io/privacy-policy/](https://schiekiera.github.io/privacy-policy/).
 
@@ -109,11 +107,13 @@ Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren 
 
 #### b) Kommunikation per E-Mail
 
-Wenn Sie mich per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Eine Weitergabe an Dritte erfolgt nicht.
+Wenn Sie mich per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Eine Weitergabe an Dritte erfolgt nicht. Ihre Nachricht wird gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung Ihrer Anfrage).
 
 ### 4. Keine Reichweitenmessung, kein Tracking
 
-Diese Website verwendet **keine Webanalyse, kein Tracking und keine Werbung**. Es werden keine Nutzungsprofile erstellt und keine Daten an Analyse-Dienstleister übermittelt.
+Diese Website verwendet **keine Webanalyse, kein Tracking und keine Werbung**. Es werden keine Nutzungsprofile erstellt und keine Daten an Analyse-Dienstleister übermittelt. Die Website bietet keine Kommentarfunktion, keinen Newsletter und keine Nutzerkonten. Abgesehen von der E-Mail-Korrespondenz speichere ich daher keine personenbezogenen Daten über Besucherinnen und Besucher.
 
 ### 5. Cookies und lokaler Speicher
 
@@ -135,18 +135,14 @@ Zur Auslieferung dieser Website werden einzelne Ressourcen von Servern Dritter g
 
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer technisch zuverlässigen Darstellung der Website sowie an der Anzeige bibliometrischer Informationen zu Publikationen).
 
-### 7. Speicherdauer
-
-Personenbezogene Daten werden nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. E-Mail-Korrespondenz wird gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen. Diese Website bietet keine Kommentarfunktion und keine Nutzerkonten.
-
-### 8. Ihre Rechte
+### 7. Ihre Rechte
 
 Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch (Art. 21 DSGVO) sowie Datenübertragbarkeit. Zudem besteht ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde.
 
-### 9. Datensicherheit
+### 8. Datensicherheit
 
 Es werden alle zumutbaren technischen und organisatorischen Maßnahmen ergriffen, um Ihre Daten zu schützen. Eine vollständige Sicherheit kann jedoch nicht gewährleistet werden.
 
-### 10. Änderungen dieser Datenschutzerklärung
+### 9. Änderungen dieser Datenschutzerklärung
 
 Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die aktuelle Version ist stets unter [https://schiekiera.github.io/privacy-policy/](https://schiekiera.github.io/privacy-policy/) abrufbar.
