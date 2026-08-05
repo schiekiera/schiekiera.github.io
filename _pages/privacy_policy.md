@@ -7,14 +7,14 @@ title: "Privacy Policy / Datenschutzerklärung"
 permalink: /privacy-policy/
 ---
 
-_Last updated: October 2025_  
-_Aktualisiert: Oktober 2025_
+_Last updated: August 2026_  
+_Aktualisiert: August 2026_
 
 ## English Version
 
 ### 1. Overview
 
-This website (https://schiekiera.github.io) is operated by **Louis Schiekiera** as a personal, non-commercial academic homepage. This Privacy Policy explains what personal data is collected, how it is used, and your rights under the GDPR.
+This website (https://schiekiera.github.io) is operated by **Louis Schiekiera** as a personal, non-commercial academic homepage. This Privacy Policy explains what personal data is processed, how it is used, and your rights under the GDPR.
 
 ### 2. Data Controller
 
@@ -23,29 +23,49 @@ Email: [louis.schiekiera@hu-berlin.de](mailto:louis.schiekiera@hu-berlin.de)
 
 ### 3. Data Collection and Use
 
-#### a) Server Logs
+#### a) Hosting and Server Logs
 
-When you access this website, the webserver automatically stores log files (IP address, browser type/version, operating system, referrer URL, time of request). These data are required for technical operation and security and are deleted automatically after a short period (usually 14 days).
+This website is hosted on **GitHub Pages**, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you access the site, GitHub's servers automatically process technical access data, in particular your IP address, browser type and version, operating system, referrer URL, and the date and time of the request. This processing is technically necessary in order to deliver the website and to ensure its secure operation.
 
-Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure and stable website operation).
+I do not operate the webserver myself. I have no access to these log files and no influence over how long GitHub retains them. Details can be found in the [GitHub Privacy Statement](https://docs.github.com/privacy).
+
+GitHub is certified under the EU-U.S. Data Privacy Framework, which provides the basis for the transfer of personal data to the United States.
+
+Legal basis: Art. 6(1)(f) GDPR (legitimate interest in the secure and stable provision of the website).
 
 #### b) Emails
 
 If you contact me via email, your message and contact data will be stored to process your inquiry. No data are shared with third parties unless required by law.
 
-### 4. Cookies and Analytics
+### 4. No Analytics and No Tracking
 
-This site uses a self‑hosted installation of Plausible Analytics to measure website usage. The analytics software is privacy‑focused and cookie‑free. It does not use cookies and does not collect personally identifiable information; measurements are aggregated and anonymous, with no cross‑site tracking and no advertising profiles.
+This website uses **no web analytics, no tracking, and no advertising**. No usage profiles are created, and no data are transmitted to analytics providers.
 
-Analytics data are processed on our own server under our control; no data are sent to plausible.io or third‑party analytics providers. For the software’s privacy approach, see Plausible’s documentation: https://plausible.io/data-policy.
+### 5. Cookies and Local Storage
 
-Legal basis: Art. 6(1)(f) GDPR (legitimate interest in privacy‑friendly audience measurement). This site does not rely on non‑essential cookies for analytics.
+This website sets **no cookies**.
 
-### 5. Data Retention
+If you switch between the light and dark colour scheme, your choice is stored in your browser's local storage under the key `theme`. This entry contains only the selected colour scheme, remains on your device, is transmitted neither to me nor to third parties, and is not used to recognise you or to trace your behaviour. You can delete it at any time via your browser settings.
 
-Personal data are stored only as long as necessary to achieve the purposes stated above or as required by law. AI News posts may remain online until removed or moderated. Blog comments are stored by GitHub as part of GitHub Discussions until deleted there.
+### 6. Externally Hosted Content (CDNs and Badges)
 
-### 6. Your Rights
+In order to deliver this website, some resources are loaded from third-party servers. When this happens, your IP address is necessarily transmitted to the respective provider, because the content cannot otherwise be delivered to your browser. These providers may process such data for their own purposes, over which I have no influence.
+
+<div class="enumsBlue" markdown="1">
+- **jsDelivr** (cdn.jsdelivr.net): JavaScript and CSS libraries. [Privacy policy](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
+- **unpkg** (unpkg.com): table component used on the publications page
+- **Google Fonts** (fonts.googleapis.com, fonts.gstatic.com), provided by Google Ireland Limited: web fonts. [Privacy policy](https://policies.google.com/privacy)
+- **Altmetric** (d1bxh8uas1mnw7.cloudfront.net), a Digital Science service: attention badges shown next to publications. [Privacy policy](https://www.altmetric.com/privacy-policy/)
+- **Dimensions** (badge.dimensions.ai), a Digital Science service: citation badges shown next to publications. [Privacy policy](https://www.digital-science.com/privacy-policy/)
+</div>
+
+Legal basis: Art. 6(1)(f) GDPR (legitimate interest in the technically reliable presentation of the website and in displaying bibliometric information alongside publications).
+
+### 7. Data Retention
+
+Personal data are stored only as long as necessary to achieve the purposes stated above or as required by law. Email correspondence is deleted once your inquiry has been dealt with conclusively and no statutory retention periods apply. This website offers no comment function and no user accounts.
+
+### 8. Your Rights
 
 You have the right to request:
 
@@ -56,11 +76,11 @@ You have the right to request:
 - and to lodge a complaint with a supervisory authority.
 </div>
 
-### 7. Security
+### 9. Security
 
 All reasonable technical and organizational measures are taken to protect your data. However, Internet transmission cannot be guaranteed to be 100% secure.
 
-### 8. Updates
+### 10. Updates
 
 This Privacy Policy may be updated from time to time. The latest version is always available at [https://schiekiera.github.io/privacy-policy/](https://schiekiera.github.io/privacy-policy/).
 
@@ -77,36 +97,56 @@ E-Mail: [louis.schiekiera@hu-berlin.de](mailto:louis.schiekiera@hu-berlin.de)
 
 ### 3. Erhebung und Verarbeitung personenbezogener Daten
 
-#### a) Server-Logfiles
+#### a) Hosting und Server-Logfiles
 
-Beim Aufruf der Website werden automatisch Logfiles erfasst (IP-Adresse, Browsertyp und -version, Betriebssystem, Referrer-URL, Uhrzeit der Anfrage). Diese Daten sind technisch erforderlich, um die Website bereitzustellen, und werden nach spätestens 14 Tagen gelöscht.
+Diese Website wird auf **GitHub Pages** gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeiten die Server von GitHub automatisch technische Zugriffsdaten, insbesondere Ihre IP-Adresse, Browsertyp und -version, Betriebssystem, Referrer-URL sowie Datum und Uhrzeit der Anfrage. Diese Verarbeitung ist technisch erforderlich, um die Website auszuliefern und ihren sicheren Betrieb zu gewährleisten.
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website).
+Ich betreibe den Webserver nicht selbst. Ich habe keinen Zugriff auf diese Logfiles und keinen Einfluss auf deren Speicherdauer. Einzelheiten ergeben sich aus der [Datenschutzerklärung von GitHub](https://docs.github.com/privacy).
+
+GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert; hierauf stützt sich die Übermittlung personenbezogener Daten in die USA.
+
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren und stabilen Betrieb der Website).
 
 #### b) Kommunikation per E-Mail
 
 Wenn Sie mich per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Eine Weitergabe an Dritte erfolgt nicht.
 
-### 4. Cookies und Analyse
+### 4. Keine Reichweitenmessung, kein Tracking
 
-Diese Website verwendet eine selbst gehostete Installation von Plausible Analytics zur Reichweitenmessung. Die Analysesoftware ist datenschutzfreundlich und setzt keine Cookies ein. Es werden keine personenbezogenen Daten erhoben; die Messungen sind aggregiert und anonym, ohne seitenübergreifendes Tracking und ohne Werbe‑Profiling.
+Diese Website verwendet **keine Webanalyse, kein Tracking und keine Werbung**. Es werden keine Nutzungsprofile erstellt und keine Daten an Analyse-Dienstleister übermittelt.
 
-Die Analysedaten werden auf einem von uns betriebenen Server verarbeitet; es werden keine Daten an plausible.io oder sonstige Drittanbieter von Analytics übermittelt. Zum Datenschutzansatz der Software siehe die Hinweise von Plausible: https://plausible.io/data-policy.
+### 5. Cookies und lokaler Speicher
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer datenschutzfreundlichen Reichweitenmessung). Für die Analyse setzt diese Website keine nicht zwingend erforderlichen Cookies ein.
+Diese Website setzt **keine Cookies**.
 
-### 5. Speicherdauer
+Wenn Sie zwischen hellem und dunklem Farbschema wechseln, wird Ihre Auswahl im lokalen Speicher (Local Storage) Ihres Browsers unter dem Schlüssel `theme` gespeichert. Dieser Eintrag enthält ausschließlich das gewählte Farbschema, verbleibt auf Ihrem Endgerät, wird weder an mich noch an Dritte übermittelt und dient nicht dazu, Sie wiederzuerkennen oder Ihr Verhalten nachzuvollziehen. Sie können ihn jederzeit über die Einstellungen Ihres Browsers löschen.
 
-Personenbezogene Daten werden nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. AI-News-Beiträge können online bleiben, bis sie entfernt oder moderiert werden. Blog-Kommentare werden von GitHub im Rahmen von GitHub Discussions gespeichert, bis sie dort gelöscht werden.
+### 6. Extern eingebundene Inhalte (CDNs und Badges)
 
-### 6. Ihre Rechte
+Zur Auslieferung dieser Website werden einzelne Ressourcen von Servern Dritter geladen. Dabei wird Ihre IP-Adresse zwangsläufig an den jeweiligen Anbieter übermittelt, da die Inhalte ohne sie nicht an Ihren Browser ausgeliefert werden können. Die Anbieter können diese Daten zu eigenen Zwecken verarbeiten; hierauf habe ich keinen Einfluss.
+
+<div class="enumsBlue" markdown="1">
+- **jsDelivr** (cdn.jsdelivr.net): JavaScript- und CSS-Bibliotheken. [Datenschutzerklärung](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
+- **unpkg** (unpkg.com): Tabellenkomponente auf der Publikationsseite
+- **Google Fonts** (fonts.googleapis.com, fonts.gstatic.com), bereitgestellt durch Google Ireland Limited: Schriftarten. [Datenschutzerklärung](https://policies.google.com/privacy)
+- **Altmetric** (d1bxh8uas1mnw7.cloudfront.net), ein Dienst von Digital Science: Aufmerksamkeits-Badges bei Publikationen. [Datenschutzerklärung](https://www.altmetric.com/privacy-policy/)
+- **Dimensions** (badge.dimensions.ai), ein Dienst von Digital Science: Zitations-Badges bei Publikationen. [Datenschutzerklärung](https://www.digital-science.com/privacy-policy/)
+</div>
+
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer technisch zuverlässigen Darstellung der Website sowie an der Anzeige bibliometrischer Informationen zu Publikationen).
+
+### 7. Speicherdauer
+
+Personenbezogene Daten werden nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. E-Mail-Korrespondenz wird gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen. Diese Website bietet keine Kommentarfunktion und keine Nutzerkonten.
+
+### 8. Ihre Rechte
 
 Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch (Art. 21 DSGVO) sowie Datenübertragbarkeit. Zudem besteht ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde.
 
-### 7. Datensicherheit
+### 9. Datensicherheit
 
 Es werden alle zumutbaren technischen und organisatorischen Maßnahmen ergriffen, um Ihre Daten zu schützen. Eine vollständige Sicherheit kann jedoch nicht gewährleistet werden.
 
-### 8. Änderungen dieser Datenschutzerklärung
+### 10. Änderungen dieser Datenschutzerklärung
 
 Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die aktuelle Version ist stets unter [https://schiekiera.github.io/privacy-policy/](https://schiekiera.github.io/privacy-policy/) abrufbar.
