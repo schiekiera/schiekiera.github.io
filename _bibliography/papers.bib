@@ -19,7 +19,7 @@
   bibtex_show    = {true},
   selected       = {true},
   selected_front = {true},
-  tags           = {statistics},
+  tags           = {machine_learning},
   abstract       = {Spike-and-slab regression is a standard Bayesian formulation of variable selection: it returns a posterior distribution over which candidate effects are active rather than a single selected subset, so that every candidate effect carries an inclusion probability. Its cost grows exponentially with the number of candidate effects, so the posterior can be enumerated exactly only when the number of predictors is small. Beyond that reach, the posterior has to be approximated, typically by Markov chain Monte Carlo over the model space, which requires a fresh run for every dataset and, within a fixed budget of steps, may fail to converge. We present LinearPFN, a prior-data fitted transformer network that amortizes spike-and-slab inference for linear models with main effects and pairwise interactions. The network is pretrained once on synthetic datasets, drawn from an explicitly specified prior, and a single forward pass over a new dataset returns posterior inclusion probabilities, posterior-mean coefficients and posterior predictive distributions with no per-dataset fitting. The prior is conjugate by design, so that the posterior for each fixed set of active effects has a closed form, and wherever the exact posterior is still computable by enumeration we verify the network's outputs against it. On real predictor matrices from published social-science datasets, with outcomes drawn from the prior so that the true active set is known, LinearPFN attains a higher per-dataset selection AUC and a higher F1 under the median probability model rule than five classical baselines. The lead holds when the coefficients, the interactions or the noise depart from the prior.}
 }
 
@@ -38,7 +38,7 @@
   bibtex_show    = {true},
   selected       = {true},
   selected_front = {false},
-  tags           = {LLM, megastudies}
+  tags           = {machine_learning, megastudies}
 }
 
 @misc{schiekiera2026pwi_dataset,
@@ -79,7 +79,7 @@
   supp           = {https://huggingface.co/datasets/schiekiera/llm-association-geometry},
   preview        = {https://schiekiera.github.io/assets/img/publication_preview/neural_semantic2.jpg},
   tldr           = {/blog/2026/neural-semantic-geometry/},
-  tags           = {LLM, psycholinguistics, megastudies},
+  tags           = {machine_learning, psycholinguistics, megastudies},
   abstract       = {We investigate the extent to which an LLM’s hidden-state geometry can be recovered from its behavior in psycholinguistic experiments. Across eight instruction-tuned transformer models, we run two experimental paradigms—similarity-based forced choice and free association—over a shared 5,000-word vocabulary, collecting 17.5M+ trials to build behavior-based similarity matrices. Using representational similarity analysis, we compare behavioral geometries to layerwise hidden-state similarity and benchmark against FastText, BERT, and cross-model consensus. We find that forced-choice behavior aligns substantially more with hidden-state geometry than free association. In a held-out-words regression, behavioral similarity (especially forced choice) predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus, indicating that behavior-only measurements retain recoverable information about internal semantic geometry. Finally, we discuss implications for the ability of behavioral tasks to uncover hidden cognitive states.}
 }
 
@@ -171,7 +171,7 @@
   tldr        = {/blog/2024/classifying-positive-results/},
   supp        = {https://econtent.hogrefe.com/doi/suppl/10.1027/2151-2604/a000563/suppl_file/2151-2604_a000563_esm1.pdf},
   abstract    = {This study addresses the gap in machine learning tools for positive results classification by evaluating the performance of SciBERT, a transformer model pretrained on scientific text, and random forest in clinical psychology abstracts. Over 1,900 abstracts were annotated into two categories: positive results only and mixed or negative results. Model performance was evaluated on three benchmarks. The best-performing model was utilized to analyze trends in over 20,000 psychotherapy study abstracts. SciBERT outperformed all benchmarks and random forest in in-domain and out-of-domain data. The trend analysis revealed nonsignificant effects of publication year on positive results for 1990–2005, but a significant decrease in positive results between 2005 and 2022. When examining the entire time span, significant positive linear and negative quadratic effects were observed. Machine learning could support future efforts to understand patterns of positive results in large data sets. The fine-tuned SciBERT model was deployed for public use.},
-  tags        = {metascience, LLM, clinical_psychology, megastudies}
+  tags        = {metascience, machine_learning, clinical_psychology, megastudies}
 }
 
 @incollection{niemeyer_schiekiera_2024_bookchapter,

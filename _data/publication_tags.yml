@@ -1,8 +1,8 @@
 - tag: psycholinguistics
   name: Psycholinguistics
 
-- tag: LLM
-  name: Large Language Models
+- tag: machine_learning
+  name: Machine Learning
 
 - tag: megastudies
   name: Megastudies
@@ -12,6 +12,3 @@
 
 - tag: clinical_psychology
   name: Clinical Psychology
-
-- tag: statistics
-  name: Statistical Methods
