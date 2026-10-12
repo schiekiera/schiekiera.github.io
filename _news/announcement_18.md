@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint: _From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs_ ([Preprint](https://arxiv.org/abs/2602.00628), [TLDR](/blog/2026/neural-semantic-geometry/)).
+New preprint: _From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs_ ([Preprint](https://arxiv.org/pdf/2602.00628), [TLDR](/blog/2026/neural-semantic-geometry/)).

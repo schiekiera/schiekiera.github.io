@@ -12,7 +12,7 @@ authors:
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
 publication_type: "ICML 2026"
-paper_url: "https://proceedings.mlr.press/v306/schiekiera26a.html"
+paper_url: "https://arxiv.org/pdf/2602.00628"
 code_url: "https://github.com/schiekiera/llm-association-geometry"
 data_url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry"
 giscus_comments: false
