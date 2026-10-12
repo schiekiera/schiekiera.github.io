@@ -1,0 +1,20 @@
+{% comment %} Teaching rows for the CV, read straight from _data/teaching.yml. {% endcomment %}
+{% assign teaching_items = site.data.teaching | sort: 'date' | reverse %}
+<ul class="activity-list">
+  {% for activity in teaching_items %}
+    <li class="activity-row">
+      <span class="activity-row__date">{{ activity.semester }}</span>
+      <span class="activity-row__main">
+        <span class="activity-row__venue">{{ activity.course }}</span>
+        {%- if activity.type %}
+          <span class="activity-row__loc">({{ activity.type }})</span>
+        {%- endif %}
+        <span class="activity-row__sub">
+          {{- activity.institution -}}
+          {%- if activity.location %}, {{ activity.location }}{% endif %}
+          {%- if activity.seminar %} · {{ activity.seminar }}{% endif -%}
+        </span>
+      </span>
+    </li>
+  {% endfor %}
+</ul>

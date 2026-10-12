@@ -66,3 +66,16 @@
         - "Thesis: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
         - "Advisors: Dr. René Tuma & Prof. Jan-Peter Voß"
         - "Minor: Human Factors Engineering"
+
+# The sections below render straight from _data/teaching.yml and
+# _data/talks.yml, so there is nothing to keep in sync here.
+- title: Teaching
+  type: teaching
+
+- title: Talks
+  type: presentations
+  kind: talk
+
+- title: Posters
+  type: presentations
+  kind: poster

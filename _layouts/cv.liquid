@@ -7,6 +7,11 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
+        {% if page.cv_print %}
+          <button type="button" class="cv-print-btn" onclick="window.print()">
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Save as PDF
+          </button>
+        {% endif %}
         {% if page.cv_pdf %}
           <a
             href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
@@ -39,6 +44,10 @@ layout: default
                 {% include cv/time_table.liquid %}
               {% elsif entry.type == 'list_groups' %}
                 {% include cv/list_groups.liquid %}
+              {% elsif entry.type == 'teaching' %}
+                {% include cv/teaching.liquid %}
+              {% elsif entry.type == 'presentations' %}
+                {% include cv/presentations.liquid kind=entry.kind %}
               {% else %}
                 {{ entry.contents }}
               {% endif %}
@@ -53,6 +62,11 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
+        {% if page.cv_print %}
+          <button type="button" class="cv-print-btn" onclick="window.print()">
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Save as PDF
+          </button>
+        {% endif %}
         {% if page.cv_pdf %}
           <a
             href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"

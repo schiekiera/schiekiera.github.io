@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-07-06 12:00:00+0100
+type: talk
 inline: true
 related_posts: false
 ---

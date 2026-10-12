@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-02-03 12:00:00+0100
+type: preprint
 inline: true
 related_posts: false
 ---

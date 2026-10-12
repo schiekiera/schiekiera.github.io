@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-03-17 12:00:00+0100
+type: poster
 inline: true
 related_posts: false
 ---

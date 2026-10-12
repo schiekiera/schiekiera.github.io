@@ -44,7 +44,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -318,7 +318,9 @@ filtered_bibtex_keywords:
     selected_front,
     slides,
     supp,
+    supp_label,
     tags,
+    tldr,
     video,
     website,
   ]

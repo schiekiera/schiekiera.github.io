@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-10-07 12:00:00+0100
+type: teaching
 inline: true
 related_posts: false
 ---

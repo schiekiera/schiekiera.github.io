@@ -1,0 +1,32 @@
+# Icon shown in front of each news item. Every _news/announcement_*.md sets
+# `type:` to one of these keys; items without a known type fall back to `other`.
+paper:
+  icon: fa-solid fa-file-lines
+  label: Paper
+preprint:
+  icon: fa-solid fa-file-pen
+  label: Preprint
+talk:
+  icon: fa-solid fa-microphone
+  label: Talk
+poster:
+  icon: fa-solid fa-image
+  label: Poster
+teaching:
+  icon: fa-solid fa-chalkboard-user
+  label: Teaching
+career:
+  icon: fa-solid fa-briefcase
+  label: Career
+media:
+  icon: fa-solid fa-newspaper
+  label: Media
+award:
+  icon: fa-solid fa-trophy
+  label: Award
+event:
+  icon: fa-solid fa-users
+  label: Event
+other:
+  icon: fa-solid fa-bullhorn
+  label: News

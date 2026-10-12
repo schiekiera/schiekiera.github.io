@@ -627,7 +627,7 @@ html[data-theme="dark"] .publications ol.bibliography li:hover {
 
 // --- Typography: lead paragraph on the about page reads with more presence
 // without changing layout or font.
-article > p:first-of-type {
+article:not(.talk-card) > p:first-of-type {
   font-size: 1.06rem;
   line-height: 1.65;
 }
@@ -917,13 +917,13 @@ html[data-theme="dark"] {
 }
 
 .talk-card--talk .talk-card__kind {
-  background: rgba(37, 99, 235, 0.12);
-  color: #2563eb;
+  background: rgba(53, 148, 105, 0.12);
+  color: #2e8560;
 }
 
 .talk-card--poster .talk-card__kind {
-  background: rgba(178, 148, 0, 0.14);
-  color: #b29400;
+  background: rgba(31, 111, 120, 0.12);
+  color: #1f6f78;
 }
 
 // "Accepted, upcoming" badge — sits between the kind tag and the date when
@@ -1041,26 +1041,26 @@ html[data-theme="dark"] {
 // take the card's kind color (blue for talks, gold for posters) as a solid,
 // darker fill so they read as more saturated than the kind label above.
 .talk-card--talk .talk-card__chip--asset {
-  background: #1d4ed8;
+  background: #2e8560;
   color: #fff;
-  border-color: #1d4ed8;
+  border-color: #2e8560;
 
   &:hover {
-    background: #1e40af;
+    background: #24694c;
     color: #fff;
-    border-color: #1e40af;
+    border-color: #24694c;
   }
 }
 
 .talk-card--poster .talk-card__chip--asset {
-  background: #997d00;
+  background: #1f6f78;
   color: #fff;
-  border-color: #997d00;
+  border-color: #1f6f78;
 
   &:hover {
-    background: #806800;
+    background: #185860;
     color: #fff;
-    border-color: #806800;
+    border-color: #185860;
   }
 }
 
@@ -1161,25 +1161,14 @@ html[data-theme="dark"] {
     box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.55);
   }
   .talk-card--talk .talk-card__kind {
-    background: rgba(96, 165, 250, 0.18);
-    color: #60a5fa;
-  }
-  .talk-card--poster .talk-card__kind {
     background: rgba(217, 179, 0, 0.18);
     color: #d9b300;
   }
-  .talk-card--talk .talk-card__chip--asset {
-    background: #2563eb;
-    color: #fff;
-    border-color: #2563eb;
-
-    &:hover {
-      background: #1d4ed8;
-      color: #fff;
-      border-color: #1d4ed8;
-    }
+  .talk-card--poster .talk-card__kind {
+    background: rgba(94, 186, 194, 0.18);
+    color: #5ebac2;
   }
-  .talk-card--poster .talk-card__chip--asset {
+  .talk-card--talk .talk-card__chip--asset {
     background: #c79f00;
     color: #1a1a1a;
     border-color: #c79f00;
@@ -1188,6 +1177,17 @@ html[data-theme="dark"] {
       background: #b29400;
       color: #1a1a1a;
       border-color: #b29400;
+    }
+  }
+  .talk-card--poster .talk-card__chip--asset {
+    background: #5ebac2;
+    color: #1a1a1a;
+    border-color: #5ebac2;
+
+    &:hover {
+      background: #4aa5ad;
+      color: #1a1a1a;
+      border-color: #4aa5ad;
     }
   }
 }
@@ -2243,5 +2243,177 @@ html[data-theme="dark"] {
     color: var(--global-theme-color);
     text-decoration: none;
     letter-spacing: 0.02em;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Publication entries: year headings, wider thumbnails, quiet icon buttons with
+  PDF as the one filled primary action.
+------------------------------------------------------------------------------*/
+
+.publications h2.bibliography {
+  color: var(--global-text-color-light);
+  border-top: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin: 2rem 0 0.75rem;
+  padding-top: 0;
+}
+
+.publications ol.bibliography li {
+  .preview {
+    max-width: 100%;
+  }
+
+  .periodical {
+    color: var(--global-text-color-light);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.55rem 0 0.35rem;
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin: 0;
+      padding: 0.18rem 0.65rem;
+      font-size: 0.74rem;
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: 0;
+      line-height: 1.5;
+      color: var(--global-text-color-light);
+      background: transparent;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      transition:
+        color 0.15s ease,
+        border-color 0.15s ease,
+        background 0.15s ease;
+
+      i {
+        font-size: 0.72rem;
+        color: var(--global-theme-color);
+      }
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+
+    a.btn.btn-primary-link {
+      color: var(--global-bg-color);
+      background: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+
+      i {
+        color: inherit;
+      }
+
+      &:hover {
+        color: var(--global-bg-color);
+        filter: brightness(0.92);
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------
+  News: a type icon in front of every item (types and icons live in
+  _data/news_types.yml).
+------------------------------------------------------------------------------*/
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.news-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: 0.05rem;
+  border-radius: 50%;
+  font-size: 0.78rem;
+  color: var(--global-theme-color);
+  background: rgba(53, 148, 105, 0.12);
+}
+
+html[data-theme="dark"] .news-icon {
+  background: rgba(217, 179, 0, 0.16);
+}
+
+.news-text {
+  min-width: 0;
+}
+
+/*------------------------------------------------------------------------------
+  CV: "Save as PDF" button, compact rows for the teaching / talks sections, and
+  a print stylesheet so the browser's PDF export looks like a document.
+------------------------------------------------------------------------------*/
+
+.cv-print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  float: right;
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--global-bg-color);
+  background: var(--global-theme-color);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.92);
+  }
+}
+
+.cv .activity-list {
+  margin-top: 0.25rem;
+}
+
+@media print {
+  .navbar,
+  footer,
+  .progress,
+  .cv-print-btn,
+  #back-to-top {
+    display: none !important;
+  }
+
+  body {
+    padding-top: 0 !important;
+    background: #fff !important;
+  }
+
+  .cv .card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    break-inside: avoid-page;
+  }
+
+  .cv-tl-item--current .cv-tl-node {
+    animation: none;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 }

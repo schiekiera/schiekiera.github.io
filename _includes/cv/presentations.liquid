@@ -1,0 +1,20 @@
+{% comment %}
+  Talk or poster rows for the CV, read straight from _data/talks.yml.
+  Pass kind="talk" or kind="poster".
+{% endcomment %}
+{% assign presentation_items = site.data.talks | where: 'presentation_type', include.kind | sort: 'date' | reverse %}
+<ul class="activity-list">
+  {% for activity in presentation_items %}
+    <li class="activity-row">
+      <span class="activity-row__date">{{ activity.date | date: '%b %Y' }}</span>
+      <span class="activity-row__main">
+        <span class="activity-row__venue">{{ activity.description }}</span>
+        <span class="activity-row__sub">
+          {{- activity.venue -}}
+          {%- if activity.location %}, {{ activity.location }}{% endif %}
+          {%- if activity.speaker and activity.speaker != 'Louis Schiekiera' %} · presented by {{ activity.speaker }}{% endif -%}
+        </span>
+      </span>
+    </li>
+  {% endfor %}
+</ul>

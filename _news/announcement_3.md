@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-10-13 15:59:00-0400
+type: career
 inline: true
 related_posts: false
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2025-11-01 12:00:00+0100
+type: paper
 inline: true
 related_posts: false
 ---

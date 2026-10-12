@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2024-07-04 18:59:00-0400
+type: preprint
 inline: true
 related_posts: false
 ---
