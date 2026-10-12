@@ -2,6 +2,27 @@
 ---
 
 
+@misc{schiekiera2026linearpfnamortizedvariableselection,
+  title          = {{LinearPFN}: Amortized Variable Selection for Linear Models with Interactions},
+  author         = {Schiekiera, Louis and Zimmer, Max and Roux, Christophe and Arnold, Manuel and Pokutta, Sebastian and G{\"u}nther, Fritz},
+  year           = {2026},
+  eprint         = {2610.06580},
+  archiveprefix  = {arXiv},
+  primaryclass   = {cs.LG},
+  url            = {https://arxiv.org/abs/2610.06580},
+  html           = {https://arxiv.org/abs/2610.06580},
+  pdf            = {https://arxiv.org/pdf/2610.06580},
+  code           = {https://github.com/schiekiera/LinearPFN},
+  supp           = {https://huggingface.co/schiekiera/LinearPFN},
+  preview        = {https://schiekiera.github.io/assets/img/publication_preview/linear_pfn_preview.jpg},
+  tldr           = {/blog/2026/linear-pfn/},
+  bibtex_show    = {true},
+  selected       = {true},
+  selected_front = {true},
+  tags           = {statistics},
+  abstract       = {Spike-and-slab regression is a standard Bayesian formulation of variable selection: it returns a posterior distribution over which candidate effects are active rather than a single selected subset, so that every candidate effect carries an inclusion probability. Its cost grows exponentially with the number of candidate effects, so the posterior can be enumerated exactly only when the number of predictors is small. Beyond that reach, the posterior has to be approximated, typically by Markov chain Monte Carlo over the model space, which requires a fresh run for every dataset and, within a fixed budget of steps, may fail to converge. We present LinearPFN, a prior-data fitted transformer network that amortizes spike-and-slab inference for linear models with main effects and pairwise interactions. The network is pretrained once on synthetic datasets, drawn from an explicitly specified prior, and a single forward pass over a new dataset returns posterior inclusion probabilities, posterior-mean coefficients and posterior predictive distributions with no per-dataset fitting. The prior is conjugate by design, so that the posterior for each fixed set of active effects has a closed form, and wherever the exact posterior is still computable by enumeration we verify the network's outputs against it. On real predictor matrices from published social-science datasets, with outcomes drawn from the prior so that the true active set is known, LinearPFN attains a higher per-dataset selection AUC and a higher F1 under the median probability model rule than five classical baselines. The lead holds when the coefficients, the interactions or the noise depart from the prior.}
+}
+
 @misc{binz2026posttraining,
   title          = {Post-training makes large language models less human-like},
   author         = {Binz, Marcel and Akata, Elif and Almaatouq, Abdullah and Alsobay, Mohammed and Ariasov, Oleksii and Br{\"a}ndle, Franziska and Broska, David and Burton, Jason W. and Busch, Nuno and Callaway, Frederick and Cheung, Vanessa and Christian, Brian and Coda-Forno, Julian and Demircan, Can and Dentella, Vittoria and Eckstein, Maria K. and {\'E}ltet{\H{o}}, No{\'e}mi and Franke, Michael and Griffiths, Thomas L. and G{\"u}nther, Fritz and Haridi, Susanne and Hellmann, Sebastian and Herytash, Stefan and Hof, Linus and Holton, Eleanor and Hoxha, Isabelle and Hussain, Zak and Jagadish, Akshay and Kara, Elif and Kriegmair, Valentin and Leivada, Evelina and Li, Ji-An and Ludwig, Tobias and Maier, Maximilian and Mattar, Marcelo G. and Mathony, Marvin and Modirshanechi, Alireza and Na, Robin and Nadverniuk, Mariia and Nasioulas, Antonios and Nath, Surabhi S. and Niemeyer, Helen and Nussenbaum, Kate and Olschewski, Sebastian and Pachur, Thorsten and Palminteri, Stefano and Petrenco, Aliona and Phaneuf-Hadd, Camille V. and Pirrone, Angelo and Rausch, Manuel and Raveling, Laura and Reddy, Shashank and Rmus, Milena and Russek, Evan M. and Saanum, Tankred and Sandbrink, Kai and Schiekiera, Louis and Schubert, Johannes A. and Schulze Buschoff, Luca M. and Singhi, Nishad and Somerville, Leah H. and Spektor, Mikhail S. and Sui, Xin and Summerfield, Christopher and Thalmann, Mirko and Thoma, Anna I. and Tikhomirova, Taisiia and Truong, Vuong and Tsvilodub, Polina and Voudouris, Konstantinos and Wilson, Robert C. and Witte, Kristin and Wu, Shuchen and Wulff, Dirk U. and Xiong, Hua-Dong and Xu, Songlin and Ying, Lance and Zhang, Xinyu and Zhu, Jian-Qiao and Schulz, Eric},
