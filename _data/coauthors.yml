@@ -1,34 +1,59 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"zimmer":
+  - firstname: ["Max", "M."]
+    url: https://maxzimmer.org/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"roux":
+  - firstname: ["Christophe", "C."]
+    url: https://christopheroux.de/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"arnold":
+  - firstname: ["Manuel", "M."]
+    url: https://www.psychologie.hu-berlin.de/en/staff/1689863
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"pokutta":
+  - firstname: ["Sebastian", "S."]
+    url: https://www.pokutta.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"gunther":
+  - firstname: ["Fritz", "F."]
+    url: https://sites.google.com/site/fritzgntr/home
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"niemeyer":
+  - firstname: ["Helen", "H."]
+    url: https://ewi-psy.fu-berlin.de/en/psychologie/arbeitsbereiche/klinisch_psychologische_intervention/mitarbeiter/hniemeyer/index.html
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"abdel rahman":
+  - firstname: ["Rasha", "R."]
+    url: https://abdelrahmanlab.com/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"burki":
+  - firstname: ["Audrey", "A."]
+    url: https://scholar.google.com/citations?user=4mE6RYcAAAAJ
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"lorenz":
+  - firstname: ["Antje", "A."]
+    url: https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=489621718
+
+"stark":
+  - firstname: ["Kirsten", "K."]
+    url: https://www.psychology.hu-berlin.de/de/personal/91680450
+
+"binz":
+  - firstname: ["Marcel", "M."]
+    url: https://marcelbinz.github.io/
+
+"hesselmann":
+  - firstname: ["Felicitas", "F."]
+    url: https://www.dzhw.eu/gmbh/mitarbeiter?m_id=692
+
+"eichel":
+  - firstname: ["Kristina", "Kae", "K."]
+    url: https://psychologie.uni-greifswald.de/en/43051/chairs-ii/clinical-psychology-and-psychotherapy/team/dr-kae-eichel/
+
+"sachse":
+  - firstname: ["Jacqueline", "J."]
+    url: https://www.rmz.hu-berlin.de/de/personen/jacqueline-sachse
+
+"gruber":
+  - firstname: ["Vincent", "V."]
+    url: https://www.linkedin.com/in/vincent-gruber-4a97863b4/
