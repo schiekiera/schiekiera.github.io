@@ -12,7 +12,7 @@ authors:
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
 publication_type: "ICML 2026"
-paper_url: "https://arxiv.org/abs/2602.00628"
+paper_url: "https://proceedings.mlr.press/v306/schiekiera26a.html"
 code_url: "https://github.com/schiekiera/llm-association-geometry"
 data_url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry"
 giscus_comments: false
@@ -159,13 +159,17 @@ If you find this work helpful for your research, please consider citing our pape
 
 ```bibtex
 @inproceedings{schiekiera2026associations,
-  title={From Associations to Activations: Comparing Behavioral and
-         Hidden-State Semantic Geometry in {LLMs}},
-  author={Schiekiera, Louis and Zimmer, Max and Roux, Christophe
-          and Pokutta, Sebastian and G{\"u}nther, Fritz},
-  booktitle={Proceedings of the 43rd International Conference on
-             Machine Learning (ICML)},
-  year={2026},
-  publisher={PMLR},
+  title     = {From Associations to Activations: Comparing Behavioral and
+               Hidden-State Semantic Geometry in {LLM}s},
+  author    = {Schiekiera, Louis and Zimmer, Max and Roux, Christophe
+               and Pokutta, Sebastian and G{\"u}nther, Fritz},
+  booktitle = {Proceedings of the 43rd International Conference on
+               Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {306},
+  pages     = {108177--108203},
+  publisher = {PMLR},
+  year      = {2026},
+  url       = {https://proceedings.mlr.press/v306/schiekiera26a.html}
 }
 ```

@@ -141,8 +141,8 @@ const defined = {
         desc: "Across eight instruction-tuned transformer models, we run two psycholinguistic paradigms (forced choice & free association) over a shared 5,000-word vocabulary, collecting 17.5M+ trials. Using RSA, we show that forced-choice behavior aligns substantially more with hidden-state geometry than free association, and that behavior alone predicts unseen hidden-state similarities beyond lexical baselines.",
         preview: "/assets/img/publication_preview/neural_semantic.jpg",
         links: [
-          { label: "PDF", url: "https://arxiv.org/pdf/2602.00628" },
-          { label: "arXiv", url: "https://arxiv.org/abs/2602.00628" },
+          { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v306/main/assets/schiekiera26a/schiekiera26a.pdf" },
+          { label: "PMLR", url: "https://proceedings.mlr.press/v306/schiekiera26a.html" },
           { label: "Code", url: "https://github.com/schiekiera/llm-association-geometry" },
           { label: "Data", url: "https://huggingface.co/datasets/schiekiera/llm-association-geometry" },
         ],

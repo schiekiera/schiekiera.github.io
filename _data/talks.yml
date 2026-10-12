@@ -119,7 +119,7 @@
   venue: ICML 2026
   description: "From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs"
   presentation_type: poster
-  link: https://arxiv.org/abs/2602.00628
+  link: https://proceedings.mlr.press/v306/schiekiera26a.html
   poster: /assets/pdf/poster/poster_ICML_2026.pdf
   location: Seoul, KR
   speaker: "Louis Schiekiera"
