@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Paper _Publication Bias in Academic Decision Making in Clinical Psychology_ published in _AMPPS_ ([Paper](https://journals.sagepub.com/doi/epub/10.1177/25152459251372134), [TLDR](/blog/2025/publication-bias-decision-making/)).
+Paper _Publication Bias in Academic Decision Making in Clinical Psychology_ published in _AMPPS_ ([Paper](https://journals.sagepub.com/doi/pdf/10.1177/25152459251372134), [TLDR](/blog/2025/publication-bias-decision-making/)).

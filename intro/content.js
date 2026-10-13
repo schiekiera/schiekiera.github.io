@@ -179,7 +179,7 @@ const defined = {
         desc: "A within-subjects study grounded in dual-process decision-making: 303 psychology researchers evaluated fictitious abstracts varying in statistical significance and hypothesis consistency. Significant results were systematically favored; intuitive judgments were rarely revised, and feeling-of-rightness did not predict revision.",
         preview: "/assets/img/publication_preview/ampps_bias.png",
         links: [
-          { label: "PDF", url: "https://journals.sagepub.com/doi/epub/10.1177/25152459251372134" },
+          { label: "PDF", url: "https://journals.sagepub.com/doi/pdf/10.1177/25152459251372134" },
           { label: "Code", url: "https://github.com/schiekiera/metascience_experiment_psychology" },
         ],
       },
