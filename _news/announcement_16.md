@@ -2,6 +2,7 @@
 layout: post
 date: 2026-01-17 12:00:00+0100
 type: poster
+link: "https://www.triplesr.org/submissions-and-programme"
 inline: true
 related_posts: false
 ---

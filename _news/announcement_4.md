@@ -2,6 +2,7 @@
 layout: post
 date: 2024-03-15 15:59:00-0400
 type: paper
+link: "https://doi.org/10.1027/2151-2604/a000563"
 inline: true
 related_posts: false
 ---

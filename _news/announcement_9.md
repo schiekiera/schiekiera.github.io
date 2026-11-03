@@ -2,6 +2,7 @@
 layout: post
 date: 2025-04-08 18:59:00-0400
 type: talk
+link: "/assets/pdf/talks/presentation_DPK_2025_schiekiera_positive_results_in_clinical_psychology.pdf"
 inline: true
 related_posts: false
 ---

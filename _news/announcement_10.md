@@ -2,6 +2,7 @@
 layout: post
 date: 2025-05-12 18:59:00-0400
 type: paper
+link: "https://doi.org/10.1525/collabra.137035"
 inline: true
 related_posts: false
 ---

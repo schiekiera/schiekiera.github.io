@@ -2,6 +2,7 @@
 layout: post
 date: 2026-05-02 12:00:00+0100
 type: paper
+link: "https://arxiv.org/pdf/2602.00628"
 inline: true
 related_posts: false
 ---

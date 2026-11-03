@@ -2,6 +2,7 @@
 layout: post
 date: 2026-05-20 12:00:00+0100
 type: talk
+link: "/assets/pdf/talks/presentation_behavioral_clones.pdf"
 inline: true
 related_posts: false
 ---

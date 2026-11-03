@@ -2,6 +2,7 @@
 layout: post
 date: 2024-07-02 18:59:00-0400
 type: paper
+link: "https://econtent.hogrefe.com/doi/10.1027/2151-2604/a000563"
 inline: true
 related_posts: false
 ---

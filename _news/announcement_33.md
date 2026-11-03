@@ -2,6 +2,7 @@
 layout: post
 date: 2026-10-15 12:00:00+0100
 type: preprint
+link: "https://osf.io/preprints/psyarxiv/whu3d_v1"
 inline: true
 related_posts: false
 ---

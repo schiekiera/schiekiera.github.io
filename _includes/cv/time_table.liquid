@@ -1,101 +1,30 @@
-<div class="cv-timeline">
+{% comment %}
+  Experience / Education rows for the CV, styled like the Teaching and Talks
+  rows: date on the left, title plus a muted institution line on the right.
+  Thesis / advisor lines (`description` or `items`) sit underneath, quietly.
+{% endcomment %}
+<ul class="activity-list">
   {% for content in entry.contents %}
-    {% assign is_current = false %}
-    {% if content.year contains 'now' or content.year contains 'present' or content.year contains 'Present' %}
-      {% assign is_current = true %}
-    {% endif %}
-    <div class="cv-tl-item{% if is_current %} cv-tl-item--current{% endif %}">
-      <span class="cv-tl-node" aria-hidden="true"></span>
-
-      <div class="cv-tl-meta">
-        {% if content.year -%}
-          <span class="cv-tl-year">{{ content.year }}</span>
-        {%- endif %}
-        {% if is_current -%}
-          <span class="cv-tl-now">now</span>
-        {%- endif %}
-        {% if content.location %}
-          <span class="cv-tl-loc"><i class="fa-solid fa-location-dot"></i> {{ content.location }}</span>
-        {% endif %}
-      </div>
-
-      <div class="cv-tl-body">
-        {% if content.title %}
-          <h6 class="cv-tl-title">{{ content.title }}</h6>
-        {% endif %}
-
-        {% if content.institution %}
-          <p class="cv-tl-inst">
-            <i class="fa-solid fa-building-columns"></i>
-            {% if content.institution_url %}
-              <a href="{{ content.institution_url }}" target="_blank" rel="noopener noreferrer">
-                {{- content.institution -}}
-                <i class="cv-tl-extlink fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            {% else %}
+    <li class="activity-row">
+      <span class="activity-row__date">{{ content.year }}</span>
+      <span class="activity-row__main">
+        <span class="activity-row__venue">{{ content.title }}</span>
+        {%- if content.institution or content.department or content.location %}
+          <span class="activity-row__sub">
+            {%- if content.institution_url -%}
+              <a href="{{ content.institution_url }}" target="_blank" rel="noopener noreferrer">{{ content.institution }}</a>
+            {%- else -%}
               {{ content.institution }}
-            {% endif %}
-          </p>
-        {% endif %}
-        {% if content.department %}
-          <p class="cv-tl-dept"><i class="fa-regular fa-circle-dot"></i> {{ content.department }}</p>
-        {% endif %}
-
-        {% if content.maindescription %}
-          <div class="cv-tl-main">{{ content.maindescription }}</div>
-        {% endif %}
-
-        {% if content.description %}
-          <ul class="cv-tl-desc">
-            {% for item in content.description %}
-              <li>
-                {% if item.contents %}
-                  <span class="cv-tl-desc-title">{{ item.title }}</span>
-                  <ul class="cv-tl-desc-sub">
-                    {% for subitem in item.contents %}
-                      <li>{{ subitem }}</li>
-                    {% endfor %}
-                  </ul>
-                {% else %}
-                  {{ item }}
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
-        {% if content.items %}
-          <ul class="cv-tl-desc">
-            {% for item in content.items %}
-              <li>
-                {% if item.contents %}
-                  <span class="cv-tl-desc-title">{{ item.title }}</span>
-                  <ul class="cv-tl-desc-sub">
-                    {% for subitem in item.contents %}
-                      <li>{{ subitem }}</li>
-                    {% endfor %}
-                  </ul>
-                {% else %}
-                  {{ item }}
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
-        {% if content.linkitems %}
-          <div class="cv-tl-links">
-            {% for item in content.linkitems %}
-              {% if item.link %}
-                <a class="cv-tl-chip" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  {{ item.linkname | default: 'doc' }}
-                </a>
-              {% endif %}
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-    </div>
+            {%- endif -%}
+            {%- if content.department %} · {{ content.department }}{% endif -%}
+            {%- if content.location %}, {{ content.location }}{% endif -%}
+          </span>
+        {%- endif %}
+        {%- assign details = content.description | default: content.items %}
+        {%- for item in details %}
+          <span class="activity-row__detail">{{ item.title | default: item }}</span>
+        {%- endfor %}
+      </span>
+    </li>
   {% endfor %}
-</div>
+</ul>

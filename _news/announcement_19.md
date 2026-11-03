@@ -2,6 +2,7 @@
 layout: post
 date: 2026-03-02 12:00:00+0100
 type: talk
+link: "/assets/pdf/talks/glp_data.pdf"
 inline: true
 related_posts: false
 ---

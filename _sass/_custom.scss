@@ -1119,6 +1119,34 @@ html[data-theme="dark"] {
   font-style: italic;
 }
 
+// Institution links inside a row: same muted colour as the text, theme colour
+// and a solid underline only on hover.
+.activity-row__sub a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// Extra lines under an Experience / Education row (thesis, advisors, minor).
+.activity-row__detail {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+
+  .activity-row__sub + & {
+    margin-top: 0.2rem;
+  }
+}
+
 @media (max-width: 480px) {
   .activity-row {
     grid-template-columns: 1fr;
@@ -1296,231 +1324,6 @@ html[data-theme="dark"] .navbar.is-scrolled {
   }
 }
 
-// --- Vertical timeline for time_table sections.
-.cv-timeline {
-  position: relative;
-  padding-left: 1.75rem;
-  margin: 0.25rem 0 0;
-}
-
-.cv-timeline::before {
-  content: "";
-  position: absolute;
-  left: 0.5rem;
-  top: 0.4rem;
-  bottom: 0.4rem;
-  width: 2px;
-  background: var(--global-divider-color);
-  border-radius: 2px;
-}
-
-.cv-tl-item {
-  position: relative;
-  padding-bottom: 1.6rem;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
-}
-
-.cv-tl-node {
-  position: absolute;
-  left: -1.4rem;
-  top: 0.45rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--global-theme-color);
-  box-shadow:
-    0 0 0 3px var(--global-card-bg-color),
-    0 0 0 4px var(--global-divider-color);
-}
-
-.cv-tl-item--current .cv-tl-node {
-  animation: cv-tl-pulse 2.4s ease-in-out infinite;
-}
-
-@keyframes cv-tl-pulse {
-  0%,
-  100% {
-    box-shadow:
-      0 0 0 3px var(--global-card-bg-color),
-      0 0 0 4px var(--global-theme-color),
-      0 0 0 4px rgba(53, 148, 105, 0);
-  }
-  50% {
-    box-shadow:
-      0 0 0 3px var(--global-card-bg-color),
-      0 0 0 4px var(--global-theme-color),
-      0 0 0 10px rgba(53, 148, 105, 0.18);
-  }
-}
-
-.cv-tl-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.4rem;
-}
-
-.cv-tl-year {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.2rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(53, 148, 105, 0.12);
-  color: var(--global-theme-color);
-  font-variant-numeric: tabular-nums;
-}
-
-.cv-tl-now {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  background: var(--global-theme-color);
-  color: var(--global-bg-color);
-}
-
-.cv-tl-loc {
-  font-size: 0.78rem;
-  color: var(--global-text-color-light);
-
-  i {
-    margin-right: 0.25rem;
-    color: var(--global-theme-color);
-  }
-}
-
-.cv-tl-title {
-  font-size: 1.02rem;
-  font-weight: 600;
-  margin: 0 0 0.3rem;
-  color: var(--global-text-color);
-  line-height: 1.3;
-}
-
-.cv-tl-inst,
-.cv-tl-dept {
-  font-size: 0.92rem;
-  margin: 0 0 0.2rem;
-  color: var(--global-text-color);
-
-  i {
-    margin-right: 0.45rem;
-    color: var(--global-theme-color);
-    width: 1rem;
-    text-align: center;
-  }
-}
-
-.cv-tl-inst a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dotted var(--global-theme-color);
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
-
-  &:hover {
-    color: var(--global-theme-color);
-    border-bottom-color: transparent;
-
-    .cv-tl-extlink {
-      opacity: 1;
-      transform: translate(2px, -2px);
-    }
-  }
-}
-
-.cv-tl-extlink {
-  font-size: 0.65rem;
-  margin-left: 0.3rem;
-  color: var(--global-theme-color);
-  opacity: 0.45;
-  vertical-align: super;
-  width: auto !important;
-  transition:
-    opacity 0.15s ease,
-    transform 0.15s ease;
-}
-
-.cv-tl-dept {
-  color: var(--global-text-color-light);
-  font-style: italic;
-}
-
-.cv-tl-main {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  color: var(--global-text-color);
-}
-
-.cv-tl-desc {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  color: var(--global-text-color);
-
-  > li {
-    margin-bottom: 0.25rem;
-
-    &::marker {
-      color: var(--global-theme-color);
-    }
-  }
-}
-
-.cv-tl-desc-title {
-  font-weight: 600;
-}
-
-.cv-tl-desc-sub {
-  margin-top: 0.2rem;
-  padding-left: 1rem;
-  list-style-type: circle;
-}
-
-.cv-tl-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-}
-
-.cv-tl-chip {
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(53, 148, 105, 0.08);
-  color: var(--global-theme-color);
-  text-decoration: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease;
-
-  i {
-    margin-right: 0.3rem;
-    font-size: 0.7rem;
-  }
-
-  &:hover {
-    background: var(--global-theme-color);
-    color: var(--global-bg-color);
-    border-color: var(--global-theme-color);
-    text-decoration: none;
-  }
-}
-
 // --- Academic interests as pill clusters.
 .cv-interests {
   display: flex;
@@ -1578,53 +1381,12 @@ html[data-theme="dark"] .navbar.is-scrolled {
 }
 
 html[data-theme="dark"] {
-  .cv-tl-year {
-    background: rgba(178, 148, 0, 0.16);
-  }
-  .cv-tl-chip,
   .cv-interest-pill {
     background: rgba(178, 148, 0, 0.12);
   }
   .cv-interest-pill:hover {
     background: rgba(178, 148, 0, 0.22);
   }
-  @keyframes cv-tl-pulse {
-    0%,
-    100% {
-      box-shadow:
-        0 0 0 3px var(--global-card-bg-color),
-        0 0 0 4px var(--global-theme-color),
-        0 0 0 4px rgba(178, 148, 0, 0);
-    }
-    50% {
-      box-shadow:
-        0 0 0 3px var(--global-card-bg-color),
-        0 0 0 4px var(--global-theme-color),
-        0 0 0 10px rgba(178, 148, 0, 0.22);
-    }
-  }
-}
-
-/*-----------------------------------------------------------------------------
-  Blog post polish — sticky horizontal section nav at the top of the post,
-  polished hero (kind / title / description / meta / action buttons), spacious
-  body typography with theme-coloured H2 dividers, and opt-in component classes
-  (.project-card / .project-grid / .insight-box) for use inside posts.
-  Inspired by the project-distill style used elsewhere in the academic
-  community (e.g., maxzimmer.org). Applies to `layout: post` only — distill
-  posts continue to use al-folio's existing chrome.
-------------------------------------------------------------------------------*/
-
-// --- Sticky section nav (auto-built from H2s by post_section_nav.js)
-.post-section-nav {
-  position: sticky;
-  top: 56px;
-  z-index: 40;
-  background: var(--global-bg-color);
-  border-bottom: 1px solid var(--global-divider-color);
-  margin: -1.25rem -1rem 2rem;
-  backdrop-filter: saturate(180%) blur(8px);
-  -webkit-backdrop-filter: saturate(180%) blur(8px);
 }
 
 .post-section-nav__inner {
@@ -2354,6 +2116,24 @@ html[data-theme="dark"] .news-icon {
   background: rgba(217, 179, 0, 0.16);
 }
 
+// Icons with a `link:` in the announcement's front matter jump to the item's
+// main link (paper, preprint, slides, poster or event).
+a.news-icon--link {
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-bg-color);
+    background: var(--global-theme-color);
+    text-decoration: none;
+    transform: scale(1.08);
+  }
+}
+
 .news-text {
   min-width: 0;
 }
@@ -2405,10 +2185,6 @@ html[data-theme="dark"] .news-icon {
     box-shadow: none !important;
     border: 1px solid #ddd !important;
     break-inside: avoid-page;
-  }
-
-  .cv-tl-item--current .cv-tl-node {
-    animation: none;
   }
 
   a {

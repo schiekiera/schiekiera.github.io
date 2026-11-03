@@ -2,6 +2,7 @@
 layout: post
 date: 2026-04-01 13:00:00+0100
 type: talk
+link: "https://www.woproc2026.com/"
 inline: true
 related_posts: false
 ---

@@ -2,6 +2,7 @@
 layout: post
 date: 2026-05-08 12:00:00+0100
 type: preprint
+link: "https://arxiv.org/abs/2605.07632"
 inline: true
 related_posts: false
 ---

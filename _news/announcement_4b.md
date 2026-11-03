@@ -2,6 +2,7 @@
 layout: post
 date: 2024-05-31 18:59:00-0400
 type: paper
+link: "https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf"
 inline: true
 related_posts: false
 ---

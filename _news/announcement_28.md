@@ -2,6 +2,7 @@
 layout: post
 date: 2026-07-07 12:00:00+0100
 type: poster
+link: "/assets/pdf/poster/poster_ICML_2026.pdf"
 inline: true
 related_posts: false
 ---

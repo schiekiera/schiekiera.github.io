@@ -2,6 +2,7 @@
 layout: post
 date: 2026-10-07 12:00:00+0100
 type: teaching
+link: "https://uni-tuebingen.de/fakultaeten/wirtschafts-und-sozialwissenschaftliche-fakultaet/faecher/fachbereich-sozialwissenschaften/methodenzentrum/events/fall-school/#c1623773"
 inline: true
 related_posts: false
 ---
