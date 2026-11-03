@@ -12,7 +12,10 @@ profile:
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes the papers that set "highlighted_start = {N}", shown in ascending N
+scholar:
+  sort_by: highlighted_start # order of the highlighted publications on the start page
+  order: ascending
 social: true # includes social icons at the bottom of the page
 ---
 

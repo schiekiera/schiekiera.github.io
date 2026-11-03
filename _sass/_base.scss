@@ -707,11 +707,13 @@ footer.sticky-bottom {
       }
 
       .author {
+        // Co-author links: no underline at rest, a solid one on hover.
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px solid transparent;
+          transition: border-color 0.15s ease;
 
           &:hover {
-            border-bottom-style: solid;
+            border-bottom-color: var(--global-theme-color);
             text-decoration: none;
           }
         }
@@ -723,12 +725,15 @@ footer.sticky-bottom {
 
         > span.more-authors {
           color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
+          border-bottom: 1px solid transparent;
           cursor: pointer;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
 
           &:hover {
             color: var(--global-text-color);
-            border-bottom: 1px dashed var(--global-text-color);
+            border-bottom-color: var(--global-text-color);
           }
         }
       }

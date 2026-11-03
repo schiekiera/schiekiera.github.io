@@ -19,7 +19,7 @@
   tldr           = {/blog/2026/computational-swinging-lexical-network/},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {true},
+  highlighted_start = {3},
   tags           = {psycholinguistics, megastudies},
   abstract       = {The Swinging Lexical Network (SLN) model explains semantic context effects in word production through the lexical cohort that a target and distractor co-activate: whether naming is facilitated or slowed depends on the balance between semantic priming and lexical competition within this cohort. As a verbal theory the SLN leaves open what counts as a competitor: any co-activated word, or only words whose activation stands out. We implemented the SLN computationally, letting activation spread through a 30,000-word distributional semantic network. From this process we derived two measures. Cohort concentration is the degree to which co-activation falls on a few words instead of being spread thinly across many. The swing is how much the activation pattern still changes over later spreading steps. In a harmonized picture–word interference dataset of 392,156 trials from 86 English and German experiments, cohort concentration was the only semantic predictor with a reliable effect in both languages: naming was slower when a few words stood out as strongly activated competitors and faster when activation was diffuse. Competitors are thus the words whose activation stands out from the background, not every word that receives some activation. Adding the swing improved fit, but its effect could not be separated from cohort concentration, with which it was strongly correlated. Because spreading converges on the same network-wide state for every word pair, later steps largely re-express the initial cohort. In line with the SLN, our computational implementation shows that semantic interference depends on how co-activation is distributed across the cohort.}
 }
@@ -41,7 +41,7 @@
   tldr           = {/blog/2026/linear-pfn/},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {true},
+  highlighted_start = {2},
   tags           = {machine_learning},
   abstract       = {Spike-and-slab regression is a standard Bayesian formulation of variable selection: it returns a posterior distribution over which candidate effects are active rather than a single selected subset, so that every candidate effect carries an inclusion probability. Its cost grows exponentially with the number of candidate effects, so the posterior can be enumerated exactly only when the number of predictors is small. Beyond that reach, the posterior has to be approximated, typically by Markov chain Monte Carlo over the model space, which requires a fresh run for every dataset and, within a fixed budget of steps, may fail to converge. We present LinearPFN, a prior-data fitted transformer network that amortizes spike-and-slab inference for linear models with main effects and pairwise interactions. The network is pretrained once on synthetic datasets, drawn from an explicitly specified prior, and a single forward pass over a new dataset returns posterior inclusion probabilities, posterior-mean coefficients and posterior predictive distributions with no per-dataset fitting. The prior is conjugate by design, so that the posterior for each fixed set of active effects has a closed form, and wherever the exact posterior is still computable by enumeration we verify the network's outputs against it. On real predictor matrices from published social-science datasets, with outcomes drawn from the prior so that the true active set is known, LinearPFN attains a higher per-dataset selection AUC and a higher F1 under the median probability model rule than five classical baselines. The lead holds when the coefficients, the interactions or the noise depart from the prior.}
 }
@@ -60,7 +60,6 @@
   code           = {https://github.com/marcelbinz/Psych-201},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {false},
   tags           = {machine_learning, megastudies}
 }
 
@@ -77,7 +76,6 @@
   supp_label     = {Data},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {true},
   preview        = {https://schiekiera.github.io/assets/img/publication_preview/pwi_data_folder_structure.png},
   tldr           = {/blog/2026/pwi-dataset/},
   tags           = {psycholinguistics, megastudies},
@@ -97,7 +95,7 @@
   html           = {https://proceedings.mlr.press/v306/schiekiera26a.html},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {true},
+  highlighted_start = {1},
   pdf            = {https://arxiv.org/pdf/2602.00628},
   code           = {https://github.com/schiekiera/llm-association-geometry},
   supp           = {https://huggingface.co/datasets/schiekiera/llm-association-geometry},
@@ -117,7 +115,6 @@
   number         = {3},
   bibtex_show    = {true},
   selected       = {true},
-  selected_front = {true},
   month          = {09},
   url            = {https://journals.sagepub.com/doi/10.1177/25152459251372134},
   pdf            = {https://journals.sagepub.com/doi/pdf/10.1177/25152459251372134},
@@ -134,7 +131,6 @@
 
 @article{schiekiera_niemeyer_2025_ap2_psych,
   selected       = {true},
-  selected_front = {true},
   bibtex_show    = {true},
   author         = {Schiekiera, Louis and Niemeyer, Helen},
   title          = {Does Scientific Productivity Increase the Publication of Positive Results?},
@@ -162,7 +158,6 @@
   title          = {Political bias in historiography - an experimental investigation of preferences for publication as a function of political orientation},
   year           = {2025},
   selected       = {true},
-  selected_front = {false},
   bibtex_show    = {true},
   month          = {05},
   journal        = {F1000Research},
