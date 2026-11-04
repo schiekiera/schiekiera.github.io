@@ -39,7 +39,7 @@
 
     - title: MSc Psychology
       institution: University of Potsdam, Potsdam, Germany
-      institution_url: https://www.uni-potsdam.de/en/university-of-potsdam
+      institution_url: https://www.uni-potsdam.de/en/department-psychologie/index
       year: 2021 - 2023
       description:
         - "Thesis: Abstract Classification for Publication Bias Research in Clinical Psychology Using Natural Language Processing"
@@ -47,7 +47,7 @@
 
     - title: BSc Psychology
       institution: University of Hamburg, Hamburg, Germany
-      institution_url: https://www.uni-hamburg.de/en.html
+      institution_url: https://www.psy.uni-hamburg.de/en.html
       year: 2018 - 2021
       description:
         - "Thesis: Parental Quality of Life After the Child's Intensive Therapy: A Longitudinal Study on Parents of Pediatric Cancer Patients"
@@ -55,7 +55,7 @@
 
     - title: BA Sociology and Technology Studies
       institution: Technical University of Berlin, Berlin, Germany
-      institution_url: https://www.tu.berlin/en
+      institution_url: https://www.tu.berlin/en/as
       year: 2014 - 2018
       description:
         - "Thesis: Medicalization of homelessness? On the discursive construction of the connection between traumatic brain injury and homelessness"
