@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+# Render the print version of the CV (/cv/print/) to a PDF inside the built site.
+#
+#   bin/cv-pdf [site_dir] [output_pdf]
+#   defaults:   _site     <site_dir>/assets/pdf/CV_Schiekiera.pdf
+#
+# The deploy workflow runs this right after `jekyll build`, so the PDF behind the
+# "PDF" button on /cv/ is regenerated on every push and always matches the page.
+# Works locally too once the site is built; needs Google Chrome or Chromium.
+set -euo pipefail
+
+site_dir="${1:-_site}"
+out="${2:-$site_dir/assets/pdf/CV_Schiekiera.pdf}"
+port="${CV_PDF_PORT:-4010}"
+url="http://127.0.0.1:$port/cv/print/"
+
+if [ ! -f "$site_dir/cv/print/index.html" ]; then
+  echo "cv-pdf: $site_dir/cv/print/index.html not found; build the site first" >&2
+  exit 1
+fi
+
+chrome=""
+for candidate in google-chrome google-chrome-stable chromium chromium-browser \
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"; do
+  if command -v "$candidate" >/dev/null 2>&1; then
+    chrome="$candidate"
+    break
+  fi
+done
+if [ -z "$chrome" ]; then
+  echo "cv-pdf: no Google Chrome or Chromium found" >&2
+  exit 1
+fi
+
+python3 -m http.server "$port" --bind 127.0.0.1 --directory "$site_dir" >/dev/null 2>&1 &
+server=$!
+trap 'kill "$server" 2>/dev/null || true' EXIT
+for _ in $(seq 1 50); do
+  curl -sf -o /dev/null "$url" && break
+  sleep 0.2
+done
+
+mkdir -p "$(dirname "$out")"
+out="$(cd "$(dirname "$out")" && pwd)/$(basename "$out")"
+rm -f "$out"
+
+# --virtual-time-budget lets the web fonts finish loading before printing.
+"$chrome" --headless=new --no-sandbox --disable-gpu \
+  --no-pdf-header-footer --virtual-time-budget=15000 \
+  --print-to-pdf="$out" "$url"
+
+if [ ! -s "$out" ]; then
+  echo "cv-pdf: Chrome did not write $out" >&2
+  exit 1
+fi
+echo "cv-pdf: wrote $out"

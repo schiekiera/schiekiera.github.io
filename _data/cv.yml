@@ -17,14 +17,9 @@
       year: 2021 - 2023
 
     - title: Student Research Assistant
-      institution: Institute for Medical Psychology, University Medical Center Hamburg-Eppendorf
+      institution: Institute for Medical Psychology and Institute for Medical Sociology, University Medical Center Hamburg-Eppendorf
       institution_url: https://www.uke.de/english/departments-institutes/institutes/medical-psychology/index.html
-      year: 2019 - 2021
-
-    - title: Student Research Assistant
-      institution: Institute for Medical Sociology, University Medical Center Hamburg-Eppendorf
-      institution_url: https://www.uke.de/english/departments-institutes/institutes/medical-sociology/index.html
-      year: 2018 - 2019
+      year: 2018 - 2021
 
     - title: Student Research Assistant
       institution: Department of General Sociology and Theory of Modern Societies, Technical University of Berlin
@@ -67,10 +62,11 @@
         - "Advisors: Dr. René Tuma & Prof. Jan-Peter Voß"
         - "Minor: Human Factors Engineering"
 
-# The sections below render straight from _data/teaching.yml and
-# _data/talks.yml, so there is nothing to keep in sync here.
-- title: Teaching
-  type: teaching
+# The sections below render straight from _bibliography/papers.bib,
+# _data/talks.yml and _data/teaching.yml, so there is nothing to keep in sync
+# here. Reorder the entries to reorder the sections (web page and PDF alike).
+- title: Publications
+  type: publications
 
 - title: Talks
   type: presentations
@@ -79,3 +75,6 @@
 - title: Posters
   type: presentations
   kind: poster
+
+- title: Teaching
+  type: teaching

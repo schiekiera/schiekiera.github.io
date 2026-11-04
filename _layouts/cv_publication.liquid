@@ -1,0 +1,73 @@
+---
+---
+{% comment %}
+  One publication row for the CV (jekyll-scholar template, used by
+  _includes/cv/publications.liquid). Same row markup as the Teaching / Talks
+  rows: year | title, authors, venue · PDF. Long author lists (more than
+  site.max_author_limit) are cut to the first three plus a count.
+{% endcomment %}
+{%- assign authors = entry.author_array -%}
+{%- assign author_count = authors | size -%}
+{%- assign self_name = site.first_name | append: ' ' | append: site.last_name -%}
+{%- capture author_line -%}
+  {%- if site.max_author_limit and author_count > site.max_author_limit -%}
+    {%- assign self_shown = false -%}
+    {%- for author in authors limit: 3 -%}
+      {%- if author.last == site.last_name -%}{%- assign self_shown = true -%}{%- endif -%}
+      {{- author.first }} {{ author.last -}}{{ ', ' }}
+    {%- endfor -%}
+    {{- 'and ' -}}{{- author_count | minus: 3 -}}{{ ' more' }}
+    {%- unless self_shown -%}{{ ' (including ' | append: self_name | append: ')' }}{%- endunless -%}
+  {%- else -%}
+    {%- for author in authors -%}
+      {%- unless forloop.first -%}
+        {%- if forloop.last -%}
+          {%- if author_count > 2 -%},{%- endif -%}{{ ' and ' }}
+        {%- else -%}
+          {{- ', ' -}}
+        {%- endif -%}
+      {%- endunless -%}
+      {{- author.first }} {{ author.last -}}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endcapture -%}
+{%- if entry.journal -%}
+  {%- assign venue = entry.journal -%}
+{%- elsif entry.booktitle -%}
+  {%- assign venue = entry.booktitle -%}
+{%- elsif entry.howpublished -%}
+  {%- assign venue = entry.howpublished -%}
+{%- elsif entry.archiveprefix -%}
+  {%- assign venue = entry.archiveprefix | append: ' preprint' -%}
+{%- else -%}
+  {%- assign venue = null -%}
+{%- endif -%}
+{%- if entry.pdf -%}
+  {%- if entry.pdf contains '://' -%}
+    {%- assign paper_link = entry.pdf -%}
+  {%- else -%}
+    {%- assign paper_link = entry.pdf | prepend: '/assets/pdf/' | absolute_url -%}
+  {%- endif -%}
+  {%- assign paper_label = 'PDF' -%}
+{%- elsif entry.html or entry.url -%}
+  {%- assign paper_link = entry.html | default: entry.url -%}
+  {%- assign paper_label = 'Link' -%}
+{%- else -%}
+  {%- assign paper_link = null -%}
+{%- endif -%}
+<div class="activity-row">
+  <span class="activity-row__date">{{ entry.year }}</span>
+  <span class="activity-row__main">
+    <span class="activity-row__venue">{{ entry.title }}</span>
+    <span class="activity-row__detail">{{ author_line | strip }}</span>
+    {%- if venue or paper_link %}
+      <span class="activity-row__sub">
+        {{- venue -}}
+        {%- if paper_link %}
+          {% if venue %}· {% endif -%}
+          <a class="activity-row__asset" href="{{ paper_link }}">{{ paper_label }}</a>
+        {%- endif -%}
+      </span>
+    {%- endif %}
+  </span>
+</div>

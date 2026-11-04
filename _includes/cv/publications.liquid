@@ -1,0 +1,8 @@
+{% comment %}
+  Publication rows for the CV, read straight from _bibliography/papers.bib (the
+  same list as /publications/, in the same order). Each row is rendered by
+  _layouts/cv_publication.liquid.
+{% endcomment %}
+<div class="cv-publications">
+  {% bibliography --group_by none --template cv_publication %}
+</div>

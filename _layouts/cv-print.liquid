@@ -1,0 +1,211 @@
+---
+---
+{% comment %}
+  Print version of the CV, rendered to /assets/pdf/<cv_pdf> by bin/cv-pdf during
+  the deploy. It walks the same _data/cv.yml sections through the same
+  includes as the CV page (cv/section.liquid), so the content is identical;
+  only the typography differs: an A4 document instead of web cards.
+{% endcomment %}
+{% assign full_name = site.first_name | append: ' ' | append: site.last_name %}
+{% assign updated = site.time | date: '%B %Y' %}
+{% assign doc_title = full_name | append: ': Curriculum Vitae' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>{{ doc_title }}</title>
+    <meta name="author" content="{{ full_name }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=block"
+    >
+    <style>
+      @page {
+        size: A4;
+        margin: 16mm 17mm 17mm;
+
+        @bottom-left {
+          content: "{{ full_name }} · Curriculum Vitae · {{ updated }}";
+          font: 400 7.5pt Roboto, Arial, sans-serif;
+          color: #8b9096;
+        }
+        @bottom-right {
+          content: counter(page) " / " counter(pages);
+          font: 400 7.5pt Roboto, Arial, sans-serif;
+          color: #8b9096;
+        }
+      }
+
+      :root {
+        --accent: #359469;
+        --text: #1f2328;
+        --muted: #646b73;
+        --rule: #d9dde1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--text);
+        font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 9.5pt;
+        line-height: 1.42;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* On screen, show the page as an A4 sheet. */
+      @media screen {
+        body {
+          background: #eceef1;
+          padding: 24px 16px;
+        }
+        .sheet {
+          max-width: 210mm;
+          margin: 0 auto;
+          padding: 16mm 17mm;
+          background: #fff;
+          box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
+        }
+        a:hover {
+          color: var(--accent);
+        }
+      }
+
+      /* Header: name, position, contact line. */
+      .cv-head {
+        margin-bottom: 6mm;
+        padding-bottom: 4mm;
+        border-bottom: 1.2pt solid var(--accent);
+      }
+      .cv-head h1 {
+        margin: 0 0 1.5mm;
+        font-size: 21pt;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+      .cv-head__position {
+        margin: 0 0 1.2mm;
+        font-size: 10pt;
+      }
+      .cv-head__contact {
+        margin: 0;
+        font-size: 8.5pt;
+        color: var(--muted);
+      }
+      .cv-head__sep {
+        margin: 0 0.5em;
+        color: #b5bbc1;
+      }
+
+      /* Sections. */
+      .cv-section + .cv-section {
+        margin-top: 6mm;
+      }
+      .cv-section h2 {
+        margin: 0 0 1.5mm;
+        padding-bottom: 1.2mm;
+        border-bottom: 0.5pt solid var(--rule);
+        color: var(--accent);
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        break-after: avoid;
+      }
+
+      /* Rows, the same markup as the CV page (see _includes/cv/*.liquid). */
+      .activity-list,
+      ol.bibliography {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .activity-row {
+        display: grid;
+        grid-template-columns: 26mm 1fr;
+        column-gap: 4mm;
+        padding: 1.5mm 0;
+        break-inside: avoid;
+      }
+      .activity-row__date {
+        padding-top: 0.25mm;
+        color: var(--muted);
+        font-size: 8.5pt;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+      .activity-row__main {
+        min-width: 0;
+      }
+      .activity-row__venue {
+        font-weight: 500;
+      }
+      .activity-row__loc {
+        color: var(--muted);
+        font-size: 8.5pt;
+      }
+      .activity-row__sub,
+      .activity-row__detail {
+        display: block;
+        color: var(--muted);
+        font-size: 8.6pt;
+      }
+      .activity-row__sub {
+        font-style: italic;
+      }
+      .activity-row__sub + .activity-row__detail {
+        margin-top: 0.6mm;
+      }
+      .activity-row__asset {
+        color: var(--accent);
+        font-style: normal;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="cv-head">
+        <h1>{{ full_name }}</h1>
+        {% if page.position %}
+          <p class="cv-head__position">{{ page.position }}</p>
+        {% endif %}
+        {% if page.contact %}
+          <p class="cv-head__contact">
+            {%- for item in page.contact -%}
+              <a href="{{ item.url }}">{{ item.label }}</a>
+              {%- unless forloop.last -%}
+                <span class="cv-head__sep">·</span>
+              {%- endunless -%}
+            {%- endfor -%}
+          </p>
+        {% endif %}
+      </header>
+
+      {% for entry in site.data.cv %}
+        <section class="cv-section">
+          <h2>{{ entry.title }}</h2>
+          {% include cv/section.liquid %}
+        </section>
+      {% endfor %}
+    </main>
+  </body>
+</html>

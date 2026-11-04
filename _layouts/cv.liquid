@@ -7,19 +7,23 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
-        {% if page.cv_print %}
+        {% comment %}
+          `cv_pdf` names the PDF that bin/cv-pdf renders from /cv/print/ during the
+          deploy, so it always matches this page. Without it, fall back to printing.
+        {% endcomment %}
+        {% if page.cv_pdf %}
+          <a
+            class="cv-print-btn"
+            href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF
+          </a>
+        {% elsif page.cv_print %}
           <button type="button" class="cv-print-btn" onclick="window.print()">
             <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Save as PDF
           </button>
-        {% endif %}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
         {% endif %}
       </h1>
       {% if page.description %}
@@ -34,23 +38,7 @@ layout: default
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
             <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% elsif entry.type == 'teaching' %}
-                {% include cv/teaching.liquid %}
-              {% elsif entry.type == 'presentations' %}
-                {% include cv/presentations.liquid kind=entry.kind %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
+              {% include cv/section.liquid %}
             </div>
           </div>
         {% endfor %}
@@ -62,19 +50,23 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
-        {% if page.cv_print %}
+        {% comment %}
+          `cv_pdf` names the PDF that bin/cv-pdf renders from /cv/print/ during the
+          deploy, so it always matches this page. Without it, fall back to printing.
+        {% endcomment %}
+        {% if page.cv_pdf %}
+          <a
+            class="cv-print-btn"
+            href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF
+          </a>
+        {% elsif page.cv_print %}
           <button type="button" class="cv-print-btn" onclick="window.print()">
             <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Save as PDF
           </button>
-        {% endif %}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
         {% endif %}
       </h1>
       {% if page.description %}

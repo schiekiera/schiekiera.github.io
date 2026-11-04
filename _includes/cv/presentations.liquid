@@ -1,6 +1,7 @@
 {% comment %}
   Talk or poster rows for the CV, read straight from _data/talks.yml.
-  Pass kind="talk" or kind="poster".
+  Pass kind="talk" or kind="poster". Slides / poster PDFs get absolute URLs so
+  the links still work in the generated CV PDF.
 {% endcomment %}
 {% assign presentation_items = site.data.talks | where: 'presentation_type', include.kind | sort: 'date' | reverse %}
 <ul class="activity-list">
@@ -13,6 +14,12 @@
           {{- activity.venue -}}
           {%- if activity.location %}, {{ activity.location }}{% endif %}
           {%- if activity.speaker and activity.speaker != 'Louis Schiekiera' %} · presented by {{ activity.speaker }}{% endif -%}
+          {%- if activity.slides %}
+            · <a class="activity-row__asset" href="{{ activity.slides | absolute_url }}">Slides</a>
+          {%- endif -%}
+          {%- if activity.poster %}
+            · <a class="activity-row__asset" href="{{ activity.poster | absolute_url }}">Poster</a>
+          {%- endif -%}
         </span>
       </span>
     </li>

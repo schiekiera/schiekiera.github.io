@@ -1136,6 +1136,14 @@ html[data-theme="dark"] {
   }
 }
 
+// Slides / poster links on the CV's Talks and Posters rows: theme colour so
+// they read as links, upright instead of the italic of the line around them.
+.activity-row__sub .activity-row__asset {
+  color: var(--global-theme-color);
+  font-style: normal;
+  font-weight: 500;
+}
+
 // Extra lines under an Experience / Education row (thesis, advisors, minor).
 .activity-row__detail {
   font-size: 0.82rem;
@@ -2157,14 +2165,35 @@ a.news-icon--link {
   border: none;
   border-radius: 999px;
   cursor: pointer;
+  text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
+    color: var(--global-bg-color);
     filter: brightness(0.92);
+    text-decoration: none;
   }
 }
 
 .cv .activity-list {
   margin-top: 0.25rem;
+}
+
+// CV publications: jekyll-scholar wraps each row in <ol class="bibliography">
+// <li>, so the dividers sit on the <li> instead of the row.
+.cv-publications ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+
+  > li {
+    margin: 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 @media print {

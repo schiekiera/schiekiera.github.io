@@ -1,0 +1,24 @@
+{% comment %}
+  Body of one _data/cv.yml section, picked by its `type`. Shared by the CV page
+  (_layouts/cv.liquid) and its PDF version (_layouts/cv-print.liquid), so both
+  always show the same content.
+{% endcomment %}
+{% if entry.type == 'list' %}
+  {% include cv/list.liquid %}
+{% elsif entry.type == 'map' %}
+  {% include cv/map.liquid %}
+{% elsif entry.type == 'nested_list' %}
+  {% include cv/nested_list.liquid %}
+{% elsif entry.type == 'time_table' %}
+  {% include cv/time_table.liquid %}
+{% elsif entry.type == 'list_groups' %}
+  {% include cv/list_groups.liquid %}
+{% elsif entry.type == 'teaching' %}
+  {% include cv/teaching.liquid %}
+{% elsif entry.type == 'presentations' %}
+  {% include cv/presentations.liquid kind=entry.kind %}
+{% elsif entry.type == 'publications' %}
+  {% include cv/publications.liquid %}
+{% else %}
+  {{ entry.contents }}
+{% endif %}
