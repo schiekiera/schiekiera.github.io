@@ -413,7 +413,7 @@ function buildInput(k, L, tShow, pop) {
   const g = el('g', {}, L.nodes);
   rectCm(g, x - PAD, YIN - PAD, x + S + PAD, top, boxStyle);
   square(g, x, YIN, S, INPUTS[k], 0.7);
-  const sub = mathLabel(g, x - PAD - 0.13 + 0.035, top + 0.09, 'i', SUBS[k]);
+  const sub = mathLabel(g, x - PAD - 0.13 + 0.035, top + 0.17, 'i', SUBS[k]);
   if (pop) popIn(g, x + S / 2, YIN + S / 2, tShow, 0.4); else fadeIn(g, tShow);
   return [sub];
 }
@@ -421,7 +421,7 @@ function buildOutputs(k, L, tArrow, tBox, tWord0, stagger) {
   const x = gridX(k);
   const g = el('g', {}, L.nodes);
   rectCm(g, x - PAD, -PAD, x + CW + PAD, CW + PAD, boxStyle);
-  const sub = mathLabel(g, x - PAD + 0.035, CW + PAD + 0.09, 'o', SUBS[k]);
+  const sub = mathLabel(g, x - PAD + 0.035, CW + PAD + 0.17, 'o', SUBS[k]);
   fadeIn(g, tBox);
   arrow(L.lines, [[x + CW / 2, YIN - PAD], [x + CW / 2, CW + PAD]], 0.9, tArrow, 0.35);
   OUTPUTS[k].forEach((w, j) => {

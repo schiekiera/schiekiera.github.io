@@ -422,7 +422,7 @@ function buildInput(k, L, tShow, pop) {
   const g = el('g', {}, L.nodes);
   rectCm(g, x - PAD, YIN - PAD, x + S + PAD, top, boxStyle);
   square(g, x, YIN, S, INPUTS[k], 0.7);
-  const sub = mathLabel(g, x - PAD - 0.13 + 0.035, top + 0.09, 'i', SUBS[k]);
+  const sub = mathLabel(g, x - PAD - 0.13 + 0.035, top + 0.17, 'i', SUBS[k]);
   if (pop) popIn(g, x + S / 2, YIN + S / 2, tShow, 0.4); else fadeIn(g, tShow);
   return [sub];
 }
@@ -431,7 +431,7 @@ function buildCands(k, L, tArrow, tBox, tWords) {
   const x = candX(k);
   const g = el('g', {}, L.nodes);
   rectCm(g, x - PAD, -PAD, x + CW + PAD, CW + PAD, boxStyle);
-  const sub = mathLabel(g, x - PAD + 0.035, CW + PAD + 0.09, 'c', SUBS[k]);
+  const sub = mathLabel(g, x - PAD + 0.035, CW + PAD + 0.17, 'c', SUBS[k]);
   candSquares[k] = {};
   CANDS.forEach((w, j) => {
     const p = candPos(k, w);
@@ -447,7 +447,7 @@ function buildPicks(k, L, t0) {
   const x = candX(k);
   const g = el('g', {}, L.nodes);
   rectCm(g, x - PAD, PY - PAD, x + CW + PAD, PY + S + PAD, boxStyle);
-  const sub = mathLabel(g, x - PAD + 0.035, PY + S + PAD + 0.09, 'o', SUBS[k]);
+  const sub = mathLabel(g, x - PAD + 0.035, PY + S + PAD + 0.17, 'o', SUBS[k]);
   fadeIn(g, t0 + 0.25, 0.35);
   arrow(L.lines, [[x + CW / 2, -PAD], [x + CW / 2, PY + S + PAD]], 0.9, t0 + 0.2, 0.35);
   PICKS[k].forEach((w, j) => {
