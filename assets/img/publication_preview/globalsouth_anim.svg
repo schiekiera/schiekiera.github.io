@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" role="img" aria-labelledby="title desc">
+<title id="title">First authorship by world region, animated</title>
+<desc id="desc">Share of first-author affiliations in psychotherapy trials by world region, morphing from the 1990s to 2020-22: North America falls from 65% to 36%, Asia rises from 3% to 23%, Latin America and Africa stay at 1-2%. Global North regions grey, Global South regions teal.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+.hbar { transform-box: fill-box; transform-origin: 0 50%; }
+@keyframes y1990 { 0%, 3.750% { opacity: 0 } 7.500%, 40.000% { opacity: 1 } 46.250%, 100% { opacity: 0 } }
+@keyframes y2020 { 0%, 47.500% { opacity: 0 } 51.250%, 87.500% { opacity: 1 } 92.500%, 100% { opacity: 0 } }
+@keyframes r0 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.929) } 55.000%, 87.500% { transform: scaleX(0.514) } 93.750%, 100% { transform: scaleX(0) } }
+@keyframes r1 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.386) } 55.000%, 87.500% { transform: scaleX(0.457) } 93.750%, 100% { transform: scaleX(0) } }
+@keyframes r2 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.043) } 55.000%, 87.500% { transform: scaleX(0.329) } 93.750%, 100% { transform: scaleX(0) } }
+@keyframes r3 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.071) } 55.000%, 87.500% { transform: scaleX(0.086) } 93.750%, 100% { transform: scaleX(0) } }
+@keyframes r4 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.014) } 55.000%, 87.500% { transform: scaleX(0.029) } 93.750%, 100% { transform: scaleX(0) } }
+@keyframes r5 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.014) } 55.000%, 87.500% { transform: scaleX(0.029) } 93.750%, 100% { transform: scaleX(0) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<text x="274.0" y="42" font-size="28" font-weight="bold" text-anchor="middle" opacity="0" style="animation: y1990 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both">1990s</text>
+<text x="274.0" y="42" font-size="28" font-weight="bold" text-anchor="middle" style="animation: y2020 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both">2020–22</text>
+<text x="166" y="93.0" font-size="20" text-anchor="end">North America</text>
+<rect class="hbar" x="176" y="72" width="196" height="28" rx="3" fill="#C9D1DA" stroke="#6B7B8C" stroke-width="2" style="transform: scaleX(0.514); animation: r0 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text x="166" y="139.0" font-size="20" text-anchor="end">Europe</text>
+<rect class="hbar" x="176" y="118" width="196" height="28" rx="3" fill="#C9D1DA" stroke="#6B7B8C" stroke-width="2" style="transform: scaleX(0.457); animation: r1 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text x="166" y="185.0" font-size="20" text-anchor="end">Asia</text>
+<rect class="hbar" x="176" y="164" width="196" height="28" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleX(0.329); animation: r2 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text x="166" y="231.0" font-size="20" text-anchor="end">Oceania</text>
+<rect class="hbar" x="176" y="210" width="196" height="28" rx="3" fill="#C9D1DA" stroke="#6B7B8C" stroke-width="2" style="transform: scaleX(0.086); animation: r3 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text x="166" y="277.0" font-size="20" text-anchor="end">Latin America</text>
+<rect class="hbar" x="176" y="256" width="196" height="28" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleX(0.029); animation: r4 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text x="166" y="323.0" font-size="20" text-anchor="end">Africa</text>
+<rect class="hbar" x="176" y="302" width="196" height="28" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleX(0.029); animation: r5 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line x1="176" y1="64" x2="176" y2="338" stroke="#1d1d1f" stroke-width="2"/>
+<rect x="64" y="355" width="18" height="18" rx="3" fill="#C9D1DA" stroke="#6B7B8C" stroke-width="2"/><text x="90" y="370" font-size="20" font-style="italic">Global North</text>
+<rect x="226" y="355" width="18" height="18" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2"/><text x="252" y="370" font-size="20" font-style="italic">Global South</text>
+<text class="cap" x="200" y="454">who gets first authorship?</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" role="img" aria-labelledby="title desc">
+<title id="title">ASR validation pipeline, animated</title>
+<desc id="desc">Three naming responses: the audio is transcribed by Whisper and matched to the target word in up to three stages. cat heard as cat passes the exact match; to heard as two passes the homophone check; ban heard as ben fails all three and goes to manual review.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+.wv { transform-box: fill-box; transform-origin: center; }
+@keyframes cap { 0%, 0.794% { opacity: 0 } 3.175%, 96.032% { opacity: 1 } 98.413%, 100% { opacity: 0 } }
+@keyframes w0 { 0%, 4.762% { transform: scaleY(0) } 10.714%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w1 { 0%, 5.476% { transform: scaleY(0) } 11.429%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w2 { 0%, 6.190% { transform: scaleY(0) } 12.143%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w3 { 0%, 6.905% { transform: scaleY(0) } 12.857%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w4 { 0%, 7.619% { transform: scaleY(0) } 13.571%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w5 { 0%, 8.333% { transform: scaleY(0) } 14.286%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w6 { 0%, 9.048% { transform: scaleY(0) } 15.000%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w7 { 0%, 9.762% { transform: scaleY(0) } 15.714%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w8 { 0%, 10.476% { transform: scaleY(0) } 16.429%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w9 { 0%, 11.190% { transform: scaleY(0) } 17.143%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w10 { 0%, 11.905% { transform: scaleY(0) } 17.857%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w11 { 0%, 12.619% { transform: scaleY(0) } 18.571%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w12 { 0%, 13.333% { transform: scaleY(0) } 19.286%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w13 { 0%, 14.048% { transform: scaleY(0) } 20.000%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w14 { 0%, 14.762% { transform: scaleY(0) } 20.714%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w15 { 0%, 15.476% { transform: scaleY(0) } 21.429%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w16 { 0%, 16.190% { transform: scaleY(0) } 22.143%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w17 { 0%, 16.905% { transform: scaleY(0) } 22.857%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w18 { 0%, 17.619% { transform: scaleY(0) } 23.571%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w19 { 0%, 18.333% { transform: scaleY(0) } 24.286%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w20 { 0%, 19.048% { transform: scaleY(0) } 25.000%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w21 { 0%, 19.762% { transform: scaleY(0) } 25.714%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w22 { 0%, 20.476% { transform: scaleY(0) } 26.429%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w23 { 0%, 21.190% { transform: scaleY(0) } 27.143%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w24 { 0%, 21.905% { transform: scaleY(0) } 27.857%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes w25 { 0%, 22.619% { transform: scaleY(0) } 28.571%, 88.095% { transform: scaleY(1) } 97.619%, 100% { transform: scaleY(0) } }
+@keyframes tg0 { 0%, 0.397% { opacity: 0 } 2.778%, 29.365% { opacity: 1 } 32.540%, 100% { opacity: 0 } }
+@keyframes hd0 { 0%, 8.730% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 11.111%, 29.365% { opacity: 1; transform: scale(1) } 32.540%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st00 { 0%, 12.698% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 15.079%, 29.365% { opacity: 1; transform: scale(1) } 32.540%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes res0 { 0%, 17.063% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 19.444%, 29.365% { opacity: 1; transform: scale(1) } 32.540%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes tg1 { 0%, 33.730% { opacity: 0 } 36.111%, 62.698% { opacity: 1 } 65.873%, 100% { opacity: 0 } }
+@keyframes hd1 { 0%, 42.063% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 44.444%, 62.698% { opacity: 1; transform: scale(1) } 65.873%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st10 { 0%, 46.032% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 48.413%, 62.698% { opacity: 1; transform: scale(1) } 65.873%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st11 { 0%, 49.603% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 51.984%, 62.698% { opacity: 1; transform: scale(1) } 65.873%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes res1 { 0%, 53.968% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 56.349%, 62.698% { opacity: 1; transform: scale(1) } 65.873%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes tg2 { 0%, 67.063% { opacity: 0 } 69.444%, 96.032% { opacity: 1 } 99.206%, 100% { opacity: 0 } }
+@keyframes hd2 { 0%, 75.397% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 77.778%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st20 { 0%, 79.365% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 81.746%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st21 { 0%, 82.937% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 85.317%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes st22 { 0%, 86.508% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 88.889%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes res2 { 0%, 90.873% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 93.254%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<rect class="wv" x="72" y="97.1" width="6" height="13.7" rx="3" fill="#8C9BAB" style="animation: w0 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="82" y="95.3" width="6" height="17.4" rx="3" fill="#8C9BAB" style="animation: w1 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="92" y="93.6" width="6" height="20.8" rx="3" fill="#8C9BAB" style="animation: w2 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="102" y="91.0" width="6" height="26.1" rx="3" fill="#8C9BAB" style="animation: w3 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="112" y="91.5" width="6" height="25.0" rx="3" fill="#8C9BAB" style="animation: w4 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="122" y="88.1" width="6" height="31.8" rx="3" fill="#8C9BAB" style="animation: w5 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="132" y="98.3" width="6" height="11.4" rx="3" fill="#8C9BAB" style="animation: w6 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="142" y="91.7" width="6" height="24.6" rx="3" fill="#8C9BAB" style="animation: w7 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="152" y="83.2" width="6" height="41.6" rx="3" fill="#8C9BAB" style="animation: w8 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="162" y="86.7" width="6" height="34.5" rx="3" fill="#8C9BAB" style="animation: w9 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="172" y="80.9" width="6" height="46.2" rx="3" fill="#8C9BAB" style="animation: w10 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="182" y="95.2" width="6" height="17.6" rx="3" fill="#8C9BAB" style="animation: w11 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="192" y="87.2" width="6" height="33.6" rx="3" fill="#8C9BAB" style="animation: w12 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="202" y="91.9" width="6" height="24.1" rx="3" fill="#8C9BAB" style="animation: w13 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="212" y="86.6" width="6" height="34.8" rx="3" fill="#8C9BAB" style="animation: w14 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="222" y="87.0" width="6" height="34.0" rx="3" fill="#8C9BAB" style="animation: w15 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="232" y="97.7" width="6" height="12.5" rx="3" fill="#8C9BAB" style="animation: w16 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="242" y="94.8" width="6" height="18.5" rx="3" fill="#8C9BAB" style="animation: w17 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="252" y="94.4" width="6" height="19.2" rx="3" fill="#8C9BAB" style="animation: w18 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="262" y="86.7" width="6" height="34.7" rx="3" fill="#8C9BAB" style="animation: w19 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="272" y="89.9" width="6" height="28.1" rx="3" fill="#8C9BAB" style="animation: w20 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="282" y="97.5" width="6" height="13.0" rx="3" fill="#8C9BAB" style="animation: w21 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="292" y="92.3" width="6" height="23.5" rx="3" fill="#8C9BAB" style="animation: w22 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="302" y="98.6" width="6" height="10.8" rx="3" fill="#8C9BAB" style="animation: w23 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="312" y="96.1" width="6" height="15.9" rx="3" fill="#8C9BAB" style="animation: w24 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="wv" x="322" y="99.5" width="6" height="8.9" rx="3" fill="#8C9BAB" style="animation: w25 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line x1="200" y1="140" x2="200" y2="157" stroke="#1d1d1f" stroke-width="2.5"/><polygon points="200,166 193.5,154 206.5,154" fill="#1d1d1f"/>
+<text x="214" y="160" font-size="19" font-style="italic" fill="#6b6b6b">Whisper</text>
+<rect x="130" y="168" width="140" height="44" rx="10" fill="#F3F4F6" stroke="#C5CAD1" stroke-width="2"/>
+<circle cx="112" cy="244" r="13" fill="#ffffff" stroke="#B0B0B0" stroke-width="2"/><text x="136" y="251" font-size="21">exact match</text>
+<circle cx="112" cy="284" r="13" fill="#ffffff" stroke="#B0B0B0" stroke-width="2"/><text x="136" y="291" font-size="21">homophone</text>
+<circle cx="112" cy="324" r="13" fill="#ffffff" stroke="#B0B0B0" stroke-width="2"/><text x="136" y="331" font-size="21">phonetic distance</text>
+<text x="200" y="46" font-size="22" text-anchor="middle" opacity="0" style="animation: tg0 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><tspan fill="#6b6b6b" font-style="italic">target:</tspan> <tspan font-weight="bold">cat</tspan></text>
+<text class="pop" x="200" y="198" font-size="24" font-style="italic" text-anchor="middle" opacity="0" style="animation: hd0 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both">“cat”</text>
+<g class="pop" opacity="0" style="animation: st00 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="244" r="13" fill="#2A9D8F"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 106 244 L 110 249 L 118.5 239"/></g></g>
+<g class="pop" opacity="0" style="animation: res0 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="132" y="364" width="136" height="40" rx="20" fill="#2A9D8F"/><text x="200" y="391" font-size="22" font-weight="bold" text-anchor="middle" fill="#ffffff">verified</text></g>
+<text x="200" y="46" font-size="22" text-anchor="middle" style="animation: tg1 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><tspan fill="#6b6b6b" font-style="italic">target:</tspan> <tspan font-weight="bold">to</tspan></text>
+<text class="pop" x="200" y="198" font-size="24" font-style="italic" text-anchor="middle" style="animation: hd1 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both">“two”</text>
+<g class="pop" style="animation: st10 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="244" r="13" fill="#C8553D"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 107 239 L 117 249 M 117 239 L 107 249"/></g></g>
+<g class="pop" style="animation: st11 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="284" r="13" fill="#2A9D8F"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 106 284 L 110 289 L 118.5 279"/></g></g>
+<g class="pop" style="animation: res1 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="132" y="364" width="136" height="40" rx="20" fill="#2A9D8F"/><text x="200" y="391" font-size="22" font-weight="bold" text-anchor="middle" fill="#ffffff">verified</text></g>
+<text x="200" y="46" font-size="22" text-anchor="middle" opacity="0" style="animation: tg2 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><tspan fill="#6b6b6b" font-style="italic">target:</tspan> <tspan font-weight="bold">ban</tspan></text>
+<text class="pop" x="200" y="198" font-size="24" font-style="italic" text-anchor="middle" opacity="0" style="animation: hd2 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both">“ben”</text>
+<g class="pop" opacity="0" style="animation: st20 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="244" r="13" fill="#C8553D"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 107 239 L 117 249 M 117 239 L 107 249"/></g></g>
+<g class="pop" opacity="0" style="animation: st21 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="284" r="13" fill="#C8553D"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 107 279 L 117 289 M 117 279 L 107 289"/></g></g>
+<g class="pop" opacity="0" style="animation: st22 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="112" cy="324" r="13" fill="#C8553D"/><g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 107 319 L 117 329 M 117 319 L 107 329"/></g></g>
+<g class="pop" opacity="0" style="animation: res2 12.600000000000001s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="102" y="364" width="196" height="40" rx="20" fill="#E07B24"/><text x="200" y="391" font-size="22" font-weight="bold" text-anchor="middle" fill="#ffffff">manual review</text></g>
+<text class="cap" x="200" y="454">automated response validation</text>
+</svg>
