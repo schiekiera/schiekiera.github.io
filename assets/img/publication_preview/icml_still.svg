@@ -18,7 +18,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes fly11 { 0%, 22.10% { opacity: 0; transform: translate(-78px, -114px) } 22.25% { opacity: 1; transform: translate(-78px, -114px) } 26.81% { opacity: 1; transform: translate(0px, 0px) } 30.07% { opacity: 1; transform: translate(0px, 0px) } 32.25% { opacity: 0; transform: translate(0px, 0px) } 100% { opacity: 0; transform: translate(0px, 0px) } }
 @keyframes fly20 { 0%, 22.10% { opacity: 0; transform: translate(78px, -192px) } 22.25% { opacity: 1; transform: translate(78px, -192px) } 26.81% { opacity: 1; transform: translate(0px, 0px) } 30.07% { opacity: 1; transform: translate(0px, 0px) } 32.25% { opacity: 0; transform: translate(0px, 0px) } 100% { opacity: 0; transform: translate(0px, 0px) } }
 @keyframes fly21 { 0%, 22.10% { opacity: 0; transform: translate(0px, -114px) } 22.25% { opacity: 1; transform: translate(0px, -114px) } 26.81% { opacity: 1; transform: translate(0px, 0px) } 30.07% { opacity: 1; transform: translate(0px, 0px) } 32.25% { opacity: 0; transform: translate(0px, 0px) } 100% { opacity: 0; transform: translate(0px, 0px) } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <rect x="158" y="20" width="84" height="84" rx="6" fill="none" stroke="#1d1d1f" stroke-width="3"/>

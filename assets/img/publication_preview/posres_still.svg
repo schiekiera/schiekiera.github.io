@@ -22,7 +22,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes tag2 { 0%, 41.905% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 44.762%, 47.619% { opacity: 1; transform: scale(1) } 51.429%, 100% { opacity: 0; transform: scale(1) } }
 @keyframes trend { 0%, 54.286% { stroke-dashoffset: 1; opacity: 1 } 67.619%, 91.429% { stroke-dashoffset: 0; opacity: 1 } 95.238% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
 @keyframes mark { 0%, 63.810% { opacity: 0 } 66.667%, 91.429% { opacity: 1 } 95.238%, 100% { opacity: 0 } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <g transform="translate(0 60)">
