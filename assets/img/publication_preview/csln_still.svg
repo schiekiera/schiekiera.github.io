@@ -61,7 +61,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes b26 { 0%, 10.909% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 18.182%, 43.636% { transform: scaleY(0.437); fill: #BFE2B8; stroke: #6DB563 } 47.273% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 60.909% { transform: scaleY(0); fill: #5CB74E; stroke: #3E8E36 } 68.182%, 93.636% { transform: scaleY(0.700); fill: #5CB74E; stroke: #3E8E36 } 97.273%, 100% { transform: scaleY(0); fill: #5CB74E; stroke: #3E8E36 } }
 @keyframes b27 { 0%, 10.909% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 18.182%, 43.636% { transform: scaleY(0.397); fill: #BFE2B8; stroke: #6DB563 } 47.273% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 60.909% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 68.182%, 93.636% { transform: scaleY(0.057); fill: #BFE2B8; stroke: #6DB563 } 97.273%, 100% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } }
 @keyframes b28 { 0%, 10.909% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 18.182%, 43.636% { transform: scaleY(0.422); fill: #BFE2B8; stroke: #6DB563 } 47.273% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 60.909% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } 68.182%, 93.636% { transform: scaleY(0.059); fill: #BFE2B8; stroke: #6DB563 } 97.273%, 100% { transform: scaleY(0); fill: #BFE2B8; stroke: #6DB563 } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <g stroke="#9A9A9A" stroke-width="1.6" style="animation: l0 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><line x1="110" y1="88" x2="56" y2="238"/><line x1="290" y1="88" x2="56" y2="238"/></g>

@@ -24,7 +24,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes g1 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
 @keyframes b12 { 0%, 63.400% { transform: scaleY(0) } 69.400%, 94.000% { transform: scaleY(0.78) } 98.000%, 100% { transform: scaleY(0) } }
 @keyframes g2 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <g opacity="0" style="animation: card0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="100" y="20" width="200" height="140" rx="8" fill="#ffffff" stroke="#C5CAD1" stroke-width="2"/><text x="116" y="50" font-size="19" font-weight="bold">Abstract</text><rect x="116" y="64" width="144" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="78" width="131" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="92" width="151" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="106" width="101" height="6" rx="3" fill="#E1E4E8"/><g class="pop" style="animation: badge0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="116" y="118" width="148" height="30" rx="15" fill="#A6CE39"/><text x="190" y="139" font-size="19" font-weight="bold" text-anchor="middle" fill="#1d1d1f">progressive</text></g></g>

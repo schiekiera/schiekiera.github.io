@@ -52,7 +52,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes st21 { 0%, 82.937% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 85.317%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
 @keyframes st22 { 0%, 86.508% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 88.889%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
 @keyframes res2 { 0%, 90.873% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 93.254%, 96.032% { opacity: 1; transform: scale(1) } 99.206%, 100% { opacity: 0; transform: scale(1) } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <rect class="wv" x="72" y="97.1" width="6" height="13.7" rx="3" fill="#8C9BAB" style="animation: w0 4.2s cubic-bezier(.45,0,.2,1) 0s infinite both"/>

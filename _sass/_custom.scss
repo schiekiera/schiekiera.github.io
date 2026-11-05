@@ -2162,29 +2162,42 @@ html[data-theme="dark"] {
   margin-top: 0.05rem;
   border-radius: 50%;
   font-size: 0.78rem;
-  color: var(--global-theme-color);
-  background: rgba(53, 148, 105, 0.12);
+  background: var(--global-theme-color);
 }
 
-html[data-theme="dark"] .news-icon {
-  background: rgba(217, 179, 0, 0.16);
+// Filled: dark green disc with a light green glyph. The `.news-item` prefix
+// outranks the theme's `table.table a` / `table.table a:hover` link colours.
+.news-item .news-icon {
+  color: #e3f3ea;
+}
+
+html[data-theme="dark"] .news-item .news-icon {
+  color: var(--global-bg-color);
 }
 
 // Icons with a `link:` in the announcement's front matter jump to the item's
-// main link (paper, preprint, slides, poster or event).
-a.news-icon--link {
+// main link (paper, preprint, slides, poster or event). On hover they grow a
+// little and get a soft ring.
+.news-item a.news-icon--link {
   text-decoration: none;
   transition:
-    background 0.15s ease,
-    color 0.15s ease,
+    box-shadow 0.15s ease,
     transform 0.15s ease;
 
   &:hover,
   &:focus-visible {
-    color: var(--global-bg-color);
-    background: var(--global-theme-color);
+    color: #e3f3ea;
     text-decoration: none;
     transform: scale(1.08);
+    box-shadow: 0 0 0 3px rgba(53, 148, 105, 0.25);
+  }
+}
+
+html[data-theme="dark"] .news-item a.news-icon--link {
+  &:hover,
+  &:focus-visible {
+    color: var(--global-bg-color);
+    box-shadow: 0 0 0 3px rgba(217, 179, 0, 0.3);
   }
 }
 

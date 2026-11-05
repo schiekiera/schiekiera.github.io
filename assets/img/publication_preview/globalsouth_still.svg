@@ -18,7 +18,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes r3 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.071) } 55.000%, 87.500% { transform: scaleX(0.086) } 93.750%, 100% { transform: scaleX(0) } }
 @keyframes r4 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.014) } 55.000%, 87.500% { transform: scaleX(0.029) } 93.750%, 100% { transform: scaleX(0) } }
 @keyframes r5 { 0%, 3.750% { transform: scaleX(0) } 13.750%, 40.000% { transform: scaleX(0.014) } 55.000%, 87.500% { transform: scaleX(0.029) } 93.750%, 100% { transform: scaleX(0) } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <text x="274.0" y="42" font-size="28" font-weight="bold" text-anchor="middle" opacity="0" style="animation: y1990 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both">1990s</text>

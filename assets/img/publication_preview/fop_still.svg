@@ -12,7 +12,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 @keyframes on { 0%, 12.500% { fill: #E6E8EB; stroke: #C9CDD2 } 15.625%, 82.500% { fill: #E07B24; stroke: #B5601A } 86.250%, 100% { fill: #E6E8EB; stroke: #C9CDD2 } }
 @keyframes pctmothers { 0%, 32.500% { opacity: 0 } 36.250%, 82.500% { opacity: 1 } 87.500%, 100% { opacity: 0 } }
 @keyframes pctfathers { 0%, 32.500% { opacity: 0 } 36.250%, 82.500% { opacity: 1 } 87.500%, 100% { opacity: 0 } }
-* { animation: none !important; }
+* { animation: none !important; } .cap { display: none; }
 </style>
 <rect width="400" height="480" fill="#ffffff"/>
 <circle cx="50.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.000s infinite both"/>
