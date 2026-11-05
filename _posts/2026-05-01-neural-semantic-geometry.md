@@ -26,8 +26,8 @@ In cognitive science, semantic knowledge is treated as a latent structure: we ca
 We transfer this measurement logic to large language models. Unlike humans, both behavior _and_ internal representations are observable in LLMs. This creates a unique opportunity: we can systematically test how well an LLM's behavioral output reveals its internal semantic geometry. A key open question is not only how model behavior compares to humans, but also what a model's _own_ behavior reveals about its _own_ internal representations.
 
 <div class="figure-container">
-  <img src="/assets/img/blog/neural_semantic_geometry/conceptual.png" alt="Conceptual overview of the framework" data-zoomable>
-  <span class="figure-caption">Conceptual overview. For a shared vocabulary, we (i) extract layer-wise word representations to form a hidden-state similarity matrix, and (ii) run behavioral association tasks (forced choice / free association) to build a behavioral similarity matrix. Representational similarity analysis (RSA) correlates the pairwise similarities to quantify behavior–activation alignment.</span>
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/conceptual_rsa_loop.html" style="--ar: 864 / 1170; --max-w: 620px" loading="lazy" title="Animated conceptual overview of the framework"></iframe>
+  <span class="figure-caption">Conceptual overview. Every word of a shared vocabulary takes two paths through the language model: (A) we extract its layer-wise hidden state, which yields a hidden-state similarity matrix, and (B) we run behavioral association tasks (forced choice / free association), which yield a behavioral similarity matrix. Representational similarity analysis (RSA) stacks the lower triangles of both matrices into vectors and correlates them (Pearson <em>r</em>) to quantify behavior–activation alignment.</span>
 </div>
 
 ## Framework
@@ -47,8 +47,13 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
 </div>
 
 <div class="figure-container">
-  <img src="/assets/img/blog/neural_semantic_geometry/both_paradigms.png" alt="Forced choice and free association paradigms" data-zoomable>
-  <span class="figure-caption">Behavioral paradigms and derived semantic geometries. Left (forced choice): given a cue word and a candidate set, the model selects the most related words. Right (free association): given a cue word alone, the model generates multiple associates. From the resulting cue–response count matrices, we compute similarity matrices by cosine similarity between rows.</span>
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/forced_choice_intro_loop.html" style="--ar: 640 / 1329; --max-w: 440px" loading="lazy" title="Animated forced choice paradigm"></iframe>
+  <span class="figure-caption">Forced choice. In each trial, the model sees one input word and a set of candidate words (four here, sixteen in the study) and picks the two most related. Running the trial for every input word fills the input–output count matrix <b>B</b><sup>FC</sup>; cosine similarity between its rows gives the behavioral similarity matrix <b>S</b><sup>FC</sup>.</span>
+</div>
+
+<div class="figure-container">
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/free_association_intro_loop.html" style="--ar: 640 / 1173; --max-w: 440px" loading="lazy" title="Animated free association paradigm"></iframe>
+  <span class="figure-caption">Free association. The model sees only the input word and generates its associates (four here, five in the study). The responses fill the input–output count matrix <b>B</b><sup>FA</sup>; cosine similarity between its rows gives <b>S</b><sup>FA</sup>.</span>
 </div>
 
 For each paradigm, model outputs are aggregated into a sparse cue–response count matrix **B**. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue–cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.
@@ -77,9 +82,19 @@ For each model and each word, we extract layerwise hidden-state representations 
 
 Hidden-state similarity matrices are computed as cosine similarity between mean-centered layerwise word vectors.
 
+<div class="figure-container">
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/hidden_states_intro_loop.html" style="--ar: 2040 / 1275" loading="lazy" title="Animated hidden-state extraction"></iframe>
+  <span class="figure-caption">Hidden-state extraction, shown for the Meaning strategy (prompt shortened). The prompt is split into tokens and passed through the model; in every layer <em>ℓ</em>, self-attention and an MLP update the residual stream. The hidden state of the cue word at layer <em>ℓ</em> fills one row of <b>H</b><sup><em>ℓ</em></sup>, and cosine similarity between rows gives <b>S</b><sup>hid</sup>, one matrix per layer.</span>
+</div>
+
 ### Models and baselines
 
 We evaluate eight instruction-tuned decoder-only transformer models ranging from 7B to 14B parameters (Falcon3, Gemma-2, Llama-3.1, Mistral-7B, Mistral-Nemo, Phi-4, Qwen2.5, and rnj-1). Beyond behavioral embeddings, we compare hidden-state similarities to three baselines: **FastText** (static word vectors), **BERT** (contextual encoder), and a **cross-model consensus** geometry aggregating hidden-state similarities across all other models, motivated by recent evidence for a shared semantic subspace across diverse LLMs.
+
+<div class="figure-container">
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/cross_model_consensus_loop.html" style="--ar: 1600 / 940" loading="lazy" title="Animated cross-model consensus baseline"></iframe>
+  <span class="figure-caption">Cross-model consensus baseline. Every layer of every model yields a hidden-state similarity matrix. For a target model <em>m</em>, the matrices of all other models and layers are averaged into the consensus <b>S</b><sup>X</sup><sub><em>m</em></sub>; the target's own matrices are always left out. Like <b>S</b><sup>FC</sup> and <b>S</b><sup>FA</sup>, the consensus then serves as a reference geometry for the target's hidden states. The heatmaps show illustrative toy data, not results.</span>
+</div>
 
 ### Evaluation
 

@@ -497,6 +497,19 @@ d-article {
     margin: 0 auto;
     border-radius: 6px;
   }
+
+  // Animated figures: self-contained HTML/SVG loops in an iframe.
+  // Per figure, set --ar (the animation's width / height) and optionally --max-w;
+  // tall figures also shrink so they fit into the viewport height.
+  .anim-figure {
+    display: block;
+    width: min(100%, var(--max-w, 100%), 90vh * var(--ar));
+    aspect-ratio: var(--ar);
+    margin: 0 auto;
+    border: 0;
+    border-radius: 6px;
+    background: #fff;
+  }
 }
 
 .figure-caption {
