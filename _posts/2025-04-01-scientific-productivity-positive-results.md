@@ -8,6 +8,7 @@ authors:
   - Helen Niemeyer
 tags: [metascience, positive-results, scientific-productivity, clinical-psychology]
 thumbnail: /assets/img/blog/scientific_productivity/Figure_3.png
+thumbnail_anim: /assets/img/publication_preview/ap2psych_anim.svg
 publication_type: "Journal Article"
 paper_url: "https://online.ucpress.edu/collabra/article-pdf/11/1/137035/874484/collabra_2025_11_1_137035.pdf"
 preregistration_url: "https://osf.io/46fk9/files/osfstorage/65aea1a9b1f2b50389b0e3f3"

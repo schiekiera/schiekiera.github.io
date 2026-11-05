@@ -11,6 +11,7 @@ authors:
   - Fritz Günther
 tags: [interpretability, representation-learning, llm-behavior, semantic-geometry]
 thumbnail: /assets/img/blog/neural_semantic_geometry/conceptual.png
+thumbnail_anim: /assets/img/publication_preview/icml_anim.svg
 publication_type: "ICML 2026"
 paper_url: "https://arxiv.org/pdf/2602.00628"
 code_url: "https://github.com/schiekiera/llm-association-geometry"

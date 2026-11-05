@@ -22,7 +22,11 @@ nav_order: 3
 <div class="featured-grid">
 {% for post in featured_posts %}
 <a class="featured-card" href="{{ post.url | relative_url }}">
-{% if post.thumbnail %}
+{% if post.thumbnail_anim %}
+<div class="featured-thumb">
+{% include anim_thumb.liquid src=post.thumbnail_anim title=post.title %}
+</div>
+{% elsif post.thumbnail %}
 <div class="featured-thumb">
 <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
 </div>
@@ -74,7 +78,11 @@ nav_order: 3
         {% assign read_time = words | divided_by: 180 | plus: 1 %}
         <li class="post-card">
           <a class="post-card-link" href="{{ post.url | relative_url }}">
-            {% if post.thumbnail %}
+            {% if post.thumbnail_anim %}
+              <div class="post-card-thumb post-card-thumb--anim">
+                {% include anim_thumb.liquid src=post.thumbnail_anim title=post.title %}
+              </div>
+            {% elsif post.thumbnail %}
               <div class="post-card-thumb">
                 <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
               </div>

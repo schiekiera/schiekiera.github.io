@@ -13,6 +13,7 @@ authors:
   - Fritz Günther
 tags: [psycholinguistics, language-production, open-data, megastudies]
 thumbnail: assets/img/publication_preview/pwi_data_collection_process.png
+thumbnail_anim: /assets/img/publication_preview/pwi_anim.svg
 publication_type: "Preprint (PsyArXiv)"
 paper_url: "https://osf.io/preprints/psyarxiv/xp69t_v1"
 data_url: "https://doi.org/10.17605/OSF.IO/2B3SX"

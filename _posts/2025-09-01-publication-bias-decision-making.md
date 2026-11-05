@@ -12,6 +12,7 @@ authors:
   - Helen Niemeyer
 tags: [metascience, publication-bias, decision-making, dual-process-theory]
 thumbnail: /assets/img/blog/publication_bias_decision_making/figure3.png
+thumbnail_anim: /assets/img/publication_preview/ap1psych_anim.svg
 publication_type: "Journal Article"
 paper_url: "https://doi.org/10.1177/25152459251338393"
 preregistration_url: "https://osf.io/6tpm7"

@@ -8,6 +8,7 @@ authors:
   - Helen Niemeyer
 tags: [metascience, political-bias, historiography, decision-making]
 thumbnail: /assets/img/blog/political_bias/Figure_4_ILoS_Main_Results.png
+thumbnail_anim: /assets/img/publication_preview/history_anim.svg
 publication_type: "Journal Article"
 paper_url: "https://doi.org/10.12688/f1000research.157553.1"
 preregistration_url: "https://doi.org/10.17605/OSF.IO/QCDV8"

@@ -11,6 +11,7 @@ authors:
   - Fritz Günther
 tags: [psycholinguistics, language-production, spreading-activation, distributional-semantics]
 thumbnail: /assets/img/blog/csln/cohort_concentration.png
+thumbnail_anim: /assets/img/publication_preview/csln_anim.svg
 publication_type: "Preprint (PsyArXiv)"
 paper_url: "https://osf.io/preprints/psyarxiv/whu3d_v1"
 data_url: "https://doi.org/10.17605/OSF.IO/G6S87"

@@ -2,7 +2,8 @@
 <title id="title">Forced choice, animated</title>
 <desc id="desc">Three forced-choice trials in turn (cat, dog, rat): the input word appears, then four candidate words one after another; the language model picks the two most related candidates, which move into the output row.</desc>
 <style>
-text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; fill: #1d1d1f; }
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
 .cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
 .pop { transform-box: fill-box; transform-origin: center; }
 @keyframes inp { 0%, 0.00% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 2.17% { opacity: 1; transform: scale(1) } 30.07% { opacity: 1; transform: scale(1) } 32.25% { opacity: 0; transform: scale(1) } 100% { opacity: 0; transform: scale(1) } }

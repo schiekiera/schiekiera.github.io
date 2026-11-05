@@ -12,6 +12,7 @@ authors:
   - Fritz Günther
 tags: [variable-selection, bayesian-inference, prior-data-fitted-networks, interactions]
 thumbnail: /assets/img/blog/linear_pfn/visual_abstract.png
+thumbnail_anim: /assets/img/publication_preview/linearpfn_anim.svg
 publication_type: "Preprint (arXiv)"
 paper_url: "https://arxiv.org/abs/2610.06580"
 code_url: "https://github.com/schiekiera/LinearPFN"

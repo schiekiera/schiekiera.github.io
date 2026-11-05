@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" role="img" aria-labelledby="title desc">
+<title id="title">Political bias in historiography, animated</title>
+<desc id="desc">Historians on the left, in the center and on the right rate a progressive and then a conservative abstract for publication: left-leaning historians prefer the progressive one, right-leaning historians the conservative one, and the center shows no preference.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+@keyframes card0 { 0%, 0.000% { opacity: 0; transform: translateY(-26px) } 3.500%, 44.000% { opacity: 1; transform: translateY(0px) } 48.000%, 100% { opacity: 0; transform: translateY(0px) } }
+@keyframes badge0 { 0%, 6.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 9.000%, 44.000% { opacity: 1; transform: scale(1) } 48.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes cap0 { 0%, 6.000% { opacity: 0 } 9.000%, 44.000% { opacity: 1 } 48.000%, 100% { opacity: 0 } }
+@keyframes b00 { 0%, 11.000% { transform: scaleY(0) } 17.000%, 44.000% { transform: scaleY(0.66) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes b01 { 0%, 12.200% { transform: scaleY(0) } 18.200%, 44.000% { transform: scaleY(0.56) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes b02 { 0%, 13.400% { transform: scaleY(0) } 19.400%, 44.000% { transform: scaleY(0.4) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes card1 { 0%, 50.000% { opacity: 0; transform: translateY(-26px) } 53.500%, 94.000% { opacity: 1; transform: translateY(0px) } 98.000%, 100% { opacity: 0; transform: translateY(0px) } }
+@keyframes badge1 { 0%, 56.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 59.000%, 94.000% { opacity: 1; transform: scale(1) } 98.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes cap1 { 0%, 56.000% { opacity: 0 } 59.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b10 { 0%, 61.000% { transform: scaleY(0) } 67.000%, 94.000% { transform: scaleY(0.46) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g0 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b11 { 0%, 62.200% { transform: scaleY(0) } 68.200%, 94.000% { transform: scaleY(0.56) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g1 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b12 { 0%, 63.400% { transform: scaleY(0) } 69.400%, 94.000% { transform: scaleY(0.78) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g2 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<g style="animation: card0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="100" y="20" width="200" height="140" rx="8" fill="#ffffff" stroke="#C5CAD1" stroke-width="2"/><text x="116" y="50" font-size="19" font-weight="bold">Abstract</text><rect x="116" y="64" width="144" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="78" width="131" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="92" width="151" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="106" width="101" height="6" rx="3" fill="#E1E4E8"/><g class="pop" style="animation: badge0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="116" y="118" width="148" height="30" rx="15" fill="#A6CE39"/><text x="190" y="139" font-size="19" font-weight="bold" text-anchor="middle" fill="#1d1d1f">progressive</text></g></g>
+<rect class="bar" x="90.0" y="180" width="40" height="112" rx="3" fill="#C9E38A" stroke="#6E9020" stroke-width="2" style="transform: scaleY(0.66); animation: b00 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="180.0" y="180" width="40" height="112" rx="3" fill="#C9E38A" stroke="#6E9020" stroke-width="2" style="transform: scaleY(0.56); animation: b01 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="270.0" y="180" width="40" height="112" rx="3" fill="#C9E38A" stroke="#6E9020" stroke-width="2" style="transform: scaleY(0.4); animation: b02 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text class="cap" x="200" y="454" style="animation: cap0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">progressive abstract</text>
+<g opacity="0" style="animation: card1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="100" y="20" width="200" height="140" rx="8" fill="#ffffff" stroke="#C5CAD1" stroke-width="2"/><text x="116" y="50" font-size="19" font-weight="bold">Abstract</text><rect x="116" y="64" width="144" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="78" width="131" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="92" width="151" height="6" rx="3" fill="#E1E4E8"/><rect x="116" y="106" width="101" height="6" rx="3" fill="#E1E4E8"/><g class="pop" style="animation: badge1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="116" y="118" width="160" height="30" rx="15" fill="#45206E"/><text x="196" y="139" font-size="19" font-weight="bold" text-anchor="middle" fill="#ffffff">conservative</text></g></g>
+<rect class="bar" x="90.0" y="180" width="40" height="112" rx="3" fill="#8E73B3" stroke="#45206E" stroke-width="2" style="transform: scaleY(0); animation: b10 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="90.0" y="218.1" width="40" height="73.9" rx="3" fill="none" stroke="#6E9020" stroke-width="2" stroke-dasharray="5 4" opacity="0" style="animation: g0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="180.0" y="180" width="40" height="112" rx="3" fill="#8E73B3" stroke="#45206E" stroke-width="2" style="transform: scaleY(0); animation: b11 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="180.0" y="229.3" width="40" height="62.7" rx="3" fill="none" stroke="#6E9020" stroke-width="2" stroke-dasharray="5 4" opacity="0" style="animation: g1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="270.0" y="180" width="40" height="112" rx="3" fill="#8E73B3" stroke="#45206E" stroke-width="2" style="transform: scaleY(0); animation: b12 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="270.0" y="247.2" width="40" height="44.8" rx="3" fill="none" stroke="#6E9020" stroke-width="2" stroke-dasharray="5 4" opacity="0" style="animation: g2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text class="cap" x="200" y="454" opacity="0" style="animation: cap1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">conservative abstract</text>
+<line x1="70" y1="292" x2="330" y2="292" stroke="#1d1d1f" stroke-width="2"/>
+<circle cx="110" cy="320" r="12" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><path d="M 88 364 V 352 Q 88 336 104 336 H 116 Q 132 336 132 352 V 364 Z" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><text x="110" y="392" font-size="21" font-style="italic" text-anchor="middle">left</text>
+<circle cx="200" cy="320" r="12" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><path d="M 178 364 V 352 Q 178 336 194 336 H 206 Q 222 336 222 352 V 364 Z" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><text x="200" y="392" font-size="21" font-style="italic" text-anchor="middle">center</text>
+<circle cx="290" cy="320" r="12" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><path d="M 268 364 V 352 Q 268 336 284 336 H 296 Q 312 336 312 352 V 364 Z" fill="#D5D9DE" stroke="#1d1d1f" stroke-width="2"/><text x="290" y="392" font-size="21" font-style="italic" text-anchor="middle">right</text>
+</svg>

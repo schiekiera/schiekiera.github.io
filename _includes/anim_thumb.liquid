@@ -1,0 +1,14 @@
+{% comment %}
+  Animated SVG thumbnail for post lists (front matter: thumbnail_anim). An <iframe>, not <img>: Safari only
+  partly repaints CSS animations inside an SVG shown via <img> when it is scaled down, and the site's CSP
+  blocks <object>. The SVG fits itself into the box like `object-fit: contain`.
+{% endcomment %}
+<iframe
+  class="anim-thumb"
+  src="{{ include.src | relative_url }}"
+  title="{{ include.title | strip_html | escape }}"
+  aria-hidden="true"
+  tabindex="-1"
+  loading="lazy"
+  scrolling="no"
+></iframe>

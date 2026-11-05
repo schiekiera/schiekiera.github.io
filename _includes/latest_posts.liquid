@@ -24,7 +24,11 @@
           target="_blank" rel="noopener"
         {% endif %}
       >
-        {% if item.thumbnail %}
+        {% if item.thumbnail_anim %}
+          <div class="home-post-thumb">
+            {% include anim_thumb.liquid src=item.thumbnail_anim title=item.title %}
+          </div>
+        {% elsif item.thumbnail %}
           <div class="home-post-thumb">
             <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title | strip_html }}" loading="lazy">
           </div>
