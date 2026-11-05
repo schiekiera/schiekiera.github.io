@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480" role="img" aria-labelledby="title desc">
+<title id="title">Fear of progression, animated</title>
+<desc id="desc">Two grids of 100 dots fill up: 54 of 100 mothers and 41 of 100 fathers of childhood cancer survivors show dysfunctional levels of fear of progression.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+@keyframes on { 0%, 12.500% { fill: #E6E8EB; stroke: #C9CDD2 } 15.625%, 82.500% { fill: #E07B24; stroke: #B5601A } 86.250%, 100% { fill: #E6E8EB; stroke: #C9CDD2 } }
+@keyframes pctmothers { 0%, 32.500% { opacity: 0 } 36.250%, 82.500% { opacity: 1 } 87.500%, 100% { opacity: 0 } }
+@keyframes pctfathers { 0%, 32.500% { opacity: 0 } 36.250%, 82.500% { opacity: 1 } 87.500%, 100% { opacity: 0 } }
+* { animation: none !important; }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<circle cx="50.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.000s infinite both"/>
+<circle cx="64.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.024s infinite both"/>
+<circle cx="79.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.048s infinite both"/>
+<circle cx="93.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.072s infinite both"/>
+<circle cx="108.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.096s infinite both"/>
+<circle cx="122.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.120s infinite both"/>
+<circle cx="137.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.144s infinite both"/>
+<circle cx="151.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.168s infinite both"/>
+<circle cx="166.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.192s infinite both"/>
+<circle cx="180.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.216s infinite both"/>
+<circle cx="50.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.240s infinite both"/>
+<circle cx="64.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.264s infinite both"/>
+<circle cx="79.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.288s infinite both"/>
+<circle cx="93.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.312s infinite both"/>
+<circle cx="108.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.336s infinite both"/>
+<circle cx="122.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.360s infinite both"/>
+<circle cx="137.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.384s infinite both"/>
+<circle cx="151.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.408s infinite both"/>
+<circle cx="166.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.432s infinite both"/>
+<circle cx="180.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.456s infinite both"/>
+<circle cx="50.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.480s infinite both"/>
+<circle cx="64.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.504s infinite both"/>
+<circle cx="79.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.528s infinite both"/>
+<circle cx="93.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.552s infinite both"/>
+<circle cx="108.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.576s infinite both"/>
+<circle cx="122.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.600s infinite both"/>
+<circle cx="137.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.624s infinite both"/>
+<circle cx="151.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.648s infinite both"/>
+<circle cx="166.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.672s infinite both"/>
+<circle cx="180.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.696s infinite both"/>
+<circle cx="50.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.720s infinite both"/>
+<circle cx="64.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.744s infinite both"/>
+<circle cx="79.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.768s infinite both"/>
+<circle cx="93.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.792s infinite both"/>
+<circle cx="108.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.816s infinite both"/>
+<circle cx="122.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.840s infinite both"/>
+<circle cx="137.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.864s infinite both"/>
+<circle cx="151.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.888s infinite both"/>
+<circle cx="166.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.912s infinite both"/>
+<circle cx="180.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.936s infinite both"/>
+<circle cx="50.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.960s infinite both"/>
+<circle cx="64.9" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.984s infinite both"/>
+<circle cx="79.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.008s infinite both"/>
+<circle cx="93.9" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.032s infinite both"/>
+<circle cx="108.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.056s infinite both"/>
+<circle cx="122.9" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.080s infinite both"/>
+<circle cx="137.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.104s infinite both"/>
+<circle cx="151.9" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.128s infinite both"/>
+<circle cx="166.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.152s infinite both"/>
+<circle cx="180.9" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.176s infinite both"/>
+<circle cx="50.4" cy="159.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.200s infinite both"/>
+<circle cx="64.9" cy="159.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.224s infinite both"/>
+<circle cx="79.4" cy="159.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.248s infinite both"/>
+<circle cx="93.9" cy="159.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 1.272s infinite both"/>
+<circle cx="108.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="122.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="137.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="151.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="166.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="180.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="50.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="64.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="79.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="93.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="108.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="122.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="137.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="151.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="166.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="180.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="50.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="64.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="79.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="93.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="108.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="122.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="137.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="151.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="166.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="180.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="50.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="64.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="79.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="93.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="108.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="122.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="137.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="151.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="166.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="180.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="50.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="64.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="79.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="93.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="108.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="122.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="137.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="151.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="166.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="180.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<text x="116" y="271.0" font-size="22" font-style="italic" text-anchor="middle">mothers</text>
+<text x="116" y="311.0" font-size="32" font-weight="bold" text-anchor="middle" fill="#B5601A" style="animation: pctmothers 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both">54%</text>
+<circle cx="227.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.000s infinite both"/>
+<circle cx="241.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.024s infinite both"/>
+<circle cx="256.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.048s infinite both"/>
+<circle cx="270.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.072s infinite both"/>
+<circle cx="285.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.096s infinite both"/>
+<circle cx="299.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.120s infinite both"/>
+<circle cx="314.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.144s infinite both"/>
+<circle cx="328.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.168s infinite both"/>
+<circle cx="343.4" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.192s infinite both"/>
+<circle cx="357.9" cy="231.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.216s infinite both"/>
+<circle cx="227.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.240s infinite both"/>
+<circle cx="241.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.264s infinite both"/>
+<circle cx="256.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.288s infinite both"/>
+<circle cx="270.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.312s infinite both"/>
+<circle cx="285.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.336s infinite both"/>
+<circle cx="299.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.360s infinite both"/>
+<circle cx="314.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.384s infinite both"/>
+<circle cx="328.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.408s infinite both"/>
+<circle cx="343.4" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.432s infinite both"/>
+<circle cx="357.9" cy="217.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.456s infinite both"/>
+<circle cx="227.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.480s infinite both"/>
+<circle cx="241.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.504s infinite both"/>
+<circle cx="256.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.528s infinite both"/>
+<circle cx="270.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.552s infinite both"/>
+<circle cx="285.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.576s infinite both"/>
+<circle cx="299.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.600s infinite both"/>
+<circle cx="314.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.624s infinite both"/>
+<circle cx="328.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.648s infinite both"/>
+<circle cx="343.4" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.672s infinite both"/>
+<circle cx="357.9" cy="202.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.696s infinite both"/>
+<circle cx="227.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.720s infinite both"/>
+<circle cx="241.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.744s infinite both"/>
+<circle cx="256.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.768s infinite both"/>
+<circle cx="270.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.792s infinite both"/>
+<circle cx="285.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.816s infinite both"/>
+<circle cx="299.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.840s infinite both"/>
+<circle cx="314.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.864s infinite both"/>
+<circle cx="328.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.888s infinite both"/>
+<circle cx="343.4" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.912s infinite both"/>
+<circle cx="357.9" cy="188.4" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.936s infinite both"/>
+<circle cx="227.4" cy="173.9" r="5.4" fill="#E07B24" stroke="#B5601A" stroke-width="1.2" style="animation: on 8.0s cubic-bezier(.45,0,.2,1) 0.960s infinite both"/>
+<circle cx="241.9" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="173.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="227.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="241.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="159.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="227.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="241.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="144.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="227.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="241.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="130.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="227.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="241.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="115.9" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="227.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="241.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="256.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="270.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="285.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="299.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="314.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="328.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="343.4" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<circle cx="357.9" cy="101.4" r="5.4" fill="#E6E8EB" stroke="#C9CDD2" stroke-width="1.2"/>
+<text x="293" y="271.0" font-size="22" font-style="italic" text-anchor="middle">fathers</text>
+<text x="293" y="311.0" font-size="32" font-weight="bold" text-anchor="middle" fill="#B5601A" style="animation: pctfathers 8.0s cubic-bezier(.45,0,.2,1) 0s infinite both">41%</text>
+<text class="cap" x="200" y="454" font-size="22">dysfunctional fear of progression</text>
+</svg>

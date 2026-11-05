@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480" role="img" aria-labelledby="title desc">
+<title id="title">Publication bias in academic decisions, animated</title>
+<desc id="desc">Researchers judge two abstracts: with a significant result (p &lt; .05) they rate it as likely to be submitted, read and cited; with a non-significant result (p = .27) all three ratings drop.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+@keyframes card0 { 0%, 0.000% { opacity: 0; transform: translateY(-26px) } 3.500%, 44.000% { opacity: 1; transform: translateY(0px) } 48.000%, 100% { opacity: 0; transform: translateY(0px) } }
+@keyframes badge0 { 0%, 6.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 9.000%, 44.000% { opacity: 1; transform: scale(1) } 48.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes cap0 { 0%, 6.000% { opacity: 0 } 9.000%, 44.000% { opacity: 1 } 48.000%, 100% { opacity: 0 } }
+@keyframes b00 { 0%, 11.000% { transform: scaleY(0) } 17.000%, 44.000% { transform: scaleY(0.82) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes b01 { 0%, 12.200% { transform: scaleY(0) } 18.200%, 44.000% { transform: scaleY(0.78) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes b02 { 0%, 13.400% { transform: scaleY(0) } 19.400%, 44.000% { transform: scaleY(0.74) } 48.000%, 100% { transform: scaleY(0) } }
+@keyframes card1 { 0%, 50.000% { opacity: 0; transform: translateY(-26px) } 53.500%, 94.000% { opacity: 1; transform: translateY(0px) } 98.000%, 100% { opacity: 0; transform: translateY(0px) } }
+@keyframes badge1 { 0%, 56.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 59.000%, 94.000% { opacity: 1; transform: scale(1) } 98.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes cap1 { 0%, 56.000% { opacity: 0 } 59.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b10 { 0%, 61.000% { transform: scaleY(0) } 67.000%, 94.000% { transform: scaleY(0.44) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g0 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b11 { 0%, 62.200% { transform: scaleY(0) } 68.200%, 94.000% { transform: scaleY(0.4) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g1 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+@keyframes b12 { 0%, 63.400% { transform: scaleY(0) } 69.400%, 94.000% { transform: scaleY(0.36) } 98.000%, 100% { transform: scaleY(0) } }
+@keyframes g2 { 0%, 59.000% { opacity: 0 } 62.000%, 94.000% { opacity: 1 } 98.000%, 100% { opacity: 0 } }
+* { animation: none !important; }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<g opacity="0" style="animation: card0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="110" y="22" width="180" height="150" rx="8" fill="#ffffff" stroke="#C5CAD1" stroke-width="2"/><text x="126" y="52" font-size="19" font-weight="bold">Abstract</text><rect x="126" y="66" width="127" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="80" width="115" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="94" width="133" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="108" width="89" height="6" rx="3" fill="#E1E4E8"/><g class="pop" style="animation: badge0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="126" y="130" width="102" height="30" rx="15" fill="#2A9D8F"/><text x="177" y="151" font-size="19" font-weight="bold" text-anchor="middle" fill="#ffffff">p &lt; .05</text></g></g>
+<rect class="bar" x="107.0" y="210" width="46" height="150" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleY(0); animation: b00 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="177.0" y="210" width="46" height="150" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleY(0); animation: b01 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="247.0" y="210" width="46" height="150" rx="3" fill="#A9DCD5" stroke="#1F7A70" stroke-width="2" style="transform: scaleY(0); animation: b02 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text class="cap" x="200" y="454" opacity="0" style="animation: cap0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">significant result</text>
+<g style="animation: card1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="110" y="22" width="180" height="150" rx="8" fill="#ffffff" stroke="#C5CAD1" stroke-width="2"/><text x="126" y="52" font-size="19" font-weight="bold">Abstract</text><rect x="126" y="66" width="127" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="80" width="115" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="94" width="133" height="6" rx="3" fill="#E1E4E8"/><rect x="126" y="108" width="89" height="6" rx="3" fill="#E1E4E8"/><g class="pop" style="animation: badge1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><rect x="126" y="130" width="102" height="30" rx="15" fill="#9A9A9A"/><text x="177" y="151" font-size="19" font-weight="bold" text-anchor="middle" fill="#ffffff">p = .27</text></g></g>
+<rect class="bar" x="107.0" y="210" width="46" height="150" rx="3" fill="#DCDCDC" stroke="#8A8A8A" stroke-width="2" style="transform: scaleY(0.44); animation: b10 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="107.0" y="237.0" width="46" height="123.0" rx="3" fill="none" stroke="#1F7A70" stroke-width="2" stroke-dasharray="5 4" style="animation: g0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="177.0" y="210" width="46" height="150" rx="3" fill="#DCDCDC" stroke="#8A8A8A" stroke-width="2" style="transform: scaleY(0.4); animation: b11 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="177.0" y="243.0" width="46" height="117.0" rx="3" fill="none" stroke="#1F7A70" stroke-width="2" stroke-dasharray="5 4" style="animation: g1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect class="bar" x="247.0" y="210" width="46" height="150" rx="3" fill="#DCDCDC" stroke="#8A8A8A" stroke-width="2" style="transform: scaleY(0.36); animation: b12 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<rect x="247.0" y="249.0" width="46" height="111.0" rx="3" fill="none" stroke="#1F7A70" stroke-width="2" stroke-dasharray="5 4" style="animation: g2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<text class="cap" x="200" y="454" style="animation: cap1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">non-significant result</text>
+<line x1="86" y1="360" x2="314" y2="360" stroke="#1d1d1f" stroke-width="2"/>
+<text x="130" y="388" font-size="21" text-anchor="middle">submit</text>
+<text x="200" y="388" font-size="21" text-anchor="middle">read</text>
+<text x="270" y="388" font-size="21" text-anchor="middle">cite</text>
+</svg>

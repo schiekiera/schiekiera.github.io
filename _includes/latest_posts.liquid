@@ -25,8 +25,13 @@
         {% endif %}
       >
         {% if item.thumbnail_anim %}
+          {% comment %}
+            On the start page the post thumbnails stay still (the animation's finished frame), so only the
+            highlighted publications move; the blog page shows them animated.
+          {% endcomment %}
+          {% assign still_thumb = item.thumbnail_anim | replace: '_anim.svg', '_still.svg' %}
           <div class="home-post-thumb">
-            {% include anim_thumb.liquid src=item.thumbnail_anim title=item.title %}
+            <img src="{{ still_thumb | relative_url }}" alt="{{ item.title | strip_html }}" loading="lazy">
           </div>
         {% elsif item.thumbnail %}
           <div class="home-post-thumb">
