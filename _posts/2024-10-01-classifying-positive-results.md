@@ -9,6 +9,7 @@ authors:
   - Jonathan Diederichs
 tags: [metascience, nlp, publication-bias, text-classification]
 thumbnail: assets/img/publication_preview/attention.png
+thumbnail_anim: /assets/img/publication_preview/posres_anim.svg
 publication_type: "Journal Article"
 paper_url: "https://doi.org/10.1027/2151-2604/a000563"
 code_url: "https://github.com/schiekiera/NegativeResultDetector"

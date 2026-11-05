@@ -8,6 +8,7 @@ authors:
   - Louis Schiekiera
 tags: [metascience, global-south, clinical-psychology, authorship]
 thumbnail: /assets/img/blog/global_clinical_psychology/figure1.jpg
+thumbnail_anim: /assets/img/publication_preview/globalsouth_anim.svg
 publication_type: "Book Chapter"
 paper_url: "https://www.busara.global/wp-content/uploads/2024/06/A-Better-How-Book.pdf"
 code_url: "https://github.com/schiekiera/busara_2024"
