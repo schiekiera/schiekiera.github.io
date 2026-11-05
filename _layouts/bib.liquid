@@ -5,7 +5,19 @@
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
+        {% if entry.preview contains '.svg' %}
+          <!-- Animated SVG thumbnail: an <iframe>, not <img>. Safari only partly repaints CSS animations
+               inside an SVG shown via <img> when it is scaled down (and the CSP blocks <object>). -->
+          <iframe
+            class="preview preview-anim z-depth-1 rounded"
+            src="{{ entry.preview }}"
+            title="Animated thumbnail"
+            aria-hidden="true"
+            tabindex="-1"
+            loading="lazy"
+            scrolling="no"
+          ></iframe>
+        {% elsif entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="max-width: 300px; height: auto;">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}

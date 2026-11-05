@@ -2050,6 +2050,18 @@ html[data-theme="dark"] {
     max-width: 100%;
   }
 
+  // Animated SVG thumbnails (an <iframe>, see _layouts/bib.liquid): same box as the image previews.
+  iframe.preview-anim {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    border: 0;
+    background: #fff;
+    pointer-events: none;
+  }
+
   .periodical {
     color: var(--global-text-color-light);
   }
