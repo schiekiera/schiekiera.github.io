@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" role="img" aria-labelledby="title desc">
+<title id="title">Post-training, animated</title>
+<desc id="desc">Alignment with human behaviour across four model generations (illustrative): each base model is followed by its post-trained version, which is less aligned; base models improve while post-trained models do not, so the gap widens.</desc>
+<style>
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
+.cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
+.pop, .bar { transform-box: fill-box; }
+.pop { transform-origin: center; }
+.bar { transform-origin: 50% 100%; }
+.draw { stroke-dasharray: 1; }
+@keyframes gap { 0%, 63.000% { opacity: 0 } 66.000%, 90.000% { opacity: 1 } 94.000%, 100% { opacity: 0 } }
+@keyframes ar0 { 0%, 7.500% { stroke-dashoffset: 1; opacity: 1 } 11.000%, 60.000% { stroke-dashoffset: 0; opacity: 1 } 64.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ah0 { 0%, 10.500% { opacity: 0 } 12.000%, 60.000% { opacity: 1 } 64.000%, 100% { opacity: 0 } }
+@keyframes bd0 { 0%, 5.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 8.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes pd0 { 0%, 12.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 15.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes bl1 { 0%, 15.500% { stroke-dashoffset: 1; opacity: 1 } 20.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes pl1 { 0%, 22.500% { stroke-dashoffset: 1; opacity: 1 } 27.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ar1 { 0%, 21.500% { stroke-dashoffset: 1; opacity: 1 } 25.000%, 60.000% { stroke-dashoffset: 0; opacity: 1 } 64.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ah1 { 0%, 24.500% { opacity: 0 } 26.000%, 60.000% { opacity: 1 } 64.000%, 100% { opacity: 0 } }
+@keyframes bd1 { 0%, 19.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 22.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes pd1 { 0%, 26.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 29.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes bl2 { 0%, 29.500% { stroke-dashoffset: 1; opacity: 1 } 34.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes pl2 { 0%, 36.500% { stroke-dashoffset: 1; opacity: 1 } 41.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ar2 { 0%, 35.500% { stroke-dashoffset: 1; opacity: 1 } 39.000%, 60.000% { stroke-dashoffset: 0; opacity: 1 } 64.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ah2 { 0%, 38.500% { opacity: 0 } 40.000%, 60.000% { opacity: 1 } 64.000%, 100% { opacity: 0 } }
+@keyframes bd2 { 0%, 33.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 36.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes pd2 { 0%, 40.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 43.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes bl3 { 0%, 43.500% { stroke-dashoffset: 1; opacity: 1 } 48.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes pl3 { 0%, 50.500% { stroke-dashoffset: 1; opacity: 1 } 55.000%, 90.000% { stroke-dashoffset: 0; opacity: 1 } 94.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ar3 { 0%, 49.500% { stroke-dashoffset: 1; opacity: 1 } 53.000%, 60.000% { stroke-dashoffset: 0; opacity: 1 } 64.000% { stroke-dashoffset: 0; opacity: 0 } 100% { stroke-dashoffset: 1; opacity: 0 } }
+@keyframes ah3 { 0%, 52.500% { opacity: 0 } 54.000%, 60.000% { opacity: 1 } 64.000%, 100% { opacity: 0 } }
+@keyframes bd3 { 0%, 47.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 50.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes pd3 { 0%, 54.000% { opacity: 0; transform: scale(.6); animation-timing-function: cubic-bezier(.34,1.56,.64,1) } 57.000%, 90.000% { opacity: 1; transform: scale(1) } 94.000%, 100% { opacity: 0; transform: scale(1) } }
+@keyframes lab { 0%, 10.000% { opacity: 0 } 13.000%, 90.000% { opacity: 1 } 94.000%, 100% { opacity: 0 } }
+@keyframes c1 { 0%, 4.000% { opacity: 0 } 7.000%, 60.000% { opacity: 1 } 64.000%, 100% { opacity: 0 } }
+@keyframes c2 { 0%, 63.000% { opacity: 0 } 66.000%, 90.000% { opacity: 1 } 94.000%, 100% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="400" height="480" fill="#ffffff"/>
+<line x1="78" y1="50" x2="78" y2="342" stroke="#1d1d1f" stroke-width="2"/>
+<line x1="78" y1="342" x2="378" y2="342" stroke="#1d1d1f" stroke-width="2"/>
+<text x="62" y="203.0" font-size="21" font-style="italic" text-anchor="middle" transform="rotate(-90 62 203.0)">alignment with humans</text>
+<text x="229.0" y="372" font-size="21" font-style="italic" text-anchor="middle">model generation</text>
+<line x1="112" y1="342" x2="112" y2="348" stroke="#1d1d1f" stroke-width="2"/>
+<line x1="192" y1="342" x2="192" y2="348" stroke="#1d1d1f" stroke-width="2"/>
+<line x1="272" y1="342" x2="272" y2="348" stroke="#1d1d1f" stroke-width="2"/>
+<line x1="352" y1="342" x2="352" y2="348" stroke="#1d1d1f" stroke-width="2"/>
+<polygon points="112,214.1 192,180.8 272,147.4 352,114.0 352,233.6 272,230.8 192,230.8 112,241.9" fill="#E07B24" fill-opacity=".14" style="animation: gap 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="112" y1="225.1" x2="112" y2="224.9" stroke="#1d1d1f" stroke-width="2" opacity="0" style="animation: ar0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/><polygon points="112,230.9 106.5,220.9 117.5,220.9" fill="#1d1d1f" opacity="0" style="animation: ah0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="112" cy="214.1" r="9" fill="#2A9D8F" stroke="#1d1d1f" stroke-width="2" style="animation: bd0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="112" cy="241.9" r="9" fill="#E07B24" stroke="#1d1d1f" stroke-width="2" style="animation: pd0 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="112" y1="214.1" x2="192" y2="180.8" stroke="#2A9D8F" stroke-width="3.5" stroke-linecap="round" style="animation: bl1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="112" y1="241.9" x2="192" y2="230.8" stroke="#E07B24" stroke-width="3.5" stroke-linecap="round" style="animation: pl1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="192" y1="191.8" x2="192" y2="213.8" stroke="#1d1d1f" stroke-width="2" opacity="0" style="animation: ar1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/><polygon points="192,219.8 186.5,209.8 197.5,209.8" fill="#1d1d1f" opacity="0" style="animation: ah1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="192" cy="180.8" r="9" fill="#2A9D8F" stroke="#1d1d1f" stroke-width="2" style="animation: bd1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="192" cy="230.8" r="9" fill="#E07B24" stroke="#1d1d1f" stroke-width="2" style="animation: pd1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="192" y1="180.8" x2="272" y2="147.4" stroke="#2A9D8F" stroke-width="3.5" stroke-linecap="round" style="animation: bl2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="192" y1="230.8" x2="272" y2="230.8" stroke="#E07B24" stroke-width="3.5" stroke-linecap="round" style="animation: pl2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="272" y1="158.4" x2="272" y2="213.8" stroke="#1d1d1f" stroke-width="2" opacity="0" style="animation: ar2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/><polygon points="272,219.8 266.5,209.8 277.5,209.8" fill="#1d1d1f" opacity="0" style="animation: ah2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="272" cy="147.4" r="9" fill="#2A9D8F" stroke="#1d1d1f" stroke-width="2" style="animation: bd2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="272" cy="230.8" r="9" fill="#E07B24" stroke="#1d1d1f" stroke-width="2" style="animation: pd2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="272" y1="147.4" x2="352" y2="114.0" stroke="#2A9D8F" stroke-width="3.5" stroke-linecap="round" style="animation: bl3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="272" y1="230.8" x2="352" y2="233.6" stroke="#E07B24" stroke-width="3.5" stroke-linecap="round" style="animation: pl3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<line class="draw" pathLength="1" x1="352" y1="125.0" x2="352" y2="216.6" stroke="#1d1d1f" stroke-width="2" opacity="0" style="animation: ar3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/><polygon points="352,222.6 346.5,212.6 357.5,212.6" fill="#1d1d1f" opacity="0" style="animation: ah3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="352" cy="114.0" r="9" fill="#2A9D8F" stroke="#1d1d1f" stroke-width="2" style="animation: bd3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<circle class="pop" cx="352" cy="233.6" r="9" fill="#E07B24" stroke="#1d1d1f" stroke-width="2" style="animation: pd3 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
+<g style="animation: lab 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><text x="98" y="198" font-size="21" fill="#2A9D8F">base</text><text x="98" y="276" font-size="21" fill="#E07B24">post-trained</text></g>
+<text class="cap" x="200" y="454" opacity="0" style="animation: c1 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">post-training lowers alignment</text>
+<text class="cap" x="200" y="454" style="animation: c2 10.0s cubic-bezier(.45,0,.2,1) 0s infinite both">and the gap widens</text>
+</svg>

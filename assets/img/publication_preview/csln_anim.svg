@@ -2,7 +2,8 @@
 <title id="title">Swinging Lexical Network, animated</title>
 <desc id="desc">Two trials in turn. Target t (yellow) appears, then distractor d (blue), then activation spreads over the cohort's neighbours. When it is spread thinly (high entropy), no word stands out, there is a single competitor and naming is facilitated; when it pools on a few words (low entropy), those words are the competitors (green) and naming shows interference.</desc>
 <style>
-text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; fill: #1d1d1f; }
+svg { fill: #1d1d1f; }
+text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman", serif; }
 .cap { font-size: 24px; font-style: italic; fill: #6b6b6b; text-anchor: middle; }
 .pop, .bar { transform-box: fill-box; }
 .pop { transform-origin: center; }
@@ -73,7 +74,7 @@ text { font-family: "Latin Modern Roman", "CMU Serif", Georgia, "Times New Roman
 <g stroke="#9A9A9A" stroke-width="1.6" style="animation: l7 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><line x1="110" y1="88" x2="308" y2="238"/><line x1="290" y1="88" x2="308" y2="238"/></g>
 <g stroke="#9A9A9A" stroke-width="1.6" style="animation: l8 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"><line x1="110" y1="88" x2="344" y2="238"/><line x1="290" y1="88" x2="344" y2="238"/></g>
 <g class="pop" style="animation: tpop 5.5s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="110" cy="88" r="36" fill="#FDE725" stroke="#1d1d1f" stroke-width="2.5"/><text x="110" y="98" font-size="30" font-style="italic" text-anchor="middle">t</text></g>
-<g class="pop" style="animation: dpop 5.5s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="290" cy="88" r="36" fill="#7682D3" stroke="#1d1d1f" stroke-width="2.5"/><text x="290" y="98" font-size="30" font-style="italic" text-anchor="middle" fill="#ffffff">d</text></g>
+<g class="pop" style="animation: dpop 5.5s cubic-bezier(.45,0,.2,1) 0s infinite both"><circle cx="290" cy="88" r="36" fill="#7682D3" stroke="#1d1d1f" stroke-width="2.5"/><text x="290" y="98" font-size="30" font-style="italic" text-anchor="middle" fill="#1d1d1f">d</text></g>
 <circle class="pop" cx="56" cy="238" r="15" fill="#5CB74E" stroke="#1d1d1f" stroke-width="2" style="animation: n0 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
 <circle class="pop" cx="92" cy="238" r="15" fill="#5CB74E" stroke="#1d1d1f" stroke-width="2" style="animation: n1 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
 <circle class="pop" cx="128" cy="238" r="15" fill="#5CB74E" stroke="#1d1d1f" stroke-width="2" style="animation: n2 11.0s cubic-bezier(.45,0,.2,1) 0s infinite both"/>
