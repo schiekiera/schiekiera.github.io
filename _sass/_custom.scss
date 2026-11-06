@@ -2141,6 +2141,110 @@ html[data-theme="dark"] {
   }
 }
 
+// Phones (below Bootstrap's `sm`, where thumbnail and text stack): the entries take the look of
+// the blog cards. The thumbnail sits in a full-width panel across the top with a divider below,
+// the text gets its own padding, a bold title, smaller author / venue lines and more room
+// between the parts; the buttons get a divider above and slightly bigger tap targets.
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li {
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+
+    > .row {
+      margin: 0;
+    }
+
+    > .row > [class*="col-"] {
+      padding: 0;
+    }
+
+    > .row > .preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 220px;
+      padding: 0.85rem;
+      background: var(--global-bg-color);
+      border-bottom: 1px solid var(--global-divider-color);
+      border-radius: 0; // the column also has class "preview", which rounds the thumbnails
+
+      // image previews (all current entries use the animated <iframe> below)
+      figure,
+      picture {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+      }
+
+      img.preview {
+        width: auto;
+        max-height: 100%;
+        object-fit: contain;
+        box-shadow: none !important;
+      }
+    }
+
+    iframe.preview-anim {
+      width: auto;
+      max-width: 100%;
+      height: 100%;
+      box-shadow: none !important; // MDB's .z-depth-1 shadow is !important
+      border-radius: 8px;
+    }
+
+    > .row > [id] {
+      padding: 1.1rem 1.25rem 1.25rem;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
+    }
+
+    .author {
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--global-text-color-light);
+    }
+
+    .periodical {
+      font-size: 0.84rem;
+      line-height: 1.5;
+      margin-top: 0.2rem;
+    }
+
+    .links {
+      gap: 0.45rem;
+      margin: 1rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--global-divider-color);
+
+      a.btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.78rem;
+      }
+    }
+
+    .bib-tags {
+      margin-top: 0.75rem;
+    }
+  }
+
+  .publications h2.bibliography {
+    margin: 1.75rem 0 0.75rem;
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li iframe.preview-anim {
+  @media (max-width: 575.98px) {
+    box-shadow: 0 0 0 1px var(--global-divider-color) !important;
+  }
+}
+
 /*------------------------------------------------------------------------------
   News: a type icon in front of every item (types and icons live in
   _data/news_types.yml).
