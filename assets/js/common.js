@@ -1,10 +1,11 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract and bibtex buttons
-  $("a.abstract").click(function () {
+  // add toggle functionality to abstract and bibtex buttons (delegated, so it also works for
+  // entries rendered later, e.g. the "all" publications on the start page)
+  $(document).on("click", "a.abstract", function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
   });
-  $("a.bibtex").click(function () {
+  $(document).on("click", "a.bibtex", function () {
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
   });

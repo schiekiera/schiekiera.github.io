@@ -5,8 +5,12 @@
   {% else %}
     {% assign latest_posts_limit = 3 %}
   {% endif %}
-  <div class="home-posts">
-    {% for item in site.posts limit: latest_posts_limit %}
+  {% comment %}
+    All posts are rendered; the ones past the limit carry `home-post-card--more` and only show
+    when the toggle in the section heading is on "all" (data-view on .home-posts).
+  {% endcomment %}
+  <div id="home-posts" class="home-posts" data-view="recent">
+    {% for item in site.posts %}
       {% if item.redirect == blank %}
         {% assign post_href = item.url | relative_url %}
         {% assign post_external = false %}
@@ -18,7 +22,7 @@
         {% assign post_external = false %}
       {% endif %}
       <a
-        class="home-post-card"
+        class="home-post-card{% if forloop.index > latest_posts_limit %} home-post-card--more{% endif %}"
         href="{{ post_href }}"
         {% if post_external %}
           target="_blank" rel="noopener"

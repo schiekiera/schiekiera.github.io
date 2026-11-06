@@ -2281,3 +2281,314 @@ html[data-theme="dark"] .news-item a.news-icon--link {
     border-bottom: none !important;
   }
 }
+
+/*------------------------------------------------------------------------------
+  View toggles (assets/js/view_toggles.js): a pill with a sliding thumb. Next to
+  the start page section headings (highlighted / all publications, recent / all
+  posts) and above side-by-side animations in blog posts.
+------------------------------------------------------------------------------*/
+
+.seg-toggle {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 3px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  font-size: 0.74rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.seg-toggle__opt {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0.2rem 0.85rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--global-text-color-light);
+  font: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+
+  &.is-active,
+  &.is-active:hover {
+    color: var(--global-bg-color);
+  }
+}
+
+// Until the script has placed the thumb, the active option carries the fill itself.
+.seg-toggle:not(.is-ready) .seg-toggle__opt.is-active {
+  background: var(--global-theme-color);
+}
+
+.seg-toggle__thumb {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  width: 0;
+  border-radius: 999px;
+  background: var(--global-theme-color);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  // a slight overshoot, so the thumb feels pushed across
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.3, 0.5, 1),
+    width 0.35s cubic-bezier(0.34, 1.3, 0.5, 1);
+}
+
+.seg-toggle.is-ready .seg-toggle__thumb {
+  opacity: 1;
+}
+
+// Section headings with a toggle: title and "view all" on the left, toggle on the right
+// (it wraps below the title on narrow screens).
+.post > article > h2.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.6rem;
+  row-gap: 0.5rem;
+
+  .view-all {
+    margin-left: 0;
+  }
+
+  .seg-toggle {
+    margin-left: auto;
+  }
+}
+
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Start page publications: the highlighted list is grouped by `highlighted_start` only to order
+// it, so its group headings stay hidden; the "all" list keeps its year headings.
+.home-pubs__list--highlighted {
+  h2.bibliography {
+    display: none;
+  }
+
+  ol.bibliography:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.home-pubs__list--all {
+  animation: view-in 0.35s ease;
+
+  h2.bibliography:first-child {
+    margin-top: 0.25rem;
+  }
+}
+
+.home-pubs[data-view="highlighted"] .home-pubs__list--all,
+.home-pubs[data-view="all"] .home-pubs__list--highlighted {
+  display: none;
+}
+
+// Start page posts: the cards past the limit show only in the "all" view.
+.home-post-card--more {
+  animation: view-in 0.35s ease;
+}
+
+.home-posts[data-view="recent"] .home-post-card--more {
+  display: none;
+}
+
+// Side-by-side animations with a toggle to focus on one (blog posts). Both frames share one clock
+// (?sync=… on the iframes); on phones the pair stacks.
+.anim-compare {
+  margin: 2.25rem auto 2.5rem;
+
+  > .seg-toggle {
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto 1.25rem;
+  }
+}
+
+.anim-compare__panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.anim-compare .anim-compare__panels .anim-compare__panel {
+  min-width: 0;
+  margin: 0;
+  animation: view-in 0.35s ease;
+}
+
+.anim-compare[data-view="fc"] [data-panel="fa"],
+.anim-compare[data-view="fa"] [data-panel="fc"] {
+  display: none;
+}
+
+.anim-compare[data-view="fc"] .anim-compare__panels,
+.anim-compare[data-view="fa"] .anim-compare__panels {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (max-width: 640px) {
+  .anim-compare__panels {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 2.25rem;
+  }
+
+  .seg-toggle__opt {
+    padding: 0.2rem 0.65rem;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  TLDR button: second after PDF, a tinted pill with a green-to-gold border and a
+  gold bolt. On hover a light sheen sweeps across and the bolt gives a zap.
+------------------------------------------------------------------------------*/
+
+.publications ol.bibliography li .links a.btn.btn-tldr {
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(53, 148, 105, 0.09), rgba(53, 148, 105, 0.09)) padding-box,
+    linear-gradient(var(--global-card-bg-color), var(--global-card-bg-color)) padding-box,
+    linear-gradient(115deg, #359469 15%, #e3a008 85%) border-box;
+
+  i {
+    color: #e3a008;
+  }
+
+  // the sheen: parked left of the pill, swept across on hover
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: translateX(-130%) skewX(-20deg);
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-theme-color);
+    border-color: transparent; // keep the gradient border (the other buttons turn green here)
+    background:
+      linear-gradient(rgba(53, 148, 105, 0.16), rgba(53, 148, 105, 0.16)) padding-box,
+      linear-gradient(var(--global-card-bg-color), var(--global-card-bg-color)) padding-box,
+      linear-gradient(115deg, #359469 15%, #e3a008 85%) border-box;
+    box-shadow: 0 3px 10px -4px rgba(227, 160, 8, 0.55);
+
+    &::after {
+      animation: tldr-sheen 0.7s ease-in-out;
+    }
+
+    i {
+      animation: tldr-zap 0.5s ease;
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn.btn-tldr {
+  background:
+    linear-gradient(rgba(178, 148, 0, 0.14), rgba(178, 148, 0, 0.14)) padding-box,
+    linear-gradient(var(--global-card-bg-color), var(--global-card-bg-color)) padding-box,
+    linear-gradient(115deg, #b29400 15%, #4fbf8a 85%) border-box;
+
+  i {
+    color: #ffd43b;
+  }
+
+  &::after {
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  }
+
+  &:hover,
+  &:focus-visible {
+    background:
+      linear-gradient(rgba(178, 148, 0, 0.22), rgba(178, 148, 0, 0.22)) padding-box,
+      linear-gradient(var(--global-card-bg-color), var(--global-card-bg-color)) padding-box,
+      linear-gradient(115deg, #b29400 15%, #4fbf8a 85%) border-box;
+    box-shadow: 0 3px 10px -4px rgba(255, 212, 59, 0.4);
+  }
+}
+
+@keyframes tldr-sheen {
+  from {
+    transform: translateX(-130%) skewX(-20deg);
+  }
+  to {
+    transform: translateX(330%) skewX(-20deg);
+  }
+}
+
+@keyframes tldr-zap {
+  0% {
+    transform: none;
+  }
+  35% {
+    transform: scale(1.35) rotate(-14deg);
+  }
+  65% {
+    transform: scale(0.95) rotate(8deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seg-toggle__thumb {
+    transition: none;
+  }
+
+  .home-pubs__list--all,
+  .home-post-card--more,
+  .anim-compare .anim-compare__panels .anim-compare__panel {
+    animation: none;
+  }
+
+  .publications ol.bibliography li .links a.btn.btn-tldr:hover {
+    &::after,
+    i {
+      animation: none;
+    }
+  }
+}

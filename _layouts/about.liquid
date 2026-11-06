@@ -50,20 +50,37 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- Selected papers: a toggle switches between the highlighted and all publications -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">highlighted publications</a>
+      <h2 class="section-head">
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"
+          ><span id="home-pubs-word">highlighted</span> publications</a
+        >
         <a class="view-all" href="{{ '/publications/' | relative_url }}">view all &rarr;</a>
+        <span class="seg-toggle" role="group" aria-label="Show publications" data-target="#home-pubs" data-label-target="#home-pubs-word">
+          <span class="seg-toggle__thumb" aria-hidden="true"></span>
+          <button type="button" class="seg-toggle__opt is-active" data-value="highlighted" data-label="highlighted" aria-pressed="true">Highlighted</button>
+          <button type="button" class="seg-toggle__opt" data-value="all" data-label="all" aria-pressed="false">All</button>
+        </span>
       </h2>
-      {% include selected_papers.liquid %}
+      <div id="home-pubs" class="home-pubs" data-view="highlighted">
+        {% include selected_papers.liquid %}
+      </div>
     {% endif %}
 
-    <!-- Latest posts -->
+    <!-- Latest posts: a toggle switches between the recent and all posts -->
     {% if page.latest_posts %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">recent posts</a>
+      {% assign home_posts_limit = site.latest_posts.limit | default: 3 %}
+      <h2 class="section-head">
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><span id="home-posts-word">recent</span> posts</a>
         <a class="view-all" href="{{ '/blog/' | relative_url }}">view all &rarr;</a>
+        {% if site.posts.size > home_posts_limit %}
+          <span class="seg-toggle" role="group" aria-label="Show posts" data-target="#home-posts" data-label-target="#home-posts-word">
+            <span class="seg-toggle__thumb" aria-hidden="true"></span>
+            <button type="button" class="seg-toggle__opt is-active" data-value="recent" data-label="recent" aria-pressed="true">Recent</button>
+            <button type="button" class="seg-toggle__opt" data-value="all" data-label="all" aria-pressed="false">All</button>
+          </span>
+        {% endif %}
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

@@ -47,14 +47,23 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
   </div>
 </div>
 
-<div class="figure-container">
-  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/forced_choice_intro_loop.html" style="--ar: 640 / 1329; --max-w: 440px" loading="lazy" title="Animated forced choice paradigm"></iframe>
-  <span class="figure-caption">Forced choice. In each trial, the model sees one input word and a set of candidate words (four here, sixteen in the study) and picks the two most related. Running the trial for every input word fills the input–output count matrix <b>B</b><sup>FC</sup>; cosine similarity between its rows gives the behavioral similarity matrix <b>S</b><sup>FC</sup>.</span>
-</div>
-
-<div class="figure-container">
-  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/free_association_intro_loop.html" style="--ar: 640 / 1173; --max-w: 440px" loading="lazy" title="Animated free association paradigm"></iframe>
-  <span class="figure-caption">Free association. The model sees only the input word and generates its associates (four here, five in the study). The responses fill the input–output count matrix <b>B</b><sup>FA</sup>; cosine similarity between its rows gives <b>S</b><sup>FA</sup>.</span>
+<div class="anim-compare" id="paradigm-compare" data-view="both" data-sync="paradigms">
+  <div class="seg-toggle" role="group" aria-label="Show the paradigm animations" data-target="#paradigm-compare">
+    <span class="seg-toggle__thumb" aria-hidden="true"></span>
+    <button type="button" class="seg-toggle__opt is-active" data-value="both" aria-pressed="true">Both</button>
+    <button type="button" class="seg-toggle__opt" data-value="fc" aria-pressed="false">Forced choice</button>
+    <button type="button" class="seg-toggle__opt" data-value="fa" aria-pressed="false">Free association</button>
+  </div>
+  <div class="anim-compare__panels">
+    <div class="figure-container anim-compare__panel" data-panel="fc">
+      <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/forced_choice_intro_loop.html?sync=paradigms" style="--ar: 640 / 1329; --max-w: 440px" loading="lazy" title="Animated forced choice paradigm"></iframe>
+      <span class="figure-caption">Forced choice. In each trial, the model sees one input word and a set of candidate words (four here, sixteen in the study) and picks the two most related. Running the trial for every input word fills the input–output count matrix <b>B</b><sup>FC</sup>; cosine similarity between its rows gives the behavioral similarity matrix <b>S</b><sup>FC</sup>.</span>
+    </div>
+    <div class="figure-container anim-compare__panel" data-panel="fa">
+      <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/free_association_intro_loop.html?sync=paradigms" style="--ar: 640 / 1173; --max-w: 440px" loading="lazy" title="Animated free association paradigm"></iframe>
+      <span class="figure-caption">Free association. The model sees only the input word and generates its associates (four here, five in the study). The responses fill the input–output count matrix <b>B</b><sup>FA</sup>; cosine similarity between its rows gives <b>S</b><sup>FA</sup>.</span>
+    </div>
+  </div>
 </div>
 
 For each paradigm, model outputs are aggregated into a sparse cue–response count matrix **B**. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue–cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.

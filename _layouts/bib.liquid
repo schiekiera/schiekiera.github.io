@@ -169,7 +169,7 @@
       {{ entry.note | strip }}
     </div>
 
-    <!-- Links/Buttons: PDF is the primary action, the rest are quiet icon buttons. -->
+    <!-- Links/Buttons: PDF is the primary action, TLDR comes second and is accented, the rest are quiet icon buttons. -->
     <div class="links">
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
@@ -178,6 +178,14 @@
           {% assign pdf_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
         {% endif %}
         <a href="{{ pdf_url }}" class="btn btn-sm z-depth-0 btn-primary-link" role="button"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+      {% endif %}
+      {% if entry.tldr %}
+        <a
+          href="{% if entry.tldr contains '://' %}{{ entry.tldr }}{% else %}{{ entry.tldr | relative_url }}{% endif %}"
+          class="btn btn-sm z-depth-0 btn-tldr"
+          role="button"
+          ><i class="fa-solid fa-bolt"></i> TLDR</a
+        >
       {% endif %}
       {% if entry.html %}
         <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-globe"></i> Web</a>
@@ -202,14 +210,6 @@
           ></i>
           {{ entry.supp_label | default: 'Supp' -}}
         </a>
-      {% endif %}
-      {% if entry.tldr %}
-        <a
-          href="{% if entry.tldr contains '://' %}{{ entry.tldr }}{% else %}{{ entry.tldr | relative_url }}{% endif %}"
-          class="btn btn-sm z-depth-0"
-          role="button"
-          ><i class="fa-solid fa-bolt"></i> TLDR</a
-        >
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-align-left"></i> Abstract</a>

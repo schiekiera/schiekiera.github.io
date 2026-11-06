@@ -1,3 +1,16 @@
-<div class="publications">
-  {% bibliography --group_by none --query @*[highlighted_start]* %}
+{% comment %}
+  Start page publications. The highlighted list shows the papers that set `highlighted_start = {N}`,
+  in ascending N: they are grouped by that field (numeric order) and the group headings are hidden.
+  Grouping instead of a page-level `sort_by` keeps the "all" list below in its usual order (by year,
+  newest first, as on the publications page). The "all" list sits in a <template> and is only
+  rendered when the reader flips the toggle (see assets/js/view_toggles.js), so its animated
+  thumbnails do not load until then.
+{% endcomment %}
+<div class="publications home-pubs__list home-pubs__list--highlighted">
+  {% bibliography --group_by highlighted_start --group_order ascending --query @*[highlighted_start]* %}
 </div>
+<template data-view-lazy="all">
+  <div class="publications home-pubs__list home-pubs__list--all">
+    {% bibliography %}
+  </div>
+</template>
