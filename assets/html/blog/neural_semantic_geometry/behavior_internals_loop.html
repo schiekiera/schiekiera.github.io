@@ -9,8 +9,9 @@
   After the first figure of the talk (presentation.tex, "Behavior as a Measurement Instrument"):
     Human            one trial (cue in, responses out); the inner activations stay blurred, so they
                      can only be inferred from the behavior (dashed arrow, "?")
-    Language model   the same trial; the hidden layers light up and can be read out, so behavior and
-                     internal state can be compared directly (solid two-way arrow, check mark)
+    Language model   joins on the right once the human trial is done; the same trial, but the hidden
+                     layers light up and can be read out, so behavior and internal state can be
+                     compared directly (solid two-way arrow, check mark)
 
   Open this file in a browser. Controls:
     space / click   pause / resume
@@ -50,7 +51,7 @@
 </head>
 <body>
 <svg id="fig" xmlns="http://www.w3.org/2000/svg" role="img"
-     aria-label="Animated figure in two panels. Human: a person sees the word dog and answers cat, fur and pet; their inner activations stay blurred and can only be inferred from the answers. Language model: the same trial; its hidden layers light up layer by layer and can be read out, so its behavior and its hidden states can be compared directly."></svg>
+     aria-label="Animated figure in two panels, the second joining after the first. Human: a person sees the word dog and answers cat, fur and pet; their inner activations stay blurred and can only be inferred from the answers. Language model: the same trial; its hidden layers light up layer by layer and can be read out, so its behavior and its hidden states can be compared directly."></svg>
 <div id="ctl" hidden>
   <button id="btn-restart" type="button" aria-label="Restart animation" title="Restart"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5V.5L4.75 3.5 8 6.5V4a4 4 0 1 1-4 4H2.5A5.5 5.5 0 1 0 8 2.5z"/></svg></button>
   <button id="btn-play" type="button" aria-label="Pause animation" title="Pause"></button>
@@ -86,6 +87,7 @@ const T = {
   // per trial, relative to H0 / L0
   cue: 0.0, cueArrow: 0.4, agent: 0.8, think: 1.0, resp: 1.6, respGap: 0.4, link: 3.0, badge: 3.5,
   layerGap: 0.35,
+  machineIn: 4.8,                      // the language-model panel slides in after the human trial
   finale: 10.8,
   fadeOut: 15.2,
   loop: 16.2,
@@ -242,6 +244,11 @@ function panel(i) {
   const O = human ? H0 : L0;                         // this panel's trial start
   const g = el('g', {}, gFig);
   const cx = Lx + PANEL_W / 2;
+  if (!human) on(t => {                              // the human panel stands alone at first
+    const p = ramp(t, T.machineIn, 0.7);
+    g.setAttribute('opacity', p);
+    g.setAttribute('transform', `translate(${(1 - p) * 40} 0)`);
+  });
 
   // card, title
   el('rect', { x: Lx, y: CARD.top, width: PANEL_W, height: CARD.bottom - CARD.top, rx: 22,
