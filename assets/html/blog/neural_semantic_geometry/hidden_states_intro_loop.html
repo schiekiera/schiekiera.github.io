@@ -754,18 +754,26 @@ const showPaused = p => {
   ctl.classList.toggle('paused', p);
 };
 let shownT = null, shownPaused = null;
-function frame(now) {
+// Wall-clock time on the same scale in every frame of the page, so a shared clock advances once per
+// tick however many frames read it.
+const ORIGIN = performance.timeOrigin || 0;
+function tick(wall) {
   const c = clock();
-  // Wall-clock time on the same scale in every frame, so a shared clock advances once per tick
-  // however many frames read it; capped so the loop does not jump after a background tab.
-  const wall = (performance.timeOrigin || 0) + now;
+  // capped so the loop does not jump after a background tab
   const dt = c.last === null ? 0 : Math.min(0.1, Math.max(0, (wall - c.last) / 1000));
   c.last = c.last === null ? wall : Math.max(c.last, wall);
   if (!c.paused && c.members.some(m => m.visible)) c.elapsed += dt * SPEED;
   const t = wrap(c.elapsed);
-  if (t !== shownT) { render(t); shownT = t; }
-  if (c.paused !== shownPaused) { showPaused(c.paused); shownPaused = c.paused; }
-  requestAnimationFrame(frame);
+  if (c.paused !== shownPaused) { shownPaused = c.paused; showPaused(c.paused); }
+  if (t !== shownT) { shownT = t; render(t); }
+}
+// requestAnimationFrame drives the loop. Safari can hold it back completely for an <iframe> (even one
+// on screen), so a timer takes over whenever it has gone quiet.
+let lastFrame = -Infinity;
+function frame(now) {
+  requestAnimationFrame(frame);                    // first, so one failing tick cannot stop the loop
+  lastFrame = performance.now();
+  tick(ORIGIN + now);
 }
 // On screen = at least 30 % of the figure in view. Inside an <iframe>, the observer measures
 // against the top-level page viewport, so the loop starts when the reader scrolls to it.
@@ -787,7 +795,11 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'r' || e.key === 'R') restart();
 });
 ctl.hidden = false;
+tick(ORIGIN + performance.now());                  // first frame and button state right away
 requestAnimationFrame(frame);
+setInterval(() => {
+  if (performance.now() - lastFrame > 200) tick(ORIGIN + performance.now());
+}, 50);
 })();
 </script>
 </body>

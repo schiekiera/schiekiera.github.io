@@ -136,14 +136,17 @@ const CW = 2 * S + G;
 const XSEP = 2.3, XOFF = 0.3, YIN = 1.84, YPROMPT = 3.2;
 const MS = 0.50, MG = 0.15, PADM = 0.12;
 const NB = BCOLS.length;
-const YMAT = -1.24, XSTART = -1.975;
+// The output grids sit lower, level with the picks row of forced_choice_intro_loop.html, and B / S
+// sit at the same height as there: both figures share one size (640 x 1329) and line up side by side.
+const YO = -0.99;                            // vertical offset of the output grids
+const YMAT = -2.8, XSTART = -1.975;
 const YSMAT = YMAT - 3 * (MS + MG) - 1.60;
 const XSTARTS = 0.55 - (4 * MS + 3 * MG) / 2;
 const XMID = 0.55;
 
 const gridX  = k => (k - 1) * XSEP;
 const inputX = k => (k - 1) * XSEP + XOFF;
-const gridPos = (k, j) => ({ x: gridX(k) + (j % 2) * (S + G), y: (1 - Math.floor(j / 2)) * (S + G) });
+const gridPos = (k, j) => ({ x: gridX(k) + (j % 2) * (S + G), y: YO + (1 - Math.floor(j / 2)) * (S + G) });
 
 /* Single-trial intro layout: a chat-style prompt bubble above an enlarged copy of column 1, centred. */
 const EX_SCALE = 1.75;                       // how much bigger the single example is drawn
@@ -424,10 +427,10 @@ function buildInput(k, L, tShow, pop) {
 function buildOutputs(k, L, tArrow, tBox, tWord0, stagger) {
   const x = gridX(k);
   const g = el('g', {}, L.nodes);
-  rectCm(g, x - PAD, -PAD, x + CW + PAD, CW + PAD, boxStyle);
-  const sub = mathLabel(g, x - PAD + 0.035, CW + PAD + 0.17, 'o', SUBS[k]);
+  rectCm(g, x - PAD, YO - PAD, x + CW + PAD, YO + CW + PAD, boxStyle);
+  const sub = mathLabel(g, x - PAD + 0.035, YO + CW + PAD + 0.17, 'o', SUBS[k]);
   fadeIn(g, tBox);
-  arrow(L.lines, [[x + CW / 2, YIN - PAD], [x + CW / 2, CW + PAD]], 0.9, tArrow, 0.35);
+  arrow(L.lines, [[x + CW / 2, YIN - PAD], [x + CW / 2, YO + CW + PAD]], 0.9, tArrow, 0.35);
   OUTPUTS[k].forEach((w, j) => {
     const p = gridPos(k, j);
     const sq = square(g, p.x, p.y, S, w, 0.7);
@@ -468,7 +471,7 @@ const xCenterB = XSTART + (NB * (MS + MG) + MS) / 2;
   fadeIn(g, T.bFrame + 0.3, 0.45);
 
   INPUTS.forEach((_, k) =>
-    arrow(gLines, [[gridX(k) + CW / 2, -PAD], [gridX(k) + CW / 2, bTop]], 0.8, T.bFrame + 0.05 * k, 0.35));
+    arrow(gLines, [[gridX(k) + CW / 2, YO - PAD], [gridX(k) + CW / 2, bTop]], 0.8, T.bFrame + 0.05 * k, 0.35));
 
   B.forEach((row, r) => row.forEach((v, c) => {
     const { x, y } = bCell(r, c);
@@ -629,18 +632,26 @@ const showPaused = p => {
   ctl.classList.toggle('paused', p);
 };
 let shownT = null, shownPaused = null;
-function frame(now) {
+// Wall-clock time on the same scale in every frame of the page, so a shared clock advances once per
+// tick however many frames read it.
+const ORIGIN = performance.timeOrigin || 0;
+function tick(wall) {
   const c = clock();
-  // Wall-clock time on the same scale in every frame, so a shared clock advances once per tick
-  // however many frames read it; capped so the loop does not jump after a background tab.
-  const wall = (performance.timeOrigin || 0) + now;
+  // capped so the loop does not jump after a background tab
   const dt = c.last === null ? 0 : Math.min(0.1, Math.max(0, (wall - c.last) / 1000));
   c.last = c.last === null ? wall : Math.max(c.last, wall);
   if (!c.paused && c.members.some(m => m.visible)) c.elapsed += dt * SPEED;
   const t = wrap(c.elapsed);
-  if (t !== shownT) { render(t); shownT = t; }
-  if (c.paused !== shownPaused) { showPaused(c.paused); shownPaused = c.paused; }
-  requestAnimationFrame(frame);
+  if (c.paused !== shownPaused) { shownPaused = c.paused; showPaused(c.paused); }
+  if (t !== shownT) { shownT = t; render(t); }
+}
+// requestAnimationFrame drives the loop. Safari can hold it back completely for an <iframe> (even one
+// on screen), so a timer takes over whenever it has gone quiet.
+let lastFrame = -Infinity;
+function frame(now) {
+  requestAnimationFrame(frame);                    // first, so one failing tick cannot stop the loop
+  lastFrame = performance.now();
+  tick(ORIGIN + now);
 }
 // On screen = at least 30 % of the figure in view. Inside an <iframe>, the observer measures
 // against the top-level page viewport, so the loop starts when the reader scrolls to it.
@@ -662,7 +673,11 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'r' || e.key === 'R') restart();
 });
 ctl.hidden = false;
+tick(ORIGIN + performance.now());                  // first frame and button state right away
 requestAnimationFrame(frame);
+setInterval(() => {
+  if (performance.now() - lastFrame > 200) tick(ORIGIN + performance.now());
+}, 50);
 })();
 </script>
 </body>
