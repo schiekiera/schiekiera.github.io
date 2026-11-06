@@ -22,13 +22,20 @@ related_posts: false
 
 ## Motivation
 
-In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior. Word-association paradigms use exactly this logic, when a participant sees a cue (e.g., _dog_), the associations they produce or select (e.g., _cat_, _leash_, _bark_) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
+In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representation directly, but we can systematically probe it through behavior. This is a general logic in cognitive science: hidden mental states are inferred from what people observably do (<a class="cite" href="#ref-baker2009">Baker et al., 2009</a>). Word-association paradigms use exactly this logic, when a participant sees a cue (e.g., _dog_), the associations they produce or select (e.g., _cat_, _leash_, _bark_) are constrained by their underlying semantic organization. When such judgments are aggregated across trials, the resulting response statistics yield a similarity matrix that approximates the geometry of an otherwise unobserved semantic system.
 
-We transfer this measurement logic to large language models. Unlike humans, both behavior _and_ internal representations are observable in LLMs. This creates a unique opportunity: we can systematically test how well an LLM's behavioral output reveals its internal semantic geometry. A key open question is not only how model behavior compares to humans, but also what a model's _own_ behavior reveals about its _own_ internal representations.
+We transfer this measurement logic to large language models. Unlike humans, both behavior _and_ internal representations are observable in LLMs (Figure 1). This creates a unique opportunity: we can systematically test how well an LLM's behavioral output reveals its internal semantic geometry. A key open question is not only how model behavior compares to humans, but also what a model's _own_ behavior reveals about its _own_ internal representations.
+
+<div class="figure-container">
+  <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/behavior_internals_loop.html" style="--ar: 1040 / 662" loading="lazy" title="Animated figure: behavior and inner states in humans and language models"></iframe>
+  <span class="figure-caption"><b>Figure 1.</b> In humans, inner states can only be inferred from behavior; in language models, both can be observed and compared.</span>
+</div>
+
+Figure 2 outlines our framework. Every word takes two paths through the model: one yields a hidden-state geometry, the other a behavioral geometry, and we compare the two with representational similarity analysis (RSA; <a class="cite" href="#ref-kriegeskorte2008">Kriegeskorte et al., 2008</a>).
 
 <div class="figure-container">
   <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/conceptual_rsa_loop.html" style="--ar: 864 / 1170; --max-w: 620px" loading="lazy" title="Animated conceptual overview of the framework"></iframe>
-  <span class="figure-caption"><b>Figure 1.</b> Each word yields a hidden-state geometry (A) and a behavioral geometry (B); RSA correlates the two.</span>
+  <span class="figure-caption"><b>Figure 2.</b> Each word yields a hidden-state geometry (A) and a behavioral geometry (B); RSA correlates the two.</span>
 </div>
 
 ## Framework
@@ -47,12 +54,14 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
   </div>
 </div>
 
-<div class="anim-compare" id="paradigm-compare" data-view="both" data-sync="paradigms">
+Figure 3 walks through one trial of each paradigm and shows how the responses become a similarity matrix. Use the toggle to switch between forced choice, free association, or both side by side.
+
+<div class="anim-compare" id="paradigm-compare" data-view="fc" data-sync="paradigms">
   <div class="seg-toggle" role="group" aria-label="Show the paradigm animations" data-target="#paradigm-compare">
     <span class="seg-toggle__thumb" aria-hidden="true"></span>
-    <button type="button" class="seg-toggle__opt is-active" data-value="both" aria-pressed="true">Both</button>
-    <button type="button" class="seg-toggle__opt" data-value="fc" aria-pressed="false">Forced choice</button>
+    <button type="button" class="seg-toggle__opt is-active" data-value="fc" aria-pressed="true">Forced choice</button>
     <button type="button" class="seg-toggle__opt" data-value="fa" aria-pressed="false">Free association</button>
+    <button type="button" class="seg-toggle__opt" data-value="both" aria-pressed="false">Both</button>
   </div>
   <div class="anim-compare__panels">
     <div class="figure-container anim-compare__panel" data-panel="fc">
@@ -62,7 +71,7 @@ We use two classic psycholinguistic paradigms, forced choice (FC) and free assoc
       <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/free_association_intro_loop.html?sync=paradigms" style="--ar: 640 / 1329; --max-w: 440px" loading="lazy" title="Animated free association paradigm"></iframe>
     </div>
   </div>
-  <span class="figure-caption"><b>Figure 2.</b> Forced choice and free association: responses fill <b>B</b>; cosine similarity between its rows gives <b>S</b>.</span>
+  <span class="figure-caption"><b>Figure 3.</b> Forced choice and free association: responses fill <b>B</b>; cosine similarity between its rows gives <b>S</b>.</span>
 </div>
 
 For each paradigm, model outputs are aggregated into a sparse cue–response count matrix **B**. We reweight counts with positive pointwise mutual information (PPMI) to reduce the influence of globally frequent responses, then compute a cue–cue similarity matrix via cosine similarity between the PPMI-weighted row vectors. In total, we collected over **17.5 million trials** across both paradigms and eight models.
@@ -89,20 +98,20 @@ For each model and each word, we extract layerwise hidden-state representations 
   </div>
 </div>
 
-Hidden-state similarity matrices are computed as cosine similarity between mean-centered layerwise word vectors.
+Hidden-state similarity matrices are computed as cosine similarity between mean-centered layerwise word vectors. Figure 4 shows the extraction for the Meaning strategy.
 
 <div class="figure-container">
   <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/hidden_states_intro_loop.html" style="--ar: 2040 / 1275" loading="lazy" title="Animated hidden-state extraction"></iframe>
-  <span class="figure-caption"><b>Figure 3.</b> Hidden-state extraction: the cue word's state at layer <em>ℓ</em> fills a row of <b>H</b><sup><em>ℓ</em></sup>, giving <b>S</b><sup>hid</sup>.</span>
+  <span class="figure-caption"><b>Figure 4.</b> Hidden-state extraction: the cue word's state at layer <em>ℓ</em> fills a row of <b>H</b><sup><em>ℓ</em></sup>, giving <b>S</b><sup>hid</sup>.</span>
 </div>
 
 ### Models and baselines
 
-We evaluate eight instruction-tuned decoder-only transformer models ranging from 7B to 14B parameters (Falcon3, Gemma-2, Llama-3.1, Mistral-7B, Mistral-Nemo, Phi-4, Qwen2.5, and rnj-1). Beyond behavioral embeddings, we compare hidden-state similarities to three baselines: **FastText** (static word vectors), **BERT** (contextual encoder), and a **cross-model consensus** geometry aggregating hidden-state similarities across all other models, motivated by recent evidence for a shared semantic subspace across diverse LLMs.
+We evaluate eight instruction-tuned decoder-only transformer models ranging from 7B to 14B parameters (Falcon3, Gemma-2, Llama-3.1, Mistral-7B, Mistral-Nemo, Phi-4, Qwen2.5, and rnj-1). Beyond behavioral embeddings, we compare hidden-state similarities to three baselines: **FastText** (static word vectors), **BERT** (contextual encoder), and a **cross-model consensus** geometry aggregating hidden-state similarities across all other models, motivated by recent evidence that the representations of diverse models converge (<a class="cite" href="#ref-huh2024">Huh et al., 2024</a>). Figure 5 shows how this consensus is built.
 
 <div class="figure-container">
   <iframe class="anim-figure" src="/assets/html/blog/neural_semantic_geometry/cross_model_consensus_loop.html" style="--ar: 1600 / 940" loading="lazy" title="Animated cross-model consensus baseline"></iframe>
-  <span class="figure-caption"><b>Figure 4.</b> Cross-model consensus: the other models' similarity matrices, averaged (toy data).</span>
+  <span class="figure-caption"><b>Figure 5.</b> Cross-model consensus: the other models' similarity matrices, averaged (toy data).</span>
 </div>
 
 ### Evaluation
@@ -128,34 +137,24 @@ We use three complementary evaluation methods:
 
 ### Forced choice aligns substantially more than free association
 
-Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA. Mean FC RSA increases from _r_ = .346 under Averaged extraction to _r_ = .463 under Task (FC), while FA shows the same pattern at considerably lower magnitude (_r_ = .140 to _r_ = .199).
+Across all models and evaluation methods, FC behavior aligns substantially more strongly with hidden-state geometry than FA (Figure 6). Mean FC RSA increases from _r_ = .346 under Averaged extraction to _r_ = .463 under Task (FC), while FA shows the same pattern at considerably lower magnitude (_r_ = .140 to _r_ = .199).
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rsa_nn_grid_1x2.png" alt="Summary RSA and nearest-neighbor overlap results" data-zoomable>
-  <span class="figure-caption"><b>Figure 5.</b> Mean RSA by layer (left) and neighbor overlap by <em>k</em> (right): FC (green) beats FA (red); consensus (black) is highest.</span>
+  <span class="figure-caption"><b>Figure 6.</b> Mean RSA by layer (left) and neighbor overlap by <em>k</em> (right): FC (green) beats FA (red); consensus (black) is highest.</span>
 </div>
 
 Task-aligned and meaning-based extraction strategies yield the strongest alignment at earlier, mid-depth layers, whereas averaging over natural contexts shifts alignment peaks to later layers.
 
-<div class="figure-container">
-  <img src="/assets/img/blog/neural_semantic_geometry/rsa_line_plot_1x2_grid_fc_fa.png" alt="Layerwise RSA for FC and FA under different extraction strategies" data-zoomable>
-  <span class="figure-caption"><b>Figure 6.</b> Layerwise RSA for FC (left) and FA (right) by extraction strategy.</span>
-</div>
-
-The full model-by-model RSA comparison reveals that the FC advantage is consistent across all eight models, though the magnitude varies:
-
-<div class="figure-container">
-  <img src="/assets/img/blog/neural_semantic_geometry/rsa_fc_fa_2x4_grid.png" alt="RSA heatmap across models" data-zoomable>
-  <span class="figure-caption"><b>Figure 7.</b> RSA per model for FC and FA across strategies and layers.</span>
-</div>
+The FC advantage holds in each of the eight models, though its size varies.
 
 ### Behavioral similarity predicts unseen hidden-state structure
 
-The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test *R*² by +.022, whereas FA yields a smaller gain (+.002). The full model reaches mean *R*² = .587 (vs. .569 for the baseline). Peak performance reaches *R*² = .844 for Llama-3.1-8B-Instruct.
+The held-out-words ridge regression shows that behavioral similarity, especially FC, predicts unseen hidden-state similarities beyond lexical baselines and cross-model consensus. Adding behavioral FC similarity on top of the baseline improves mean test *R*² by +.022, whereas FA yields a smaller gain (+.002). The full model reaches mean *R*² = .587 (vs. .569 for the baseline). Peak performance reaches *R*² = .844 for Llama-3.1-8B-Instruct (Figure 7).
 
 <div class="figure-container">
   <img src="/assets/img/blog/neural_semantic_geometry/rr_model_performance_grid_2x4.png" alt="Ridge regression performance across models" data-zoomable>
-  <span class="figure-caption"><b>Figure 8.</b> Ridge regression <em>R</em>² per model: full model (bold) vs. baselines only (in parentheses).</span>
+  <span class="figure-caption"><b>Figure 7.</b> Ridge regression <em>R</em>² per model: full model (bold) vs. baselines only (in parentheses).</span>
 </div>
 
 ## Discussion
@@ -173,7 +172,7 @@ Our findings show that structured behavior, particularly from constrained measur
   </div>
   <div class="project-card">
     <h4 class="highlight-text">Cross-model consensus</h4>
-    <p>Similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the hypothesis of a common semantic subspace.</p>
+    <p>Similarity structure shared across other LLMs explains a large fraction of variance in a target model's hidden-state geometry, consistent with the Platonic representation hypothesis (<a class="cite" href="#ref-huh2024">Huh et al., 2024</a>).</p>
   </div>
 </div>
 
@@ -197,3 +196,11 @@ If you find this work helpful for your research, please consider citing our pape
   url       = {https://proceedings.mlr.press/v306/schiekiera26a.html}
 }
 ```
+
+## References
+
+<ul class="post-references">
+  <li id="ref-baker2009">Baker, C. L., Saxe, R., &amp; Tenenbaum, J. B. (2009). Action understanding as inverse planning. <em>Cognition, 113</em>(3), 329–349. <a href="https://doi.org/10.1016/j.cognition.2009.07.005">https://doi.org/10.1016/j.cognition.2009.07.005</a></li>
+  <li id="ref-huh2024">Huh, M., Cheung, B., Wang, T., &amp; Isola, P. (2024). Position: The Platonic representation hypothesis. In <em>Proceedings of the 41st International Conference on Machine Learning</em> (Vol. 235, pp. 20617–20642). PMLR. <a href="https://proceedings.mlr.press/v235/huh24a.html">https://proceedings.mlr.press/v235/huh24a.html</a></li>
+  <li id="ref-kriegeskorte2008">Kriegeskorte, N., Mur, M., &amp; Bandettini, P. A. (2008). Representational similarity analysis: Connecting the branches of systems neuroscience. <em>Frontiers in Systems Neuroscience, 2</em>, 4. <a href="https://doi.org/10.3389/neuro.06.004.2008">https://doi.org/10.3389/neuro.06.004.2008</a></li>
+</ul>

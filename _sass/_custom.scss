@@ -2696,3 +2696,67 @@ html[data-theme="dark"] .publications ol.bibliography li .links a.btn.btn-tldr {
     }
   }
 }
+
+/*------------------------------------------------------------------------------
+  Blog post citations: author-year links in the text (a.cite) jump to the
+  matching entry of the "References" list (ul.post-references, APA style with
+  hanging indent); the target entry flashes briefly.
+------------------------------------------------------------------------------*/
+
+a.cite {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+ul.post-references {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  text-align: left;
+  hyphens: manual;
+
+  li {
+    margin: 0 0 0.75rem;
+    padding: 0.35rem 0.5rem 0.35rem calc(2em + 0.5rem);
+    text-indent: -2em;
+    border-radius: 8px;
+    scroll-margin-top: 7rem;
+    overflow-wrap: anywhere;
+  }
+
+  li:target {
+    animation: ref-flash 2.2s ease;
+  }
+}
+
+@keyframes ref-flash {
+  0%,
+  35% {
+    background: rgba(53, 148, 105, 0.14);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+html[data-theme="dark"] ul.post-references li:target {
+  animation-name: ref-flash-dark;
+}
+
+@keyframes ref-flash-dark {
+  0%,
+  35% {
+    background: rgba(178, 148, 0, 0.18);
+  }
+  100% {
+    background: transparent;
+  }
+}
