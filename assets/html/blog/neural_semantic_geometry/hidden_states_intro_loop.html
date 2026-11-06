@@ -25,6 +25,7 @@
     ?speed=0.5        play at half the normal speed
     ?caption=0        hide the caption line
     ?bg=transparent   transparent instead of white background
+    ?sync=name        share one clock with the other frames on the page that use the same name
 -->
 <style>
   :root { --bg: #ffffff; }
@@ -715,31 +716,63 @@ const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v1
 const ctl = document.getElementById('ctl');
 const btnPlay = document.getElementById('btn-play');
 const btnRestart = document.getElementById('btn-restart');
-let paused = false, visible = true, elapsed = 0, last = null, dirty = true;
 const wrap = t => ((t % T.loop) + T.loop) % T.loop;
-const setPaused = p => {
-  paused = p;
+
+// The clock runs only while a frame that uses it is on screen. Normally that is just this frame.
+// With ?sync=<name>, every frame on the page that passes the same name shares one clock (kept on the
+// parent window): they play, pause and restart together, and the clock runs while any of them is on
+// screen. The page can set `linked = false` on the group (e.g. while the frames are stacked on a
+// phone) to let each frame run on its own clock again.
+let inView = true, group = null;
+const me = {
+  get visible() {
+    if (!inView || !group) return inView;
+    // In a group, a frame also counts as off screen while it is hidden (display: none) or was taken
+    // off the page (pages that re-insert an <iframe> leave its first copy behind in the group).
+    try { const f = window.frameElement; return !!f && f.isConnected && f.getClientRects().length > 0; }
+    catch (e) { return false; }
+  },
+};
+const own = { elapsed: 0, paused: false, last: null, members: [me] };
+const SYNC = params.get('sync');
+if (SYNC && window.parent !== window) {
+  try {
+    const reg = window.parent.__loopSync || (window.parent.__loopSync = {});
+    group = reg[SYNC] || (reg[SYNC] = { linked: true, elapsed: 0, paused: false, last: null, members: [] });
+    group.members.push(me);
+  } catch (e) { group = null; }                    // parent page on another origin: play on our own
+}
+const clock = () => (group && group.linked !== false ? group : own);
+const setPaused = p => { clock().paused = p; };
+const togglePause = () => setPaused(!clock().paused);
+const seek = dt => { clock().elapsed += dt; };
+const restart = () => { clock().elapsed = 0; };
+const showPaused = p => {
   btnPlay.innerHTML = p ? ICON_PLAY : ICON_PAUSE;
   btnPlay.setAttribute('aria-label', p ? 'Play animation' : 'Pause animation');
   btnPlay.title = p ? 'Play' : 'Pause';
   ctl.classList.toggle('paused', p);
 };
-const togglePause = () => setPaused(!paused);
-const seek = dt => { elapsed += dt; dirty = true; };
-const restart = () => { elapsed = 0; dirty = true; };
+let shownT = null, shownPaused = null;
 function frame(now) {
-  const dt = last === null ? 0 : Math.min(0.1, (now - last) / 1000);   // no jump after a background tab
-  last = now;
-  if (visible && !paused) { elapsed += dt * SPEED; dirty = true; }
-  if (dirty) { render(wrap(elapsed)); dirty = false; }
+  const c = clock();
+  // Wall-clock time on the same scale in every frame, so a shared clock advances once per tick
+  // however many frames read it; capped so the loop does not jump after a background tab.
+  const wall = (performance.timeOrigin || 0) + now;
+  const dt = c.last === null ? 0 : Math.min(0.1, Math.max(0, (wall - c.last) / 1000));
+  c.last = c.last === null ? wall : Math.max(c.last, wall);
+  if (!c.paused && c.members.some(m => m.visible)) c.elapsed += dt * SPEED;
+  const t = wrap(c.elapsed);
+  if (t !== shownT) { render(t); shownT = t; }
+  if (c.paused !== shownPaused) { showPaused(c.paused); shownPaused = c.paused; }
   requestAnimationFrame(frame);
 }
-// Play only while at least 30 % of the figure is on screen. Inside an <iframe>, the observer
-// measures against the top-level page viewport, so the loop starts when the reader scrolls to it.
+// On screen = at least 30 % of the figure in view. Inside an <iframe>, the observer measures
+// against the top-level page viewport, so the loop starts when the reader scrolls to it.
 if ('IntersectionObserver' in window) {
-  visible = false;
+  inView = false;
   new IntersectionObserver(entries => {
-    for (const e of entries) visible = e.isIntersecting && e.intersectionRatio >= 0.3;
+    for (const e of entries) inView = e.isIntersecting && e.intersectionRatio >= 0.3;
   }, { threshold: [0, 0.3] }).observe(document.getElementById('fig'));
 }
 btnPlay.addEventListener('click', togglePause);
@@ -753,7 +786,6 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'ArrowLeft') seek(-0.25);
   else if (e.key === 'r' || e.key === 'R') restart();
 });
-setPaused(false);
 ctl.hidden = false;
 requestAnimationFrame(frame);
 })();
